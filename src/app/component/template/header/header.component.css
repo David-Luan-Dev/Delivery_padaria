@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #EBCA1D;
+}
+.header .nome {
+  float: left;
+  padding-top: 20px;
+  margin-right: 200px;
+  text-decoration: nome;
+}
+.header .links {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  font-size: 22px;
+  margin: 8px;
+  text-decoration: none;
+  color: black;
+}
+.header .logo {
+  display: flex;
+  float: left;
+  height: 63px;
+  width: 110px;
+  align-items: flex-start;
+  margin-left: 1px;
+
+}
+#divBusca{
+  background-color:#fff;
+  border:solid 2px grey;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+  align-items: center;
+}
+.material-icons {
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: grey;
+}
+
+#txtBusca {
+  display: flex;
+  float:left;
+  background: transparent;
+  padding-left:8px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+
+}
+#btnBusca {
+  border: none;
+  float: left;
+  height: 32px;
+  border-radius: 0 7px 7px 0;
+  width: 70px;
+  font-weight: bold;
+  background: #434444;
+  color: white;
+}
+
+
+
+
+
