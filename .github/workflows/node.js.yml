@@ -1,32 +1,52 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: Node.js CI
+name: Deploy to FTP On-Premise - Project ABC
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+
+  # the follow line allow this script to be started manually.
+  workflow_dispatch:
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        node-version: 10.16
     - name: Install packages with NPM
       run: npm install
     - name: Build for production
       run: npm run build
+    - name: Upload artifacts to be used in next job
+      if: success()
+      uses: actions/upload-artifact@v1
+      with:
+        name: deploy_dist
+        path: dist
+
+  ftp-deploy:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+
+    - name: Download artifacts created at previous job
+      if: success()
+      uses: actions/download-artifact@v1
+      with:
+        name: deploy_dist
+        path: dist
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Actions@master
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: dist/
+        server-dir: ${{ secrets.FTP_APP_DIR }}
+        dangerous-clean-slate: true # optional
