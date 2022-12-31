@@ -29,4 +29,4 @@ jobs:
     - name: Install packages with NPM
       run: npm install
     - name: Build for production
-      run: npm run build -- --prod
+      run: npm run build
