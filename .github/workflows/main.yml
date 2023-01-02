@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: '14'
       
-    - name: Install NPM Modules
+    - name: Install NPM Modules 
       run: npm install
 
     - name: Build Project
