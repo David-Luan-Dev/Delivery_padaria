@@ -1,3 +1,4 @@
+
 name: Deploy prod site on push
 
 on: 
@@ -20,11 +21,11 @@ jobs:
       with:
         node-version: '14'
       
-    - name: Install NPM Modules 
+    - name: Install NPM Modules
       run: npm install
 
     - name: Build Project
-      run: npm run build 
+      run: npm run build
     
     - name: Sync Files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
