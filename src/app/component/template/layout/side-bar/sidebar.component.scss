@@ -1,0 +1,63 @@
+.example-container {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 64px);
+  margin: 0;
+  padding: 0;
+  border: 1px solid #555;
+}
+
+mat-drawer {
+  display: flex;
+  width: 250px;
+  box-shadow: 0px -2px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+::ng-deep .mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: none;
+}
+
+.container-context {
+  margin-left: 249px;
+  padding: 24px;
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  border: none;
+  padding: 10px;
+  mat-icon {
+    margin-right: 8px;
+  }
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
