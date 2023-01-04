@@ -1,16 +1,15 @@
 <mat-toolbar class="header mat-elevation-z4">
-  <div>
-    <img class="logo" src="assets/img/logo.png" alt="logo" />
-  </div>
-  <div>
-    <a class="links" href="">Inicio</a>
-    <a class="links" href="">Sobre nós</a>
-    <a class="links" href="">Parceiros</a>
-    <a class="links" href="">contato</a>
-  </div>
-  <div class="col-6 input-search">
+  <span id="reorder">
+    <mat-icon class="reorder">reorder</mat-icon>
+    <img class="logo" src="assets/img/logo1.jpg" alt="logo" />
+    <mat-icon class="room">location_on</mat-icon>
+
+  </span>
+
+  <span class="col-6 input-search">
     <mat-form-field class="w-100">
-      <mat-label>Pesquisar</mat-label>
+      <mat-label class="pesquisar">Pesquisar</mat-label>
+      <mat-icon class="search">search</mat-icon>
       <input matInput type="text" [(ngModel)]="value" />
       <button
         *ngIf="value"
@@ -19,8 +18,13 @@
         aria-label="Clear"
         (click)="value = ''"
       >
-        <mat-icon>close</mat-icon>
+        <mat-icon class="close">close</mat-icon>
       </button>
     </mat-form-field>
-  </div>
+  </span>
+  <span class="carrinho">
+    <mat-icon class="entrar">account_circle</mat-icon>
+    Entrar
+    <mat-icon class="compras">add_shopping_cart</mat-icon>
+  </span>
 </mat-toolbar>
