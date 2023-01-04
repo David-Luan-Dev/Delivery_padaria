@@ -1,5 +1,15 @@
+<app-header [drawer]="drawer"></app-header>
 <mat-drawer-container class="container-fluid example-container">
-  <mat-drawer mode="side" opened class="mat-elevation-z8">
+  <mat-drawer
+    #drawer
+    mode="side"
+    opened
+    class="mat-elevation-z8"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)"
+  >
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
       <span>Home</span>
