@@ -28,6 +28,17 @@
   align-items: flex-start;
   margin: 15px;
 }
+ .room {
+  display: flex;
+  align-items: center;
+  padding: 0%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+::ngcontent-jea-c77 .mat-icon {
+  color: red;
+}
 
 .input-search {
   align-items: center;
@@ -81,7 +92,7 @@ text-decoration: none;
   margin: 0;
   padding: 0;
   justify-items: end;
-  margin-left: 130px;
+  margin-left: 125px;
 
 
 }
