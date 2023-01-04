@@ -1,9 +1,14 @@
 <mat-toolbar class="header mat-elevation-z4">
   <span id="reorder">
-    <mat-icon class="reorder">reorder</mat-icon>
+    <mat-icon
+      mat-raised-button
+      class="reorder"
+      (click)="drawer.toggle()"
+      style="cursor: pointer"
+      >reorder</mat-icon
+    >
     <img class="logo" src="assets/img/logo1.jpg" alt="logo" />
     <mat-icon class="room">location_on</mat-icon>
-
   </span>
 
   <span class="col-6 input-search">
