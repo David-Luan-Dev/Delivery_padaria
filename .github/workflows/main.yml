@@ -33,5 +33,5 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/
-        server-dir: /domains/deliverypadarias.com.br/public_html
+        server-dir: /domains/deliverypadarias.com.br/public_html/
         dangerous-clean-slate: true
