@@ -2,13 +2,11 @@
 <mat-drawer-container class="example-container">
   <mat-drawer
     #drawer
-    mode="side"
-    opened
     class="mat-elevation-z8"
     fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)"
+    [mode]="'push'"
+    [opened]="false"
   >
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
