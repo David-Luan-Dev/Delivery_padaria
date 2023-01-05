@@ -1,24 +1,13 @@
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-
-}
-
- .header .reorder {
-   /*margin-top: 12px;*/
-
-   flex-direction: row;
+.header .reorder {
+  flex-direction: row;
   float: left;
 }
 
 #reorder {
   display: flex;
   align-items: center;
- /* padding: 10px;*/
- margin-right: 100px;
-
-
+  /* padding: 10px;*/
+  margin-right: 100px;
 }
 .logo {
   display: flex;
@@ -28,16 +17,12 @@
   align-items: flex-start;
   margin: 15px;
 }
- .room {
+.room {
   display: flex;
   align-items: center;
   padding: 0%;
   margin-bottom: 15px;
   margin-top: 15px;
-
-}
-::ngcontent-jea-c77 .mat-icon {
-  color: red;
 }
 
 .input-search {
@@ -46,17 +31,12 @@
   margin-left: 120px;
   padding: 0;
   height: 60px;
-
-
-
 }
 .pesquisar {
   display: flex;
-align-items: center;
-margin-left: 200px;
-text-decoration: none;
-
-
+  align-items: center;
+  margin-left: 200px;
+  text-decoration: none;
 }
 .search {
   display: flex;
@@ -72,7 +52,6 @@ text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .material-icons {
@@ -93,8 +72,6 @@ text-decoration: none;
   padding: 0;
   justify-items: end;
   margin-left: 125px;
-
-
 }
 .entrar {
   display: flex;
@@ -105,7 +82,6 @@ text-decoration: none;
 .compras {
   display: flex;
   align-items: center;
- /* padding: 10px;*/
- margin-left: 20px;
+  /* padding: 10px;*/
+  margin-left: 20px;
 }
-

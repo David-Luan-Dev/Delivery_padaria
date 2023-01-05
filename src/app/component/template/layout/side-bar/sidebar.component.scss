@@ -7,6 +7,14 @@
   border: 1px solid #555;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
+  height: 74px;
+}
+
 mat-drawer {
   display: flex;
   width: 250px;
