@@ -1,4 +1,4 @@
-<mat-toolbar class="header mat-elevation-z4">
+<div class="d-flex w-100 mat-elevation-z8">
   <span id="reorder">
     <mat-icon
       mat-raised-button
@@ -11,25 +11,26 @@
     <mat-icon class="room">location_on</mat-icon>
   </span>
 
-  <span class="col-6 input-search">
-    <mat-form-field class="w-100">
-      <mat-label class="pesquisar">Pesquisar</mat-label>
-      <mat-icon class="search">search</mat-icon>
+  <div class="col-6" style="margin-top: 17px">
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Pesquisar</mat-label>
+      <mat-icon matSuffix>search</mat-icon>
       <input matInput type="text" [(ngModel)]="value" />
       <button
+        mat-button
         *ngIf="value"
         matSuffix
         mat-icon-button
         aria-label="Clear"
         (click)="value = ''"
       >
-        <mat-icon class="close">close</mat-icon>
+        <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-  </span>
+  </div>
   <span class="carrinho">
     <mat-icon class="entrar">account_circle</mat-icon>
     Entrar
     <mat-icon class="compras">add_shopping_cart</mat-icon>
   </span>
-</mat-toolbar>
+</div>
