@@ -1,18 +1,20 @@
-<div class="d-flex w-100 mat-elevation-z8">
-  <span id="reorder">
-    <mat-icon
+<mat-toolbar class="header mat-elevation-z8">
+  <div id="reorder">
+    <mat-icon class="menu"
       mat-raised-button
-      class="reorder"
+
       (click)="drawer.toggle()"
       style="cursor: pointer"
-      >reorder</mat-icon
+      >menu</mat-icon
     >
-    <img class="logo" src="assets/img/logo1.jpg" alt="logo" />
-    <mat-icon class="room">location_on</mat-icon>
-  </span>
+    <img class="logo" src="assets/img/logo5.svg" alt="logo" />
+    <mat-icon class="locarion_on" style="color: red;">location_on</mat-icon>
+     <p class="localizacao">Digite sua localização</p>
+  </div>
 
-  <div class="col-6" style="margin-top: 17px">
-    <mat-form-field class="w-100" appearance="outline">
+  <div class="btnPesquisa">
+
+      <mat-form-field class="col-30" appearance="outline">
       <mat-label>Pesquisar</mat-label>
       <mat-icon matSuffix>search</mat-icon>
       <input matInput type="text" [(ngModel)]="value" />
@@ -27,10 +29,11 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
+
   </div>
-  <span class="carrinho">
-    <mat-icon class="entrar">account_circle</mat-icon>
+  <div id="carrinho">
+    <mat-icon class="iconEntrar">account_circle</mat-icon>
     Entrar
     <mat-icon class="compras">add_shopping_cart</mat-icon>
-  </span>
-</div>
+  </div>
+</mat-toolbar>

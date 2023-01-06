@@ -1,21 +1,25 @@
-.header .reorder {
+ .menu {
   flex-direction: row;
   float: left;
-}
+   color: black;
 
-#reorder {
-  display: flex;
-  align-items: center;
-  /* padding: 10px;*/
-  margin-right: 100px;
-}
+ }
+
+ #reorder {
+   display: flex;
+   align-items: center;
+   /* padding: 10px;*/
+
+   color: black;
+ }
 .logo {
   display: flex;
   float: left;
-  height: 63px;
-  width: 110px;
+ height: 300px;
+  width: 160px;
   align-items: flex-start;
-  margin: 15px;
+  margin-left: 0;
+  padding-top: 10;
 }
 .room {
   display: flex;
@@ -23,6 +27,7 @@
   padding: 0%;
   margin-bottom: 15px;
   margin-top: 15px;
+  color: red;
 }
 
 .input-search {
@@ -37,6 +42,7 @@
   align-items: center;
   margin-left: 200px;
   text-decoration: none;
+
 }
 .search {
   display: flex;
@@ -64,24 +70,76 @@
   text-decoration: none;
 }
 
-.carrinho {
+#carrinho {
   display: flex;
   flex-direction: row;
+  position: relative;
   align-items: center;
   margin: 0;
   padding: 0;
-  justify-items: end;
-  margin-left: 125px;
+  left: 6em;
+  float: left;
+
 }
-.entrar {
+.iconEntrar {
   display: flex;
   align-items: center;
   padding: 0;
   margin-right: 12px;
+  color: black;
 }
 .compras {
   display: flex;
   align-items: center;
   /* padding: 10px;*/
   margin-left: 20px;
+   color: black;
 }
+.header {
+  width: 100%;
+}
+.locarion_on {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: red;
+
+}
+
+ .localizacao {
+  display: flex;
+  align-items: center;
+  pad: 5px;
+  color: black;
+  border-bottom: 1px solid black;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.btnPesquisa {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30em;
+  background-color: royalblue;
+  margin-left: 80px;
+  padding: 1em;
+  height: 1em;
+  border-radius: 1px;
+
+ }
+.example-form-field {
+  display: flex;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  border: 3px;
+}
+
+
