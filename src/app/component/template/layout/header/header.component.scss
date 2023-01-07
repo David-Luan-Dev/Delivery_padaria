@@ -1,21 +1,20 @@
- .menu {
+.menu {
   flex-direction: row;
   float: left;
-   color: black;
+  color: black;
+}
 
- }
+#reorder {
+  display: flex;
+  align-items: center;
+  /* padding: 10px;*/
 
- #reorder {
-   display: flex;
-   align-items: center;
-   /* padding: 10px;*/
-
-   color: black;
- }
+  color: black;
+}
 .logo {
   display: flex;
   float: left;
- height: 300px;
+  height: 300px;
   width: 160px;
   align-items: flex-start;
   margin-left: 0;
@@ -42,7 +41,6 @@
   align-items: center;
   margin-left: 200px;
   text-decoration: none;
-
 }
 .search {
   display: flex;
@@ -79,7 +77,6 @@
   padding: 0;
   left: 6em;
   float: left;
-
 }
 .iconEntrar {
   display: flex;
@@ -93,7 +90,7 @@
   align-items: center;
   /* padding: 10px;*/
   margin-left: 20px;
-   color: black;
+  color: black;
 }
 .header {
   width: 100%;
@@ -104,10 +101,9 @@
   padding: 0;
   margin: 0;
   color: red;
-
 }
 
- .localizacao {
+.localizacao {
   display: flex;
   align-items: center;
   pad: 5px;
@@ -124,13 +120,11 @@
   align-items: center;
   position: relative;
   width: 30em;
-  background-color: royalblue;
   margin-left: 80px;
   padding: 1em;
   height: 1em;
   border-radius: 1px;
-
- }
+}
 .example-form-field {
   display: flex;
   position: relative;
@@ -142,4 +136,10 @@
   border: 3px;
 }
 
+:host ::ng-deep .mat-mdc-form-field {
+  height: 49px;
+}
 
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+  height: 49px;
+}
