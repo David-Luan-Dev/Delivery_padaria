@@ -16,6 +16,7 @@ export class SidebarComponent {
   public isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
     .pipe(map((result: BreakpointState) => result.matches));
+  value = ``
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 

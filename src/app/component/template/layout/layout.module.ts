@@ -9,6 +9,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 
 // components
@@ -17,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const material = [
   MatToolbarModule,
@@ -24,7 +27,9 @@ const material = [
   MatIconModule,
   FormsModule,
   MatInputModule,
-  MatDividerModule
+  MatDividerModule,
+  FlexLayoutModule,
+  MatMenuModule
 ]
 
 @NgModule({
