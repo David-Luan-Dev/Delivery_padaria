@@ -1,16 +1,7 @@
-<app-header
-  [drawer]="drawer"
-  class="container-header mat-elevation-z3"
-></app-header>
+<app-header [drawer]="drawer" class="container-header mat-elevation-z3"></app-header>
 <mat-drawer-container class="example-container">
-  <mat-drawer
-    #drawer
-    class="mat-elevation-z8"
-    fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="'push'"
-    [opened]="false"
-  >
+  <mat-drawer #drawer class="mat-elevation-z8" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="'push'" [opened]="false">
     <button mat-button class="menu-button">
       <mat-icon>home</mat-icon>
       <span>Home</span>
@@ -23,9 +14,7 @@
       <mat-icon>info</mat-icon>
       <span>About</span>
     </button>
-
     <mat-divider></mat-divider>
-
     <button mat-button class="menu-button">
       <mat-icon>help</mat-icon>
       <span>Help</span>

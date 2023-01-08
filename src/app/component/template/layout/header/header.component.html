@@ -1,88 +1,49 @@
 <mat-toolbar class="header mat-elevation-z8">
   <!-- botao menu -->
   <mat-toolbar-row>
-    <div class="col-1">
-      <mat-icon
-        class="menu"
-        mat-raised-button
-        (click)="drawer.toggle()"
-        style="cursor: pointer"
-        >menu</mat-icon
-      >
+    <div>
+      <mat-icon class="menu" mat-raised-button (click)="drawer.toggle()" style="cursor: pointer">
+        menu
+      </mat-icon>
     </div>
-    <div class="div-col-2">
+    <div>
       <img class="logo" src="assets/img/logo5.svg" alt="logo" />
     </div>
-    <div class="col-1">
+    <div fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
       <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
       <p class="localizacao">Digite sua localização</p>
     </div>
-    <div class="col-7">
-      <mat-form-field class="w-100" appearance="outline">
+    <div class=" flex-auto mat-form-class" fxshow fxShow.xs fxShow.sm>
+      <mat-form-field style="width: 75%;" appearance="outline">
         <mat-label>Pesquisar</mat-label>
         <mat-icon matSuffix>search</mat-icon>
         <input matInput type="text" [(ngModel)]="value" />
-        <button
-          mat-button
-          *ngIf="value"
-          matSuffix
-          mat-icon-button
-          aria-label="Clear"
-          (click)="value = ''"
-        >
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value = ''">
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
     </div>
-    <div class="col-1">
+    <div fxShow fxHide.xs fxHide.sm class="flex items-center">
       <mat-icon class="iconEntrar">account_circle</mat-icon>
       Entrar
     </div>
-    <div class="col-1">
-      <mat-icon class="compras">add_shopping_cart</mat-icon>
-    </div>
+    <mat-icon fxShow fxHide.xs fxHide.sm>add_shopping_cart</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs fxShow.sm>
+      <mat-icon>more_vert</mat-icon>
+    </button>
   </mat-toolbar-row>
-  <!-- fim botao menu -->
-
-  <!-- localizacao -->
-  <!-- <div class="col-2">
-      <img class="logo" src="assets/img/logo5.svg" alt="logo" />
-    </div>
-    <div class="col-1">
-      <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
-    </div>
-    <div class="col-1">
-      <p class="localizacao">Digite sua localização</p>
-    </div> -->
-  <!-- fim localizacao -->
-
-  <!-- pesquisar -->
-  <!-- <div class="col-7">
-      <mat-form-field class="w-100" appearance="outline">
-        <mat-label>Pesquisar</mat-label>
-        <mat-icon matSuffix>search</mat-icon>
-        <input matInput type="text" [(ngModel)]="value" />
-        <button
-          mat-button
-          *ngIf="value"
-          matSuffix
-          mat-icon-button
-          aria-label="Clear"
-          (click)="value = ''"
-        >
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
-    </div> -->
-  <!-- Fim pesquisar -->
-
-  <!-- Icone de entrar e o carrinho -->
-  <!-- <div class="col-1">
+  <mat-menu #dropMenu="matMenu">
+    <button mat-menu-item>
       <mat-icon class="iconEntrar">account_circle</mat-icon>
       Entrar
-    </div>
-    <div class="col-1">
-      <mat-icon class="compras">add_shopping_cart</mat-icon>
-    </div> -->
-  <!-- fim -->
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
+      <p class="localizacao">Digite sua localização</p>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+    <mat-divider></mat-divider>
+  </mat-menu>
 </mat-toolbar>
