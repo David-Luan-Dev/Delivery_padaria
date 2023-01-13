@@ -11,10 +11,10 @@
     </div>
     <div fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
       <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
-      <p class="localizacao">Digite sua localização</p>
+      <input placeholder="Digite sua localização" matInput type="text" />
     </div>
-    <div class=" flex-auto mat-form-class" fxshow fxShow.xs fxShow.sm>
-      <mat-form-field style="width: 75%;" appearance="outline">
+    <div class=" flex-auto mat-form-class">
+      <mat-form-field style="width: 75%; margin-bottom: -22px;" fxshow fxShow.xs fxShow.sm>
         <mat-label>Pesquisar</mat-label>
         <mat-icon matSuffix>search</mat-icon>
         <input matInput type="text" [(ngModel)]="value" />

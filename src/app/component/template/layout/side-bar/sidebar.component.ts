@@ -18,6 +18,8 @@ export class SidebarComponent {
     .pipe(map((result: BreakpointState) => result.matches));
   value = ``
 
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor(private breakpointObserver: BreakpointObserver) {
+    window
+  }
 
 }

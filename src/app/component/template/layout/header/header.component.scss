@@ -68,10 +68,20 @@ mat-toolbar-row {
   border: 3px;
 }
 
-:host ::ng-deep .mat-mdc-form-field {
-  height: 49px;
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+  height: 48px;
 }
 
-:host ::ng-deep .mat-mdc-text-field-wrapper {
-  height: 49px;
+::ng-deep .mat-form-field-wrapper {
+  margin-bottom: -1.25em;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  margin: 0 !important;
+  padding: 0;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  margin: 0 !important;
+  padding: 0;
 }
