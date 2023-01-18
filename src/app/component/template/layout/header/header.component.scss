@@ -1,7 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: ghostwhite;
+}
+
 .menu {
+  display: flex;
   flex-direction: row;
   float: left;
-  color: black;
+  color: #6a696e;
 }
 mat-toolbar-row {
   gap: 10px;
@@ -16,45 +25,72 @@ mat-toolbar-row {
 .logo {
   display: flex;
   float: left;
-  height: 300px;
-  width: 160px;
+  height: 5rem;
+  width: 10rem;
   align-items: flex-start;
-  margin-left: 0;
-  padding-top: 10;
+  margin-bottom: 1rem;
+
+  color: #6a696e;
+  cursor: pointer;
+}
+
+.logo-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .material-icons {
   float: left;
-  color: grey;
+  color: #6a696e;
+  cursor: pointer;
 }
 
 .iconEntrar {
   display: flex;
   align-items: center;
   padding: 0;
-  margin-right: 12px;
-  color: black;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.entrar {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6a696e;
+  padding-right: 1.6rem;
+  height: 35px;
+  border-right: 1px solid #d1d0d4;
+  font-family: sans-serif;
+  font-size: large;
 }
 
-.locarion_on {
+.location_on {
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  color: red;
+  float: left;
+  padding-left: 1rem;
+  padding-bottom: 0px;
+  margin-bottom: 1px;
+  color: #6a696e;
+  cursor: pointer;
+  height: 35px;
+  border-left: 1px solid #d1d0d4;
 }
-
+.seta {
+  color: red;
+  cursor: pointer;
+}
 .localizacao {
   display: flex;
   align-items: center;
   pad: 5px;
-  color: black;
-  border-bottom: 1px solid black;
+
   font-style: italic;
   font-size: 15px;
   font-weight: 300;
   padding: 0;
-  margin: 0;
+  margin: 0.3rem;
 }
 
 .example-form-field {

@@ -80,3 +80,25 @@ mat-divider {
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.5);
 }
+.area-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.area-login span {
+  border: 1px solid lightgray;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 5px;
+  border-radius: 7px;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+}
+.delivery_Padaria {
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 15px;
+  font-size: 22px;
+  border-bottom: 1px solid lightgray;
+}
