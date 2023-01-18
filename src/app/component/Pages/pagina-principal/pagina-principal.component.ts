@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagina-principal.component.scss']
 })
 export class PaginaPrincipalComponent {
-
+  value = ``
 }

@@ -1,4 +1,4 @@
-<mat-toolbar class="header mat-elevation-z8">
+<mat-toolbar class="header mat-elevation-z3">
   <!-- botao menu -->
   <mat-toolbar-row>
     <div>
@@ -6,15 +6,21 @@
         menu
       </mat-icon>
     </div>
+    <div class="logo-c">
+      <img class="logo" src="assets/img/logo13.png" alt="logo">
+    </div>
+    <div class="location_on" fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
+      <mat-icon style="color: red">location_on</mat-icon>
+      <span class="localizacao"
+        style="font-size: 1rem; color: red; text-decoration-line: underline; font-weight: bold; ">
+        Digite sua localização </span>
+      <mat-icon class="seta">arrow_drop_down</mat-icon>
+    </div>
     <div>
-      <img class="logo" src="assets/img/logo5.svg" alt="logo" />
+
     </div>
-    <div fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
-      <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
-      <p class="localizacao">Digite sua localização</p>
-    </div>
-    <div class=" flex-auto mat-form-class" fxshow fxShow.xs fxShow.sm>
-      <mat-form-field style="width: 75%;" appearance="outline">
+    <div class=" flex-auto mat-form-class">
+      <mat-form-field style="width: 75%; margin-bottom: -22px;" fxshow fxShow.xs fxShow.sm>
         <mat-label>Pesquisar</mat-label>
         <mat-icon matSuffix>search</mat-icon>
         <input matInput type="text" [(ngModel)]="value" />
@@ -25,7 +31,7 @@
     </div>
     <div fxShow fxHide.xs fxHide.sm class="flex items-center">
       <mat-icon class="iconEntrar">account_circle</mat-icon>
-      Entrar
+      <a class="entrar">Entrar</a>
     </div>
     <mat-icon fxShow fxHide.xs fxHide.sm>add_shopping_cart</mat-icon>
     <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs fxShow.sm>
@@ -33,14 +39,8 @@
     </button>
   </mat-toolbar-row>
   <mat-menu #dropMenu="matMenu">
-    <button mat-menu-item>
-      <mat-icon class="iconEntrar">account_circle</mat-icon>
-      Entrar
-    </button>
-    <button mat-menu-item>
-      <mat-icon class="locarion_on" style="color: red">location_on</mat-icon>
-      <p class="localizacao">Digite sua localização</p>
-    </button>
+
+
     <button mat-menu-item>
       <mat-icon>add_shopping_cart</mat-icon>
     </button>
