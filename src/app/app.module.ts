@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 const layoutPrimeng = [
@@ -39,7 +40,8 @@ const layoutPrimeng = [
     MatInputModule,
     NgbModule,
     layoutPrimeng,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
