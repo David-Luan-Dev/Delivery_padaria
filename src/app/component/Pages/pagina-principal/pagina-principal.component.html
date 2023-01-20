@@ -23,8 +23,16 @@
   </mat-form-field>
 </div>
 
-
-<span class="p-input-icon-left">
-  <i class="pi pi-search"></i>
-  <input type="text" pInputText [(ngModel)]="value" placeholder="Search">
-</span>
+<div class="form">
+  <form [formGroup]="FormGroup">
+    <span class="p-input-icon-left">
+      <i class="pi pi-search"></i>
+      <input formControlName="email" type="text" pInputText placeholder="Email">
+    </span>
+    <span class="p-input-icon-left">
+      <i class="pi pi-search"></i>
+      <input formControlName="senha" type="text" pInputText placeholder="Senha" required>
+    </span>
+  </form>
+  <button [disabled]="FormGroup.invalid" pButton type="button" label="Enviar" class="p-button-success"></button>
+</div>
