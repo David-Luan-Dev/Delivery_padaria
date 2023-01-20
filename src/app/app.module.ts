@@ -13,6 +13,11 @@ import { LayoutModule } from './component/template/layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
+import { InputTextModule } from 'primeng/inputtext';
+
+const layoutPrimeng = [
+  InputTextModule
+]
 
 @NgModule({
   declarations: [
@@ -29,7 +34,8 @@ import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pag
     MatIconModule,
     FormsModule,
     MatInputModule,
-    NgbModule
+    NgbModule,
+    layoutPrimeng
   ],
   providers: [],
   bootstrap: [AppComponent]
