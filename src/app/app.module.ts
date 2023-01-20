@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
@@ -13,6 +13,15 @@ import { LayoutModule } from './component/template/layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { MatDividerModule } from '@angular/material/divider';
+
+
+const layoutPrimeng = [
+  InputTextModule,
+  ButtonModule
+]
 
 @NgModule({
   declarations: [
@@ -29,7 +38,10 @@ import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pag
     MatIconModule,
     FormsModule,
     MatInputModule,
-    NgbModule
+    NgbModule,
+    layoutPrimeng,
+    ReactiveFormsModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

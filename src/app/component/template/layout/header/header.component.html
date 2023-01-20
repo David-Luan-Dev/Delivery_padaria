@@ -19,15 +19,11 @@
     <div>
 
     </div>
-    <div class=" flex-auto mat-form-class">
-      <mat-form-field style="width: 75%; margin-bottom: -22px;" fxshow fxShow.xs fxShow.sm>
-        <mat-label>Pesquisar</mat-label>
-        <mat-icon matSuffix>search</mat-icon>
-        <input matInput type="text" [(ngModel)]="value" />
-        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value = ''">
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
+    <div class="flex-auto mat-form-class">
+      <span class="p-input-icon-left w-100">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText [(ngModel)]="value" placeholder="Search" class="p-inputtext-sm w-100">
+      </span>
     </div>
     <div fxShow fxHide.xs fxHide.sm class="flex items-center">
       <mat-icon class="iconEntrar">account_circle</mat-icon>
