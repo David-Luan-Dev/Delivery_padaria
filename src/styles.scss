@@ -11,4 +11,37 @@
 html,
 body {
   height: 100%;
+  margin: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined)
+  .mat-mdc-form-field-infix {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  height: 29px;
+  min-height: 10px;
+  width: 50px;
+  max-width: 100%;
+}
+.mat-mdc-form-field-focus-overlay {
+  top: 20;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.mat-mdc-form-field-subscript-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  /* height: 14px; */
+  background-color: red;
+  height: 50;
+  height: 0px;
 }

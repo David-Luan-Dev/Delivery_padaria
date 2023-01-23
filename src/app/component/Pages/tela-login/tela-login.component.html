@@ -3,14 +3,14 @@
   <div>
     <img class="img" src="assets/img/logo3.jpg" alt="logo">
   </div>
-  <form class="conteudo-form">
+  <form class="conteudo-form" (ngSubmit)="submit()">
 
 
     <div class="mat-form">
       <mat-form-field class="mat" appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
         [floatLabel]="getFloatLabelValue()">
         <mat-label floatLabel="auto">E-mail</mat-label>
-        <input class="mensagem-erro" matInput [formControl]="email" required>
+        <input class="mensagem-erro" matInput required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
     </div>
@@ -18,7 +18,7 @@
       <mat-form-field class="mat" aparência="fill" [hideRequiredMarker]="hideRequiredControl.value"
         [floatLabel]="getFloatLabelValue()">
         <mat-label>Senha</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'" [formControl]="senha" required>
+        <input matInput [type]="hide ? 'password' : 'text'" required>
         <mat-error *ngIf="senha.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
     </div>

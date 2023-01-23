@@ -1,4 +1,4 @@
-import { LoginComponent } from './component/Pages/login/login.component';
+import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'pagina-principal',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: '',
@@ -17,18 +17,18 @@ const routes: Routes = [
     children: [
       {
         path: 'pagina-principal',
-        component: PaginaPrincipalComponent
+        component: PaginaPrincipalComponent,
       },
       {
         path: 'login',
-        component: LoginComponent
+        component: TelaLoginComponent
       }
-    ]
-  }
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

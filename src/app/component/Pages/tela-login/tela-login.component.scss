@@ -1,5 +1,3 @@
-html {
-}
 
 h1 {
   display: block;
@@ -33,9 +31,9 @@ h1 {
     max-width: 100%;
     transition: all 0.5s ease-in-out;
   }
-  .img:hover {
-    box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
-  }
+  // .img:hover {
+  //   box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+  // }
 
   .conteudo-form {
     padding-top: 15%;
@@ -78,9 +76,9 @@ h1 {
       cursor: pointer;
     }
   }
-  .conteudo-form:hover {
-    box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
-  }
+  // .conteudo-form:hover {
+  //   box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+  // }
 }
 
 .mensagem-erro {

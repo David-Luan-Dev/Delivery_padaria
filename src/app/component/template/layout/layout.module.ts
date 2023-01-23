@@ -21,7 +21,7 @@ import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { LoginComponent } from './../../Pages/login/login.component';
+
 
 const material = [
   MatToolbarModule,
@@ -49,7 +49,7 @@ const material = [
     FooterComponent,
     LayoutComponent,
     SidebarComponent,
-    LoginComponent
+
   ],
   providers: [],
 })
