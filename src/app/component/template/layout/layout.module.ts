@@ -21,6 +21,8 @@ import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 
 const material = [
@@ -34,13 +36,18 @@ const material = [
   MatMenuModule
 ]
 
+const layoutPrimeng = [
+  InputTextModule
+]
+
 @NgModule({
   imports: [
     BrowserModule,
     RouterModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    material
+    material,
+    layoutPrimeng
   ],
   exports: [],
   declarations: [

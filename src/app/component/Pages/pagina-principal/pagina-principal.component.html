@@ -1,24 +1,34 @@
-<div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+<div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl" *ngFor="let produto of produtos" style="margin-left: 10px; margin-bottom: 10px;flex-direction: row;
+  display: inline-flex;">
   <div class="md:flex">
     <div class="md:shrink-0">
       <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/img/logo5.svg"
         alt="Modern building architecture">
     </div>
     <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-      <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
-        accomodation for your team</a>
-      <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some
-        sunshine? We have a list of places to do just that.</p>
+      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{produto.item}}</div>
+      <a href="#"
+        class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{produto.descricao}}</a>
     </div>
   </div>
-  <button class="py-2 px-3 m-2 bg-blue-500 hover:bg-nav-hover-blue rounded-md text-white">Click Me!</button>
-  <mat-form-field style="width: 75%;" fxshow fxShow.xs fxShow.sm>
-    <mat-label>Pesquisar</mat-label>
-    <mat-icon matSuffix>search</mat-icon>
-    <input matInput type="text" [(ngModel)]="value" />
-    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value = ''">
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
 </div>
+
+<!-- <div class="form">
+  <form [formGroup]="FormGroup">
+    <span class="p-input-icon-left mb-2">
+      <i class="pi pi-search"></i>
+      <input formControlName="email" type="text" pInputText placeholder="Email">
+    </span>
+    <div style="width: 100%;">
+      <mat-divider>
+      </mat-divider>
+    </div>
+    <span class="p-input-icon-left mt-2">
+      <i class="pi pi-search"></i>
+      <input formControlName="senha" type="text" pInputText placeholder="Senha" required>
+    </span>
+  </form>
+  <div>
+    <button [disabled]="FormGroup.invalid" pButton type="button" label="Enviar" class="p-button-success"></button>
+  </div>
+</div> -->
