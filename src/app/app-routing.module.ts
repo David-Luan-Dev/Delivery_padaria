@@ -1,3 +1,4 @@
+import { LoginComponent } from './component/Pages/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
         path: 'pagina-principal',
         component: PaginaPrincipalComponent
       },
+      {
+        path: 'login',
+        component: LoginComponent
+      }
     ]
   }
 ];

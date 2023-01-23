@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -20,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginComponent } from './../../Pages/login/login.component';
 
 const material = [
   MatToolbarModule,
@@ -46,7 +48,8 @@ const material = [
     AppComponent,
     FooterComponent,
     LayoutComponent,
-    SidebarComponent
+    SidebarComponent,
+    LoginComponent
   ],
   providers: [],
 })

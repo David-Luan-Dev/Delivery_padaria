@@ -13,10 +13,12 @@ import { LayoutModule } from './component/template/layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
+import { LoginComponent } from './component/Pages/login/login.component';
 
 @NgModule({
   declarations: [
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule,

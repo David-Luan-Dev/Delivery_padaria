@@ -1,0 +1,90 @@
+html {
+}
+
+h1 {
+  display: block;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  padding: auto;
+  margin: auto;
+}
+.conteudo-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 608px;
+  margin-left: 20%;
+  background-color: #fff;
+  max-width: 800px;
+
+  .img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 5px 5px 05px grey;
+    height: 400px;
+    border-radius: 10px 0px 0px 10px;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .img:hover {
+    box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+  }
+
+  .conteudo-form {
+    padding-top: 15%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+
+    box-shadow: 0px 5px 5px 5px grey;
+    text-align: center;
+    width: 80%;
+
+    max-width: 500px;
+    height: 400px;
+    transition: all 0.5s ease-in-out;
+
+    .botao {
+      background-color: green;
+      border: none;
+      padding: 20px;
+      margin-top: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 13px;
+      box-shadow: o 5px 5px 0 grey;
+      border-radius: 5px;
+      width: 90%;
+      cursor: pointer;
+    }
+    .mat {
+      border: none;
+      padding: 0px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 13px;
+      box-shadow: o 5px 5px 0 rgb(24, 24, 24);
+      border-radius: 5px;
+      width: 90%;
+      cursor: pointer;
+    }
+  }
+  .conteudo-form:hover {
+    box-shadow: 0 5px 5px 0 rgb(39, 39, 39);
+  }
+}
+
+.mensagem-erro {
+  font-size: 14px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
