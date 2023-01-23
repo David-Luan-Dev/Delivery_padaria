@@ -18,7 +18,7 @@ import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pag
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 
 const layoutPrimeng = [
   InputTextModule,
