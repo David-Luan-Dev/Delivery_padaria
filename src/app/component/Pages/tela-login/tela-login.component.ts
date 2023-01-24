@@ -13,8 +13,9 @@ import { FloatLabelType } from '@angular/material/form-field';
 export class TelaLoginComponent implements OnInit {
 
   loginForm!: FormGroup;
+  value = ``
 
-  constructor(){}
+  constructor() { }
 
   hide = true;
   hideRequiredControl = new FormControl(false);
@@ -33,9 +34,9 @@ export class TelaLoginComponent implements OnInit {
   getFloatLabelValue(): FloatLabelType {
     return this.floatLabelControl.value || 'auto';
   }
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  submit(){
+  submit() {
     console.log("Enviado com sucesso!")
   }
 }

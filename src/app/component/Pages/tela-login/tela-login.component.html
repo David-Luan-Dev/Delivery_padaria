@@ -1,31 +1,27 @@
-<div class="conteudo-login">
+<div class=" container">
+  <div class="row">
+    <div class="row">
+      <div class="col-md-6 conteudo-login p-0">
+        <img class="img" src="assets/img/logo3.jpg" alt="logo">
+      </div>
+      <div class="col-md-6 p-0" style="height: 100%;">
+        <div class="conteudo-form" (click)="submit()" style="height: 100%;">
+          <span class="p-input-icon-left w-100">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText [(ngModel)]="value" placeholder="Search" class="p-inputtext-sm w-100">
+          </span>
+          <div>
+            <span class="p-input-icon-left w-100">
+              <i class="pi pi-search"></i>
+              <input type="text" pInputText [(ngModel)]="value" placeholder="Search" class="p-inputtext-sm w-100">
+            </span>
+          </div>
+          <div>
+            <button pButton type="button" label="Success" class="p-button-success"></button>
+          </div>
 
-  <div>
-    <img class="img" src="assets/img/logo3.jpg" alt="logo">
+        </div>
+      </div>
+    </div>
   </div>
-  <form class="conteudo-form" (ngSubmit)="submit()">
-
-
-    <div class="mat-form">
-      <mat-form-field class="mat" appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
-        [floatLabel]="getFloatLabelValue()">
-        <mat-label floatLabel="auto">E-mail</mat-label>
-        <input class="mensagem-erro" matInput required>
-        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field class="mat" aparência="fill" [hideRequiredMarker]="hideRequiredControl.value"
-        [floatLabel]="getFloatLabelValue()">
-        <mat-label>Senha</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'" required>
-        <mat-error *ngIf="senha.invalid">{{getErrorMessage()}}</mat-error>
-      </mat-form-field>
-    </div>
-    <div>
-      <button mat-button class="botao">Entrar</button>
-    </div>
-
-  </form>
-
 </div>
