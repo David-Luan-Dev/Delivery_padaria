@@ -1,24 +1,32 @@
-h1 {
-  display: block;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  padding: auto;
-  margin: auto;
-}
 .conteudo-login {
   border-radius: 10px 0px 0px 10px;
   box-shadow: 0px 5px 5px 05px grey;
 }
 
 .conteudo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 0px 10px 10px 0px;
   box-shadow: 0px 5px 5px 5px grey;
   transition: all 0.5s ease-in-out;
+}
+.conteudo-form .p-button-success {
+}
+.m-1 {
+  font-weight: 100;
 }
 
 .mensagem-erro {
   font-size: 14px;
   color: red;
   font-family: Arial, Helvetica, sans-serif;
+}
+.row-md-3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
