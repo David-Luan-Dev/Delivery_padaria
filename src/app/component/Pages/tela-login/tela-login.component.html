@@ -1,32 +1,31 @@
 <div class="container">
   <div class="row">
     <div class="row justify-content-center">
-      <div class="col-md-12">
-        <h1 class="titulo">
-          Iniciar sessão
-        </h1>
-      </div>
+
     </div>
-    <div class="row screen-container">
-      <div class="col-md-6 conteudo-login p-0">
-        <img class="img" src="assets/img/logo3.jpg" alt="logo">
-      </div>
-      <div class="col-md-6 p-0">
-        <div class="conteudo-form" (click)="submit()">
-          <span class="w-75">
-            <input type="Email" pInputText [(ngModel)]="value" placeholder="Digite seu número"
-              class="p-inputtext-sm w-100">
-          </span>
-          <button pButton type="submit" label="SMS" class="p-button-success m-4 w-75"></button>
-          <button pButton type="submit" label="WhatsApp" class="p-button-success w-75"></button>
-          <div>
-            <p class="m-3" style="font-weight: bold;">Entre com</p>
-          </div>
-          <div class="row-md-3">
-            <p class=" pi pi-google m-2" style="font-size: 2rem;"> </p>
-            <i class="pi pi-apple m-2" style="font-size: 2rem;"></i>
-            <i class="pi pi-facebook m-2" style="font-size: 2rem;"></i>
-          </div>
+  </div>
+  <div class="row screen-container">
+    <div class="col-md-6 conteudo-login p-0">
+      <p>voltar</p>
+      <img class="img" src="assets/img/logo3.jpg" alt="logo">
+    </div>
+    <div class="col-md-6 p-0">
+      <div class="conteudo-form" (click)="submit()">
+
+        <div class="col-md-12">
+          <p class="titulo">
+            Cadastre-se ou faça login
+          </p>
+          <!---->
+          <button pButton type="submit" label="Continuar com Google" class="p-button-success cor-red p-3px w-75 m-2"><i
+              class=" pi pi-google m-2"> </i></button>
+          <button pButton type="submit" label="Continuar com celular" class="p-button-success cor-grey w-75  m-2"><i
+              class="pi pi-phone m-2"></i></button>
+          <button pButton type="submit" label="Continuar com Facebook" class="p-button-success cor-blue w-75  m-2"><i
+              class="pi pi-facebook m-2"></i></button>
+          <button pButton type="submit" label="continuar com Aplle" class="p-button-success cor-black w-75  m-2"> <i
+              class="pi pi-apple m-2"></i></button>
+          <button pButton type="submit" label="Sou cadastrado" class="p-button-success cor-white w-75  m-2"></button>
         </div>
       </div>
     </div>

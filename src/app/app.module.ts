@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import {PasswordModule} from 'primeng/password';
+import {InputMaskModule} from 'primeng/inputmask';
 
 
 import { AppComponent } from './app.component';
@@ -48,7 +49,8 @@ const layoutPrimeng = [
     layoutPrimeng,
     ReactiveFormsModule,
     MatDividerModule,
-    PasswordModule
+    PasswordModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

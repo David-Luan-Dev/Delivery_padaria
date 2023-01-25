@@ -6,6 +6,7 @@ import {
   FormGroup,
   FormBuilder,
 } from '@angular/forms';
+import { Output, EventEmitter } from '@angular/core';
 
 import { Component, OnInit, NgModule } from '@angular/core';
 import { FloatLabelType } from '@angular/material/form-field';
@@ -16,7 +17,7 @@ import { FloatLabelType } from '@angular/material/form-field';
   styleUrls: ['./tela-login.component.scss'],
 })
 export class TelaLoginComponent implements OnInit {
-
+  val4!: string;
 
   loginForm!: FormGroup;
   value = ``

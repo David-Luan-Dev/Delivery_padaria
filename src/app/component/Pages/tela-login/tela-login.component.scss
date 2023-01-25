@@ -1,10 +1,16 @@
 .conteudo-form {
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
+}
+.conteudo-form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
 }
 
 .m-1 {
@@ -41,30 +47,95 @@
   align-items: center;
   justify-content: center;
   height: 48px;
-  width: 102px;
+  // width: 102px;
   padding: 0 10px;
-  background-color: #f2f2f2;
+  background-color: #131212;
   margin-right: 10px;
   border-radius: 4px;
 }
 
 .img {
   height: 100% !important;
+  border: none;
+}
+
+.titulo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  float: left;
+  font-size: 35px;
+  padding: 0;
+}
+.cor-red {
+  background-color: rgb(68, 133, 68);
+  height: 50px;
+  border-radius: 20px;
+}
+.cor-grey {
+  background-color: grey;
+  height: 50px;
+  border-radius: 20px;
+}
+.cor-blue {
+  background-color: rgb(82, 82, 214);
+  height: 50px;
+  border-radius: 20px;
+}
+
+.cor-black {
+  background-color: black;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.cor-white {
+  background-color: white;
+  color: rgb(107, 223, 122);
+  height: 50px;
+  border-radius: 20px;
+}
+
+.pi-google {
+  font-size: 20px;
+}
+
+.pi-phone {
+  font-size: 20px;
+}
+
+.pi-facebook {
+  font-size: 20px;
+}
+
+.pi-apple {
+  font-size: 20px;
 }
 
 // @media (min-width: 320px) {
 //   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 // }
-// @media (min-width: 480px) {
-//   /* smartphones, Android phones, landscape iPhone */
-// }
-// @media (min-width: 600px) {
-//   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-// }
-
-@media (max-width: 800px) {
-  .conteudo-form {
+@media (max-width: 516px) {
+  .titulo {
+    font-size: 20px;
     height: auto;
+    margin-bottom: auto;
+    padding: auto;
+  }
+  .container {
+    display: flex;
+    margin: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .conteudo-form {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     padding: 25px;
     border-radius: unset;
     box-shadow: unset;
