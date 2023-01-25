@@ -34,10 +34,13 @@
     </button>
   </mat-toolbar-row>
   <mat-menu #dropMenu="matMenu">
-
-
     <button mat-menu-item>
       <mat-icon>add_shopping_cart</mat-icon>
+      <a routerLink="/login">Carrinho</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="iconEntrar" routerLink="/login">account_circle</mat-icon>
+      <a routerLink="/login">Entrar</a>
     </button>
     <mat-divider></mat-divider>
   </mat-menu>
