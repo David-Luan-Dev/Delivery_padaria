@@ -39,6 +39,13 @@ mat-drawer {
   border: none;
 }
 
+@media (max-width: 640px) {
+  .container-context {
+    padding: 0px !important;
+  }
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
 .container-context {
   width: 100%;
   padding: 24px;
