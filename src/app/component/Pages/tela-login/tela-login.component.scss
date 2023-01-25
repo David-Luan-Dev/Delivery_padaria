@@ -1,21 +1,27 @@
-.conteudo-login {
-  border-radius: 10px 0px 0px 10px;
-  box-shadow: 0px 5px 5px 05px grey;
-}
-
 .conteudo-form {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: 0px 5px 5px 5px grey;
   transition: all 0.5s ease-in-out;
 }
 
 .m-1 {
   font-weight: 100;
+}
+
+.titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-family: Goldplay-Bold;
+  font-weight: initial;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: rgb(46, 44, 54);
 }
 
 .mensagem-erro {
@@ -34,15 +40,15 @@
   height: 100% !important;
 }
 
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-}
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
+// @media (min-width: 320px) {
+//   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+// }
+// @media (min-width: 480px) {
+//   /* smartphones, Android phones, landscape iPhone */
+// }
+// @media (min-width: 600px) {
+//   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+// }
 
 @media (max-width: 800px) {
   .conteudo-form {
@@ -63,6 +69,7 @@
 
   .conteudo-login {
     border-radius: unset;
+    display: none;
   }
 
   .screen-container {
