@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -21,6 +22,7 @@ import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
+
 
 
 const material = [
@@ -53,7 +55,8 @@ const layoutPrimeng = [
     AppComponent,
     FooterComponent,
     LayoutComponent,
-    SidebarComponent
+    SidebarComponent,
+
   ],
   providers: [],
 })
