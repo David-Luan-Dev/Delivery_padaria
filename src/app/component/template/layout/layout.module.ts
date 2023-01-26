@@ -1,3 +1,4 @@
+import { CestaComponent } from './../../Pages/carrinho/cesta/cesta.component';
 
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,10 +19,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AppComponent } from 'src/app/app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
+
 
 
 

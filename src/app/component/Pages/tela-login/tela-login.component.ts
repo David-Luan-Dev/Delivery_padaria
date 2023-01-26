@@ -27,6 +27,8 @@ export class TelaLoginComponent implements OnInit {
 
   ngOnInit(): void { }
 
+ 
+
   submit() {
     console.log("Enviado com sucesso!")
   }
