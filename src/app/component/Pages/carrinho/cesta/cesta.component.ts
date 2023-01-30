@@ -7,4 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class CestaComponent { }
 
-// 20² = 400 * 50 = 40000
+// 20 * n² = 100 * 50²
