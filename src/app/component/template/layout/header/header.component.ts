@@ -10,7 +10,10 @@ import { map, Observable } from 'rxjs';
 })
 export class HeaderComponent {
   @Input() drawer!: MatDrawer
+  @Input() drawerCarrinho!: MatDrawer
   value = ""
+  carrinhoBoolean = false;
+
   public isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
     .pipe(map((result: BreakpointState) => result.matches));

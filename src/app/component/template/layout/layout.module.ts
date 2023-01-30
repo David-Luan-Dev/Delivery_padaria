@@ -1,5 +1,3 @@
-import { CestaComponent } from './../../Pages/carrinho/cesta/cesta.component';
-
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,8 +11,6 @@ import { RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 
-
-
 // components
 import { AppComponent } from 'src/app/app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,9 +20,7 @@ import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
-
-
-
+import { CestaComponent } from '../../Pages/carrinho/cesta/cesta.component';
 
 const material = [
   MatToolbarModule,
@@ -52,14 +46,14 @@ const layoutPrimeng = [
     material,
     layoutPrimeng
   ],
-  exports: [],
+  exports: [SidebarComponent],
   declarations: [
     HeaderComponent,
     AppComponent,
     FooterComponent,
     LayoutComponent,
     SidebarComponent,
-
+    CestaComponent
   ],
   providers: [],
 })

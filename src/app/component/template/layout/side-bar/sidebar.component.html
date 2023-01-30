@@ -1,7 +1,7 @@
-<app-header [drawer]="drawer" class="container-header mat-elevation-z3"></app-header>
+<app-header [drawer]="drawer" [drawerCarrinho]="drawerCarrinho" class="container-header mat-elevation-z3"></app-header>
 <mat-drawer-container class="example-container">
   <mat-drawer #drawer class="mat-elevation-z8" fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="'push'" [opened]="false">
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="'over'" [opened]="false">
     <div>
       <h1 class="delivery_Padaria">Delivery_padarias</h1>
     </div>
@@ -32,6 +32,12 @@
       <span>Help</span>
     </button>
   </mat-drawer>
+
+  <mat-drawer #drawerCarrinho class="mat-elevation-z1" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="'over'" [opened]="false" position="end">
+    <app-cesta></app-cesta>
+  </mat-drawer>
+
   <mat-drawer-content class="container-context">
     <router-outlet></router-outlet>
   </mat-drawer-content>

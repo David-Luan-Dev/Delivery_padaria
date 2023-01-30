@@ -7,22 +7,21 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import {PasswordModule} from 'primeng/password';
-import {InputMaskModule} from 'primeng/inputmask';
+import { PasswordModule } from 'primeng/password';
+import { InputMaskModule } from 'primeng/inputmask';
 
 
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 
-
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from './component/template/layout/layout.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { CestaComponent } from './component/Pages/carrinho/cesta/cesta.component';
 
 const layoutPrimeng = [
   InputTextModule,
@@ -33,8 +32,7 @@ const layoutPrimeng = [
 @NgModule({
   declarations: [
     PaginaPrincipalComponent,
-    TelaLoginComponent,
-    CestaComponent
+    TelaLoginComponent
   ],
   imports: [
     RouterModule,
@@ -52,7 +50,8 @@ const layoutPrimeng = [
     ReactiveFormsModule,
     MatDividerModule,
     PasswordModule,
-    InputMaskModule
+    InputMaskModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
