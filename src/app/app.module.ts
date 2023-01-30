@@ -22,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { PadariasComponent } from './component/Pages/padarias/padarias.component';
 
 const layoutPrimeng = [
   InputTextModule,
@@ -32,7 +33,8 @@ const layoutPrimeng = [
 @NgModule({
   declarations: [
     PaginaPrincipalComponent,
-    TelaLoginComponent
+    TelaLoginComponent,
+    PadariasComponent
   ],
   imports: [
     RouterModule,

@@ -1,3 +1,6 @@
+* {
+  height: auto;
+}
 .example-container {
   display: flex;
   width: 100%;
@@ -38,6 +41,19 @@ mat-drawer {
   padding: 24px;
   border: none;
 }
+.secoes {
+  font-size: 1em;
+  font-weight: 300;
+}
+.outros {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 1.5em;
+}
+.parte2 li {
+  display: flex;
+  margin-top: 1.5em;
+}
 
 @media (max-width: 640px) {
   .container-context {
@@ -50,18 +66,37 @@ mat-drawer {
   width: 100%;
   padding: 24px;
 }
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home {
+  border: none;
+}
 
 .menu-button {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  font-size: 1em;
   border: none;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.3em;
+
   mat-icon {
     margin-right: 8px;
   }
+}
+
+.top-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .avatar {
@@ -98,10 +133,12 @@ mat-divider {
   background-color: red;
   font-weight: bold;
 }
-.delivery_Padaria {
-  font-weight: bold;
-  font-family: sans-serif;
-  margin-left: 15px;
-  font-size: 22px;
-  border-bottom: 1px solid lightgray;
+.brazil {
+  height: 2rem;
+  width: 4rem;
+  margin: 8px;
+}
+.img-brasil {
+  display: flex;
+  align-items: center;
 }

@@ -1,3 +1,4 @@
+import { PadariasComponent } from './component/Pages/padarias/padarias.component';
 import { CestaComponent } from './component/Pages/carrinho/cesta/cesta.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 import { NgModule } from '@angular/core';
@@ -28,6 +29,10 @@ const routes: Routes = [
         path: 'carrinho',
         component: CestaComponent
       },
+      {
+        path: 'padarias',
+        component: PadariasComponent
+      }
 
     ],
   },
