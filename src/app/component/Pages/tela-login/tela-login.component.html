@@ -27,11 +27,13 @@
         <button pButton type="submit" label="continuar com Aplle" class="p-button-success cor-black"> <i
             class="pi pi-apple m-2"></i></button>
 
-        <p-button class="p-button-success" (click)="showDialog()" label="Sou cadastrado"></p-button>
-        <p-dialog header="Header" [(visible)]="displaydialog" [style]="{width: '100%'}">
+        <p-button class="p-button-success" (click)=" showDialog()" label="Sou cadastrado"></p-button>
+        <p-dialog header="Iniciar sessão" [(visible)]="displaydialog" [style]="{width: '30%'}">
           <div class="button-modal">
-            <button class="p-button-success">Continuar com celular</button>
-            <button class="p-button-success">Continuar com seu e-mail</button>
+            <button pButton type="button" label="Continuar com celular" icon="pi pi-phone" class="p-button-text"
+              style="background-color: rgb(183, 233, 183);"></button>
+            <button pButton type="button" label="Continuar com e-mail" icon="pi pi-envelope" class="p-button-text"
+              style="background-color: rgb(207, 230, 207);"></button>
           </div>
           <ng-template pTemplate="footer">
             <p-button icon="pi pi-check" (click)="displaydialog=false" label="Ok" styleClass="p-button-text"></p-button>
