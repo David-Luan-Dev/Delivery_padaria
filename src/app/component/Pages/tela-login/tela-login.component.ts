@@ -18,6 +18,7 @@ import { FloatLabelType } from '@angular/material/form-field';
 })
 export class TelaLoginComponent implements OnInit {
   val4!: string;
+  displaydialog!: boolean;
 
   loginForm!: FormGroup;
   value = ``
@@ -27,9 +28,12 @@ export class TelaLoginComponent implements OnInit {
 
   ngOnInit(): void { }
 
- 
+
 
   submit() {
     console.log("Enviado com sucesso!")
   }
+  showDialog() {
+    this.displaydialog = true;
+}
 }

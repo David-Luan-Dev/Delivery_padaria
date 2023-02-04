@@ -1,3 +1,5 @@
+import { CadastroCelularComponent } from './component/Pages/cadastro/cadastro-celular/cadastro-celular.component';
+import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
 import { PadariasComponent } from './component/Pages/padarias/padarias.component';
 import { CestaComponent } from './component/Pages/carrinho/cesta/cesta.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
@@ -27,13 +29,20 @@ const routes: Routes = [
       },
       {
         path: 'carrinho',
-        component: CestaComponent
+        component: CestaComponent,
       },
       {
         path: 'padarias',
-        component: PadariasComponent
-      }
-
+        component: PadariasComponent,
+      },
+      {
+        path: 'cadastro-padarias',
+        component: CadastroPadariasComponent,
+      },
+      {
+        path: 'cadastro-celular',
+        component: CadastroCelularComponent 
+      },
     ],
   },
 ];
@@ -42,4 +51,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

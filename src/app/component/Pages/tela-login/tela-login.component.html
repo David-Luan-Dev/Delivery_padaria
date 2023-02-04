@@ -1,33 +1,44 @@
-<div class="container">
-  <div class="row">
-    <div class="row justify-content-center">
-
-    </div>
+<div class="container-1">
+  <!--início da div que contém a imagem-->
+  <div class="conteudo-img">
+    <img class="img" src="assets/img/logo3.jpg" alt="logo">
   </div>
-  <div class="row screen-container">
-    <div class="col-md-6 conteudo-login p-0">
-      <p style="font-weight: bold; cursor: pointer;" routerLink="/pagina-principal">Voltar</p>
-      <img class="img" src="assets/img/logo3.jpg" alt="logo">
+  <!--Fim da div que contém a imagem-->
+  <!-- <div>
+        <p style="font-weight: bold; cursor: pointer;" routerLink="/pagina-principal">Voltar</p>
+      </div> -->
+  <!--Título de login-->
+  <div class="login">
+    <div>
+      <p class="titulo">
+        Cadastre-se ou faça login para continuar.
+      </p>
     </div>
-    <div class="col-md-6 p-0">
-      <div class="conteudo-form" (click)="submit()">
+    <!--fim do titulo de login-->
+    <!--início dos botoes-->
+    <div class="conteudo-form">
+      <div class="botoes">
+        <button pButton type="submit" label="Continuar com Google" class="p-button-success cor-red"><i
+            class=" pi pi-google ml-2 p-0"> </i></button>
+        <button pButton type="submit" label="Continuar com celular" class="p-button-success cor-grey"
+          routerLink="/cadastro-celular"><i class="pi pi-phone m-2"></i></button>
+        <button pButton type="submit" label="Continuar com Facebook" class="p-button-success cor-blue"><i
+            class="pi pi-facebook m-2"></i></button>
+        <button pButton type="submit" label="continuar com Aplle" class="p-button-success cor-black"> <i
+            class="pi pi-apple m-2"></i></button>
 
-        <div class="col-md-12">
-          <p class="titulo">
-            Cadastre-se ou faça login
-          </p>
-          <!---->
-          <button pButton type="submit" label="Continuar com Google" class="p-button-success cor-red p-3px w-75 m-2"><i
-              class=" pi pi-google m-2"> </i></button>
-          <button pButton type="submit" label="Continuar com celular" class="p-button-success cor-grey w-75  m-2"><i
-              class="pi pi-phone m-2"></i></button>
-          <button pButton type="submit" label="Continuar com Facebook" class="p-button-success cor-blue w-75  m-2"><i
-              class="pi pi-facebook m-2"></i></button>
-          <button pButton type="submit" label="continuar com Aplle" class="p-button-success cor-black w-75  m-2"> <i
-              class="pi pi-apple m-2"></i></button>
-          <button pButton type="submit" label="Sou cadastrado" class="p-button-success cor-white w-75  m-2"></button>
-        </div>
+        <p-button class="p-button-success" (click)="showDialog()" label="Sou cadastrado"></p-button>
+        <p-dialog header="Header" [(visible)]="displaydialog" [style]="{width: '100%'}">
+          <div class="button-modal">
+            <button class="p-button-success">Continuar com celular</button>
+            <button class="p-button-success">Continuar com seu e-mail</button>
+          </div>
+          <ng-template pTemplate="footer">
+            <p-button icon="pi pi-check" (click)="displaydialog=false" label="Ok" styleClass="p-button-text"></p-button>
+          </ng-template>
+        </p-dialog>
       </div>
+      <div></div>
     </div>
   </div>
 </div>

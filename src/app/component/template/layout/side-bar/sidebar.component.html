@@ -7,7 +7,7 @@
       <button mat-button class="inicio">
         <mat-icon class="home" routerLink="/pagina-principal">home</mat-icon>
       </button>
-      <button mat-button><i class="pi pi-times"></i></button>
+      <button mat-button (click)="drawer.toggle()"><i class="pi pi-times"></i></button>
     </div>
     <div class="secoes">
       <span>SEÇÕES</span>
@@ -16,7 +16,7 @@
     <div class="menu-button-span">
       <button mat-button class="menu-button" routerLink="/padarias">
         <mat-icon>keyboard_arrow_right</mat-icon>
-        <span >Padarias</span>
+        <span>Padarias</span>
       </button>
       <button mat-button class="menu-button">
         <mat-icon>keyboard_arrow_right</mat-icon>
@@ -38,7 +38,7 @@
     <div class="parte2">
       <ul>
         <li>Parceiro entregador</li>
-        <li>Cadastre sua padaria</li>
+        <li routerLink="cadastro-padarias">Cadastre sua padaria</li>
         <li>Cadastre sua loja</li>
         <li></li>
       </ul>

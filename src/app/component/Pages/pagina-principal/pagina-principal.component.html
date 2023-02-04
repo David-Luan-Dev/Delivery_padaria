@@ -13,6 +13,17 @@
   </div>
 </div>
 
+
+<p-button (click)="showDialog()" label="Sou cadastrado"></p-button>
+<p-dialog header="Header" [(visible)]="displaydialog" [style]="{width: '50vw'}">
+  <div>
+    <button>Continuar com celular</button>
+    <button>Continuar com seu e-mail</button>
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="displaydialog=false" label="Ok" styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>
 <!-- <div class="form">
   <form [formGroup]="FormGroup">
     <span class="p-input-icon-left mb-2">

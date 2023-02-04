@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { PasswordModule } from 'primeng/password';
 import { InputMaskModule } from 'primeng/inputmask';
 
+import {DialogModule} from 'primeng/dialog';
 
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
@@ -23,6 +24,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { PadariasComponent } from './component/Pages/padarias/padarias.component';
+import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
+import { CadastroCelularComponent } from './component/Pages/cadastro/cadastro-celular/cadastro-celular.component';
+
 
 const layoutPrimeng = [
   InputTextModule,
@@ -34,7 +38,9 @@ const layoutPrimeng = [
   declarations: [
     PaginaPrincipalComponent,
     TelaLoginComponent,
-    PadariasComponent
+    PadariasComponent,
+    CadastroPadariasComponent,
+    CadastroCelularComponent,
   ],
   imports: [
     RouterModule,
@@ -53,7 +59,9 @@ const layoutPrimeng = [
     MatDividerModule,
     PasswordModule,
     InputMaskModule,
-    MatSidenavModule
+    MatSidenavModule,
+    DialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

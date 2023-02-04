@@ -53,6 +53,7 @@ mat-drawer {
 .parte2 li {
   display: flex;
   margin-top: 1.5em;
+  cursor: pointer;
 }
 
 @media (max-width: 640px) {
