@@ -1,46 +1,43 @@
-<div class="container-1">
-  <!--início da div que contém a imagem-->
-  <div class="conteudo-img">
-    <img class="img" src="assets/img/logo3.jpg" alt="logo">
-  </div>
-  <!--Fim da div que contém a imagem-->
-  <!-- <div>
-        <p style="font-weight: bold; cursor: pointer;" routerLink="/pagina-principal">Voltar</p>
-      </div> -->
-  <!--Título de login-->
-  <div class="login">
-    <div>
-      <p class="titulo">
-        Cadastre-se ou faça login para continuar.
-      </p>
-    </div>
-    <!--fim do titulo de login-->
-    <!--início dos botoes-->
-    <div class="conteudo-form">
-      <div class="botoes">
-        <button pButton type="submit" label="Continuar com Google" class="p-button-success cor-red"><i
-            class=" pi pi-google ml-2 p-0"> </i></button>
-        <button pButton type="submit" label="Continuar com celular" class="p-button-success cor-grey"
-          routerLink="/cadastro-celular"><i class="pi pi-phone m-2"></i></button>
-        <button pButton type="submit" label="Continuar com Facebook" class="p-button-success cor-blue"><i
-            class="pi pi-facebook m-2"></i></button>
-        <button pButton type="submit" label="continuar com Aplle" class="p-button-success cor-black"> <i
-            class="pi pi-apple m-2"></i></button>
-
-        <p-button class="p-button-success" (click)=" showDialog()" label="Sou cadastrado"></p-button>
-        <p-dialog header="Iniciar sessão" [(visible)]="displaydialog" [style]="{width: '30%'}">
-          <div class="button-modal">
-            <button pButton type="button" label="Continuar com celular" icon="pi pi-phone" class="p-button-text"
-              style="background-color: rgb(183, 233, 183);"></button>
-            <button pButton type="button" label="Continuar com e-mail" icon="pi pi-envelope" class="p-button-text"
-              style="background-color: rgb(207, 230, 207);"></button>
-          </div>
-          <ng-template pTemplate="footer">
-            <p-button icon="pi pi-check" (click)="displaydialog=false" label="Ok" styleClass="p-button-text"></p-button>
-          </ng-template>
-        </p-dialog>
+<div class="container">
+  <div class="row">
+    <div class="d-flex col-md-12" style="flex-direction: row; grid-template-rows: unset;">
+      <div class="col-md-6 image">
+        <img style="width: 100% !important; max-height: 100vh;"
+          src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
       </div>
-      <div></div>
+      <div class="col-md-6 ">
+        <div class="col-12">
+          <span class="titulo" style="font-size: 2rem; font-weight: 400; color: black;">
+            Falta pouco para matar sua fome!
+          </span>
+        </div>
+        <div class="row botoes" style="gap: 15px;">
+          <div class="col-md-12">
+            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
+              <i class="pi pi-facebook"></i>
+            </button>
+          </div>
+          <div class="col-md-12">
+            <button style="width: 50%" pButton type="submit" label="Continuar com Google"
+              class="p-button-success cor-red"><i class="pi pi-google"> </i></button>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-4 mt-3">
+              <mat-divider class="w-50"></mat-divider>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <button style="width: 25%" pButton type="submit" label="celular"
+                  class="p-button-success cor-red mr-2"><i class="pi pi-google">
+                  </i></button>
+                <button style="width: 25%" pButton (click)="showDialog()" label="E-mail"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
