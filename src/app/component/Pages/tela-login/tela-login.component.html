@@ -1,38 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="d-flex col-md-12" style="flex-direction: row; grid-template-rows: unset;">
-      <div class="col-md-6 image">
-        <img style="width: 100% !important; max-height: 100vh;"
-          src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
+<div class="container-fluid">
+  <div class="row ">
+    <div class="d-flex col-12">
+      <div class="col-lg-6">
+        <img class="img" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
       </div>
-      <div class="col-md-6 ">
-        <div class="col-12">
-          <span class="titulo" style="font-size: 2rem; font-weight: 400; color: black;">
-            Falta pouco para matar sua fome!
+      <div class="col-lg m-2">
+        <div class="col-lg-12  sobre-titulo">
+          <span class="titulo">
+            Entre ou cadastre-se para continuar!
           </span>
         </div>
-        <div class="row botoes" style="gap: 15px;">
-          <div class="col-md-12">
-            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
+        <div class="row  mt-5">
+          <div class="col-lg-12 botoes">
+            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info .bg-primary">
               <i class="pi pi-facebook"></i>
             </button>
           </div>
-          <div class="col-md-12">
-            <button style="width: 50%" pButton type="submit" label="Continuar com Google"
-              class="p-button-success cor-red"><i class="pi pi-google"> </i></button>
+          <div class="col-lg botoes">
+            <button pButton type="submit" label="Continuar com Google" class="p-button-success"><i
+                class="pi pi-google"> </i></button>
           </div>
           <div class="row">
-            <div class="col-md-12 mb-4 mt-3">
+            <div class="col-lg mb-4 mt-3 botoes">
               <mat-divider class="w-50"></mat-divider>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <button style="width: 25%" pButton type="submit" label="celular"
-                  class="p-button-success cor-red mr-2"><i class="pi pi-google">
+          <div class="col-lg m-2 ">
+            <div class="row teste">
+              <div class="col-md-12 botoes">
+                <button pButton type="submit" label="celular" class="p-button-info email-celular"><i
+                    class="pi pi-phone">
                   </i></button>
-                <button style="width: 25%" pButton (click)="showDialog()" label="E-mail"></button>
+                <button pButton type="submit" (click)="showDialog()" label="E-mail" class="pi pi-envelope"
+                  class="p-button-info email-celular"></button>
               </div>
             </div>
           </div>

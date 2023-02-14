@@ -1,0 +1,44 @@
+.voltar {
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: 600;
+  float: left;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+.dncelular {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 1.42;
+  letter-spacing: -0.24px;
+  color: var(--chakra-colors-gray-100);
+}
+.p-1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0.5em 0 2em 0;
+}
+.button {
+  display: flex;
+  margin-top: 2%;
+}
+.p-button-text {
+  display: flex;
+  margin: 5px;
+  background-color: rgb(73, 236, 73);
+  color: rgb(61, 60, 58);
+}
+

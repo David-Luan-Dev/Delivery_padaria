@@ -1,10 +1,157 @@
-.container {
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.sobre-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.email-celular {
+  width: 25%;
+  margin: 3px;
+  background-color: white;
+  color: darkgray;
+}
+
+
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+  .img {
+    display: none;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80% !important;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 8px;
+  }
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em !important;
+    font-weight: 600 !important;
+  }
+  .sobre-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em !important;
+    padding-top: 0.1em !important;
+  }
+
+  .email-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40% !important;
+    padding: 5px;
+    margin: 0;
+  }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    display: block !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0;
+    padding: 0;
+    }
+    .img {
+      display: flex;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 80% !important;
+      font-size: 14px;
+      font-family: sans-serif;
+      padding: 8px;
+    }
+    .titulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em !important;
+      font-weight: 600 !important;
+    }
+    .sobre-titulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5em !important;
+      padding-top: 0.1em !important;
+    }
+
+    .email-celular {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40% !important;
+      padding: 4px;
+      margin: 0;
+    }
+  }
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {  }
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {  }
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {  }
 
 @media screen and (min-width: 1536px) {
-  // Quando chegar no tamanho maior que 1536px, eu vou mais aplicar esse css.
-  .container {
+  // Quando chegar no tamanho maior que 1536px, eu não vou  mais aplicar esse css.
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: 100% !important;
     height: 100vh !important;
   }
@@ -12,35 +159,23 @@
 
 @media screen and (max-width: 1536px) {
   // Quando chegar no tamanho menor que 1536px, eu vou aplicar esse css.
-  .container {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: 100% !important;
     height: 100vh !important;
   }
 }
 
 .botoes {
-  padding: 140px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-.form-check {
-  margin-bottom: 20px;
+  padding: 15px 0px 0px 0px;
+  gap: 15px;
 }
 
 button {
