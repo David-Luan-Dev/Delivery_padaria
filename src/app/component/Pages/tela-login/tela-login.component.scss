@@ -1,73 +1,124 @@
-.container-fluid {
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
 }
 .sobre-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .titulo {
+  margin-top: 10px;
+}
+.faceGoogle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
-.email-celular {
-  width: 25%;
-  margin: 3px;
-  background-color: white;
-  color: darkgray;
+.botoes .email-celular {
+  max-width: 30%;
+  margin: 0px;
+  background-color: azure;
+  color: rgb(168, 166, 166);
 }
-
-
-
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+}
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
-  .container-fluid {
+@media only screen and (max-width: 610px) {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     padding: 0;
     margin: 0;
   }
-  .w-50 {
-    width: 100% !important;
-  }
-  .img {
+
+  .img-fluid {
     display: none;
+  }
+  .sobre-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em !important;
+    padding-top: 0.1em !important;
+  }
+  .titulo {
+    font-size: 1em !important;
+    font-weight: 400 !important;
+  }
+  button {
+    width: 80% !important;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    padding: 6px;
+    margin: 0;
+  }
+
+  .email-celular {
+    width: 40% !important;
+    padding: 6px !important;
+    margin: 3px !important;
+  }
+  .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: block !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+  .img-fluid {
+    display: flex;
   }
   button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     width: 80% !important;
     font-size: 14px;
     font-family: sans-serif;
-    padding: 8px;
   }
   .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8em !important;
-    font-weight: 600 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.3em !important;
+    font-weight: 400 !important;
   }
   .sobre-titulo {
     display: flex;
@@ -76,96 +127,69 @@
     margin: 0.5em !important;
     padding-top: 0.1em !important;
   }
-
   .email-celular {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40% !important;
-    padding: 5px;
+    padding: 4px;
     margin: 0;
+  }
+  .faceGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 }
 
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {
-  .container-fluid {
-    display: block !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    margin: 0;
-    padding: 0;
-    }
-    .img {
-      display: flex;
-    }
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      width: 80% !important;
-      font-size: 14px;
-      font-family: sans-serif;
-      padding: 8px;
-    }
-    .titulo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5em !important;
-      font-weight: 600 !important;
-    }
-    .sobre-titulo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0.5em !important;
-      padding-top: 0.1em !important;
-    }
-
-    .email-celular {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40% !important;
-      padding: 4px;
-      margin: 0;
-    }
-  }
-
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) {  }
+@media only screen and (min-width: 768px) {
+}
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) {  }
+@media only screen and (min-width: 992px) {
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em !important;
+    font-weight: 400 !important;
+  }
+}
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {  }
+@media only screen and (min-width: 1200px) {
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em !important;
+    font-weight: 400 !important;
+  }
+}
 
 @media screen and (min-width: 1536px) {
   // Quando chegar no tamanho maior que 1536px, eu não vou  mais aplicar esse css.
-  .container-fluid {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    max-width: 100% !important;
-    height: 100vh !important;
+    width: 100vw !important;
+    height: 100% !important;
   }
 }
 
 @media screen and (max-width: 1536px) {
   // Quando chegar no tamanho menor que 1536px, eu vou aplicar esse css.
-  .container-fluid {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     max-width: 100% !important;
-    height: 100vh !important;
+    height: 100% !important;
   }
 }
 
@@ -173,11 +197,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 15px 0px 0px 0px;
   gap: 15px;
 }
-
 button {
-  width: 50%;
+  width: 100%;
 }

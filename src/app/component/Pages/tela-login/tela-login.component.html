@@ -1,38 +1,38 @@
-<div class="container-fluid">
-  <div class="row ">
+<div class="container">
+  <div class="row gx-1 ">
     <div class="d-flex col-12">
-      <div class="col-lg-6">
-        <img class="img" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
+      <div class="col-sm-6">
+        <img class="img-fluid" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
       </div>
-      <div class="col-lg m-2">
-        <div class="col-lg-12  sobre-titulo">
+      <div class="col-lg">
+        <div class="col-sm d-flex sobre-titulo">
           <span class="titulo">
             Entre ou cadastre-se para continuar!
           </span>
         </div>
-        <div class="row  mt-5">
-          <div class="col-lg-12 botoes">
-            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info .bg-primary">
+        <div class="row  mt-5 faceGoogle">
+          <div class="col-sm-6 botoes">
+            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
               <i class="pi pi-facebook"></i>
             </button>
           </div>
-          <div class="col-lg botoes">
+          <div class="col-sm-12 botoes">
             <button pButton type="submit" label="Continuar com Google" class="p-button-success"><i
-                class="pi pi-google"> </i></button>
+                class="pi pi-google"></i></button>
           </div>
           <div class="row">
-            <div class="col-lg mb-4 mt-3 botoes">
-              <mat-divider class="w-50"></mat-divider>
+            <div class="col-sm mb-3  mt-3 divider">
+              <mat-divider class="w-75"></mat-divider>
             </div>
           </div>
-          <div class="col-lg m-2 ">
-            <div class="row teste">
-              <div class="col-md-12 botoes">
-                <button pButton type="submit" label="celular" class="p-button-info email-celular"><i
+          <div class="col-lg ">
+            <div class="row ">
+              <div class="col-sm botoes">
+                <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"><i
                     class="pi pi-phone">
                   </i></button>
-                <button pButton type="submit" (click)="showDialog()" label="E-mail" class="pi pi-envelope"
-                  class="p-button-info email-celular"></button>
+                <button pButton type="submit" (click)="showDialog()" label="E-mail"
+                  class="p-button-info email-celular"><i class="pi pi-envelope"></i></button>
               </div>
             </div>
           </div>
