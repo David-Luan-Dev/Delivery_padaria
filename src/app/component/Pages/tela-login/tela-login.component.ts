@@ -17,8 +17,9 @@ import { FloatLabelType } from '@angular/material/form-field';
   styleUrls: ['./tela-login.component.scss'],
 })
 export class TelaLoginComponent implements OnInit {
-  val4!: string;
-  displaydialog!: boolean;
+display: boolean = false;
+displayBasic: boolean = false
+
 
   loginForm!: FormGroup;
   value = ``
@@ -34,6 +35,7 @@ export class TelaLoginComponent implements OnInit {
     console.log("Enviado com sucesso!")
   }
   showDialog() {
-    this.displaydialog = true;
+    this.display = true;
+    this.displayBasic = true;
 }
 }

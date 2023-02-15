@@ -31,8 +31,17 @@
                 <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"><i
                     class="pi pi-phone">
                   </i></button>
+
+                  <!--input com dialog-->
+                  <p-dialog header="Entre com seu email" [(visible)]="displayBasic" [style]="{width: '25vw'}">
+                    <ng-template pTemplate="footer">
+                        <p-button icon="pi pi-check" (click)="displayBasic=false" label="Ok" styleClass="p-button-text"></p-button>
+                    </ng-template>
+                    <input type="email" pInputText placeholder="Digite seu email"/>
+
+                </p-dialog>
                 <button pButton type="submit" (click)="showDialog()" label="E-mail"
-                  class="p-button-info email-celular"><i class="pi pi-envelope"></i></button>
+                  class="p-button-info email-celular"><i class="pi pi-envelope" ></i></button>
               </div>
             </div>
           </div>
