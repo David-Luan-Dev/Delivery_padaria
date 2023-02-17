@@ -17,6 +17,8 @@ import { FloatLabelType } from '@angular/material/form-field';
   styleUrls: ['./tela-login.component.scss'],
 })
 export class TelaLoginComponent implements OnInit {
+  value2!: string;
+
 display: boolean = false;
 displayBasic: boolean = false
 

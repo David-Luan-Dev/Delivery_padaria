@@ -1,7 +1,36 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-6 coll">
-      <img src="assets/img/padaria-1.jpg" alt="image">
-    </div>
 
-</div>
+<button pButton (click)="showDialog()"label="Contiuar"></button>
+<p-dialog [(visible)]="displayBasic" [style]="{width: '50vw'}">
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-1" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 1 de 5"
+      role="textbox" autocomplete="off" value="">
+
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-2" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 2 de 5"
+      role="textbox" autocomplete="off" value="">
+
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-3" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 3 de 5"
+      role="textbox" autocomplete="off" value="">
+
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-4" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 4 de 5"
+      role="textbox" autocomplete="off" value="">
+
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-5" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 5 de 5"
+      role="textbox" autocomplete="off" value="">
+      
+  <input class="sign-in-otp__field-char sign-in-otp__field-char--active"
+      type="number" id="otp-input-5" placeholder="0" tabindex="0"
+      aria-label="Código de verificação: caracter 5 de 5"
+      role="textbox" autocomplete="off" value="">
+    <ng-template pTemplate="footer">
+    </ng-template>
+</p-dialog>
+

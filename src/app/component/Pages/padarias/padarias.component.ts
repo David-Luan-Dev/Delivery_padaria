@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./padarias.component.scss']
 })
 export class PadariasComponent {
+  displayBasic: boolean = false;
+
+  showDialog() {
+    this.displayBasic = true;
+}
 
 }
