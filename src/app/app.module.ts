@@ -9,8 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { PasswordModule } from 'primeng/password';
 import { InputMaskModule } from 'primeng/inputmask';
-
-import {DialogModule} from 'primeng/dialog';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
+import { DialogModule } from 'primeng/dialog';
 
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
@@ -23,16 +23,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { PadariasComponent } from './component/Pages/padarias/padarias.component';
+import PadariasComponent from './component/Pages/padarias/padarias.component';
 import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
 import { CadastroCelularComponent } from './component/Pages/cadastro/cadastro-celular/cadastro-celular.component';
 
-
-const layoutPrimeng = [
-  InputTextModule,
-  ButtonModule
-]
-
+const layoutPrimeng = [InputTextModule, ButtonModule];
 
 @NgModule({
   declarations: [
@@ -60,10 +55,10 @@ const layoutPrimeng = [
     PasswordModule,
     InputMaskModule,
     MatSidenavModule,
-    DialogModule
+    DialogModule,
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

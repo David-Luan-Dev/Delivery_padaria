@@ -1,6 +1,6 @@
 import { CadastroCelularComponent } from './component/Pages/cadastro/cadastro-celular/cadastro-celular.component';
 import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
-import { PadariasComponent } from './component/Pages/padarias/padarias.component';
+import PadariasComponent from './component/Pages/padarias/padarias.component';
 import { CestaComponent } from './component/Pages/carrinho/cesta/cesta.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 import { NgModule } from '@angular/core';
@@ -41,7 +41,7 @@ const routes: Routes = [
       },
       {
         path: 'cadastro-celular',
-        component: CadastroCelularComponent 
+        component: CadastroCelularComponent,
       },
     ],
   },

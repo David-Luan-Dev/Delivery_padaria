@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PadariasComponent } from './padarias.component';
+import PadariasComponent from './padarias.component';
 
 describe('PadariasComponent', () => {
   let component: PadariasComponent;
@@ -8,9 +8,8 @@ describe('PadariasComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PadariasComponent ]
-    })
-    .compileComponents();
+      declarations: [PadariasComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PadariasComponent);
     component = fixture.componentInstance;
