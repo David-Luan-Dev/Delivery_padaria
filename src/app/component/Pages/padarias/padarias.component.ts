@@ -1,6 +1,6 @@
 import { DialogModule } from 'primeng/dialog';
 import { Component } from '@angular/core';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-padarias',
@@ -8,10 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./padarias.component.scss'],
 })
 export default class PadariasComponent {
-  displayBasic: boolean = false;
+  displayPosition!: boolean;
 
-  showDialog() {
-    this.displayBasic = true;
-  }
+  position!: string;
+
+  constructor() {}
+  
+  showPositionDialog(position: string) {
+    this.position = position;
+    this.displayPosition = true;
+}
+
 
 }

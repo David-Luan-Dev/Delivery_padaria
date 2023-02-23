@@ -11,17 +11,19 @@ import { PasswordModule } from 'primeng/password';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 import { DialogModule } from 'primeng/dialog';
+import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+
+
 
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { RouterModule } from '@angular/router';
 import { LayoutModule } from './component/template/layout/layout.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
 import { MatDividerModule } from '@angular/material/divider';
 import PadariasComponent from './component/Pages/padarias/padarias.component';
 import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
@@ -36,6 +38,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     PadariasComponent,
     CadastroPadariasComponent,
     CadastroCelularComponent,
+
   ],
   imports: [
     RouterModule,
@@ -60,5 +63,6 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
   ],
   providers: [],
   bootstrap: [AppComponent],
+ 
 })
 export class AppModule {}

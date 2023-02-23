@@ -1,13 +1,22 @@
-
-.sign-in-otp__field-char {
+.localizacao {
+  cursor: pointer;
+}
+.dialogEnd {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 40px;
-  border: 1px solid #dcdcdc;
-  border-radius: 4px;
-  font-size: 1em;
-  text-indent: calc(50% - 0.375em);
-  line-height: 1.125em;
+  justify-content: space-between;
+}
+.dialogEnd p {
+  font-weight: 600;
+}
+.dialogEnd .pi-times {
+}
+.inputES {
+  width: 400px;
+  margin: 0 px;
+}
+.p-float-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

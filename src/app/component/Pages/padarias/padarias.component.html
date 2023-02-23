@@ -1,1 +1,28 @@
+<span class="localizacao" (click)="showPositionDialog('top')" icon="pi pi-arrow-down" label="Top"
+  styleClass="p-button-warning">Digite sua
+  localização</span>
+<div class="location_on" fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
+  <mat-icon style="color: red; font-size: 1.5rem;">location_on</mat-icon>
+  <span class="localizacao" (click)="showPositionDialog('top')" icon="pi pi-arrow-down"
+    style="font-size: 0.8rem; color: red; text-decoration-line: underline; font-weight: bold;">
+    Digite sua localização </span>
+  <mat-icon class="seta">arrow_drop_down</mat-icon>
+</div>
+<p-dialog header="Godfather I" [(visible)]="displayPosition" [position]="position" [modal]="true"
+  [style]="{width: '35vw'}" [draggable]="false" [resizable]="false">
 
+  <!--Título da modal localização com o primeIcon-->
+  <div class="dialogEnd">
+    <p>Adicione ou escolha um endereço
+    </p>
+    <i class="pi pi-times"></i>
+  </div>
+  <!--Início do imput da modal de localização com material-icon-->
+  <span class="p-float-label">
+    <input type="text" class="inputES" id="float-input" pInputText placeholder="Escreva o endereço da entrega">
+    <mat-icon>location_on</mat-icon>
+  </span>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="displayPosition=false" label="Ok" styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog>
