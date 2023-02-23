@@ -9,15 +9,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export default class PadariasComponent {
   displayPosition!: boolean;
-
   position!: string;
 
-  constructor() {}
-  
+  constructor() { }
+
   showPositionDialog(position: string) {
     this.position = position;
     this.displayPosition = true;
-}
-
+  }
 
 }

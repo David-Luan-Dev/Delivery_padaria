@@ -29,6 +29,7 @@ import PadariasComponent from './component/Pages/padarias/padarias.component';
 import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
 import { CadastroCelularComponent } from './component/Pages/cadastro/cadastro-celular/cadastro-celular.component';
 
+
 const layoutPrimeng = [InputTextModule, ButtonModule];
 
 @NgModule({
@@ -38,7 +39,6 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     PadariasComponent,
     CadastroPadariasComponent,
     CadastroCelularComponent,
-
   ],
   imports: [
     RouterModule,
@@ -63,6 +63,6 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
   ],
   providers: [],
   bootstrap: [AppComponent],
- 
+
 })
-export class AppModule {}
+export class AppModule { }

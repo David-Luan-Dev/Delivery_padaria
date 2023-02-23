@@ -10,6 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+
+
 
 // components
 import { AppComponent } from 'src/app/app.component';
@@ -21,6 +25,8 @@ import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
 import { CestaComponent } from '../../Pages/carrinho/cesta/cesta.component';
+import { DialogLocalizacaoComponent } from '../../Pages/dialog-localizacao/dialog-localizacao.component';
+
 
 const material = [
   MatToolbarModule,
@@ -34,7 +40,9 @@ const material = [
 ]
 
 const layoutPrimeng = [
-  InputTextModule
+  InputTextModule,
+  DialogModule,
+  ButtonModule
 ]
 
 @NgModule({
@@ -53,7 +61,8 @@ const layoutPrimeng = [
     FooterComponent,
     LayoutComponent,
     SidebarComponent,
-    CestaComponent
+    CestaComponent,
+    DialogLocalizacaoComponent
   ],
   providers: [],
 })
