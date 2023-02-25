@@ -5,7 +5,6 @@ body {
 .header {
   background-color: white;
 }
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -15,13 +14,11 @@ body {
 mat-toolbar-row {
   gap: 10px;
 }
-
 .mat-form-class {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .logo {
   display: flex;
   float: left;
@@ -29,23 +26,19 @@ mat-toolbar-row {
   width: 10rem;
   align-items: flex-start;
   margin-bottom: 1rem;
-
   color: rgb(114, 107, 107);
   cursor: pointer;
 }
-
 .logo-c {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .material-icons {
   float: left;
   color: rgb(114, 107, 107);
   cursor: pointer;
 }
-
 .iconEntrar {
   display: flex;
   align-items: center;
@@ -65,7 +58,6 @@ mat-toolbar-row {
   font-family: sans-serif;
   font-size: 0.7em;
 }
-
 .location_on {
   display: flex;
   align-items: center;
@@ -73,7 +65,6 @@ mat-toolbar-row {
   padding-left: 1rem;
   padding-bottom: 0px;
   margin-bottom: 1px;
-
   cursor: pointer;
   height: 35px;
   border-left: 0.1rem solid rgb(228, 220, 220);
@@ -93,7 +84,6 @@ mat-toolbar-row {
   padding: 0;
   margin: 0.3rem;
 }
-
 .example-form-field {
   display: flex;
   position: relative;
@@ -104,20 +94,16 @@ mat-toolbar-row {
   height: 60px;
   border: 3px;
 }
-
 :host ::ng-deep .mat-mdc-text-field-wrapper {
   height: 48px;
 }
-
 ::ng-deep .mat-form-field-wrapper {
   margin-bottom: -1.25em;
 }
-
 :host ::ng-deep .mat-form-field-wrapper {
   margin: 0 !important;
   padding: 0;
 }
-
 :host ::ng-deep .mat-form-field-wrapper {
   margin: 0 !important;
   padding: 0;
@@ -125,4 +111,20 @@ mat-toolbar-row {
 .w-100 {
   width: 100% !important;
   height: 40px;
+}
+/* Estilização do icone e do span com (texto usar minha localização)*/
+.uml-1 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  color: rgb(41, 216, 132);
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.uml {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.6;
 }

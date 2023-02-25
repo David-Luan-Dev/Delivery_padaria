@@ -10,7 +10,7 @@
       <img class="logo" src="assets/img/logo13.png" alt="logo" routerLink="pagina-principal">
     </div>
     <div class="location_on" fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
-      <mat-icon style="color: red; font-size: 1.5rem;">location_on</mat-icon>
+      <mat-icon style="color: red; font-size: 1.5rem;"> <i class="pi pi-map-marker"></i></mat-icon>
       <span class="localizacao" (click)="showPositionDialog('top')" icon="pi pi-arrow-down"
         style="font-size: 0.8rem; color: red; text-decoration-line: underline; font-weight: bold;">
         Digite sua localização </span>
@@ -43,10 +43,16 @@
     <mat-divider></mat-divider>
   </mat-menu>
 </mat-toolbar>
-<p-dialog [(visible)]="displayPosition" [position]="position" [modal]="true" [style]="{width: '35vw'}"
+<p-dialog header="Adicione ou escolha um endereço" [(visible)]="displayPosition"
+  [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [position]="position" [modal]="true" [style]="{width: '33vw'}"
   [draggable]="false" [resizable]="false">
   <app-dialog-localizacao></app-dialog-localizacao>
   <ng-template pTemplate="footer">
-    <p-button icon="pi pi-check" (click)="displayPosition=false" label="Ok" styleClass="p-button-text"></p-button>
+    <p-button (click)="displayPosition=false" styleClass="p-button-text"></p-button>
+    <mat-divider class="w-100 mt-5"></mat-divider>
+    <div class="uml-1">
+      <i class="pi pi-send mr-2"></i>
+      <span class="uml">Usar minha localização</span>
+    </div>
   </ng-template>
 </p-dialog>

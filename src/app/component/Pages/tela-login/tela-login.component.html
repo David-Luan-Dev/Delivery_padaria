@@ -2,7 +2,8 @@
   <div class="row gx-1 ">
     <div class="d-flex col-12">
       <div class="col-sm-6">
-        <img class="img-fluid" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png" alt="imagem de fundo">
+        <img class="img-fluid" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png"
+          alt="imagem de fundo">
       </div>
       <div class="col-lg">
         <div class="col-sm d-flex sobre-titulo">
@@ -28,27 +29,31 @@
           <div class="col-lg ">
             <div class="row ">
               <div class="col-sm botoes">
-                <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%" [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active" ><i
-                    class="pi pi-phone">
+                <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"
+                  [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
                   </i></button>
+                <!--início do dialog-->
+                <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}">
+                  <ng-template pTemplate="header">
+                    Informe seu e-mail para continuar
+                  </ng-template>
+                  <ng-template pTemplate="footer">
+                  </ng-template>
 
-                  <!--início do dialog-->
-                  <p-dialog   [(visible)]="displayBasic" [style]="{width: '30vw'}">
-                    <ng-template pTemplate="footer">
-                    </ng-template>
-                    <!--título do dialog-->
-                    <div class="dialogP">
-                      <p>Informe seu e-mail para continuar</p>
-                    </div>
-                   <span class="p-float-label mb-4">
-                     <input class="p-inputtext-sm" id="float-input " type="email" pInputText [(ngModel)]="value2" [style]="{width: '25vw'}">
-                     <label for="float-input">E-mail</label>
+                  <span class="p-float-label mb-4">
+                    <input class="p-inputtext-sm" id="float-input " type="email" pInputText [(ngModel)]="value2"
+                      [style]="{width: '25vw'}">
+                    <label for="float-input">E-mail</label>
                   </span>
-                  <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail"></button>
+                  <button pButton type="button" label="Continuar"
+                    class="p-button-danger p-button-sm dialogEmail">
+                  </button>
                 </p-dialog>
                 <!--Final do dialog-->
                 <button pButton type="submit" (click)="showDialog()" label="E-mail"
-                  class="p-button-info email-celular"><i class="pi pi-envelope" ></i></button>
+                  class="p-button-info email-celular"><i class="pi pi-envelope"></i></button>
+
+
               </div>
             </div>
           </div>

@@ -1,11 +1,15 @@
-<div class="dialogEnd">
-  <p>
-    Adicione ou escolha um endereço
-  </p>
-  <i class="pi pi-times"></i>
+<div class="container">
+  <div>
+    <span class="p-input-icon-left">
+      <i class="pi pi-map-marker"></i>
+      <input type="text" class="p-inputtext-sm w-100" pInputText [(ngModel)]="value1"
+        placeholder="Escreva o endereço de entrega">
+    </span>
+  </div>
+  <!--div do span e dos icons do dialog de localização-->
+  <div class="localReal">
+    <mat-icon class="adjust">adjust</mat-icon>
+    <span class="span-dialog">Centro, Rio de Janeiro - RJ,Brasil</span>
+    <mat-icon class="edit">edit</mat-icon>
+  </div>
 </div>
-<!--Início do imput da modal de localização com material-icon-->
-<span class="p-float-label">
-  <input type="text" class="inputES" id="float-input" pInputText placeholder="Escreva o endereço da entrega">
-  <mat-icon>location_on</mat-icon>
-</span>

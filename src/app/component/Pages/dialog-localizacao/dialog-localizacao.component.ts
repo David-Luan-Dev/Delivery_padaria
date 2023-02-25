@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./dialog-localizacao.component.css']
 })
 export class DialogLocalizacaoComponent {
+  value1!: string;
   @Input()
   position!: string;
 
