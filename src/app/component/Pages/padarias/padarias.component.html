@@ -1,9 +1,33 @@
-<span class="localizacao" (click)="showPositionDialog('top')" icon="pi pi-arrow-down" label="Top"
-  styleClass="p-button-warning">Digite sua localização</span>
-<div class="location_on" fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
-  <mat-icon style="color: red; font-size: 1.5rem;">location_on</mat-icon>
-  <span class="localizacao" (click)="showPositionDialog('top')" icon="pi pi-arrow-down"
-    style="font-size: 0.8rem; color: red; text-decoration-line: underline; font-weight: bold;">
-    Digite sua localização </span>
-  <mat-icon class="seta">arrow_drop_down</mat-icon>
+<div class="titulo col">
+  <h1>Venda mais com sua <span>padaria online</span></h1>
 </div>
+<div class="container col-12">
+  <div class="texto-lado-esquerdo col-8">
+    <h2 class="col ">Venda mais com o Padaria online </h2>
+  </div>
+  <div class="col-4 lado-direito">
+    <form>
+      <div class="paragrafo-pai">
+        <p class="paragrafo-filho">Cadastre sua padaria</p>
+        <p class="paragrafo-filho2">Lucre muito mais vendeno aqui!</p>
+      </div>
+      <div class="form-group row">
+        <div class="col mb-4">
+          <label for="exampleInputEmail1" class="label-inputs">Nome completo</label>
+          <input type="text" class="form-control" placeholder="Nome">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col mb-4">
+          <label for="exampleInputEmail1" class="label-inputs">Endereço de email</label>
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col mb-4">
+          <label for="exampleInputEmail1" class="label-inputs">Telefone com DDD</label>
+          <input type="tel" class="form-control" id="tel" placeholder=" Telefone (00) 00000-0000">
+        </div>
+      </div>
+    </form>
+  </div>
