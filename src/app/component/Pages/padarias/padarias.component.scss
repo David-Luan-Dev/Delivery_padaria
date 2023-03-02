@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 .titulo h1 {
   font-family: sans-serif;
@@ -13,55 +14,170 @@
   max-width: 80%;
   font-size: 42px;
   font-weight: 500;
-  color: rgb(62, 62, 62);
+  color: rgb(4, 5, 5);
 }
 .titulo span {
   color: rgb(239, 87, 83);
+  border-bottom: 1px solid rgb(231, 224, 224);
 }
-
-.container {
+.img {
   display: flex;
-  color: rgb(233, 233, 233);
-  border: none;
-  margin: 0;
+  flex-direction: column;
+  background-color: red;
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
 }
 .texto-lado-esquerdo {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  left: 15%;
+  margin-left: -120px;
+  top: 70%;
+  margin-top: -75px;
+  width: 50%;
+  height: 50%;
 }
-
 .texto-lado-esquerdo h2 {
   font-family: sans-serif;
-  color: rgb(239, 87, 83);
-  font-size: 50px;
-  left: 150px;
-  top: 100px;
-
+  font-size: 3.5em;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2em;
+}
+.texto-lado-esquerdo p {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: white;
 }
 .lado-direito {
   display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-}
-.label-inputs {
-  color: rgb(19, 6, 6);
-}
-.paragrafo-pai {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 0.5em;
-  margin-bottom: 3em;
+  position: absolute;
+  right: 5%;
+  margin-right: -180px;
+  top: 70%;
+  margin-top: -75px;
+  width: 50%;
+  height: 50%;
 }
 .paragrafo-filho {
-  font-family: sans-serif;
-  font-size: 2rem;
-  color: black;
+  font-size: 1.5em;
+  color: white;
 }
 .paragrafo-filho2 {
-  color: rgb(51, 13, 12);
-  font-family: sans-serif;
+  font-size: 1em;
+  color: white;
 }
+/*Segunda parte da pagina*/
+.segunda-parte {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.img2 {
+  width: 600px;
+  height: 300px;
+  border-radius: 5px;
+}
+.h2-p h2 {
+  font-family: sans-serif;
+  font-size: 3.5em;
+  color: rgb(214, 107, 107);
+  margin-bottom: 1em;
+}
+.h2-p {
+  margin: 50px 10px 10px 50px;
+}
+.h2-p p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: larger;
+}
+// .titulo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top: 0;
+//   margin-top: 0;
+// }
+// .titulo h1 {
+//   font-family: sans-serif;
+//   line-height: 48px;
+//   margin: 5rem 0px 0px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   max-width: 80%;
+//   font-size: 42px;
+//   font-weight: 500;
+//   color: rgb(4, 5, 5);
+// }
+// .titulo span {
+//   color: rgb(239, 87, 83);
+//   border-bottom: 1px solid rgb(231, 224, 224);
+// }
+
+// .container {
+//   display: flex;
+//   color: rgb(233, 233, 233);
+//   border: none;
+//   margin: 0;
+// }
+// .texto-lado-esquerdo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   background-color: rgb(215, 228, 215);
+//   border-radius: 5px;
+// }
+
+// .texto-lado-esquerdo h2 {
+//   font-family: sans-serif;
+//   color: rgb(128, 11, 7);
+//   font-size: 50px;
+//   margin-top: 60px;
+//   left: 150px;
+//   top: 100px;
+// }
+// .texto-lado-esquerdo p {
+//   font-family: sans-serif;
+//   color: rgb(24, 20, 20);
+//   font-size: 20px;
+//   font-weight: 600;
+// }
+// .lado-direito {
+//   display: flex;
+//   justify-content: center;
+//   border-radius: 5px;
+//   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+// }
+// .label-inputs {
+//   color: rgb(19, 6, 6);
+// }
+// .paragrafo-pai {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   margin-top: 0.5em;
+//   margin-bottom: 3em;
+// }
+// .paragrafo-filho {
+//   font-family: sans-serif;
+//   font-size: 2rem;
+//   color: black;
+// }
+// .paragrafo-filho2 {
+//   color: rgb(51, 13, 12);
+//   font-family: sans-serif;
+// }
+// /*Segunda parte da tela*/
+// .img2 {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: red;
+//   height: 300px;
+//   width: 300px;
+// }
