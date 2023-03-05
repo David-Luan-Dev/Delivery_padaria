@@ -1,60 +1,51 @@
-<div class="container">
-  <div class="row gx-1 ">
-    <div class="d-flex col-12">
-      <div class="col-sm-6">
-        <img class="img-fluid" src="https://images.rappi.com/cms-web/images/sign-in_3f701ac0c6.png"
-          alt="imagem de fundo">
-      </div>
-      <div class="col-lg">
-        <div class="col-sm d-flex sobre-titulo">
-          <span class="titulo">
-            Entre ou cadastre-se para continuar!
-          </span>
+<div class="main-login">
+  <div class="left-login">
+
+    <img src="../../../../assets/img/person-working.svg" class="left-login-image" alt="Pessoa trabalhando">
+  </div>
+  <div class="right-login">
+    <div class="card-login">
+      <h1>LOGIN</h1>
+      <div class="row  mt-5 faceGoogle">
+        <div class="col-sm-6 botoes">
+          <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
+            <i class="pi pi-facebook"></i>
+          </button>
         </div>
-        <div class="row  mt-5 faceGoogle">
-          <div class="col-sm-6 botoes">
-            <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
-              <i class="pi pi-facebook"></i>
-            </button>
+        <div class="col-sm-12 botoes">
+          <button pButton type="submit" label="Continuar com Google" class="p-button-success"><i
+              class="pi pi-google"></i></button>
+        </div>
+        <div class="row">
+          <div class="col-sm mb-3  mt-3 divider">
+            <mat-divider class="w-75"></mat-divider>
           </div>
-          <div class="col-sm-12 botoes">
-            <button pButton type="submit" label="Continuar com Google" class="p-button-success"><i
-                class="pi pi-google"></i></button>
-          </div>
-          <div class="row">
-            <div class="col-sm mb-3  mt-3 divider">
-              <mat-divider class="w-75"></mat-divider>
-            </div>
-          </div>
-          <div class="col-lg ">
-            <div class="row ">
-              <div class="col-sm botoes">
-                <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"
-                  [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
-                  </i></button>
-                <!--início do dialog-->
-                <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}">
-                  <ng-template pTemplate="header">
-                    Informe seu e-mail para continuar
-                  </ng-template>
-                  <ng-template pTemplate="footer">
-                  </ng-template>
+        </div>
+        <div class="col-lg ">
+          <div class="row ">
+            <div class="col-sm botoes">
+              <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"
+                [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
+                </i></button>
+              <!--início do dialog-->
+              <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}">
+                <ng-template pTemplate="header">
+                  Informe seu e-mail para continuar
+                </ng-template>
+                <ng-template pTemplate="footer">
+                </ng-template>
 
-                  <span class="p-float-label mb-4">
-                    <input class="p-inputtext-sm" id="float-input " type="email" pInputText [(ngModel)]="value2"
-                      [style]="{width: '25vw'}">
-                    <label for="float-input">E-mail</label>
-                  </span>
-                  <button pButton type="button" label="Continuar"
-                    class="p-button-danger p-button-sm dialogEmail">
-                  </button>
-                </p-dialog>
-                <!--Final do dialog-->
-                <button pButton type="submit" (click)="showDialog()" label="E-mail"
-                  class="p-button-info email-celular"><i class="pi pi-envelope"></i></button>
-
-
-              </div>
+                <span class="p-float-label mb-4">
+                  <input class="p-inputtext-sm" id="float-input " type="email" pInputText [(ngModel)]="value2"
+                    [style]="{width: '25vw'}">
+                  <label for="float-input">E-mail</label>
+                </span>
+                <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail">
+                </button>
+              </p-dialog>
+              <!--Final do dialog-->
+              <button pButton type="submit" (click)="showDialog()" label="E-mail" class="p-button-info email-celular"><i
+                  class="pi pi-envelope"></i></button>
             </div>
           </div>
         </div>
