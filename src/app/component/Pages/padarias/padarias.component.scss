@@ -4,36 +4,36 @@
   justify-content: center;
   padding-top: 0;
   margin-top: 0;
+  height: auto;
+  margin-bottom: 5rem;
 }
 .titulo h1 {
-  font-family: sans-serif;
-  line-height: 48px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5rem;
   margin: 5rem 0px 0px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  max-width: 80%;
-  font-size: 48px;
+  max-width: 90%;
+  font-size: 2.5rem;
+  margin: 0.5em;
   font-weight: 500;
   color: rgb(4, 5, 5);
 }
 .titulo span {
-  color: rgb(239, 87, 83);
-  border-bottom: 1px solid rgb(231, 224, 224);
+  color: rgb(204, 18, 12);
 }
 .img {
   display: flex;
   flex-direction: column;
   height: 60%;
-  width: 100vw;
+  width: 50%;
   position: relative;
 }
 .tl-esquerdo {
   display: flex;
   position: absolute;
   left: 15%;
-  margin-left: -120px;
+  margin-left: -7.5rem;
   top: 70%;
-  margin-top: -75px;
+  margin-top: -4.6875rem;
   width: 50%;
   height: 50%;
 }
@@ -51,13 +51,17 @@
   font-weight: 800;
   color: red;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 .lado-direito {
   display: flex;
   position: absolute;
   right: 5%;
-  margin-right: -180px;
+  margin-right: -11.25rem;
   top: 70%;
-  margin-top: -75px;
+  margin-top: -4.6875rem;
   width: 50%;
   height: 50%;
 }
@@ -87,22 +91,41 @@
   margin-bottom: 1em;
 }
 .h2-p {
-  margin: 50px 10px 10px 50px;
+  margin: 3.125rem 0.625rem 0.625rem 3.125rem;
 }
 .h2-p p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: larger;
+  margin-bottom: 2em;
+}
+.foguete {
+  width: 3em;
+}
+.imgs-foquete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 .pai {
   display: flex;
 }
 .imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 200px;
-  width: 200px;
-  background-color: red;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: rgb(235, 113, 113);
 }
-@media (max-width: 547px) {
+/* Telefones em paisagem e abaixo */
+@media (max-width: 320px) {
   .titulo {
     display: flex;
   }
@@ -144,17 +167,31 @@
     height: 50%;
   }
 }
-@media (max-width: 768px) {
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 375px) {
+  .titulo {
+    display: flex;
+  }
   .titulo h1 {
-    font-family: sans-serif;
-    line-height: 48px;
-    margin: 5rem 0px 0px;
-    padding-top: 0px;
-    padding-bottom: 12px;
-    max-width: 80%;
-    font-size: 38px;
-    font-weight: 500;
-    color: rgb(4, 5, 5);
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+  .imgs {
+    display: none;
+  }
+  .titulo span {
+    display: none;
+  }
+  h2 {
+    display: none;
+  }
+  .h2-p p {
+    display: none;
+  }
+  .segunda-parte {
+    display: none;
   }
   .tl-esquerdo p {
     display: none;
@@ -167,31 +204,58 @@
     position: absolute;
     right: 4%;
     margin-right: 140px;
-    top: 60%;
+    top: 40%;
     margin-top: -65px;
     width: 50%;
     height: 50%;
   }
-  .form-group {
-    width: 700px;
-  }
-  .container-img {
-    top: 900px;
-  }
-  .img {
-    top: 50px;
-  }
-  .lado-direito {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btn-enviar {
-    width: 100%;
-    padding: 15px;
-    font-size: 2.5em;
-  }
-  .form-control {
-    padding: 15px;
-  }
 }
+
+  @media (max-width: 425px) {
+    .titulo {
+      display: flex;
+    }
+    .titulo h1 {
+      display: none;
+    }
+    .img2 {
+      display: none;
+    }
+    .imgs {
+      display: none;
+    }
+    .titulo span {
+      display: none;
+    }
+    h2 {
+      display: none;
+    }
+    .h2-p p {
+      display: none;
+    }
+    .segunda-parte {
+      display: none;
+    }
+    .tl-esquerdo p {
+      display: none;
+    }
+    .tl-esquerdo h2 {
+      display: none;
+    }
+    .lado-direito {
+      display: flex;
+      position: absolute;
+      right: 4%;
+      margin-right: 140px;
+      top: 40%;
+      margin-top: -65px;
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  /* Desktop grande */
+  @media (min-width: 1200px) {
+    /* estilos aqui */
+  }
+
