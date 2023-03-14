@@ -155,6 +155,8 @@ label {
     z-index: 0;
   }
   .formulario {
+    margin-right: 2.3rem;
+    margin-bottom: 2.3rem;
   }
   .formulario .formGroup {
     width: auto;
@@ -175,6 +177,18 @@ label {
 }
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) {
+  .formulario {
+    margin-right: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .container-card-imagem {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    width: auto;
+    height: 100vh;
+  }
 }
 
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
