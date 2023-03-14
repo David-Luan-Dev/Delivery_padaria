@@ -1,6 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
 .parte-de-fora {
   position: relative;
   z-index: 1;
+}
+.container-card-imagem {
+  position: absolute;
+  width: 100%;
+  min-height: 700px;
+}
+img {
+  display: block;
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 .container-card-login {
   margin: 0px auto;
@@ -19,7 +43,7 @@
   margin-top: 8em;
 }
 .frase-de-negocio h1 {
-  font-family: sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 56px;
   line-height: 48px;
   margin-top: 50px;
@@ -81,4 +105,86 @@ label {
   color: rgb(113, 113, 113);
   font-weight: 500;
   margin-bottom: 1.4em;
+}
+/*O media queries engloba cinco tamanhos, para smartphone, tablet, tablet deitado, descktop, tv smart*/
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 690px) {
+  .frase-de-negocio {
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .frase-de-negocio h1 {
+    font-family: sans-serif;
+    font-size: 42px;
+    line-height: 38px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+  }
+  .frase-de-negocio h2 {
+    display: block;
+    font-family: sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .container-card-login-filho {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+
+  .container-card-imagem {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .parte-de-fora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  .formulario {
+  }
+  .formulario .formGroup {
+    width: auto;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .card-imagem {
+    width: 100%;
+  }
+}
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
 }
