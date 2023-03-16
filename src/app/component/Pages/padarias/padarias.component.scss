@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito:wght@200&display=swap");
 
 .parte-de-fora {
   position: relative;
@@ -9,7 +10,7 @@
   width: 100%;
   min-height: 700px;
 }
-img {
+.img-marketing-01 {
   display: block;
   position: absolute;
   inset: 0px;
@@ -106,8 +107,52 @@ label {
   font-weight: 500;
   margin-bottom: 1.4em;
 }
+/*Segunda parte da página*/
+.pai-parte2 {
+  display: flex;
+  padding: 8rem 2rem 2rem 10rem;
+  width: 100%;
+}
+.parte2-img {
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  margin-right: 3rem;
+}
+.parte2-h2-h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parte2-h2-h5 span {
+  color: rgb(234, 29, 44);
+  font-size: 58px;
+  line-height: 65px;
+  font-family: "Merriweather", serif;
+}
+.parte2-h2-h5 h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+}
+.parte2-h2-h5 h5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: rgb(113, 113, 113);
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /*O media queries engloba cinco tamanhos, para smartphone, tablet, tablet deitado, descktop, tv smart*/
 /* Smartphones (600px para baixo) */
+
 @media only screen and (max-width: 690px) {
   .frase-de-negocio {
     display: inline-block;
@@ -174,7 +219,34 @@ label {
   .card-imagem {
     width: 100%;
   }
+  .pai-parte2 {
+    display: block;
+    padding: 2rem 0.3rem 2rem 0.3rem;
+    margin: 0;
+  }
+  .parte2  {
+    padding: 0;
+    margin: 0;
+  }
+  .parte2-img {
+    display: flex;
+    width: 100vw;
+  }
+  .parte2-h2-h5 {
+
+  }
+  .parte2-h2-h5 h2  {
+    font-size: 20px;
+
+  }
+
+  .parte2-h2-h5 h5 {
+    font-size: 14px;
+  }
 }
+
+/*Aqui começão a segunda parte da página*/
+
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) {
   .formulario {
@@ -189,6 +261,17 @@ label {
     width: auto;
     height: 100vh;
   }
+  @media only screen and (max-width: 600px){
+  .pai-parte2 {
+    display: block;
+    padding: 2rem 0.3rem 2rem 0.3rem;
+    margin: 0;
+  }
+  .parte2-img {
+    display: flex;
+    width: 100vw;
+  }
+}
 }
 
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
