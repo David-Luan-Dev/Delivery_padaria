@@ -158,19 +158,23 @@ label {
     display: inline-block;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 0;
+    margin: 0;
   }
   .frase-de-negocio h1 {
     font-family: sans-serif;
-    font-size: 42px;
+    font-size: 35px;
     line-height: 38px;
     font-weight: 500;
     color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
   }
   .frase-de-negocio h2 {
     display: block;
     font-family: sans-serif;
     line-height: 20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin-block-start: 0.83em;
@@ -191,6 +195,7 @@ label {
     width: 100%;
     width: auto;
     height: auto;
+    padding: 0%;
   }
   .parte-de-fora {
     display: flex;
@@ -199,12 +204,37 @@ label {
     position: relative;
     z-index: 0;
   }
+  .primeira-parte-cadastro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
   .formulario {
-    margin-right: 2.3rem;
-    margin-bottom: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4em;
+    padding-top: 0.5em;
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+
+
+
   }
   .formulario .formGroup {
     width: auto;
+    max-width: 90%;
+  }
+  .formulario h2 {
+    font-size: 28px;
+
+  }
+  .label {
+    font-size: 14px;
   }
   .img {
     display: flex;
@@ -214,7 +244,10 @@ label {
     width: 100%;
     min-width: auto;
     margin: 0;
-    padding: 0;
+    padding-top: 0%;
+  }
+  .p-button-danger {
+    padding: 3px;
   }
   .card-imagem {
     width: 100%;
@@ -233,15 +266,19 @@ label {
     width: 100vw;
   }
   .parte2-h2-h5 {
-
+    display: flex;
   }
   .parte2-h2-h5 h2  {
-    font-size: 20px;
-
+    font-size: 35px;
+    align-items: center;
   }
 
   .parte2-h2-h5 h5 {
-    font-size: 14px;
+    font-size: 30x;
+  }
+  .btn-dimensionamento {
+    padding: 3px;
+    margin: 3px;
   }
 }
 
