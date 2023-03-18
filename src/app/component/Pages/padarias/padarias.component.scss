@@ -133,11 +133,12 @@ label {
   font-family: "Merriweather", serif;
 }
 .parte2-h2-h5 h2 {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 58px;
+  line-height: 58px;
   font-family: "Merriweather", serif;
   font-weight: 500;
   color: rgb(62, 62, 62);
+  width: 50%;
 }
 .parte2-h2-h5 h5 {
   font-size: 18px;
@@ -148,7 +149,51 @@ label {
   margin-block-end: 1.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  width: 70%;
 }
+/*Tenceira parte da tela de cadastro*/
+.terceiraParte {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 56px;
+  margin-bottom: 20px;
+  background-color: rgb(218, 43, 55);
+  color: rgb(62, 62, 62);
+  z-index: 0;
+  height: 300px;
+}
+.terceiraParte h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  line-height: 32px;
+  font-size: 42px;
+  padding-bottom: 1.5em;
+  color: rgb(255, 255, 255);
+}
+.terceiraParte h3 {
+  display: block;
+  font-family: "Merriweather", serif;
+  line-height: 32px;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 30%;
+
+}
+.imgs-parte3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.icone-aumentar-porcentagem {
+  width: 5%;
+  margin-top: 35px;
+
+}
+
 
 /*O media queries engloba cinco tamanhos, para smartphone, tablet, tablet deitado, descktop, tv smart*/
 /* Smartphones (600px para baixo) */
@@ -211,7 +256,6 @@ label {
     width: 100%;
     margin: 0;
     padding: 0;
-
   }
   .formulario {
     display: flex;
@@ -221,9 +265,6 @@ label {
     padding-top: 0.5em;
     margin-bottom: 0.3em;
     margin-top: 0.5em;
-
-
-
   }
   .formulario .formGroup {
     width: auto;
@@ -231,7 +272,6 @@ label {
   }
   .formulario h2 {
     font-size: 28px;
-
   }
   .label {
     font-size: 14px;
@@ -257,7 +297,7 @@ label {
     padding: 2rem 0.3rem 2rem 0.3rem;
     margin: 0;
   }
-  .parte2  {
+  .parte2 {
     padding: 0;
     margin: 0;
   }
@@ -268,7 +308,7 @@ label {
   .parte2-h2-h5 {
     display: flex;
   }
-  .parte2-h2-h5 h2  {
+  .parte2-h2-h5 h2 {
     font-size: 35px;
     align-items: center;
   }
@@ -281,8 +321,6 @@ label {
     margin: 3px;
   }
 }
-
-/*Aqui começão a segunda parte da página*/
 
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) {
@@ -298,17 +336,17 @@ label {
     width: auto;
     height: 100vh;
   }
-  @media only screen and (max-width: 600px){
-  .pai-parte2 {
-    display: block;
-    padding: 2rem 0.3rem 2rem 0.3rem;
-    margin: 0;
+  @media only screen and (max-width: 600px) {
+    .pai-parte2 {
+      display: block;
+      padding: 2rem 0.3rem 2rem 0.3rem;
+      margin: 0;
+    }
+    .parte2-img {
+      display: flex;
+      width: 100vw;
+    }
   }
-  .parte2-img {
-    display: flex;
-    width: 100vw;
-  }
-}
 }
 
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
