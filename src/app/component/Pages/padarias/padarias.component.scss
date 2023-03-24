@@ -201,25 +201,38 @@ label {
 .conteudo-oculto {
   visibility: hidden;
 }
+//Aqui começa a quarta parte da página cadastro
+.quarta-parte {
+  display: flex;
+  justify-content: space-around;
+  align-items:  center;
+  margin: 4em 25em 1em 8em;
+}
+.quarta-parte-texto-principal h2 {
+  font-size: 64px;
+  line-height: 58px;
+  width: 55%;
+  font-family: "iFood RC Títulos";
 
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-// @media only screen and (min-width: 1024px) {
-//   .terceiraParte {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-//   .imgs-parte3 h3 {
-//     width: 100%;
-//     font-size: 10px;
-//     margin-right: 4%;
-//     margin-left: -45%;
-//   }
-//   .imgs-parte3 {
-//     display: flex;
-//     justify-content: space-around;
-//   }
-// }
-
+}
+.quarta-parte-texto-principal span {
+  font-size: 64px;
+  color: rgb(89, 114, 238);
+  font-family: "iFood RC Títulos";
+  width: 100%;
+}
+.quarta-parte-texto-secundario {
+  width: 75%;
+  font-family: "iFood RC Títulos";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: rgb(113, 113, 113);
+}
+.quarta-parte-imagem img{
+max-width: 100%;
+object-fit: cover;
+}
 /* Smartphones (690px para baixo) */
 @media only screen and (max-width: 523px) {
   .frase-de-negocio {
@@ -388,6 +401,41 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .quarta-parte {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .quarta-parte-texto-principal h2 {
+    font-size: 32px;
+    line-height: 18px;
+    width: 100%;
+    font-family: "iFood RC Títulos";
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .quarta-parte-texto-principal span {
+    font-size: 32px;
+    line-height: 18px;
+    width: 100%;
+    font-family: "iFood RC Títulos";
+    margin: 0;
+    padding: 0;
+  }
+  .quarta-parte-texto-secundario {
+    width: 100%;
+    font-family: "iFood RC Títulos";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: rgb(113, 113, 113);
+    margin: 2px;
   }
 }
 
