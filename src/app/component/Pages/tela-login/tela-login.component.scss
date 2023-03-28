@@ -106,8 +106,29 @@ body * {
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+@media only screen and (min-width: 951px) {
+  .right-login {
+    width: 100vw;
+    height: calc(100vh - 125px);
+}
 
-@media only screen and (max-width: 950px) {
+  .botoes {
+    width: 400px;
+    height: 100%;
+    gap: 3px;
+  }
+  .btn-facebook {
+    width: 100vw;
+    gap: 3px;
+    padding: 10px;
+    margin: 5;
+  }
+  .faceGoogle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  @media only screen and (max-width: 950px) {
   .main-login {
     flex-direction: column;
   }
@@ -170,21 +191,21 @@ body * {
   margin: 0;
 }
 /*Estilização dos botões email e celular*/
-.botoes .email-celular {
+.email-celular {
   width: 100%;
   margin: 0px;
   background-color: azure;
   color: rgb(168, 166, 166);
 }
 /*Estilização dos botões da tela de login*/
-.botoes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  padding: 0;
-  margin: 0;
-}
+// .botoes {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   padding: 0;
+//   margin: 0;
+// }
 /*linha de divisão do login*/
 .divider {
   display: flex;
@@ -193,7 +214,7 @@ body * {
 }
 /*Estilização do input email dentro do dialog*/
 .dialogEmail {
-  width: 25vw !important;
+  width: 100%;
 }
 /*div do título denro do dialog*/
 .dialogP {
@@ -212,4 +233,19 @@ body * {
 }
 button {
   width: 100%;
+}
+@media only screen and (max-width: 280px) {
+  .right-login {
+    width: 100vw;
+    height: calc(100vh - 125px);
+    padding: 0;
+}
+
+  .botoes {
+    width: 265px;
+    height: 100%;
+    gap: 2px;
+    padding-bottom: 1;
+    margin: 0;
+  }
 }

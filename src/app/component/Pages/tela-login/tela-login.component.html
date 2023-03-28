@@ -8,12 +8,12 @@
       <h1>LOGIN</h1>
       <div class="row  mt-5 faceGoogle">
         <div class="col-sm-6 botoes">
-          <button pButton type="submit" label="Continuar com Facebook" class="p-button-info">
+          <button pButton type="submit" label="Continuar com Facebook" class="p-button-info btn-facebook">
             <i class="pi pi-facebook"></i>
           </button>
         </div>
         <div class="col-sm-12 botoes">
-          <button pButton type="submit" label="Continuar com Google" class="p-button-success"><i
+          <button pButton type="submit" label="Continuar com Google" class="p-button-success btn-facebook"><i
               class="pi pi-google"></i></button>
         </div>
         <div class="row">
@@ -28,7 +28,7 @@
                 [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
                 </i></button>
               <!--início do dialog-->
-              <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}">
+              <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}" [breakpoints]="{ '960px': '75vw' }">
                 <ng-template pTemplate="header">
                   Informe seu e-mail para continuar
                 </ng-template>
@@ -36,16 +36,16 @@
                 </ng-template>
 
                 <span class="p-float-label mb-4">
-                  <input class="p-inputtext-sm" id="float-input " type="email" pInputText [(ngModel)]="value2"
-                    [style]="{width: '25vw'}">
+                  <input class="p-inputtext-sm" id="float-input " type="email"  pInputText [(ngModel)]="value2"
+                    [style]="{width: '100%'}" >
                   <label for="float-input">E-mail</label>
                 </span>
-                <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail">
+                <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail" >
                 </button>
               </p-dialog>
               <!--Final do dialog-->
-              <button pButton type="submit" (click)="showDialog()" label="E-mail" class="p-button-info email-celular"><i
-                  class="pi pi-envelope"></i></button>
+              <button pButton type="submit"(click)="showDialog()" label="E-mail" class="p-button-info email-celular w-100%"><i
+              class="pi pi-envelope"></i></button>
             </div>
           </div>
         </div>
