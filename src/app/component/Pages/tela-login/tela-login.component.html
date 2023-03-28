@@ -28,9 +28,9 @@
                 [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
                 </i></button>
               <!--início do dialog-->
-              <p-dialog [(visible)]="displayBasic" [style]="{width: '35vw'}" [breakpoints]="{ '960px': '75vw' }">
+              <p-dialog [(visible)]="displayBasic" [style]="{width: '40vw'}" [breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
                 <ng-template pTemplate="header">
-                  Informe seu e-mail para continuar
+                 <p>Informe seu e-mail</p>
                 </ng-template>
                 <ng-template pTemplate="footer">
                 </ng-template>
@@ -38,7 +38,7 @@
                 <span class="p-float-label mb-4">
                   <input class="p-inputtext-sm" id="float-input " type="email"  pInputText [(ngModel)]="value2"
                     [style]="{width: '100%'}" >
-                  <label for="float-input">E-mail</label>
+                  <label for="float-input" id="label-da-modal-email">E-mail</label>
                 </span>
                 <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail" >
                 </button>

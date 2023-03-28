@@ -14,16 +14,20 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 50vh;
+  height: 80vh;
 }
 .dncelular {
   font-family: sans-serif;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 55px;
   line-height: 1.42;
   letter-spacing: -0.24px;
   color: var(--chakra-colors-gray-100);
 }
+.dncelular h1 {
+  font-size: 55px;
+}
+
 .p-1 {
   font-family: sans-serif;
   font-weight: bold;
@@ -33,12 +37,68 @@
 }
 .button {
   display: flex;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 .p-button-text {
   display: flex;
   margin: 5px;
   background-color: rgb(73, 236, 73);
   color: rgb(61, 60, 58);
+}
+@media only screen and (max-width: 950px) {
+
+}
+@media only screen and (max-width: 600px) {
+  .voltar {
+    margin-bottom: 20px;
+  }
+  .container {
+    display: block;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .dncelular h1 {
+    font-size: 25px;
+    margin-top: 30%;
+  }
+  .p-button-text {
+    padding: 15px;
+    margin: 5px;
+  }
+  .p-button-text label{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .voltar {
+    margin-bottom: 20px;
+  }
+  .container {
+    display: block;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .dncelular h1 {
+    margin-left: 5px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 30%;
+  }
+  .p-1 {
+    width: 100%;
+    margin-left: 5px;
+    width: 100%;
+    font-size: 10px;
+  }
+  .p-button-text {
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+  }
+
 }
 

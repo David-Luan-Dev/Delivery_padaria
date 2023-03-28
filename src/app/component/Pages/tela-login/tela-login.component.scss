@@ -221,6 +221,7 @@ body * {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .botoes {
@@ -233,7 +234,8 @@ body * {
 }
 button {
   width: 100%;
-}
+ }
+
 @media only screen and (max-width: 280px) {
   .right-login {
     width: 100vw;
@@ -248,4 +250,11 @@ button {
     padding-bottom: 1;
     margin: 0;
   }
+// .p-dialog-email p{
+//   width: 100%;
+//   font-size: 16px;
+//  }
+//  .label-da-modal-email {
+//   font-size: 12px;
+//  }
 }
