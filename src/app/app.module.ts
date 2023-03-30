@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { DockModule } from 'primeng/dock';
 
 
 
@@ -59,6 +60,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     InputMaskModule,
     MatSidenavModule,
     DialogModule,
+    DockModule
 
   ],
   providers: [],

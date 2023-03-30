@@ -1,4 +1,91 @@
-<div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl" *ngFor="let produto of produtos" style="margin-left: 10px; margin-bottom: 10px;flex-direction: row;
+<div class="container">
+<section class="primeiro-grupo-card">
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/sorvetes.jpg" alt="">
+      <h5 class="m-1">Sorvetes e picoles</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/frios.jpg" alt="">
+      <h5 class="m-1" >Queijos e presunto</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/bebidas.jpg" alt="">
+      <h5 class="m-1">Bebidas e sucos</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/laticinios.jpg" alt="">
+      <h5 class="m-1">Laticínios</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/confeitaria.jpg" alt="">
+      <h5 class="m-1">Bolos</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/arroz.jpg" alt="">
+      <h5 class="m-1">Não perecíveis</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/pao.jpg" alt="">
+      <h5 class="m-1">Pães</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/doces.jpg" alt="">
+      <h5 class="m-1">Balas e doces</h5>
+    </div>
+  </div>
+  <div class="nomes-produtos">
+    <div class="card">
+      <img src="assets/img/sobremesas.jpg" alt="">
+      <h5 class="m-1">Sobremesas</h5>
+    </div>
+  </div>
+
+</section>
+  <div class="frase-inicial">
+    <h1>Tudo para facilitar o seu dia a dia.</h1>
+    <h5>O que você precisa está aqui, peça e receba onde estiver</h5>
+  </div>
+  <div class="pai-input-btn">
+    <div class="input-btn">
+      <span class="p-input-icon-left">
+        <i class="pi pi-map-marker"></i>
+        <input type="text" class="p-inputtext-sm h-8 m-2"  pInputText [(ngModel)]="value" placeholder="Endereço de entrega e número"/>
+    </span>
+    <p-button label="Buscar" styleClass="p-button-danger p-button-sm h-8 m-2"></p-button>
+    </div>
+  </div>
+  <div class="produtos">
+    <div class="produto1">
+      <!-- <img src="assets/img/logo6.png" alt="imagem"> -->
+    </div>
+    <div class="produto2">
+      <!--  -->
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl" *ngFor="let produto of produtos" style="margin-left: 10px; margin-bottom: 10px;flex-direction: row;
   display: inline-flex;">
   <div class="md:flex">
     <div class="md:shrink-0">
@@ -11,7 +98,7 @@
         class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{produto.descricao}}</a>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- <div class="form">

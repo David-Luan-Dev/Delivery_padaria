@@ -10,6 +10,7 @@ export class PaginaPrincipalComponent implements OnInit {
   FormGroup!: FormGroup
   value = ``
   displaydialog!: boolean;
+  
   constructor(public formBuilder: FormBuilder) { }
 
   produtos = [
