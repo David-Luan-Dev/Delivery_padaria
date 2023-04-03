@@ -64,20 +64,132 @@
     <div class="input-btn">
       <span class="p-input-icon-left">
         <i class="pi pi-map-marker"></i>
-        <input type="text" class="p-inputtext-sm h-8 m-2"  pInputText [(ngModel)]="value" placeholder="Endereço de entrega e número"/>
+        <input type="text" class="p-inputtext-sm h-8 m-2 teste"  pInputText [(ngModel)]="value" placeholder="Endereço de entrega e número"/>
     </span>
     <p-button label="Buscar" styleClass="p-button-danger p-button-sm h-8 m-2"></p-button>
     </div>
   </div>
   <div class="produtos">
-    <div class="produto1">
-      <!-- <img src="assets/img/logo6.png" alt="imagem"> -->
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
     </div>
-    <div class="produto2">
-      <!--  -->
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
     </div>
-
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
   </div>
+</div>
+<div class="btns">
+  <ul>
+    <li>
+      <!--início do dialog-->
+    <p-dialog [(visible)]="displayBasic" [style]="{width: '40vw'}" [style]="{height: '40vh'}" [breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
+        <ng-template pTemplate="header">
+         <p>Ordenar por</p>
+        </ng-template>
+        <ng-template pTemplate="footer">
+        </ng-template>
+        <div class="pai-ordenacao">
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-sort-alt"></span>
+            </div>
+            <div class=""><h4>Ordenação Padrão</h4></div>
+          </div>
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-dollar"></span>
+            </div>
+            <div><h4>Preço</h4></div>
+          </div>
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-star"></span>
+            </div>
+            <div><h4>Avaliação</h4></div>
+          </div>
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-stopwatch"></span>
+            </div>
+            <div><h4>Tempo de entrega</h4></div>
+          </div>
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-percentage"></span>
+            </div>
+            <div><h4>Taxa de entrega</h4></div>
+          </div>
+          <div class="dois-elementos">
+            <div class="ordenacao">
+              <span class="pi pi-map-marker"></span>
+            </div>
+            <div><h4>Menor distância</h4></div>
+          </div>
+
+
+        </div>
+
+
+      </p-dialog>
+      <!--Final do dialog-->
+      <p-button label="ordenar" (click)="showDialog()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Pra retirar" styleClass="p-button-secondary p-button-text"> <mat-icon>transfer_within_a_station</mat-icon></p-button>
+    </li>
+    <li>
+      <p-button label="Entrega grátis" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Vale-refeição" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Distância" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Entrega Parceira" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Filtros" styleClass="p-button-danger p-button-text"></p-button>
+    </li>
+    <li>
+      <p-button label="Limpar" styleClass="p-button-secondary p-button-text"></p-button>
+    </li>
+  </ul>
 </div>
 
 

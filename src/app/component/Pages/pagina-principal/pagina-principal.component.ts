@@ -9,9 +9,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class PaginaPrincipalComponent implements OnInit {
   FormGroup!: FormGroup
   value = ``
+  value2!: string;
   displaydialog!: boolean;
-  
-  constructor(public formBuilder: FormBuilder) { }
+  displayBasic: boolean = false
+
+  constructor(public formBuilder: FormBuilder, ) { }
 
   produtos = [
     {
@@ -43,6 +45,7 @@ export class PaginaPrincipalComponent implements OnInit {
   }
   showDialog() {
     this.displaydialog = true;
+    this.displayBasic = true;
 }
 
 }
