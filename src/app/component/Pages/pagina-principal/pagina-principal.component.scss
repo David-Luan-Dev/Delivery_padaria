@@ -29,6 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 25px;
 
 }
 .card-segunda-parte{
@@ -123,9 +124,40 @@
 .ordenacao:hover {
   background-color: bisque;
   border: none;
+  color: #ea1d2c;
 }
-p-dialog {
- 
+.vale-selecao {
+  display: flex;
+  flex-direction: column;
+
+}
+.d-flex {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+ h5 {
+  font: 400 calc(14px * 0.83)/20px Roboto, sans-serif;
+  margin: 0 0 12px;
+  margin-right: 440px;
+
+}
+ng-template header h1{
+  font-weight: 500;
+  font-size: 18px;
+  color: #913333;
+  margin: 0;
+  text-align: center;
+}
+.img-vale {
+  width: 25px;
+  height: 25px;
 }
 
 p-dialog h4 {

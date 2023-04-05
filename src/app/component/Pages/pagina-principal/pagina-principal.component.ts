@@ -12,6 +12,12 @@ export class PaginaPrincipalComponent implements OnInit {
   value2!: string;
   displaydialog!: boolean;
   displayBasic: boolean = false
+  displayBasicVale: boolean = false;
+  checkedVrRefeicao: boolean = true;
+  checkedSodexo: boolean = true;
+  checkedAleloRefeicao: boolean = true;
+  checkedTicketRefeicao: boolean = true;
+  checkedBenRefeicao: boolean = true;
 
   constructor(public formBuilder: FormBuilder, ) { }
 
@@ -46,6 +52,15 @@ export class PaginaPrincipalComponent implements OnInit {
   showDialog() {
     this.displaydialog = true;
     this.displayBasic = true;
+}
+valeDialog(){
+  this.displaydialog = true;
+  this.displayBasicVale = true;
+  this.checkedVrRefeicao = false;
+  this.checkedSodexo = false;
+  this.checkedAleloRefeicao = false;
+  this.checkedTicketRefeicao = false;
+  this.checkedBenRefeicao = false;
 }
 
 }

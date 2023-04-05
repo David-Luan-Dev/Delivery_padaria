@@ -17,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DockModule } from 'primeng/dock';
 import { MenubarModule } from 'primeng/menubar';
+import { CheckboxModule } from 'primeng/checkbox';
 
 
 
@@ -62,7 +63,8 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     MatSidenavModule,
     DialogModule,
     DockModule,
-    MenubarModule
+    MenubarModule,
+    CheckboxModule
 
   ],
   providers: [],

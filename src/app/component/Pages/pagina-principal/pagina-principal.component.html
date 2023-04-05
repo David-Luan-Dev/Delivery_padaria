@@ -175,9 +175,48 @@
       <p-button label="Entrega grátis" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
-      <p-button label="Vale-refeição" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <!--início do dialog do vale-refeição-->
+    <p-dialog [(visible)]="displayBasicVale" [style]="{width: '48vw'} "[breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
+      <ng-template pTemplate="header">
+        <h1>Vale-refeição/alimentação</h1>
+      </ng-template>
+      <ng-template pTemplate="footer">
+      </ng-template>
+      <div class="vale-selecao">
+        <div class="d-flex">
+          <img class="img-vale" src="assets/img/VRO.avif" alt="img">
+          <h5>VR Refeição</h5>
+          <p-checkbox [(ngModel)]="checkedVrRefeicao" [binary]="true" inputId="binary"></p-checkbox>
+        </div>
+        <div class="d-flex">
+          <img class="img-vale" src="assets/img/SRP.png" alt="img">
+          <h5>Sodexo Refeição</h5>
+          <p-checkbox [(ngModel)]="checkedSodexo" [binary]="true" inputId="binary"></p-checkbox>
+        </div>
+        <div class="d-flex">
+          <img class="img-vale" src="assets/img/ALR.avif" alt="img">
+          <h5>Alelo Refeição</h5>
+          <p-checkbox [(ngModel)]="checkedAleloRefeicao" [binary]="true" inputId="binary"></p-checkbox>
+        </div>
+        <div class="d-flex">
+          <img class="img-vale" src="assets/img/TRO.png" alt="img">
+          <h5>Ticket Restaurante</h5>
+          <p-checkbox [(ngModel)]="checkedTicketRefeicao" [binary]="true" inputId="binary"></p-checkbox>
+        </div>
+        <div class="d-flex">
+          <img class="img-vale" src="assets/img/BENRON.avif" alt="img">
+          <h5>Ben Refeição</h5>
+          <p-checkbox [(ngModel)]="checkedBenRefeicao" [binary]="true" inputId="binary"></p-checkbox>
+        </div>
+
+
+      </div>
+    </p-dialog>
+    <!--Final do dialog do vale-refeição-->
+      <p-button label="Vale-refeição" (click)="valeDialog()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
+
       <p-button label="Distância" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
