@@ -26,13 +26,14 @@
               <div class="formGroup">
                 <label for="float-input" class="label">Nome completo</label>
                 <span>
-                  <input placeholder="E-mail" pInputText class="p-inputtext-lg btn-dimensionamento w-100 mb-4" id="float-input" type="text"
+                  <input placeholder="Nome Completo" pInputText class="p-inputtext-lg btn-dimensionamento w-100 mb-4" id="float-input" type="text"
                     pInputText [(ngModel)]="value2">
-                  <label for="float-input" class="label">João da Silva</label>
-                </span>
-                <span>
-                  <input placeholder="email@email.com.br" pInputText class="p-inputtext-lg btn-dimensionamento w-100 mb-4" id="float-input"
+                  </span>
+                  <span>
+                  <label for="float-input" class="label">E-mail</label>
+                  <input [(ngModel)]="emailAddress" placeholder="email@email.com.br" pInputText class="p-inputtext-lg btn-dimensionamento w-100 mb-4" id="float-input"
                     type="email" pInputText [(ngModel)]="value3">
+                    <p>{{ emailAddress }}</p>
 
                 </span>
                 <label for="float-input" class="label">Celular (com DDD)</label>
@@ -60,6 +61,7 @@
       src="https://parceiros.ifood.com.br/_next/image?url=%2Fimages%2Fsections%2Fintro%2Fready-market-desktop-v1.webp&w=1920&q=75 "
       alt="">
   </div>
+  <!--conteudos h2 e h5-->
   <div class="parte2-h2-h5">
     <h2>
         A <span>parceria </span> certa para o seu negócio
@@ -75,23 +77,7 @@
   <div class="terceiraParte">
     <h2>Vantagens de ser uma padaria parceira</h2>
     <div class="imgs-parte3">
-      <!--Aqui entra um conteúdo que só irá aparecer em telas grandes-->
-      <!--
-        div class="conteudo-oculto">
-        <img class="icones-escondidos" src="assets/img/ganhar-dinheiro.png" alt="icone">
-        <h3>
-        Mais vendas e maior destaque
-        Aumente o faturamento do seu negócio e dê mais visibilidade a sua marca.
-      </h3>
-       <img class="icones-escondidos" src="assets/img/tag-de-porcentagem.png" alt="icone">
-      <h3>
-        Olha que Vantagem legal,
-        Desconto nos primeiros três meses pra você experimentar, que massa!
-      </h3>
-      </div>
-      -->
       <div class="frases-e-icones">
-
         <img class="icones-escondidos" src="assets/img/ganhar-dinheiro.png" alt="icone">
         <h3>
           Mais vendas e maior destaque
@@ -102,7 +88,6 @@
       <img class="icone-aumentar-porcentagem" src="assets/img/ganhar-dinheiro.png" alt="icone">
       <img class="icone-aumentar-porcentagem" src="assets/img/tag-de-porcentagem.png" alt="icone">
       <div class="frases-e-icones">
-
         <img class="icones-escondidos" src="assets/img/tag-de-porcentagem.png" alt="icone">
         <h3>
           Olha que Vantagem legal,

@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito:wght@200&display=swap");
 
-.parte-de-fora {
-  position: relative;
-  z-index: 1;
-}
+//div pai da imagem
 .container-card-imagem {
   position: absolute;
   width: 100%;
   min-height: 700px;
 }
+//div da imagem do formulário
 .img-marketing-01 {
   display: block;
   position: absolute;
@@ -27,6 +25,10 @@
   object-fit: cover;
   object-position: center top;
 }
+.parte-de-fora {
+  position: relative;
+  z-index: 1;
+}
 .container-card-login {
   margin: 0px auto;
   max-width: 1023px;
@@ -35,7 +37,6 @@
 }
 .container-card-login-filho {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 }
 .section {
@@ -43,6 +44,7 @@
   -webkit-box-align: center;
   margin-top: 8em;
 }
+//classe que estiliza o H1 titulo da imagem
 .frase-de-negocio h1 {
   font-family: "Noto Sans", sans-serif;
   font-size: 56px;
@@ -51,6 +53,7 @@
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
+//classe que estiliza o H2 subtítulo da imagem
 .frase-de-negocio h2 {
   display: block;
   font-family: sans-serif;
@@ -63,7 +66,7 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
+//classe que estiliza o formulário
 .formulario {
   background-color: rgb(255, 255, 255);
   border-width: 1px;
@@ -73,6 +76,7 @@
   border-radius: 5px;
   margin-top: 5em;
 }
+//classe que estiliza o texto H2 do formulário
 .formulario h2 {
   color: rgb(62, 62, 62);
   font-size: 32px;
@@ -80,6 +84,7 @@
   margin: 0px;
   margin-top: 0;
 }
+//classe que estiliza o texto h3 do formulário
 .formulario h3 {
   display: block;
   font-size: 16px;
@@ -88,11 +93,13 @@
   color: rgb(113, 113, 113);
   margin-bottom: 1.2em;
 }
+//classe de estilização do grupo de inputs do formulário
 .formGroup {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
+//classe de estilização da label do formGoup
 label {
   font-weight: 600;
   font-size: 16px;
@@ -100,6 +107,7 @@ label {
   color: rgb(62, 62, 62);
   margin-bottom: 4px;
 }
+//classe que estiliza a parte que fala da proteção do site
 .capticha {
   font-size: 12px;
   line-height: 16px;
@@ -113,24 +121,28 @@ label {
   padding: 8rem 2rem 2rem 10rem;
   width: 100%;
 }
+//classe que estiliza a imagem da parte 2
 .parte2-img {
   max-width: 100%;
   min-height: 100%;
   max-height: 100%;
   min-height: 100%;
 }
+//classe que estiliza o conteúdo h2 e h5
 .parte2-h2-h5 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+//classe que estiliza o span do conteúdo h2, somente a palavra (parceria)
 .parte2-h2-h5 span {
   color: rgb(234, 29, 44);
   font-size: 58px;
   line-height: 65px;
   font-family: "Merriweather", serif;
 }
+//classe que estiliza o conteudo do h2 da segunda parte
 .parte2-h2-h5 h2 {
   font-size: 58px;
   line-height: 58px;
@@ -139,6 +151,7 @@ label {
   color: rgb(62, 62, 62);
   width: 65%;
 }
+//classe que estiliza o h5 do conteúdo da segunda parte
 .parte2-h2-h5 h5 {
   font-family: sans-serif;
   font-size: 18px;
@@ -164,6 +177,7 @@ label {
   z-index: 0;
   height: 300px;
 }
+//classe que estiliza o h2 da terceira parte
 .terceiraParte h2 {
   text-align: center;
   font-family: "Merriweather", serif;
@@ -172,6 +186,7 @@ label {
   padding-bottom: 1.5em;
   color: rgb(255, 255, 255);
 }
+//classe que estiliza o h3 da terceira parte
 .terceiraParte h3 {
   display: block;
   font-family: "Merriweather", serif;
@@ -181,23 +196,24 @@ label {
   color: rgb(255, 255, 255);
   width: 40%;
 }
+//classe que estiliza as imagens grafico aumentar e porcentagem da terceira parte
 .imgs-parte3 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-/**/
-
+//classe que estiliza as dimensões dos icones porcentagem e grafico aumentar
 .icone-aumentar-porcentagem {
   width: 5%;
   margin-top: 35px;
   margin-left: 10%;
   margin-left: 3%;
 }
+//classe do oculto que só aparecem em telas pequenas
 .icones-escondidos {
   visibility: hidden;
-}
+}//classe dos conteudo oculto
 .conteudo-oculto {
   visibility: hidden;
 }
@@ -205,22 +221,24 @@ label {
 .quarta-parte {
   display: flex;
   justify-content: space-around;
-  align-items:  center;
+  align-items: center;
   margin: 4em 25em 1em 8em;
 }
+// classe de estilização do h2 da quarta parte
 .quarta-parte-texto-principal h2 {
   font-size: 64px;
   line-height: 58px;
   width: 55%;
   font-family: "iFood RC Títulos";
-
 }
+//classe de estilização do span da quarta parte
 .quarta-parte-texto-principal span {
   font-size: 64px;
   color: rgb(89, 114, 238);
   font-family: "iFood RC Títulos";
   width: 100%;
 }
+//classe de estilização também da quarta parte
 .quarta-parte-texto-secundario {
   width: 75%;
   font-family: "iFood RC Títulos";
@@ -229,9 +247,10 @@ label {
   font-weight: normal;
   color: rgb(113, 113, 113);
 }
-.quarta-parte-imagem img{
-max-width: 100%;
-object-fit: cover;
+//classe que estiliza a imagem da quarta parte
+.quarta-parte-imagem img {
+  max-width: 100%;
+  object-fit: cover;
 }
 /* Smartphones (690px para baixo) */
 @media only screen and (max-width: 523px) {
@@ -405,7 +424,7 @@ object-fit: cover;
   .quarta-parte {
     display: flex;
     justify-content: center;
-    align-items:  center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     margin: 0;
@@ -414,31 +433,73 @@ object-fit: cover;
   .quarta-parte-texto-principal h2 {
     font-size: 32px;
     line-height: 18px;
-    width: 100%;
+    width: 60%;
     font-family: "iFood RC Títulos";
-    margin: 0;
+    margin-left: 15px;
     padding: 0;
     margin-bottom: 15px;
   }
   .quarta-parte-texto-principal span {
     font-size: 32px;
     line-height: 18px;
-    width: 100%;
+    width: 60%;
     font-family: "iFood RC Títulos";
     margin: 0;
     padding: 0;
   }
   .quarta-parte-texto-secundario {
-    width: 100%;
+    width: 60%;
     font-family: "iFood RC Títulos";
     font-size: 14px;
     line-height: 24px;
     font-weight: normal;
     color: rgb(113, 113, 113);
-    margin: 2px;
+    margin-left: 20px;
+    margin-top: 25px;
   }
 }
-
+@media only screen and (max-width: 414px) {
+  .parte2-h2-h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .parte2-h2-h5 h2 {
+  font-size: 20px;
+  margin: 2px;
+ }
+ .parte2-h2-h5 span {
+  font-size: 20px;
+ }
+ .parte2-h2-h5 h5 {
+  font-size: 18px;
+  width: 90%;
+ }
+.quarta-parte {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+ }
+ .quarta-parte-texto-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center;
+   width: 100%;
+ }
+ .quarta-parte-texto-principal h2 {
+  font-size: 30px;
+  width: 90%;
+  line-height: 30px;
+ }
+ .quarta-parte-texto-principal span {
+  font-size: 30px;
+  width: 90%;
+ }
+ .quarta-parte-texto-secundario {
+  width: 90%;
+ }
+}
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 524px) {
   .formulario {
@@ -453,11 +514,9 @@ object-fit: cover;
   .container-card-login-filho {
     display: flex;
     flex-direction: column;
-
   }
   .primeira-parte-cadastro {
     margin-right: 3%;
-
   }
   .frase-de-negocio h1 {
     font-size: 25px;
@@ -495,7 +554,6 @@ object-fit: cover;
   .pai-parte2 {
     display: flex;
     padding: 2rem 0.3rem 4rem 1.5rem;
-
   }
   .parte2-img {
     display: flex;
@@ -523,38 +581,37 @@ object-fit: cover;
     font-size: 14px;
     align-items: center;
     width: 100%;
-    }
+  }
   .parte2-h2-h5 span {
     font-size: 14px;
     align-items: center;
-    }
+  }
   .parte2-h2-h5 h5 {
     font-size: 12px;
     align-items: center;
     width: 100%;
     margin-top: 0px;
-    }
+  }
   .terceiraParte {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    }
+  }
   .terceiraParte h2 {
     font-size: 16px;
     margin-top: 49px;
     margin-bottom: 0px;
-
-    }
-    .terceiraParte h3 {
-      display: flex;
-      flex-direction: column;
-      font-size: 10px;
-      width: 42%;
-      line-height: 1.4;
-      margin-left: 63px;
-    }
-  .icones-escondidos{
+  }
+  .terceiraParte h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    width: 42%;
+    line-height: 1.4;
+    margin-left: 63px;
+  }
+  .icones-escondidos {
     visibility: visible;
     width: 12%;
     margin-bottom: 1em;
@@ -567,59 +624,82 @@ object-fit: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    .conteudo-oculto {
-      visibility: hidden;
-    }
-    .frases-e-icones {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
-@media  only screen and (min-width: 586px) {
-  .terceiraParte {
+  }
+  .conteudo-oculto {
+    visibility: hidden;
+  }
+  .frases-e-icones {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    }
-  .terceiraParte h2 {
-    font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: -10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .quarta-parte {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .quarta-parte-texto-principal {
+    width: auto;
+    margin: auto;
+  }
+  .quarta-parte-texto-principal h2 {
+    font-size: 50px;
+    margin: 0px;
+  }
+  .quarta-parte-texto-principal span {
+    font-size: 50px;
+    margin: 0px;
+  }
+  .quarta-parte-imagem {
+    display: flex;
+    margin-right: 10px;
+  }
+}
 
-    }
-    .terceiraParte h3 {
-      display: flex;
-      flex-direction: column;
-      font-size: 10px;
-      width: 42%;
-      line-height: 1.4;
-      margin-left: 63px;
-      margin: 0;
-    }
-  .icones-escondidos{
-    visibility: visible;
-    width: 12%;
-    margin-bottom: 1em;
-  }
-  .icone-aumentar-porcentagem {
-    display: none;
-  }
-  .imgs-parte3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    .conteudo-oculto {
-      visibility: hidden;
-    }
-}
+// @media only screen and (min-width: 586px) {
+//   .terceiraParte {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     padding: 0;
+//     margin: 0;
+//   }
+//   .terceiraParte h2 {
+//     font-size: 16px;
+//     margin-top: 0px;
+//     margin-bottom: -10px;
+//   }
+//   .terceiraParte h3 {
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 10px;
+//     width: 42%;
+//     line-height: 1.4;
+//     margin-left: 63px;
+//     margin: 0;
+//   }
+//   .icones-escondidos {
+//     visibility: visible;
+//     width: 12%;
+//     margin-bottom: 1em;
+//   }
+//   .icone-aumentar-porcentagem {
+//     display: none;
+//   }
+//   .imgs-parte3 {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .conteudo-oculto {
+//     visibility: hidden;
+//   }
+// }
 @media only screen and (min-width: 820px) {
   .container-card-login {
     margin: 300px auto;
@@ -628,7 +708,7 @@ object-fit: cover;
   }
   .formulario {
     width: 100%;
-    margin-top:-30%;
+    margin-top: -30%;
   }
   .primeira-parte-cadastro {
     padding: 0;
@@ -668,7 +748,6 @@ object-fit: cover;
   .parte2-h2-h5 h5 {
     width: 50%;
     font-size: 20px;
-
   }
   .imgs-parte3 {
     display: flex;
@@ -686,13 +765,22 @@ object-fit: cover;
     width: 8%;
   }
 
-.conteudo-oculto {
-  visibility: visible;
-}
-.btn-dimensionamento {
-  padding: 5px;
-}
-.frases-e-icones img {
-  margin-bottom: 5%;
-}
+  .conteudo-oculto {
+    visibility: visible;
+  }
+  .btn-dimensionamento {
+    padding: 5px;
+  }
+  .frases-e-icones img {
+    margin-bottom: 5%;
+  }
+  .quarta-parte {
+
+  }
+  .quarta-parte-texto-principal h2 span {
+   ;
+  }
+  .quarta-parte-imagem img{
+
+  }
 }
