@@ -118,7 +118,7 @@ label {
 /*Segunda parte da página*/
 .pai-parte2 {
   display: flex;
-  padding: 8rem 2rem 2rem 10rem;
+  padding: 8rem 0rem 2rem 0rem;
   width: 100%;
 }
 //classe que estiliza a imagem da parte 2
@@ -134,9 +134,13 @@ label {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 //classe que estiliza o span do conteúdo h2, somente a palavra (parceria)
 .parte2-h2-h5 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgb(234, 29, 44);
   font-size: 58px;
   line-height: 65px;
@@ -144,6 +148,9 @@ label {
 }
 //classe que estiliza o conteudo do h2 da segunda parte
 .parte2-h2-h5 h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 58px;
   line-height: 58px;
   font-family: "Merriweather", serif;
@@ -252,16 +259,56 @@ label {
   max-width: 100%;
   object-fit: cover;
 }
+// @media only screen and (max-width: 414px) {
+//   .parte2-h2-h5 {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//  .parte2-h2-h5 h2 {
+//   font-size: 12px;
+//  }
+//  .parte2-h2-h5 span {
+
+//  }
+//  .parte2-h2-h5 h5 {
+
+//  }
+// .quarta-parte {
+//   width: 100%;
+//   align-items: center;
+//   justify-content: center;
+//  }
+//  .quarta-parte-texto-principal {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//    justify-content: center;
+//    width: 100%;
+//  }
+//  .quarta-parte-texto-principal h2 {
+//   font-size: 20px;
+//   width: 90%;
+//   line-height: 30px;
+//  }
+//  .quarta-parte-texto-principal span {
+//   font-size: 30px;
+//   width: 90%;
+//  }
+//  .quarta-parte-texto-secundario {
+//   width: 90%;
+//  }
+// }
 /* Smartphones (690px para baixo) */
 @media only screen and (max-width: 523px) {
-  .frase-de-negocio {
+  .frase-de-negocio { //classe da primeira parte
     display: inline-block;
     justify-content: flex-end;
     align-items: center;
     padding-top: 0;
     margin: 0;
   }
-  .frase-de-negocio h1 {
+  .frase-de-negocio h1 { //primeira parte
     font-family: sans-serif;
     font-size: 35px;
     line-height: 38px;
@@ -270,7 +317,7 @@ label {
     padding: 0;
     margin: 0;
   }
-  .frase-de-negocio h2 {
+  .frase-de-negocio h2 { //primeira parte
     display: block;
     font-family: sans-serif;
     line-height: 20px;
@@ -282,13 +329,13 @@ label {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-  .container-card-login-filho {
+  .container-card-login-filho {//classe da primeira parte
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 1rem;
   }
 
-  .container-card-imagem {
+  .container-card-imagem {//classe da primeira parte
     display: flex;
     position: relative;
     flex-direction: column;
@@ -297,14 +344,14 @@ label {
     height: auto;
     padding: 0%;
   }
-  .parte-de-fora {
+  .parte-de-fora {//classe da primeira parte
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 0;
   }
-  .primeira-parte-cadastro {
+  .primeira-parte-cadastro {//classe da primeir parte
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -312,7 +359,7 @@ label {
     margin: 0;
     padding: 0;
   }
-  .formulario {
+  .formulario { //classe da primeira parte
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -322,38 +369,41 @@ label {
     margin-top: 0.5em;
     margin-right: 18px;
   }
-  .formulario .formGroup {
+  .formulario .formGroup {  //classe da primeira parte formulário
     width: auto;
     max-width: 90%;
   }
-  .formulario h2 {
+  .formulario h2 {  //classe ca primeira parte dentro do formulário
     font-size: 28px;
   }
-  .label {
+  .label {  //classe da primeira parte do formulário
     font-size: 14px;
   }
-
-  .p-button-danger {
+  .p-button-danger {  //classe da primeira parte do formulário
     padding: 3px;
   }
-  .card-imagem {
+  .card-imagem {  //classe da primeira parte do formulário
     width: 100%;
   }
-  .pai-parte2 {
-    display: block;
-    padding: 2rem 0.3rem 2rem 0.3rem;
-    margin: 0;
+  .pai-parte2 {  //classe da segunda parte
+    flex-direction: column;
+    width: 100%;
   }
-  .parte2 {
+  .parte2 {  //classe da segunda parte
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
   }
-  .parte2-img {
+  .parte2 img {  //calsse da segunda parte
     display: flex;
     width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
   }
-  .parte2-h2-h5 {
-    display: flex;
+  .parte2-h2-h5 h2 {
+
   }
   .btn-dimensionamento {
     padding: 3px;
@@ -362,21 +412,36 @@ label {
   .icones-escondidos {
     visibility: hidden;
   }
+  .pai-parte2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .parte2 {
+    width: 100%;
+  }
   .parte2-h2-h5 h2 {
-    font-size: 27px;
+    font-size: 20px;
     align-items: center;
     width: 100%;
-    margin-left: 30px;
+    line-height: 0px;
   }
   .parte2-h2-h5 span {
-    font-size: 27px;
+    font-size: 20px;
     align-items: center;
+    width: 25%;
+
+
   }
   .parte2-h2-h5 h5 {
-    font-size: 12px;
+    font-size: 18px;
     align-items: center;
-    width: 72%;
+    width: 95%;
     margin-top: 0px;
+    margin-bottom: 50px;
   }
   .terceiraParte {
     display: flex;
@@ -433,7 +498,7 @@ label {
   .quarta-parte-texto-principal h2 {
     font-size: 32px;
     line-height: 18px;
-    width: 60%;
+    width: 100%;
     font-family: "iFood RC Títulos";
     margin-left: 15px;
     padding: 0;
@@ -448,58 +513,19 @@ label {
     padding: 0;
   }
   .quarta-parte-texto-secundario {
-    width: 60%;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
     font-family: "iFood RC Títulos";
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 25px;
     font-weight: normal;
     color: rgb(113, 113, 113);
-    margin-left: 20px;
+    margin: 8px;
     margin-top: 25px;
   }
 }
-@media only screen and (max-width: 414px) {
-  .parte2-h2-h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- .parte2-h2-h5 h2 {
-  font-size: 20px;
-  margin: 2px;
- }
- .parte2-h2-h5 span {
-  font-size: 20px;
- }
- .parte2-h2-h5 h5 {
-  font-size: 18px;
-  width: 90%;
- }
-.quarta-parte {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
- }
- .quarta-parte-texto-principal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-   justify-content: center;
-   width: 100%;
- }
- .quarta-parte-texto-principal h2 {
-  font-size: 30px;
-  width: 90%;
-  line-height: 30px;
- }
- .quarta-parte-texto-principal span {
-  font-size: 30px;
-  width: 90%;
- }
- .quarta-parte-texto-secundario {
-  width: 90%;
- }
-}
+
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 524px) {
   .formulario {
@@ -553,17 +579,35 @@ label {
   }
   .pai-parte2 {
     display: flex;
-    padding: 2rem 0.3rem 4rem 1.5rem;
-  }
-  .parte2-img {
-    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 5px;
+    padding: 2rem 0 0 0;
   }
   .parte2-h2-h5 {
+    width: 100%;
     display: flex;
   }
+
+  .parte2-img {
+    width: 100%;
+  }
+  .parte2-h2-h5 h2 {
+    width: 80%;
+    font-size: 35px;
+    padding-bottom: 1%;
+    margin-top: 3%;
+  }
+  .parte2-h2-h5 span {
+    width: 27%;
+    font-size: 35px;
+    padding: 0;
+  }
+  .parte2-h2-h5 h5 {
+    width: 93%;
+    font-size: 27px;
+    line-height: 36px;
+  }
+  //parte 3
   .imgs-parte3 h3 {
     width: 100%;
     font-size: 16px;
@@ -577,36 +621,23 @@ label {
   .imgs-parte3 {
     display: flex;
   }
-  .parte2-h2-h5 h2 {
-    font-size: 14px;
-    align-items: center;
-    width: 100%;
-  }
-  .parte2-h2-h5 span {
-    font-size: 14px;
-    align-items: center;
-  }
-  .parte2-h2-h5 h5 {
-    font-size: 12px;
-    align-items: center;
-    width: 100%;
-    margin-top: 0px;
-  }
   .terceiraParte {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: 60%;
   }
   .terceiraParte h2 {
-    font-size: 16px;
+    font-size: 30px;
     margin-top: 49px;
     margin-bottom: 0px;
   }
   .terceiraParte h3 {
     display: flex;
     flex-direction: column;
-    font-size: 10px;
+    font-size: 16px;
     width: 42%;
     line-height: 1.4;
     margin-left: 63px;
@@ -637,25 +668,65 @@ label {
   .quarta-parte {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0px;
     padding: 0px;
   }
   .quarta-parte-texto-principal {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: auto;
+    padding-top: 3%;
   }
   .quarta-parte-texto-principal h2 {
-    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size:65px;
     margin: 0px;
+    width: 90%;
   }
   .quarta-parte-texto-principal span {
-    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
     margin: 0px;
+    width: 90%;
+  }
+  .quarta-parte-texto-secundario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .quarta-parte-texto-secundario p{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 45px;
+    margin: 15px;
   }
   .quarta-parte-imagem {
     display: flex;
-    margin-right: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .quarta-parte-imagem img {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
   }
 }
 
@@ -734,20 +805,27 @@ label {
     font-size: 20px;
     line-height: 28px;
   }
+  .pai-parte2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .parte2-img {
+    width: 100%;
+  }
   .parte2-h2-h5 h2 {
-    width: 60%;
-    font-size: 55px;
+    width: 90%;
+    font-size: 38px;
     padding-bottom: 5%;
-    margin-left: 10%;
   }
   .parte2-h2-h5 span {
-    width: 50%;
-    font-size: 55px;
+    width: 25%;
+    font-size: 38px;
     padding-bottom: 0;
   }
   .parte2-h2-h5 h5 {
-    width: 50%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 30px;
   }
   .imgs-parte3 {
     display: flex;
@@ -775,12 +853,26 @@ label {
     margin-bottom: 5%;
   }
   .quarta-parte {
-
+    align-items: center;
+    justify-content: center;
   }
-  .quarta-parte-texto-principal h2 span {
-   ;
+  .quarta-parte-texto-secundario p {
+    width: 120%;
+    margin-left: 50px;
+    font-size: 25px;
+  }
+  .quarta-parte-texto-principal h2 {
+   width: 100%;
+   margin-left: 130px;
+   line-height: 100px;
+  }
+  .quarta-parte-texto-principal span {
+    width: 100%;
+  }
+  .quarta-parte-imagem {
+    width: 100%;
   }
   .quarta-parte-imagem img{
-
+    width: 100%;
   }
 }
