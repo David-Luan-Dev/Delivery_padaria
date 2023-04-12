@@ -6,12 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./padarias.component.scss'],
 })
 export default class PadariasComponent {
-  public emailAddress!: string;
   value1!: string;
   value2!: string;
   value3!: string;
   val5!: string;
-
   constructor() {}
-  
 }
