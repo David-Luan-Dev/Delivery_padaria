@@ -3,6 +3,14 @@
   bottom: 0;
   font-size: 1rem;
   font-weight: 300;
-
   display: flex;
+  justify-content: space-evenly;
+}
+.redes-sociais {
+  display: flex;
+  margin-left: 10px;
+}
+.espaco-entre-icones {
+  display: flex;
+  margin-left: 15px;
 }
