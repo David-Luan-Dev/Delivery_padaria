@@ -6,11 +6,17 @@
   display: flex;
   justify-content: space-evenly;
 }
-.redes-sociais {
-  display: flex;
-  margin-left: 10px;
+span h5 {
+  width: 50%;
+  font-size: 12px;
+  color: rgb(126, 116, 116);
 }
-.espaco-entre-icones {
-  display: flex;
-  margin-left: 15px;
-}
+
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android)*/
+@media (min-width: 280px) {}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

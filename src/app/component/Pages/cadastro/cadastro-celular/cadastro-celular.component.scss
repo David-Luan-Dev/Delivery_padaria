@@ -100,8 +100,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    width: 250px;
-    margin: 15px 0 30px 6px;
+    width: 96%;
+    margin: 15px 0 30px 0px;
   }
   .dncelular {
     display: flex;
@@ -127,6 +127,7 @@
   }
   ::placeholder {
     font-size: 15px;
+    font-family: sans-serif;
   }
   .btn-sms-watsapp {
     margin-bottom: 8px;
@@ -161,8 +162,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    width: 335px;
-    margin: 30px 0 30px 6px;
+    width: 95%;
+    margin: 30px 0 30px 0px;
   }
   .dncelular h1 {
     display: flex;
@@ -188,8 +189,12 @@
     align-items: center;
     justify-content: center;
   }
+  .w-100 {
+    width: 100%;
+  }
   ::placeholder {
     font-size: 15px;
+    font-family: sans-serif;
   }
   .btn-sms-watsapp {
     margin-bottom: 15px;
@@ -197,6 +202,7 @@
   .button {
      display: flex;
      flex-direction: column;
+     margin-top: 10%;
      width: 100%;
    }
 }
@@ -216,8 +222,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
-    width: 335px;
-    margin: 30px 0 30px 6px;
+    width: 96%;
+    margin: 30px 0 30px 0px;
   }
   .dncelular h1 {
     display: flex;
@@ -240,7 +246,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 325px;
+    width: 100%;
     margin-bottom: 30px;
   }
   ::placeholder {
@@ -249,9 +255,10 @@
   .btn-sms-watsapp {
 
     margin-bottom: 15px;
+    font-family: sans-serif;
   }
   .button {
-
+      margin-top: 10%;
      width: 100%;
    }
 }
@@ -262,9 +269,13 @@
     position: relative;
     font-family: sans-serif;
     width: 100%;
-    margin: 10px 0 0px 0px;
+    margin: 10px 0 0px 6px;
     cursor: pointer;
   }
+  .btn-voltar {
+    font-size: 18px;
+  }
+
   .container-btn-celular {
     display: flex;
     justify-content: flex-end;
@@ -272,6 +283,7 @@
     position: relative;
     width: 25%;
     margin: 30px 0 0px 6px;
+    visibility: hidden;
   }
   .dncelular h1 {
     display: flex;
@@ -279,7 +291,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-size: 26px;
+    font-size: 40px;
   }
   .p-1 {
     flex-direction: column;
@@ -287,32 +299,99 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 14px;
+    font-size: 28px;
   }
   .input-numero-celular {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 325px;
-    margin-bottom: 5px;
+    width:75%;
+    margin-bottom: 30px;
+  }
+  .w-100 {
+    width: 75%;
+    height: 50px;
   }
   ::placeholder {
-    font-size: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
   }
   .btn-sms-watsapp {
 
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
   .button {
-
-     width: 50%;
+    display: flex;
+     width: 75%;
+     margin-top: 0%;
    }
 }
 
 /*  */
-@media (min-width:1024px) {
+@media (min-width:920px) {
+  .voltar {
+    display: flex;
+    position: relative;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 10px 0 0px 3px;
+    cursor: pointer;
+  }
+  .btn-voltar {
+    font-size: 18px;
+  }
 
+  .container-btn-celular {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    margin: 30px 0 0px 3px;
+    visibility: hidden;
+  }
+  .dncelular h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+  }
+  .p-1 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+  }
+  .input-numero-celular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    margin-bottom: 30px;
+  }
+  .w-100 {
+    width: 25%;
+    height: 35px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .btn-sms-watsapp {
+
+    margin-bottom: 12px;
+  }
+  .button {
+    display: flex;
+     width: 40%;
+     margin-top: 0%;
+   }
 }
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
