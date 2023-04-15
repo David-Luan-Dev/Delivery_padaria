@@ -1,15 +1,13 @@
-<div class="pai">
+
   <div class="container-card-imagem">
     <div class="card-imagem">
       <img class="img-marketing-01" alt="Background com uma proprietária de restaurante"
         src="https://parceiros.ifood.com.br/_next/image?url=%2Fimages%2Fsections%2Fform%2Fbackground-desktop.webp&w=1920&q=75"
-        decoding="async" data-nimg="fill">
-    </div>
-    <div class="parte-de-fora">
-      <div class="container-card-login">
-        <div class="container-card-login-filho">
-          <section class="section">
-            <div class="frase-de-negocio">
+        decoding="async" data-img="fill">
+      </div>
+      <div class="parte-de-fora">
+          <div class="section-h1-h2-form">
+            <div class="primeira-parte-fraseh1-h2">
               <h1>
                 Milhares de pedidos em apenas um mês
               </h1>
@@ -18,8 +16,24 @@
                 vendas.
               </h2>
             </div>
-          </section>
-          <div class="primeira-parte-cadastro">
+                <!-- arquivo.html -->
+                <form (ngSubmit)="onSubmit()" class="form-container">
+                   <mat-form-field appearance="fill" class="form-field">
+                     <mat-label>Nome</mat-label>
+                     <input matInput type="text" [(ngModel)]="dadosFormulario.nome" name="nome" required>
+                   </mat-form-field>
+                   <mat-form-field appearance="fill" class="form-field">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" [(ngModel)]="dadosFormulario.email" name="email" required>
+                   </mat-form-field>
+                   <mat-form-field appearance="fill" class="form-field">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput type="tel" [(ngModel)]="dadosFormulario.telefone" name="telefone" required>
+                   </mat-form-field>
+                    <button mat-raised-button type="submit" color="accent">Enviar</button>
+                </form>
+              </div>
+          <!-- <div class="primeira-parte-cadastro">
             <div class="formulario">
               <h2>Cadastre sua loja</h2>
               <h3>Entre e ganhe mensalidade grátis!</h3>
@@ -47,12 +61,9 @@
                   styleClass="p-button-lg "></button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> -->
     </div>
   </div>
-</div>
 <!--Aqui começa a segunda parte da página-->
 <div class="pai-parte2">
   <div class="parte2">
