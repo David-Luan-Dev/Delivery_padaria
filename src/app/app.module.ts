@@ -72,7 +72,8 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     MatButtonModule
 
   ],
-  providers: [ {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}],
+  providers: [ {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}},
+  {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {floatLabel: 'always'}},],
   bootstrap: [AppComponent],
 
 })
