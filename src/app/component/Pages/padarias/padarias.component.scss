@@ -100,7 +100,289 @@ button[type="submit"] {
 }
 //=============================================================//
 
+// @media screen and (max-width: 768px) {
+//   .primeira-parte-fraseh1-h2 {
+//     width: 100%;
+//     margin: 2% 0 0 0;
+//   }
 
-@media only screen and (min-width: 280px) {}
-@media only screen and (min-width: 440px) {}
-@media only screen and (min-width: 940px) {}
+//   .section-h1-h2-form {
+//     flex-direction: column;
+//     margin-top: 2em;
+//   }
+
+//   .section-h1-h2-form h1 {
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+//     width: 100%;
+//     margin-bottom: 5em;
+//     font-family: "primeicons";
+//     font-size: 4em;
+//     line-height: 70%;
+//     font-weight: bold;
+//     color: #e3dfec;
+
+//   }
+
+//   .section-h1-h2-form h2 {
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//     width: 100%;
+//     font-size: 3em;
+//     font-family:"Noto Sans", sans-serif;
+//     line-height: 40px;
+//     font-weight: 500;
+//     color: #e3dfec;
+//   }
+
+//   .form-container {
+//     width: 80%;
+//     margin-top: 0.5em;
+//   }
+
+//   .form-field {
+//     width: 100%;
+//     margin-bottom: 2%;
+//   }
+
+//   button[type="submit"] {
+//     margin-top: 0.5em;
+//   }
+// }
+@media only screen and (max-width: 280px) {
+  .parte-de-fora {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .section-h1-h2-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .primeira-parte-fraseh1-h2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .primeira-parte-fraseh1-h2 h1 {
+    display: flex;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 900;
+    line-height: 0.9em;
+    width: 100%;
+    color: #e3dfec;
+    margin-bottom: 3em;
+  }
+  .primeira-parte-fraseh1-h2 h2 {
+    display: flex;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 900;
+    line-height: 1em;
+    color: #e3dfec;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .form-field {
+     width: 96%;
+     margin-bottom: 2%;
+ }
+}
+
+  @media only screen and (min-width: 281px) and (max-width: 400px) {
+    .parte-de-fora {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-h1-h2-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .primeira-parte-fraseh1-h2 {
+      margin-top: 4em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .primeira-parte-fraseh1-h2 h1 {
+      display: flex;
+      font-size: 2em;
+      font-family: sans-serif;
+      font-weight: 300;
+      line-height: 0.9em;
+      width: 30%;
+      color: #e3dfec;
+      margin-bottom: 0;
+    }
+    .primeira-parte-fraseh1-h2 h2 {
+      display: flex;
+      width: 100%;
+      font-size: 1em;
+      font-family: sans-serif;
+      font-weight: 900;
+      line-height: 1em;
+      color: #5d1afa;
+    }
+    .form-container {
+      width: 100%;
+    }
+    .form-field {
+       width: 96%;
+       margin-bottom: 0;
+   }
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 768px) {
+    .img-marketing-01 {
+    }
+    .parte-de-fora {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5em;
+    }
+    .section-h1-h2-form {
+      display: flex;
+      flex-direction: column;
+    }
+    .primeira-parte-fraseh1-h2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .primeira-parte-fraseh1-h2 h1 {
+      display: flex;
+      font-size: 4em;
+      font-family: sans-serif;
+      font-weight: 300;
+      line-height: 0.9em;
+      width: 30%;
+      color: #e3dfec;
+      margin-bottom: 1.2em;
+    }
+    .primeira-parte-fraseh1-h2 h2 {
+      display: flex;
+      width: 100%;
+      font-size: 2em;
+      font-family: sans-serif;
+      font-weight: 600;
+      line-height: 1em;
+      color: #5d1afa;
+    }
+    .form-container {
+      width: 100%;
+    }
+    .form-field {
+       width: 90%;
+       margin-bottom: 2%;
+   }
+   }
+
+  @media only screen and (min-width: 769px) and (max-width: 912px) {
+    .container-card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .card-imagem {
+      display: flex;
+      width: 100%;
+
+    }
+    .img-marketing-01 {
+      display: flex;
+      position: absolute;
+      inset: 0px;
+      box-sizing: border-box;
+      padding: 0px;
+      border: none;
+      margin: auto;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center top;
+
+    }
+    .parte-de-fora {
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+    .primeira-parte-fraseh1-h2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 4%;
+    }
+    .section-h1-h2-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30%;
+    }
+      .form-container {
+        margin-top: 6em;
+        width: 100%;
+    }
+    .section-h1-h2-form h1 {
+      width: 30%;
+      display: flex;
+      font-family: "primeicons";
+      font-size: 5em;
+      line-height: 70%;
+      font-weight: 700;
+      color: #3e08c9;
+      margin-bottom: 0.5em;
+    }
+    .section-h1-h2-form h2 {
+      display: flex;
+      width: 100%;
+      font-family:"Noto Sans", sans-serif;
+      line-height: 20px;
+      font-size: 1.3em;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .form-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3%;
+    }
+
+    mat-label {
+      font-family: cursive;
+    }
+    .form-container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+    }
+
+    .form-field {
+      width: 45%;
+      margin-bottom: 1%;
+    }
+
+    button[type="submit"] {
+      margin-top: 0px;
+      background-color: #512da8;
+      font-family: cursive;
+    }
+  }
+
+
+
