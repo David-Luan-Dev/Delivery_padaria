@@ -7,8 +7,10 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./dialog-localizacao.component.scss']
 })
 export class DialogLocalizacaoComponent implements OnInit {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: string,
-  private dialogRef: MatDialogRef <DialogLocalizacaoComponent>) {}
+  constructor(
+    public dialogRef: MatDialogRef<DialogLocalizacaoComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any,
+  ) { }
 
   ngOnInit(): void {
 
