@@ -1,16 +1,19 @@
 import {
-  BreakpointObserver, Breakpoints, BreakpointState,
+  BreakpointObserver,
+  Breakpoints,
+  BreakpointState,
 } from '@angular/cdk/layout';
 import { Component, Input } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { map, Observable } from 'rxjs';
 import { DialogModule } from 'primeng/dialog';
-
+import { DialogLocalizacaoComponent } from 'src/app/component/template/layout/header/dialog-localizacao/dialog-localizacao.component';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   displayPosition!: boolean;
@@ -24,10 +27,19 @@ export class HeaderComponent {
     .observe(Breakpoints.Handset)
     .pipe(map((result: BreakpointState) => result.matches));
 
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private dialog: MatDialog
+  ) {}
 
-  showPositionDialog(position: string) {
-    this.position = position;
-    this.displayPosition = true;
+  public openDialog() {
+    this.dialog.open(DialogLocalizacaoComponent, {
+      data: 'bazinga',
+      width: '300px',
+      height: '400px',
+      enterAnimationDuration: '500ms',
+      exitAnimationDuration: '500ms'
+
+    });
   }
 }

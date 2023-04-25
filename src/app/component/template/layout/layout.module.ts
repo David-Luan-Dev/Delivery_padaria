@@ -13,8 +13,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 
-
-
 // components
 import { AppComponent } from 'src/app/app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -25,8 +23,8 @@ import { SidebarComponent } from './side-bar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
 import { CestaComponent } from '../../Pages/carrinho/cesta/cesta.component';
-import { DialogLocalizacaoComponent } from '../../Pages/dialog-localizacao/dialog-localizacao.component';
-
+import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
+import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 
 const material = [
   MatToolbarModule,
@@ -36,14 +34,11 @@ const material = [
   MatInputModule,
   MatDividerModule,
   FlexLayoutModule,
-  MatMenuModule
-]
+  MatMenuModule,
+  MatDialogModule
+];
 
-const layoutPrimeng = [
-  InputTextModule,
-  DialogModule,
-  ButtonModule
-]
+const layoutPrimeng = [InputTextModule, DialogModule, ButtonModule];
 
 @NgModule({
   imports: [
@@ -52,7 +47,7 @@ const layoutPrimeng = [
     BrowserAnimationsModule,
     MatSidenavModule,
     material,
-    layoutPrimeng
+    layoutPrimeng,
   ],
   exports: [SidebarComponent],
   declarations: [
@@ -62,8 +57,10 @@ const layoutPrimeng = [
     LayoutComponent,
     SidebarComponent,
     CestaComponent,
-    DialogLocalizacaoComponent
+    DialogLocalizacaoComponent,
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DATA, useValue: {}}
+  ],
 })
-export class LayoutModule { }
+export class LayoutModule {}
