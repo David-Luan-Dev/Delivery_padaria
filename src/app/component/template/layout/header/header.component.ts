@@ -34,8 +34,8 @@ export class HeaderComponent {
 
   public openDialog() {
     this.dialog.open(DialogLocalizacaoComponent, {
-      data: 'bazinga',
-      width: '300px',
+      data: 'Adicione ou escolha um endereço',
+      width: '400px',
       height: '400px',
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms'
