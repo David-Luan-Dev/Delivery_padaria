@@ -1,0 +1,51 @@
+.titulo-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.ordenacao-padrao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-wrap: nowrap;
+}
+.dois-elementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ordenacao-padrao p {
+
+  font-size: 12px;
+}
+.circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+.circulo:hover {
+  border: none;
+  background-color: rgb(247, 223, 223);
+}
+
+.ordenacao-padrao:hover {
+  color: rgb(238, 106, 106);
+
+}
+mat-divider {
+  border: 1px solid grey;
+}
+
+

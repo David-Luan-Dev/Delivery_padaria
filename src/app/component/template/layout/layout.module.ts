@@ -24,7 +24,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { InputTextModule } from 'primeng/inputtext';
 import { CestaComponent } from '../../Pages/carrinho/cesta/cesta.component';
 import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
-import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import {
+  MAT_DIALOG_DATA,
+  MatDialogModule,
+  MatDialogRef,
+} from '@angular/material/dialog';
+//import { OrdenarComponent } from '../../Pages/pagina-principal/ordenar-modal/ordenar.component';
 
 const material = [
   MatToolbarModule,
@@ -35,7 +40,7 @@ const material = [
   MatDividerModule,
   FlexLayoutModule,
   MatMenuModule,
-  MatDialogModule
+  MatDialogModule,
 ];
 
 const layoutPrimeng = [InputTextModule, DialogModule, ButtonModule];
@@ -58,11 +63,11 @@ const layoutPrimeng = [InputTextModule, DialogModule, ButtonModule];
     SidebarComponent,
     CestaComponent,
     DialogLocalizacaoComponent,
+    //OrdenarComponent,
   ],
   providers: [
     { provide: MAT_DIALOG_DATA, useValue: {} },
-    { provide: MatDialogRef, useValue: {} }
-
+    { provide: MatDialogRef, useValue: {} },
   ],
 })
-export class LayoutModule { }
+export class LayoutModule {}
