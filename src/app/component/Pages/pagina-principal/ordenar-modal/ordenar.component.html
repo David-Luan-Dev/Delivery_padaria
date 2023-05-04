@@ -1,51 +1,56 @@
 <div class="titulo-close">
   <h1 mat-dialog-title>Ordenar por</h1>
-  <mat-icon (click)="closeDialog()" class="icone-fechar">close</mat-icon>
+  <mat-icon (click)="closeDialog()" class="icone-fechar" align="end">close</mat-icon>
 </div>
-<div mat-dialog-content class="conteudo">
+<div class="conteudo">
   <button class="dois-elementos">
     <div class="ordenacao-padrao ml-3">
-      <div class="circulo">
+      <div class="circulo ">
         <mat-icon>swap_vert</mat-icon>
       </div>
-      <p class="ml-3">Ordenação Padrão</p>
+      <p class="">Ordenação <br> Padrão</p>
     </div>
   </button>
-
-  <div class="ordenacao-padrao ml-3">
-    <button class="dois-elementos">
+  <button class="dois-elementos">
+      <div class="ordenacao-padrao ml-3">
       <div class="circulo">
         <mat-icon>currency_exchange</mat-icon>
       </div>
-      <p class="ml-3">Preço</p>
-    </button>
-  </div>
+      <p class="">Preço</p>
+    </div>
+  </button>
+  <button class="dois-elementos">
+    <div class="ordenacao-padrao ml-3">
+      <div class="circulo">
+        <mat-icon>star_rate</mat-icon>
+      </div>
+      <p class="">Avaliação</p>
+    </div>
+  </button>
+  <button class="dois-elementos">
+    <div class="ordenacao-padrao ml-3">
+      <div class="circulo">
+        <mat-icon>history_toggle_off</mat-icon>
+      </div>
+      <p class="">Tempo de <br> entrega</p>
+    </div>
+  </button>
+  <button class="dois-elementos">
+    <div class="ordenacao-padrao ml-3">
+      <div class="circulo">
+        <mat-icon>location_on</mat-icon>
+      </div>
+      <p class="">Menor <br> Distãncia</p>
+    </div>
+  </button>
 
-  <div class="ordenacao-padrao ml-3">
-    <div class="circulo">
-      <mat-icon>star_rate</mat-icon>
+  <button class="dois-elementos">
+    <div class="ordenacao-padrao ml-3">
+      <div class="circulo">
+        <mat-icon>location_on</mat-icon>
+      </div>
+      <p class="">Taxa de <br> Entrega</p>
     </div>
-    <p class="ml-3">Avaliação</p>
-  </div>
+  </button>
 
-  <div class="ordenacao-padrao ml-3">
-    <div class="circulo">
-      <mat-icon>history_toggle_off</mat-icon>
-    </div>
-    <p class="ml-3">Tempo de entrega</p>
-  </div>
-
-  <div class="ordenacao-padrao ml-3">
-    <div class="circulo">
-      <mat-icon>location_on</mat-icon>
-    </div>
-    <p class="ml-3">Menor  Distãncia</p>
-  </div>
-  <br>
-  <div class="ordenacao-padrao ml-3">
-    <div class="circulo">
-      <mat-icon>percent</mat-icon>
-    </div>
-    <p class="ml-3">Tempo de  Entrega</p>
-  </div>
 </div>

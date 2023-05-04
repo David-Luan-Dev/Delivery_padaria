@@ -3,11 +3,15 @@
   align-items: center;
   justify-content: space-around;
 }
+.icone-fechar {
+  cursor: pointer;
+}
 .conteudo {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .ordenacao-padrao{
   display: flex;
@@ -21,10 +25,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 25%;
+  height: 30%;
 }
 .ordenacao-padrao p {
-
-  font-size: 12px;
+  font-size: .75rem;
+  line-height: .875rem;
 }
 .circulo {
   display: flex;

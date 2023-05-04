@@ -55,7 +55,7 @@ export class PaginaPrincipalComponent implements OnInit {
   //Material
   public openDialog() {
     this.dialog.open(OrdenarComponent, {
-      width: '800px',
+      width: '450px',
       height: '400px',
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
