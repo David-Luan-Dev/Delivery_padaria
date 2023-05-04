@@ -1,0 +1,16 @@
+<div class="h4">
+  <h4 matDialogTitle>Distância</h4>
+  <p>menos de 100 km</p>
+</div>
+<div class="mat-slider">
+  <mat-slider min="0" max="100000" step="1000"  discrete [displayWith]="formatLabel">
+    <input matSliderThumb>
+  </mat-slider>
+</div>
+<div class="min-max">
+  <span class="ml-7">0 km</span>
+  <span class="mr-7">100 km</span>
+</div>
+<div class="btn-verResultados">
+  <button class="p-4" mat-raised-button color="warn">Ver resultados</button>
+</div>

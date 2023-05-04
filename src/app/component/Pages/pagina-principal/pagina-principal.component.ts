@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { OrdenarComponent } from './ordenar-modal/ordenar.component';
+import { FromPagamentoComponent } from './from-pagamento/from-pagamento.component';
+import { DialogDistanciaComponent } from './dialog-distancia/dialog-distancia.component';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -61,17 +63,20 @@ export class PaginaPrincipalComponent implements OnInit {
       exitAnimationDuration: '500ms',
     });
   }
-  showDialog() {
-    this.displaydialog = true;
-    this.displayBasic = true;
+  public openDialogfromPagamento() {
+    this.dialog.open(FromPagamentoComponent, {
+      width: '350px',
+      height: '380px',
+      enterAnimationDuration: '500ms',
+      exitAnimationDuration: '500ms',
+    });
   }
-  valeDialog() {
-    this.displaydialog = true;
-    this.displayBasicVale = true;
-    this.checkedVrRefeicao = false;
-    this.checkedSodexo = false;
-    this.checkedAleloRefeicao = false;
-    this.checkedTicketRefeicao = false;
-    this.checkedBenRefeicao = false;
+  public openDialogDistancia() {
+    this.dialog.open(DialogDistanciaComponent, {
+      width: '600px',
+      height: '300px',
+      enterAnimationDuration: '500ms',
+      exitAnimationDuration: '500ms',
+    });
   }
 }

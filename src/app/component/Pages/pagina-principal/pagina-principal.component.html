@@ -115,57 +115,7 @@
 <div class="btns">
   <ul>
     <li>
-      <!--início do dialog-->
-    <p-dialog [(visible)]="displayBasic" [style]="{width: '40vw'}" [style]="{height: '40vh'}" [breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
-        <ng-template pTemplate="header">
-         <p>Ordenar por</p>
-        </ng-template>
-        <ng-template pTemplate="footer">
-        </ng-template>
-        <div class="pai-ordenacao">
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-sort-alt"></span>
-            </div>
-            <div class=""><h4>Ordenação Padrão</h4></div>
-          </div>
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-dollar"></span>
-            </div>
-            <div><h4>Preço</h4></div>
-          </div>
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-star"></span>
-            </div>
-            <div><h4>Avaliação</h4></div>
-          </div>
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-stopwatch"></span>
-            </div>
-            <div><h4>Tempo de entrega</h4></div>
-          </div>
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-percentage"></span>
-            </div>
-            <div><h4>Taxa de entrega</h4></div>
-          </div>
-          <div class="dois-elementos">
-            <div class="ordenacao">
-              <span class="pi pi-map-marker"></span>
-            </div>
-            <div><h4>Menor distância</h4></div>
-          </div>
 
-
-        </div>
-
-
-      </p-dialog>
-      <!--Final do dialog-->
       <p-button label="ordenar"  (click)="openDialog()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
@@ -175,49 +125,11 @@
       <p-button label="Entrega grátis" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
-      <!--início do dialog do vale-refeição-->
-    <p-dialog [(visible)]="displayBasicVale" [style]="{width: '48vw'} "[breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
-      <ng-template pTemplate="header">
-        <h1>Vale-refeição/alimentação</h1>
-      </ng-template>
-      <ng-template pTemplate="footer">
-      </ng-template>
-      <div class="vale-selecao">
-        <div class="d-flex">
-          <img class="img-vale" src="assets/img/VRO.avif" alt="img">
-          <h5>VR Refeição</h5>
-          <p-checkbox [(ngModel)]="checkedVrRefeicao" [binary]="true" inputId="binary"></p-checkbox>
-        </div>
-        <div class="d-flex">
-          <img class="img-vale" src="assets/img/SRP.png" alt="img">
-          <h5>Sodexo Refeição</h5>
-          <p-checkbox [(ngModel)]="checkedSodexo" [binary]="true" inputId="binary"></p-checkbox>
-        </div>
-        <div class="d-flex">
-          <img class="img-vale" src="assets/img/ALR.avif" alt="img">
-          <h5>Alelo Refeição</h5>
-          <p-checkbox [(ngModel)]="checkedAleloRefeicao" [binary]="true" inputId="binary"></p-checkbox>
-        </div>
-        <div class="d-flex">
-          <img class="img-vale" src="assets/img/TRO.png" alt="img">
-          <h5>Ticket Restaurante</h5>
-          <p-checkbox [(ngModel)]="checkedTicketRefeicao" [binary]="true" inputId="binary"></p-checkbox>
-        </div>
-        <div class="d-flex">
-          <img class="img-vale" src="assets/img/BENRON.avif" alt="img">
-          <h5>Ben Refeição</h5>
-          <p-checkbox [(ngModel)]="checkedBenRefeicao" [binary]="true" inputId="binary"></p-checkbox>
-        </div>
-
-
-      </div>
-    </p-dialog>
-    <!--Final do dialog do vale-refeição-->
-      <p-button label="Vale-refeição" (click)="valeDialog()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <p-button label="Vale-refeição" (click)="openDialogfromPagamento()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
 
-      <p-button label="Distância" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <p-button label="Distância" (click)="openDialogDistancia()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
     </li>
     <li>
       <p-button label="Entrega Parceira" styleClass="p-button-secondary p-button-text"></p-button>
@@ -230,44 +142,3 @@
     </li>
   </ul>
 </div>
-
-
-
-
-
-
-<!-- <div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl" *ngFor="let produto of produtos" style="margin-left: 10px; margin-bottom: 10px;flex-direction: row;
-  display: inline-flex;">
-  <div class="md:flex">
-    <div class="md:shrink-0">
-      <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/img/logo5.svg"
-        alt="Modern building architecture">
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{produto.item}}</div>
-      <a href="#"
-        class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{produto.descricao}}</a>
-    </div>
-  </div>
-</div> -->
-
-
-<!-- <div class="form">
-  <form [formGroup]="FormGroup">
-    <span class="p-input-icon-left mb-2">
-      <i class="pi pi-search"></i>
-      <input formControlName="email" type="text" pInputText placeholder="Email">
-    </span>
-    <div style="width: 100%;">
-      <mat-divider>
-      </mat-divider>
-    </div>
-    <span class="p-input-icon-left mt-2">
-      <i class="pi pi-search"></i>
-      <input formControlName="senha" type="text" pInputText placeholder="Senha" required>
-    </span>
-  </form>
-  <div>
-    <button [disabled]="FormGroup.invalid" pButton type="button" label="Enviar" class="p-button-success"></button>
-  </div>
-</div> -->
