@@ -28,26 +28,34 @@
   width: 25%;
   height: 30%;
 }
+.dois-elementos:hover {
+  .ordenacao-padrao {
+    color: rgb(238, 106, 106);
+  }
+  .circulo {
+    background-color: rgb(243, 180, 180);
+    border: none;
+  }
+  .mat-icon {
+    color: red;
+  }
+}
 .ordenacao-padrao p {
   font-size: .75rem;
   line-height: .875rem;
+  margin-top: 6px;
 }
 .circulo {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid grey;
+  border: 1px solid rgb(224, 214, 214);
   border-radius: 100%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
-.circulo:hover {
-  border: none;
-  background-color: rgb(247, 223, 223);
-}
-
-.ordenacao-padrao:hover {
-  color: rgb(238, 106, 106);
+.mat-icon {
+  color: rgb(129, 126, 126);
 
 }
 mat-divider {

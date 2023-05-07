@@ -1,15 +1,17 @@
 import { loginModel } from 'src/models/loginModel';
 import { Router, RouterModule } from '@angular/router';
-import {
-  FormControl,
-  Validators,
-  FormGroup,
-  FormBuilder,
-} from '@angular/forms';
 import { Output, EventEmitter } from '@angular/core';
-
-import { Component, OnInit, NgModule } from '@angular/core';
 import { FloatLabelType } from '@angular/material/form-field';
+import { Component, OnInit } from '@angular/core';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  FormControl,
+} from '@angular/forms';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { InformarEmailComponent } from '../../../informar-email/informar-email.component';
+import { CadastroCelularComponent } from './cadastro-celular/cadastro-celular.component';
 
 @Component({
   selector: 'app-tela-login',
@@ -17,27 +19,41 @@ import { FloatLabelType } from '@angular/material/form-field';
   styleUrls: ['./tela-login.component.scss'],
 })
 export class TelaLoginComponent implements OnInit {
+  FormGroup!: FormGroup;
   value2!: string;
 
-display: boolean = false;
-displayBasic: boolean = false
-
+  display: boolean = false;
+  displayBasic: boolean = false;
 
   loginForm!: FormGroup;
-  value = ``
+  value = ``;
 
-  constructor() { }
+  constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
 
-
-  ngOnInit(): void { }
-
-
+  ngOnInit(): void {}
 
   submit() {
-    console.log("Enviado com sucesso!")
+    console.log('Enviado com sucesso!');
   }
   showDialog() {
     this.display = true;
     this.displayBasic = true;
-}
+  }
+  //Dialog material informar email
+  public informarEmailDialog() {
+    this.dialog.open(InformarEmailComponent, {
+      width: '450px',
+      height: '400px',
+      enterAnimationDuration: '500ms',
+      exitAnimationDuration: '500ms',
+    });
+  }
+    public informarCelularlDialog() {
+      this.dialog.open(CadastroCelularComponent, {
+        width: '450px',
+        height: '400px',
+        enterAnimationDuration: '500ms',
+        exitAnimationDuration: '500ms',
+      });
+    }
 }

@@ -17,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
 import { AppComponent } from 'src/app/app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { EntregaGratisComponent } from '../../Pages/entrega-gratis/entrega-gratis.component';
 
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './side-bar/sidebar.component';

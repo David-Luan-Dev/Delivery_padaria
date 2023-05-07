@@ -2,7 +2,7 @@
 <section class="primeiro-grupo-card">
   <div class="nomes-produtos">
     <div class="card">
-      <img src="assets/img/sorvetes.jpg" alt="">
+      <img src="assets/img/sorvete-1.jpg" alt="">
       <h5 class="m-1">Sorvetes e picoles</h5>
     </div>
   </div>
@@ -115,30 +115,49 @@
 <div class="btns">
   <ul>
     <li>
-
-      <p-button label="ordenar"  (click)="openDialog()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled" (click)="openDialog()">
+        Ordenar
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
     </li>
     <li>
-      <p-button label="Pra retirar" styleClass="p-button-secondary p-button-text"> <mat-icon>transfer_within_a_station</mat-icon></p-button>
+      <button mat-fab extended color="disabled" routerLink="../pra-retirar">
+        Pra retirar
+        <mat-icon>transfer_within_a_station</mat-icon>
+      </button>
     </li>
     <li>
-      <p-button label="Entrega grátis" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled" routerLink="../entrega-gratis">
+        Entrega grátis
+      </button>
     </li>
     <li>
-      <p-button label="Vale-refeição" (click)="openDialogfromPagamento()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled" (click)="openDialogfromPagamento()">
+        Vale-refeição
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
     </li>
     <li>
-
-      <p-button label="Distância" (click)="openDialogDistancia()" icon="pi pi-angle-down" iconPos="right" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled" (click)="openDialogDistancia()">
+        Distância
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
     </li>
     <li>
-      <p-button label="Entrega Parceira" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled" routerLink="../entrega-parceira">
+        Entrega Parceira
+      </button>
     </li>
     <li>
-      <p-button label="Filtros" styleClass="p-button-danger p-button-text"></p-button>
+      <button mat-fab extended color="disabled">
+        <mat-icon>sort</mat-icon>
+        Filtros
+      </button>
     </li>
     <li>
-      <p-button label="Limpar" styleClass="p-button-secondary p-button-text"></p-button>
+      <button mat-fab extended color="disabled">
+        Limpar
+      </button>
     </li>
   </ul>
 </div>

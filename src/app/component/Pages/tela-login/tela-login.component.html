@@ -8,6 +8,7 @@
       <h1>LOGIN</h1>
       <div class="row  mt-5 faceGoogle">
         <div class="col-sm-6 botoes">
+
           <button pButton type="submit" label="Continuar com Facebook" class="p-button-info btn-facebook">
             <i class="pi pi-facebook"></i>
           </button>
@@ -25,26 +26,9 @@
           <div class="row ">
             <div class="col-sm botoes">
               <button pButton type="submit" label="celular" class="p-button-info email-celular w-100%"
-                [routerLink]="['/cadastro-celular']" routerLinkActive="router-link-active"><i class="pi pi-phone">
+                (click)="informarCelularlDialog()" routerLinkActive="router-link-active"><i class="pi pi-phone">
                 </i></button>
-              <!--início do dialog-->
-              <p-dialog [(visible)]="displayBasic" [style]="{width: '40vw'}" [breakpoints]="{ '960px': '90vw' }" class="p-dialog-email">
-                <ng-template pTemplate="header">
-                 <p>Informe seu e-mail</p>
-                </ng-template>
-                <ng-template pTemplate="footer">
-                </ng-template>
-
-                <span class="p-float-label mb-4">
-                  <input class="p-inputtext-sm" id="float-input " type="email"  pInputText [(ngModel)]="value2"
-                    [style]="{width: '100%'}" >
-                  <label for="float-input" id="label-da-modal-email">E-mail</label>
-                </span>
-                <button pButton type="button" label="Continuar" class="p-button-danger p-button-sm dialogEmail" >
-                </button>
-              </p-dialog>
-              <!--Final do dialog-->
-              <button pButton type="submit"(click)="showDialog()" label="E-mail" class="p-button-info email-celular w-100%"><i
+              <button pButton type="submit"(click)="informarEmailDialog()"  label="E-mail" class="p-button-info email-celular w-100%"><i
               class="pi pi-envelope"></i></button>
             </div>
           </div>

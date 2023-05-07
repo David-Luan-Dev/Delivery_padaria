@@ -70,19 +70,15 @@
 .card img{
    width: 100px;
    height: 100px;
-
    border: none;
    gap: 8px;
    border-radius: 100%;
-   transition: width 1s, height 1s, transform 0.5s;
-}
-.card img:hover {
-  width: 106px;
-}
 
+}
 .nomes-produtos .card{
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .nomes-produtos {
   background-color: rgb(248, 231, 231);
@@ -90,14 +86,15 @@
 }
 .btns ul{
   display: flex;
-  margin: 10px;
+  margin: 20px;
 }
-.pai-ordenacao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px;
+.btns li {
+  margin-left: 10px;
+}
+
+li button {
+  height: 35px;
+
 
 }
 // .dois-elementos {

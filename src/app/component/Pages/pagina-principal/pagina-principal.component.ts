@@ -4,6 +4,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { OrdenarComponent } from './ordenar-modal/ordenar.component';
 import { FromPagamentoComponent } from './from-pagamento/from-pagamento.component';
 import { DialogDistanciaComponent } from './dialog-distancia/dialog-distancia.component';
+import { EntregaGratisComponent } from '../entrega-gratis/entrega-gratis.component';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -54,7 +55,7 @@ export class PaginaPrincipalComponent implements OnInit {
       senha: ['', Validators.required],
     });
   }
-  //Material
+  //Dialog Material
   public openDialog() {
     this.dialog.open(OrdenarComponent, {
       width: '450px',

@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cadastro-celular.component.scss']
 })
 export class CadastroCelularComponent {
-  val4!: string;
-  value!: string;
+
 }
