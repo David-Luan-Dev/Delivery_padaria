@@ -1,7 +1,11 @@
+mat-icon {
+  cursor: pointer;
+}
 .h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .h2 h2 {
   font-size: 1.125rem;
@@ -12,6 +16,7 @@ form {
   align-items: center;
   justify-content: center;
 }
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -29,13 +34,7 @@ form {
   align-items: center;
   justify-content: center;
 }
-.codigo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 button {
   width: 95%;
   padding: 25px;
 }
-

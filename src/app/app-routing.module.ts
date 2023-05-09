@@ -10,6 +10,7 @@ import { EntregaGratisComponent } from './component/Pages/entrega-gratis/entrega
 import { PraRetirarComponent } from './component/Pages/pra-retirar/pra-retirar.component';
 import { EntregaParceiraComponent } from './component/Pages/entrega-parceira/entrega-parceira.component';
 import { CadastroCelularComponent } from './component/Pages/tela-login/cadastro-celular/cadastro-celular.component';
+import { InformarEmailComponent } from './component/Pages/tela-login/informar-email/informar-email.component';
 const routes: Routes = [
   {
     path: '',
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path: 'entrega-parceira',
         component: EntregaParceiraComponent,
+      },
+      {
+        path: 'informar-email',
+        component: InformarEmailComponent
       },
     ],
   },

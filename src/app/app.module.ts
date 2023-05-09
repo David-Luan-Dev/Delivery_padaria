@@ -45,7 +45,7 @@ import { DialogDistanciaComponent } from './component/Pages/pagina-principal/dia
 import { EntregaGratisComponent } from './component/Pages/entrega-gratis/entrega-gratis.component';
 import { PraRetirarComponent } from './component/Pages/pra-retirar/pra-retirar.component';
 import { EntregaParceiraComponent } from './component/Pages/entrega-parceira/entrega-parceira.component';
-import { InformarEmailComponent } from './informar-email/informar-email.component';
+import { InformarEmailComponent } from './component/Pages/tela-login/informar-email/informar-email.component';
 
 const layoutPrimeng = [InputTextModule, ButtonModule];
 

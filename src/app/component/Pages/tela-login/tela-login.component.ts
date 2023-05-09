@@ -10,7 +10,7 @@ import {
   FormControl,
 } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { InformarEmailComponent } from '../../../informar-email/informar-email.component';
+import { InformarEmailComponent } from './informar-email/informar-email.component';
 import { CadastroCelularComponent } from './cadastro-celular/cadastro-celular.component';
 
 @Component({
@@ -43,15 +43,15 @@ export class TelaLoginComponent implements OnInit {
   public informarEmailDialog() {
     this.dialog.open(InformarEmailComponent, {
       width: '450px',
-      height: '400px',
+      height: '300px',
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
     });
   }
     public informarCelularlDialog() {
       this.dialog.open(CadastroCelularComponent, {
-        width: '450px',
-        height: '400px',
+        width: '500px',
+        height: '325px',
         enterAnimationDuration: '500ms',
         exitAnimationDuration: '500ms',
       });
