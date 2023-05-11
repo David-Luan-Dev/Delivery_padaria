@@ -46,6 +46,7 @@ import { EntregaGratisComponent } from './component/Pages/entrega-gratis/entrega
 import { PraRetirarComponent } from './component/Pages/pra-retirar/pra-retirar.component';
 import { EntregaParceiraComponent } from './component/Pages/entrega-parceira/entrega-parceira.component';
 import { InformarEmailComponent } from './component/Pages/tela-login/informar-email/informar-email.component';
+import { CodigoVerificadorCelularComponent } from './component/Pages/tela-login/cadastro-celular/codigo-verificador-celular/codigo-verificador-celular.component';
 
 const layoutPrimeng = [InputTextModule, ButtonModule];
 
@@ -63,6 +64,9 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     PraRetirarComponent,
     EntregaParceiraComponent,
     InformarEmailComponent,
+    CodigoVerificadorCelularComponent,
+
+
   ],
   imports: [
     RouterModule,

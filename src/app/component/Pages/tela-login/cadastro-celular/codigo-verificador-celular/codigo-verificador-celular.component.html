@@ -1,0 +1,40 @@
+<mat-icon [mat-dialog-close]>keyboard_arrow_left</mat-icon>
+<div class="paragrafo">
+  <p>Digite o código de verificação de 6 digitos que envimos por WhatsApp para o</p>
+</div>
+<div class="input">
+  <form class="example-form" [formGroup]="form">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0" [errorStateMatcher]="customErrorStateMatcher">
+      <!-- <mat-error *ngIf="this.form.controls.numero.hasError('required')">
+        Número invalido
+      </mat-error>-->
+    </mat-form-field>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0">
+    </mat-form-field>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0">
+    </mat-form-field>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0">
+    </mat-form-field>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0">
+    </mat-form-field>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <input type="text" matInput placeholder="0">
+    </mat-form-field>
+  </form>
+  <div class="btn">
+    <button mat-raised-button color="warn">Continuar</button>
+  </div>
+</div>
+<div class="codigo-nao-recebido">
+  <p>Não recebi o meu código</p>
+</div>

@@ -4,11 +4,12 @@
 </div>
 
 <form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Email</mat-label>
+  <mat-form-field class="example-full-width" appearance="outline">
     <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-           placeholder="Ex. fulano@example.com">
-    <mat-hint>Errors appear instantly!</mat-hint>
+           placeholder="Entre com seu e-mail" [(ngModel)]="value">
+           <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+          </button>
     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
       Por favor insira um endereço de e-mail válido
     </mat-error>

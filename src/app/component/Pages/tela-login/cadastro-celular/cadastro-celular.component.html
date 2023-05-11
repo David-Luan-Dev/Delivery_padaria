@@ -4,10 +4,11 @@
 </div>
   <div class="example-form">
     <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <mat-label>Telefone</mat-label>
+      <mat-form-field class="example-full-width" appearance="outline">
+
         <span matPrefix></span>
-        <input type="tel" matInput placeholder="(21) 00000-0000">
+
+        <input type="tel" matInput placeholder="  Informe o seu número de celular">
       </mat-form-field>
     </form>
   </div>
@@ -15,7 +16,7 @@
     <h5>Como deseja receber seu código?</h5>
   </div>
   <div class="btn">
-    <button mat-raised-button color="warn">WhatsApp</button>
+    <button mat-raised-button color="warn" (click)="codigoVerificadorDialog()" [mat-dialog-close]>WhatsApp</button>
   </div>
 
 

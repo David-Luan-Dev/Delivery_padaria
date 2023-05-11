@@ -29,7 +29,7 @@ mat-form-field {
   top: 20px;
 }
 .radio_button {
-  color: rgb(146, 202, 146);
+  color: rgb(179, 226, 179);
 }
 .usar-minha-localizacao{
   display: flex;
@@ -49,10 +49,13 @@ mat-form-field {
   position: relative;
 }
 .usar-minha-localizacao h5 {
-  color: green;
+  color: rgb(166, 243, 166);
   font-size: 20px;
   font-family: 'primeicons';
   font-weight: 500;
   margin-left: 3px;
+}
+mat-icon {
+  color: rgb(177, 170, 170);
 }
 
