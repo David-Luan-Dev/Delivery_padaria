@@ -66,6 +66,9 @@ const routes: Routes = [
       {
         path: 'verificador-celular',
         component: CodigoVerificadorCelularComponent
+      },
+      {path: 'entrega-parceira',
+    component: EntregaParceiraComponent
       }
     ],
   },

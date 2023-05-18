@@ -1,6 +1,7 @@
 <mat-icon [mat-dialog-close]>keyboard_arrow_left</mat-icon>
 <div class="paragrafo">
   <p>Digite o código de 6 digitos que enviamos para </p>
+  
 </div>
 <div class="input">
   <form class="example-form">
@@ -30,7 +31,7 @@
     </mat-form-field>
   </form>
   <div class="btn">
-    <button mat-raised-button color="warn">Continuar</button>
+    <button mat-raised-button color="warn" disabled='{{isDisabled}}'>Continuar</button>
   </div>
 </div>
 <div class="codigo-nao-recebido">
