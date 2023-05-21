@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-.ordenacao-padrao{
+.ordenacao-padrao {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,8 +41,8 @@
   }
 }
 .ordenacao-padrao p {
-  font-size: .75rem;
-  line-height: .875rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   margin-top: 6px;
 }
 .circulo {
@@ -56,10 +56,7 @@
 }
 .mat-icon {
   color: rgb(129, 126, 126);
-
 }
 mat-divider {
   border: 1px solid grey;
 }
-
-

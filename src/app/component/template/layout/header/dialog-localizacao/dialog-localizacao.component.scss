@@ -1,4 +1,3 @@
-
 .btn-h3-button {
   display: flex;
   justify-content: space-evenly;
@@ -30,9 +29,9 @@ mat-form-field {
   top: 20px;
 }
 .radio_button {
-  color: rgb(179, 226, 179);
+  color: rgb(128, 233, 128);
 }
-.usar-minha-localizacao{
+.usar-minha-localizacao {
   display: flex;
   justify-content: center;
   margin: 3px;
@@ -50,15 +49,19 @@ mat-form-field {
   position: relative;
 }
 .usar-minha-localizacao h5 {
-  color: rgb(166, 243, 166);
-  font-size: 20px;
-  font-family: 'primeicons';
-  font-weight: 500;
+  color: rgb(99, 231, 99);
+  font-size: 18px;
+  font-weight: 400;
   margin-left: 3px;
   cursor: pointer;
 }
 mat-icon {
-  color: rgb(177, 170, 170);
+  color: rgb(151, 145, 145);
   cursor: pointer;
 }
-
+.icone-localizacao {
+  color: rgb(151, 145, 145);
+}
+.icone-navigation {
+  color: rgb(151, 145, 145);
+}

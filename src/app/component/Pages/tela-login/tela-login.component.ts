@@ -3,12 +3,8 @@ import { Router, RouterModule } from '@angular/router';
 import { Output, EventEmitter } from '@angular/core';
 import { FloatLabelType } from '@angular/material/form-field';
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-  FormControl,
-} from '@angular/forms';
+import { Validators, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { InformarEmailComponent } from './informar-email/informar-email.component';
 import { CadastroCelularComponent } from './cadastro-celular/cadastro-celular.component';

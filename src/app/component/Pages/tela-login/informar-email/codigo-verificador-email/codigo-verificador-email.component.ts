@@ -11,8 +11,6 @@ isDisabled: boolean = false;
 
 constructor(){}
 
-ngOnInit(): void {
-    
-}
+ngOnInit(): void {}
 
 }

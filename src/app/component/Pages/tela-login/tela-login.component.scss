@@ -110,7 +110,7 @@ body * {
   .right-login {
     width: 100vw;
     height: calc(100vh - 125px);
-}
+  }
 
   .botoes {
     width: 400px;
@@ -128,7 +128,7 @@ body * {
     flex-direction: column;
   }
 }
-  @media only screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .main-login {
     flex-direction: column;
   }
@@ -197,25 +197,19 @@ body * {
   background-color: azure;
   color: rgb(168, 166, 166);
 }
-/*Estilização dos botões da tela de login*/
-// .botoes {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100%;
-//   padding: 0;
-//   margin: 0;
-// }
+
 /*linha de divisão do login*/
 .divider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /*Estilização do input email dentro do dialog*/
 .dialogEmail {
   width: 100%;
 }
+
 /*div do título denro do dialog*/
 .dialogP {
   display: flex;
@@ -232,17 +226,18 @@ body * {
   gap: 15px;
   flex-grow: 1;
 }
+
 button {
   width: 100%;
- }
+}
 
 @media only screen and (max-width: 280px) {
   .right-login {
     width: 100vw;
     height: calc(100vh - 125px);
     padding: 0;
-}
-
+  }
+  
   .botoes {
     width: 265px;
     height: 100%;
@@ -250,11 +245,4 @@ button {
     padding-bottom: 1;
     margin: 0;
   }
-// .p-dialog-email p{
-//   width: 100%;
-//   font-size: 16px;
-//  }
-//  .label-da-modal-email {
-//   font-size: 12px;
-//  }
 }

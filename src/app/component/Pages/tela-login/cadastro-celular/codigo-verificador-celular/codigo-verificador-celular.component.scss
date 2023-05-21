@@ -1,12 +1,12 @@
 .mat-icon {
-   color: red;
-   margin: 8px 0px 25x 3px;
-   font-size: 30px;
+  color: red;
+  margin: 8px 0px 25x 3px;
+  font-size: 30px;
 }
 .paragrafo {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .paragrafo p {
   width: 80%;
@@ -16,6 +16,10 @@
   color: #717171;
   margin-bottom: 50px;
 }
+.input {
+  display: flex;
+  flex-direction: column;
+}
 .codigo-nao-recebido {
   display: flex;
   align-items: center;
@@ -24,7 +28,6 @@
 .codigo-nao-recebido p {
   color: red;
   font-weight: 600;
-
 }
 .example-form {
   display: flex;
@@ -40,7 +43,7 @@
   width: 10%;
   margin: 5px;
 }
-.btn{
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
