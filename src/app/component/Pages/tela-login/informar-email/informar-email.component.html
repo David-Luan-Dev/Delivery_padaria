@@ -1,0 +1,23 @@
+<mat-icon [mat-dialog-close]>keyboard_arrow_left</mat-icon>
+<div class="h2">
+  <h2 matDialogTitle>Informe o seu e-mail para continuar</h2>
+</div>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+           placeholder="Entre com seu e-mail" [(ngModel)]="value">
+           <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon>close</mat-icon>
+          </button>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Por favor insira um endereço de e-mail válido
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email  <strong>obrigatório</strong>
+    </mat-error>
+  </mat-form-field>
+</form>
+<div class="btn">
+  <button mat-raised-button color="warn" (click)="openCodigoEmail()" [mat-dialog-close]>Continuar</button>
+</div>

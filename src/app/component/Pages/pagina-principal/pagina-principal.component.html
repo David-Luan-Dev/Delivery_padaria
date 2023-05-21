@@ -1,34 +1,201 @@
-<div class="max-w-md bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl" *ngFor="let produto of produtos" style="margin-left: 10px; margin-bottom: 10px;flex-direction: row;
-  display: inline-flex;">
-  <div class="md:flex">
-    <div class="md:shrink-0">
-      <img class="h-48 w-full object-cover md:h-full md:w-48" src="/assets/img/logo5.svg"
-        alt="Modern building architecture">
+<div class="container">
+  <section class="primeiro-grupo-card">
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/sorvetes.avif" alt="">
+        <h5 class="m-1">Sorvetes e picoles</h5>
+      </div>
     </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{{produto.item}}</div>
-      <a href="#"
-        class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{produto.descricao}}</a>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/composicaoqueijo.jpg" alt="">
+        <h5 class="m-1">Queijos e presunto</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/bebidas.avif" alt="">
+        <h5 class="m-1">Bebidas e sucos</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/baseadoleite.jpg" alt="">
+        <h5 class="m-1">Laticínios</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/docesebolos.avif" alt="">
+        <h5 class="m-1">Bolos e doces</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/Mercados.avif" alt="">
+        <h5 class="m-1">Mercado</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/pao.jpg" alt="">
+        <h5 class="m-1">Pães</h5>
+      </div>
+    </div>
+    <div class="nomes-produtos">
+      <div class="card">
+        <img src="assets/img/sobremesas.jpg" alt="">
+        <h5 class="m-1">Sobremesas</h5>
+      </div>
+    </div>
+
+  </section>
+  <div class="frase-inicial">
+    <h1>Tudo para facilitar o seu dia a dia.</h1>
+    <h5>O que você precisa está aqui, peça e receba onde estiver</h5>
+  </div>
+  <div class="pai-input-btn">
+    <div class="input-btn">
+      <span class="p-input-icon-left">
+        <i class="pi pi-map-marker"></i>
+        <input type="text" class="p-inputtext-sm h-8 m-2 teste" pInputText [(ngModel)]="value"
+          placeholder="Endereço de entrega e número" />
+      </span>
+      <p-button label="Buscar" styleClass="p-button-danger p-button-sm h-8 m-2"></p-button>
+    </div>
+  </div>
+  <div class="produtos">
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
+    </div>
+    <div class="card-segunda-parte">
+      <img src="assets/img/padaria.png" alt="">
+      <h5 class="m-1">padaria do joão</h5>
     </div>
   </div>
 </div>
-
-<!-- <div class="form">
-  <form [formGroup]="FormGroup">
-    <span class="p-input-icon-left mb-2">
-      <i class="pi pi-search"></i>
-      <input formControlName="email" type="text" pInputText placeholder="Email">
-    </span>
-    <div style="width: 100%;">
-      <mat-divider>
-      </mat-divider>
+<div class="btns">
+  <ul>
+    <li>
+      <button mat-fab extended color="disabled" (click)="openDialog()">
+        Ordenar
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled" routerLink="../pra-retirar">
+        Pra retirar
+        <mat-icon>transfer_within_a_station</mat-icon>
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled" routerLink="../entrega-gratis">
+        Entrega grátis
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled" (click)="openDialogfromPagamento()">
+        Vale-refeição
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled" (click)="openDialogDistancia()">
+        Distância
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled" routerLink="../entrega-parceira">
+        Entrega Parceira
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="disabled">
+        <mat-icon>sort</mat-icon>
+        Filtros
+      </button>
+    </li>
+    <li>
+      <button mat-fab extended color="warn">
+        Limpar
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="segunda-parde-msg-chamada">
+  <span>
+    <h2>
+      Junte-se ao
+      <strong class="efeito-nome">Delivery Padaria</strong>
+    </h2>
+  </span>
+</div>
+<div class="segunda-parte">
+  <div class="card1">
+    <img src="assets/img/registre-seu-restaurante.webp" alt="imagem">
+    <div class="texto-card1">
+      <h2>Registre sua padaria</h2>
+      <p>Descubra os benefícios dos parceiros
+        aliados espalhados em todo Rio de Janeiro</p>
     </div>
-    <span class="p-input-icon-left mt-2">
-      <i class="pi pi-search"></i>
-      <input formControlName="senha" type="text" pInputText placeholder="Senha" required>
-    </span>
-  </form>
-  <div>
-    <button [disabled]="FormGroup.invalid" pButton type="button" label="Enviar" class="p-button-success"></button>
+    <div class="btn-card">
+      <button mat-raised-button color="basic" routerLink="/padarias" class="saiba-mais">Saiba mais</button>
+    </div>
   </div>
-</div> -->
+  <div class="card2">
+    <img src="assets/img/registre-seu-negocio.webp" alt="imagem">
+    <div class="texto-card1">
+      <h2>Registre seu negócio</h2>
+      <p>Tenha acesso a milhares de usuários Delivery Padaria
+        sem precisar sair de sua loja.</p>
+    </div>
+    <div class="btn-card">
+      <button mat-raised-button color="basic" routerLink="/padarias" class="saiba-mais">Saiba mais</button>
+    </div>
+  </div>
+  <div class="card3">
+    <img src="assets/img/seja-um-entregador.webp" alt="imagem">
+    <div class="texto-card1">
+      <h2>Seja um entregador</h2>
+      <p>Ganhe dinheiro extra fazendo entregas. receba 100% de suas gorjetas</p>
+    </div>
+    <div class="btn-card">
+      <button mat-raised-button color="basic" routerLink="/entrega-parceira" class="saiba-mais">Cadastre-se
+        agora</button>
+    </div>
+  </div>
+</div>

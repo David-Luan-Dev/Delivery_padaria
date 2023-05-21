@@ -1,0 +1,35 @@
+<div class="container-card">
+  <div class="card-imagem">
+    <img class="img-marketing-01" alt="Background com uma proprietária de restaurante"
+      src="assets/img/background-desktop-mulher-atendendo.webp" decoding="async" data-img="cover">
+  </div>
+  <div class="parte-de-fora">
+    <div class="section-h1-h2-form">
+      <div class="primeira-parte-fraseh1-h2">
+        <h1>
+          Milhares de pedidos em apenas um mês
+        </h1>
+        <h2>
+          Conecte seu negócio a milhares de clientes ativos na nossa plataforma. Cadastre-se e aumente suas
+          vendas.
+        </h2>
+    </div>
+  </div>
+  <form (ngSubmit)="onSubmit()" class="form-container">
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Nome</mat-label>
+      <input matInput type="text" [(ngModel)]="dadosFormulario.nome" name="nome" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" [(ngModel)]="dadosFormulario.email" name="email" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+      <mat-label>Telefone</mat-label>
+      <input matInput type="tel" [(ngModel)]="dadosFormulario.telefone" name="telefone" required>
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="accent">Enviar</button>
+  </form>
+  </div>
+</div>
+

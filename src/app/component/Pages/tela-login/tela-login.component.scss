@@ -1,103 +1,248 @@
-.conteudo-form {
-  height: 80%;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-login {
+  background: #fdedee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: calc(100vh - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: #77ffc0;
+  font-size: 2.5vw;
+}
+
+.left-login-image {
+  width: 35vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: calc(100vh - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+  color: black;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
+  margin: 10px 0px;
 }
 
-.m-1 {
-  font-weight: 100;
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.titulo {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-  font-family: Goldplay-Bold;
-  font-weight: initial;
-  line-height: 1.21;
-  letter-spacing: normal;
-  color: rgb(46, 44, 54);
+.textfield > label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
 }
 
-.mensagem-erro {
-  font-size: 14px;
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.row-md-3 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+.textfield > input::placeholder {
+  color: #f0ffff94;
 }
 
-.sign-in-phone__country-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  width: 102px;
-  padding: 0 10px;
-  background-color: #f2f2f2;
-  margin-right: 10px;
-  border-radius: 4px;
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
 }
-
-.img {
-  height: 100% !important;
-}
-
-// @media (min-width: 320px) {
-//   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-// }
-// @media (min-width: 480px) {
-//   /* smartphones, Android phones, landscape iPhone */
-// }
-// @media (min-width: 600px) {
-//   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-// }
-
-@media (max-width: 800px) {
-  .conteudo-form {
-    height: auto;
-    padding: 25px;
-    border-radius: unset;
-    box-shadow: unset;
+@media only screen and (min-width: 951px) {
+  .right-login {
+    width: 100vw;
+    height: calc(100vh - 125px);
   }
 
-  .container-context {
-    padding: 0px;
+  .botoes {
+    width: 400px;
+    height: 100%;
+    gap: 3px;
+  }
+  .btn-facebook {
+    width: 100vw;
+    gap: 3px;
+    padding: 10px;
+    margin: 5;
+  }
+  .faceGoogle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .main-login {
+    flex-direction: column;
   }
 
-  .container {
-    display: block;
-    max-width: 100%;
-  }
-
-  .conteudo-login {
-    border-radius: unset;
+  .left-login > h1 {
     display: none;
   }
 
-  .screen-container {
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width: 1025px) {
-  .conteudo-login {
+  .left-login {
+    width: 100%;
     height: auto;
   }
-  /* big landscape tablets, laptops, and desktops */
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-login-image {
+    width: 40vh;
+  }
+
+  .card-login {
+    width: 100%;
+    border-radius: 0px;
+  }
 }
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilização da imagem da tela de login*/
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+/*Div do título da tela de login*/
+.sobre-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilização do título da tela de login*/
+.titulo {
+  margin-top: 10px;
+}
+/*Div dos botões*/
+.faceGoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+/*Estilização dos botões email e celular*/
+.email-celular {
+  width: 100%;
+  margin: 0px;
+  background-color: azure;
+  color: rgb(168, 166, 166);
+}
+
+/*linha de divisão do login*/
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilização do input email dentro do dialog*/
+.dialogEmail {
+  width: 100%;
+}
+
+/*div do título denro do dialog*/
+.dialogP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px 0px 0px;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+button {
+  width: 100%;
+}
+
+@media only screen and (max-width: 280px) {
+  .right-login {
+    width: 100vw;
+    height: calc(100vh - 125px);
+    padding: 0;
+  }
+  
+  .botoes {
+    width: 265px;
+    height: 100%;
+    gap: 2px;
+    padding-bottom: 1;
+    margin: 0;
+  }
 }
