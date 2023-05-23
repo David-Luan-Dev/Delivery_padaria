@@ -7,13 +7,15 @@ import {
   FormControl,
 } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+
 @Component({
   selector: 'app-cadastro-celular',
   templateUrl: './cadastro-celular.component.html',
   styleUrls: ['./cadastro-celular.component.scss']
 })
 export class CadastroCelularComponent {
-
+  numeroCelular = '';
+  
   constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
 
 
