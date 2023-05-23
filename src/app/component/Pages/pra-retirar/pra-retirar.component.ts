@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-pra-retirar',
   templateUrl: './pra-retirar.component.html',
   styleUrls: ['./pra-retirar.component.scss']
 })
-export class PraRetirarComponent {
+export class PraRetirarComponent implements OnInit {
 
-  constructor( private http: HttpClient) {}
+
+  ngOnInit() {}
+
+  onSubmit() {
+
+  }
 
 }

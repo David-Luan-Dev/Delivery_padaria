@@ -5,10 +5,8 @@
   <div class="example-form">
     <form class="example-form">
       <mat-form-field class="example-full-width" appearance="outline">
-
         <span matPrefix></span>
-
-        <input type="tel" matInput placeholder="  Informe o seu número de celular">
+        <input type="text" matInput placeholder="  Informe o seu número de celular" [(ngModel)]="numeroCelular" name="numeroCelular">
       </mat-form-field>
     </form>
   </div>
