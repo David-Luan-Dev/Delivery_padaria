@@ -3,10 +3,14 @@
   <h2 matDialogTitle>Informe o número do seu celular para continuar</h2>
 </div>
   <div class="example-form">
-    <form class="example-form">
+    <form class="example-form" (ngSubmit)="enviarCodigowatsApp()" #formCodigo="ngForm">
       <mat-form-field class="example-full-width" appearance="outline">
         <span matPrefix></span>
-        <input type="text" matInput placeholder="  Informe o seu número de celular" [(ngModel)]="numeroCelular" name="numeroCelular">
+        <input type="text" matInput value="" placeholder="  Informe o seu número de celular"
+        [(ngModel)]="numero.numeroCelular" name="numeroCelular" #numeroCelularRef="ngModel" required minlength="11">
+        <mat-hint *ngIf="numeroCelularRef.invalid && numeroCelularRef.touched" class="field-error">
+          <p>Digite um email válido</p>
+        </mat-hint>
       </mat-form-field>
     </form>
   </div>
@@ -14,7 +18,7 @@
     <h5>Como deseja receber seu código?</h5>
   </div>
   <div class="btn">
-    <button mat-raised-button color="warn" (click)="codigoVerificadorDialog()" [mat-dialog-close]>WhatsApp</button>
+    <button mat-raised-button color="warn" (click)="codigoVerificadorDialog()" [disabled]="!formCodigo.valid">WhatsApp</button>
   </div>
 
 

@@ -3,21 +3,21 @@
   <h2 matDialogTitle>Informe o seu e-mail para continuar</h2>
 </div>
 
-<form class="example-form">
+<form class="example-form" #ngEmailForm="ngForm" (ngSubmit)="EnviarCodigoEmail()">
   <mat-form-field class="example-full-width" appearance="outline">
-    <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-           placeholder="Entre com seu e-mail" [(ngModel)]="value">
-           <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <input type="email" matInput [formControl]="emailFormControl" value="email"
+           placeholder="Entre com seu e-mail" [(ngModel)]="email"  required minlength="3">
+           <button *ngIf="email" matSuffix mat-icon-button aria-label="Clear">
             <mat-icon>close</mat-icon>
           </button>
-    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+    <mat-hint *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
       Por favor insira um endereço de e-mail válido
-    </mat-error>
+    </mat-hint>
     <mat-error *ngIf="emailFormControl.hasError('required')">
       Email  <strong>obrigatório</strong>
     </mat-error>
   </mat-form-field>
 </form>
 <div class="btn">
-  <button mat-raised-button color="warn" (click)="openCodigoEmail()" [mat-dialog-close]>Continuar</button>
+  <button mat-raised-button color="warn" (click)="openCodigoEmail()" [mat-dialog-close] [disabled]="ngEmailForm.valid">Continuar</button>
 </div>

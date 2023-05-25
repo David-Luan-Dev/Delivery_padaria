@@ -30,6 +30,7 @@ import {
   MatDialogModule,
   MatDialogRef,
 } from '@angular/material/dialog';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 //import { OrdenarComponent } from '../../Pages/pagina-principal/ordenar-modal/ordenar.component';
 
 const material = [
@@ -69,6 +70,7 @@ const layoutPrimeng = [InputTextModule, DialogModule, ButtonModule];
   providers: [
     { provide: MAT_DIALOG_DATA, useValue: {} },
     { provide: MatDialogRef, useValue: {} },
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
   ],
 })
 export class LayoutModule {}

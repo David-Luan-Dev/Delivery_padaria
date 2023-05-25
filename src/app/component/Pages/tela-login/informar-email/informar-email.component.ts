@@ -21,7 +21,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./informar-email.component.scss']
 })
 export class InformarEmailComponent implements OnInit{
-  public value = '';
+  public email = '';
   emailFormControl = new FormControl ('', [Validators.required, Validators.email]);
 
   matcher = new MyErrorStateMatcher();
@@ -30,6 +30,10 @@ export class InformarEmailComponent implements OnInit{
 
 
   ngOnInit(): void {}
+
+  EnviarCodigoEmail() {
+    console.log(this.emailFormControl)
+  }
 
   public openCodigoEmail() {
     this.dialog.open(CodigoVerificadorEmailComponent, {

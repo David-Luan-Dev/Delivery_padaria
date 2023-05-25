@@ -7,7 +7,7 @@ import { FormBuilder } from '@angular/forms';
 export class CustomErrorStateMatcher implements ErrorStateMatcher{
   codigo: string = '';
   digitos: string[] = [];
-  
+
   isErrorState(
     control: FormControl | null,
     form: FormGroupDirective | NgForm | null): boolean {

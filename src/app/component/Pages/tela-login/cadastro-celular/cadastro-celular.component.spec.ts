@@ -21,3 +21,4 @@ describe('CadastroCelularComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+}
