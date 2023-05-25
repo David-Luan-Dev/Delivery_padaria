@@ -53,6 +53,7 @@ import { InformarEmailComponent } from './component/Pages/tela-login/informar-em
 import { OrdenarComponent } from './component/Pages/pagina-principal/ordenar-modal/ordenar.component';
 import { CodigoVerificadorCelularComponent } from './component/Pages/tela-login/cadastro-celular/codigo-verificador-celular/codigo-verificador-celular.component';
 import { CodigoVerificadorEmailComponent } from './component/Pages/tela-login/informar-email/codigo-verificador-email/codigo-verificador-email.component';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 
 
 const layoutPrimeng = [InputTextModule, ButtonModule];
@@ -108,7 +109,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     MatRadioModule,
     MatDatepickerModule,
     MatCardModule,
-   
+
 
   ],
   providers: [
@@ -120,6 +121,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { floatLabel: 'always' },
     },
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
   ],
   bootstrap: [AppComponent],
 })

@@ -8,18 +8,27 @@ import {
 } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
+interface Celular {
+  numeroCelular: string;
+}
+
 @Component({
   selector: 'app-cadastro-celular',
   templateUrl: './cadastro-celular.component.html',
   styleUrls: ['./cadastro-celular.component.scss']
 })
 export class CadastroCelularComponent {
-  numeroCelular = '';
-  
+
+  numero: Celular = { numeroCelular: ""};
+
   constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
 
 
   ngOnInit(): void {}
+
+  enviarCodigowatsApp(){
+    console.log(this.numero)
+  }
 
 
   public codigoVerificadorDialog() {

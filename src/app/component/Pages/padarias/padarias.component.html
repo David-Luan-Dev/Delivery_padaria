@@ -18,7 +18,7 @@
   <form  class="form-container" #ngDadosFormulario="ngForm" (ngSubmit)="onSubmit()">
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Nome</mat-label>
-      <input matInput type="text" autocomplete="on" [(ngModel)]="dadosFormulario.nome" name="nome" required>
+      <input matInput type="text" autocomplete="on" [(ngModel)]="dadosFormulario.nome" name="nome" required maxlength="30">
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Email</mat-label>
@@ -28,7 +28,7 @@
       <mat-label>Telefone</mat-label>
       <input matInput type="text" [(ngModel)]="dadosFormulario.telefone" name="telefone" required>
     </mat-form-field>
-    <button mat-raised-button type="submit" color="accent">Enviar</button>
+    <button mat-raised-button type="submit" color="accent" [disabled]="!ngDadosFormulario.valid">Enviar</button>
   </form>
   </div>
 </div>
