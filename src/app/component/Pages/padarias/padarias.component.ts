@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface dadosFormulario {
+interface DadosFormulario {
   nome: string;
   email: string;
   telefone: string;
@@ -13,7 +13,7 @@ interface dadosFormulario {
 })
 export default class PadariasComponent {
 
-  dadosFormulario = {
+  dadosFormulario: DadosFormulario = {
     nome: '',
     email: '',
     telefone: ''

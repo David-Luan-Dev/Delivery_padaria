@@ -19,5 +19,5 @@
   </mat-form-field>
 </form>
 <div class="btn">
-  <button mat-raised-button color="warn" (click)="openCodigoEmail()" [mat-dialog-close] [disabled]="ngEmailForm.valid">Continuar</button>
+  <button mat-raised-button color="warn" (click)="openCodigoEmail()" [mat-dialog-close] [disabled]="!ngEmailForm.valid">Continuar</button>
 </div>
