@@ -4,30 +4,30 @@
 
 </div>
 <div class="input">
-  <form class="example-form">
+  <form class="example-form" #formCodigo="ngForm">
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
-
+      <input #compo1 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero1" required maxlength="1">
+      
     </mat-form-field>
     <mat-divider [vertical]="true"></mat-divider>
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
+      <input #campo2 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero2" required maxlength="1">
     </mat-form-field>
     <mat-divider [vertical]="true"></mat-divider>
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
+      <input #campo3 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero3" required maxlength="1">
     </mat-form-field>
     <mat-divider [vertical]="true"></mat-divider>
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
+      <input #campo4 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero4" required maxlength="1">
     </mat-form-field>
     <mat-divider [vertical]="true"></mat-divider>
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
+      <input #campo5 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero5" required maxlength="1">
     </mat-form-field>
     <mat-divider [vertical]="true"></mat-divider>
     <mat-form-field class="example-full-width" appearance="outline">
-      <input type="text" matInput placeholder="0">
+      <input #campo6 type="text" matInput placeholder="0" [(ngModel)]="codigo.numero6" required maxlength="1">
     </mat-form-field>
   </form>
   <div class="btn">
