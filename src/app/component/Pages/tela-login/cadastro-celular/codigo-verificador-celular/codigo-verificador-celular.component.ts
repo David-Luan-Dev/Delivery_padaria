@@ -13,13 +13,14 @@ import { FormBuilder } from '@angular/forms';
 export class CodigoVerificadorCelularComponent implements OnInit{
 
   CodigoVerificador = this.fb.group({
-    codigo: this.fb.array(['','','','','',''])
+    codigo: this.fb.array(['','','','','', [Validators.required, Validators.minLength(1)]])
   })
   numero = this.CodigoVerificador.get('codigo') as FormArray
 
   constructor(private fb: FormBuilder){}
 
   ngOnInit(): void {
+
   }
 
   codigoVerificadorWatsApp() {

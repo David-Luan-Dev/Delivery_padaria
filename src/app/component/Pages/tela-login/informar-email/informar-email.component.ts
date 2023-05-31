@@ -1,18 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
-
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-
+import { FormBuilder } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { CodigoVerificadorEmailComponent } from './codigo-verificador-email/codigo-verificador-email.component';
 
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && ( control.dirty || control.touched || isSubmitted))
-  }
+interface NumeroEmail {
+  codigo: string;
 }
 
 @Component({
@@ -21,18 +14,19 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./informar-email.component.scss']
 })
 export class InformarEmailComponent implements OnInit{
-  public email = '';
-  emailFormControl = new FormControl ('', [Validators.required, Validators.email]);
 
-  matcher = new MyErrorStateMatcher();
+
+
+  codigo1: NumeroEmail = {
+    codigo: ""
+  };
 
   constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
-
 
   ngOnInit(): void {}
 
   EnviarCodigoEmail() {
-    console.log(this.emailFormControl)
+    console.log(this.codigo1.codigo)
   }
 
   public openCodigoEmail() {
@@ -42,6 +36,9 @@ export class InformarEmailComponent implements OnInit{
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
     });
+  }
+  limparCampo() {
+    this.codigo1.codigo = '';
   }
 
 }
