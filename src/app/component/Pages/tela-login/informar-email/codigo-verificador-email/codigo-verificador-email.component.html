@@ -7,8 +7,8 @@
   <form class="example-form" formArrayName="CodigoVerificador">
     <mat-form-field class="example-full-width" appearance="outline"
     *ngFor="let c of numero.controls; let i=index">
-      <input #compo1 type="text" matInput placeholder="0" required maxlength="1"
-      [formControlName]="i">
+      <input #compo type="text" matInput placeholder="0"
+      [formControlName]="i" required maxlength="1">
     </mat-form-field>
 
   </form>

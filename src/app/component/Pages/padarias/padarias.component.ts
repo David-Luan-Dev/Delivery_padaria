@@ -12,11 +12,10 @@ interface DadosFormulario {
   styleUrls: ['./padarias.component.scss'],
 })
 export default class PadariasComponent {
-
   dadosFormulario: DadosFormulario = {
     nome: '',
     email: '',
-    telefone: ''
+    telefone: '',
   };
 
   constructor() {}

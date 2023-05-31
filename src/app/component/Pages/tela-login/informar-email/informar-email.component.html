@@ -5,17 +5,14 @@
 
 <form class="example-form" #ngEmailForm="ngForm" (ngSubmit)="EnviarCodigoEmail()">
   <mat-form-field class="example-full-width" appearance="outline">
-    <input type="email" matInput [formControl]="emailFormControl" value="email"
-           placeholder="Entre com seu e-mail" [(ngModel)]="email"  required minlength="3">
-           <button *ngIf="email" matSuffix mat-icon-button aria-label="Clear">
-            <mat-icon>close</mat-icon>
+    <input type="email" matInput [(ngModel)]="codigo1.codigo"value="" name="email"
+           placeholder="Entre com seu e-mail" #codigo="ngModel"  required minlength="3" email>
+           <button matSuffix mat-icon-button aria-label="Clear">
+            <mat-icon (click)="limparCampo()">close</mat-icon>
           </button>
-    <mat-hint *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+    <mat-hint *ngIf="codigo.invalid && (codigo.touched || codigo.dirty)">
       Por favor insira um endereço de e-mail válido
     </mat-hint>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email  <strong>obrigatório</strong>
-    </mat-error>
   </mat-form-field>
 </form>
 <div class="btn">
