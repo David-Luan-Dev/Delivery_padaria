@@ -1,29 +1,36 @@
-import { Component, ViewChildren, ElementRef, AfterViewInit, QueryList, OnInit, ViewChild } from '@angular/core';
-
-import { AbstractControl, FormArray, FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
-
 
 @Component({
   selector: 'app-codigo-verificador-celular',
   templateUrl: './codigo-verificador-celular.component.html',
-  styleUrls: ['./codigo-verificador-celular.component.scss']
+  styleUrls: ['./codigo-verificador-celular.component.scss'],
 })
-export class CodigoVerificadorCelularComponent implements OnInit{
+export class CodigoVerificadorCelularComponent implements OnInit {
+  CodigoVerificador!: FormGroup;
 
-  CodigoVerificador = this.fb.group({
-    codigo: this.fb.array(['','','','','', [Validators.required, Validators.minLength(1)]])
-  })
-  numero = this.CodigoVerificador.get('codigo') as FormArray
-
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
-
+    this.CodigoVerificador = this.fb.group({
+      codigo1: ['', [Validators.required, Validators.minLength(1)]],
+      codigo2: ['', [Validators.required, Validators.minLength(1)]],
+      codigo3: ['', [Validators.required, Validators.minLength(1)]],
+      codigo4: ['', [Validators.required, Validators.minLength(1)]],
+      codigo5: ['', [Validators.required, Validators.minLength(1)]],
+      codigo6: ['', [Validators.required, Validators.minLength(1)]],
+    });
   }
 
-  codigoVerificadorWatsApp() {
+  mudarFoco(
+    elementoAtual: HTMLInputElement,
+    proximoElemento: HTMLInputElement
+  ) {
+    if (proximoElemento) {
+      proximoElemento.focus();
+    }
   }
 
+  enviarCodigo() {}
 }
