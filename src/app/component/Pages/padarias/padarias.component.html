@@ -18,8 +18,8 @@
     <form class="form-container" #DadosFormulario="ngForm" (ngSubmit)="onSubmit()">
       <mat-form-field appearance="fill" class="form-field">
         <mat-label>Nome</mat-label>
-        <input matInput type="text" [(ngModel)]="dadosFormulario.nome" name="nome" #nome="ngModel" required
-          minlength="3">
+        <input matInput type="text" [(ngModel)]="dadosFormulario.nome"
+         name="nome" #nome="ngModel" required minlength="3">
         <mat-hint *ngIf="nome.invalid && (nome.touched || nome.dirty)" class="erro-de-campo">
           <p>Campo obrigatório</p>
         </mat-hint>
