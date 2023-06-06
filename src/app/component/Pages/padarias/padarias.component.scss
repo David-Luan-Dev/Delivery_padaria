@@ -95,6 +95,136 @@ button[type="submit"] {
   background-color: #512da8;
   font-family: cursive;
 }
+.segunda-parde-msg-chamada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.segunda-parde-msg-chamada h2 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 200;
+  color: rgb(46, 44, 54);
+  margin-bottom: 30px !important;
+  margin-top: 30px;
+  font-weight: 700;
+}
+.efeito-nome {
+  color: rgb(255, 68, 31);
+  font-family: Goldplay-Bold;
+  font-weight: bold;
+}
+.segunda-parte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.saiba-mais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  padding-top: 5px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.saiba-mais:hover{
+  background-color: rgb(103, 241, 103);
+  color: white;
+  font-weight: 600;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(248, 255, 255);
+  width: 380px;
+  height: 350px;
+  border: 1px solid rgb(238, 226, 226);
+  border-radius: 6px;
+  margin: 20px;
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(248, 255, 255);
+  width: 380px;
+  height: 350px;
+  border: 1px solid rgb(238, 226, 226);
+  border-radius: 6px;
+  margin: 20px;
+}
+.card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(248, 255, 255);
+  width: 380px;
+  height: 350px;
+  border: 1px solid rgb(238, 226, 226);
+  border-radius: 6px;
+  margin: 20px;
+}
+.card1 img {
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
+  object-position: 0px 4%;
+  width: 100%;
+  height: 183px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card2 img {
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
+  object-position: 0px 4%;
+  width: 100%;
+  height: 183px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card3 img {
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
+  object-position: 0px 4%;
+  width: 100%;
+  height: 183px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.texto-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.texto-card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card1 p {
+  display: flex;
+  width: 90%;
+  margin-bottom: 15px;
+}
+.card2 p {
+  display: flex;
+  width: 90%;
+  margin-bottom: 15px;
+}
+.card3 p {
+  display: flex;
+  width: 90%;
+  margin-bottom: 15px;
+}
 @media only screen and (max-width: 280px) {
   .parte-de-fora {
     display: flex;
