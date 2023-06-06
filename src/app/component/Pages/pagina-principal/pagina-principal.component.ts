@@ -13,6 +13,7 @@ import { EntregaGratisComponent } from '../entrega-gratis/entrega-gratis.compone
 })
 export class PaginaPrincipalComponent implements OnInit {
   FormGroup!: FormGroup;
+  numeroDivs = 10;
   value = ``;
   value2!: string;
   displaydialog!: boolean;
@@ -24,8 +25,14 @@ export class PaginaPrincipalComponent implements OnInit {
   checkedTicketRefeicao: boolean = true;
   checkedBenRefeicao: boolean = true;
 
-  constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
+  constructor(
+    public formBuilder: FormBuilder,
+    private dialog: MatDialog
+    ) {}
 
+    gerarArrayDivs(): number[] {
+      return Array(this.numeroDivs).fill(0).map((_,index) => index)
+    }
   produtos = [
     {
       item: 'Café',
@@ -55,7 +62,7 @@ export class PaginaPrincipalComponent implements OnInit {
       senha: ['', Validators.required],
     });
   }
-  //Dialog Material
+  //Dialog Material componente ordenar
   public openDialog() {
     this.dialog.open(OrdenarComponent, {
       width: '450px',
@@ -64,6 +71,7 @@ export class PaginaPrincipalComponent implements OnInit {
       exitAnimationDuration: '500ms',
     });
   }
+  //Dialog Material componente de forma de pagamento
   public openDialogfromPagamento() {
     this.dialog.open(FromPagamentoComponent, {
       width: '350px',
@@ -72,6 +80,7 @@ export class PaginaPrincipalComponent implements OnInit {
       exitAnimationDuration: '500ms',
     });
   }
+  //Dialog material componente distância
   public openDialogDistancia() {
     this.dialog.open(DialogDistanciaComponent, {
       width: '600px',

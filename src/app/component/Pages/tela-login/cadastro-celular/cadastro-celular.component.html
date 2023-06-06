@@ -1,13 +1,13 @@
 <mat-icon [mat-dialog-close]>keyboard_arrow_left</mat-icon>
 <div class="h2">
-  <h2 matDialogTitle>Informe o número do seu celular para continuar</h2>
+  <h2 matDialogTitle>{{ frase }}</h2>
 </div>
   <div class="example-form">
     <form class="example-form" #formNumero="ngForm" (ngSubmit)="codigo()">
       <mat-form-field class="example-full-width" appearance="outline">
         <span matPrefix></span>
-        <input type="text" name="numero" matInput value="" placeholder="(00) 00000-0000"
-         [(ngModel)]="codigo1.codigo" #numeroCelular="ngModel" required minlength="3">
+        <input type="tel" name="phone" matInput value="" placeholder="(00) 00000-0000"
+         [(ngModel)]="codigo1" #numeroCelular="ngModel" required minlength="3">
          <mat-hint *ngIf="numeroCelular.invalid && (numeroCelular.touched || numeroCelular.dirty)">
           Campo obrigatório
         </mat-hint>

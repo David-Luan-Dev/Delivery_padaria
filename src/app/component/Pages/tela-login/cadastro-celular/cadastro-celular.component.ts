@@ -1,16 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CodigoVerificadorCelularComponent } from './codigo-verificador-celular/codigo-verificador-celular.component';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-  FormControl,
-} from '@angular/forms';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-
-  interface Numero {
-    codigo: string;
-  }
+import { FormBuilder } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cadastro-celular',
@@ -18,17 +9,20 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./cadastro-celular.component.scss']
 })
 export class CadastroCelularComponent implements OnInit{
+  codigo1: string = "";
+  frase: string = "Informe o número do seu celular para continuar";
 
-  codigo1: Numero = {
-    codigo: ""
-  };
+  constructor(
+    public formBuilder: FormBuilder,
+     private dialog: MatDialog
+     ) {}
 
-  constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
+  ngOnInit(): void {
 
-  ngOnInit(): void {}
+  }
 
   codigo(){
-    console.log();
+    console.log(this.codigo1);
   }
 
   public codigoVerificadorDialog() {
@@ -37,6 +31,7 @@ export class CadastroCelularComponent implements OnInit{
       height: '380px',
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
+
     });
   }
 }
