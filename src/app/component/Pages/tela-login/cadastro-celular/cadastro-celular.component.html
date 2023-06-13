@@ -6,7 +6,7 @@
     <form class="example-form" #formNumero="ngForm" (ngSubmit)="codigo()">
       <mat-form-field class="example-full-width" appearance="outline">
         <span matPrefix></span>
-        <input type="tel" name="phone" matInput value="" placeholder="(00) 00000-0000"
+        <input type="tel" name="number" matInput value="" mask="(00) 00000-0000" placeholder="(00) 00000-0000"
          [(ngModel)]="codigo1" #numeroCelular="ngModel" required minlength="3">
          <mat-hint *ngIf="numeroCelular.invalid && (numeroCelular.touched || numeroCelular.dirty)">
           Campo obrigatório
