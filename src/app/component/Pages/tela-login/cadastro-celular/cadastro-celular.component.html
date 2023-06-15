@@ -19,8 +19,14 @@
     <h5>Enviaremos um código para o seu watsapp</h5>
   </div>
   <div class="btn">
-    <button mat-raised-button color="warn" (click)="codigoVerificadorDialog()"
-    [disabled]="!formNumero.valid">WhatsApp</button>
+    <button 
+    mat-raised-button color="warn" 
+    (click)="codigoVerificadorDialog()"
+    [disabled]="!formNumero.valid"
+    [mat-dialog-close]
+    >
+     WhatsApp
+    </button>
   </div>
 
 

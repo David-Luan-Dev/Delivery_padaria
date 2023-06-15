@@ -4,7 +4,7 @@
 </div>
 
 <div>
-  <form class="example-form" [formGroup]="CodigoVerificador" (ngSubmit)="enviarCodigo()">
+  <form class="example-form" [formGroup]="CodigoVerificador">
     <mat-form-field class="example-full-width" appearance="outline">
       <input #input1 type="text" matInput placeholder="0" formControlName="codigo1" required maxlength="1"
         (input)="mudarFoco(input1, input2)">
@@ -31,9 +31,16 @@
 
   </form>
   <div class="btn">
-    <button mat-raised-button color="warn" [disabled]="!CodigoVerificador.valid">Continuar</button>
+    <button 
+    mat-raised-button color="warn" 
+    [disabled]="!CodigoVerificador.valid" 
+    (click)= "openSnackBar()"
+    [mat-dialog-close]
+    routerLink="pagina-principal">
+     Continuar
+    </button>
   </div>
 </div>
 <div class="codigo-nao-recebido">
-  <p class="reevia-codigo" (ngSubmit)="enviarCodigo()">Não recebi o meu código</p>
+  <p class="reevia-codigo" >Não recebi o meu código</p>
 </div>

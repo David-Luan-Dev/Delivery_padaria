@@ -31,8 +31,13 @@
 
   </form>
   <div class="btn">
-    <button mat-raised-button color="warn" [disabled]="!CodigoVerificador.valid"
-      (submit)="enviarCodigo()">Continuar</button>
+    <button mat-raised-button color="warn" 
+    [disabled]="!CodigoVerificador.valid"
+    routerLink="pagina-principal"
+    [matDialogClose]
+    (click)="openFromComp()">
+      Continuar
+    </button>
   </div>
 </div>
 <div class="codigo-nao-recebido">
