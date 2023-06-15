@@ -36,7 +36,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 //Componentes
@@ -111,7 +111,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     MatRadioModule,
     MatDatepickerModule,
     MatCardModule,
-
+    MatSnackBarModule
 
   ],
   providers: [

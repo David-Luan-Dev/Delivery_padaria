@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { OrdenarComponent } from './ordenar-modal/ordenar.component';
 import { FromPagamentoComponent } from './from-pagamento/from-pagamento.component';
 import { DialogDistanciaComponent } from './dialog-distancia/dialog-distancia.component';
 import { EntregaGratisComponent } from '../entrega-gratis/entrega-gratis.component';
+import { MAT_SNACK_BAR_DATA } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -27,7 +28,7 @@ export class PaginaPrincipalComponent implements OnInit {
 
   constructor(
     public formBuilder: FormBuilder,
-    private dialog: MatDialog
+    private dialog: MatDialog,
     ) {}
 
     gerarArrayDivs(): number[] {
