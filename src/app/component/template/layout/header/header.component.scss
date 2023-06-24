@@ -1,130 +1,83 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-.header {
-  background-color: white;
-}
-.menu {
+.container {
   display: flex;
-  flex-direction: row;
-  float: left;
-  color: rgb(114, 107, 107);
+  align-items: center;
+  justify-content: space-evenly;//adicionado após
 }
-mat-toolbar-row {
+.paragrafo-icones-header {
+  display: flex;
+  align-items: center;
+
+}
+.img {
+  width: 82.192px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.icon-localizacao {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #fc7310;
+  margin: 0px 3px 6px 0px;
+}
+.p-localizacao {
+  color: #e3b34d;
+  font-size: 16px;
+  font-family: Poppins;
+}
+.icon-seta {
+  width: 10px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #e49011;
+  margin: 0px 3px 6px 3px;
+}
+//links-- inicio - padarias - contato - sobre
+.links {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
-.mat-form-class {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.links-p {
+  color: #e49011;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: Poppins;
+  color: #1e1e1e;
 }
-.logo {
-  display: flex;
-  float: left;
-  height: 4.5rem;
-  width: 10rem;
+input {
+  display: inline-flex;
+  height: 30px;
+  width: 400px;
+  padding: 2px 2px 3px 5px;
+  justify-content: center;
   align-items: flex-start;
-  margin-bottom: 1rem;
-  color: rgb(114, 107, 107);
-  cursor: pointer;
+  gap: 160px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  border: 1px solid #717171;
+  margin: 3px; //adicionado
 }
-.logo-c {
+.input-place-icon {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+::placeholder {
+  color: #e3b34d;
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+button {
+  color: #fffffa;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  display: inline-flex;
+  padding: 8px 18px;
   justify-content: center;
-}
-.material-icons {
-  float: left;
-  color: rgb(114, 107, 107);
-  cursor: pointer;
-}
-.iconEntrar {
-  display: flex;
   align-items: center;
-  padding: 0;
-  margin-right: 0.5rem;
-  cursor: pointer;
-}
-.entrar {
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-  color: rgb(114, 107, 107);
-  padding-right: 1.6rem;
-  height: 35px;
-  border-right: 0.1rem solid rgb(228, 220, 220);
-  height: 1.5rem;
-  font-family: sans-serif;
-  font-size: 0.7em;
-}
-.location_on {
-  display: flex;
-  align-items: center;
-  float: left;
-  padding-left: 1rem;
-  padding-bottom: 0px;
-  margin-bottom: 1px;
-  cursor: pointer;
-  height: 35px;
-  border-left: 0.1rem solid rgb(228, 220, 220);
-  height: 1.5rem;
-}
-.seta {
-  color: red;
-  cursor: pointer;
-}
-.localizacao {
-  display: flex;
-  align-items: center;
-  pad: 5px;
-  font-style: italic;
-  font-size: 15px;
-  font-weight: 300;
-  padding: 0;
-  margin: 0.3rem;
-}
-.example-form-field {
-  display: flex;
-  position: relative;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 60px;
-  border: 3px;
-}
-:host ::ng-deep .mat-mdc-text-field-wrapper {
-  height: 48px;
-}
-::ng-deep .mat-form-field-wrapper {
-  margin-bottom: -1.25em;
-}
-:host ::ng-deep .mat-form-field-wrapper {
-  margin: 0 !important;
-  padding: 0;
-}
-:host ::ng-deep .mat-form-field-wrapper {
-  margin: 0 !important;
-  padding: 0;
-}
-.w-100 {
-  width: 100% !important;
-  height: 40px;
-}
-/* Estilização do icone e do span com (texto usar minha localização)*/
-.uml-1 {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  position: relative;
-  color: rgb(97, 207, 154);
-  margin-right: 0.5em;
-  cursor: pointer;
-}
-.uml {
-  font-family: sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.6;
+  border-radius: 8px;
+  background: #e49011;
 }

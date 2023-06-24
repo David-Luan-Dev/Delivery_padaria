@@ -1,60 +1,27 @@
-<mat-toolbar class="header mat-elevation-z1">
-  <!-- botao menu -->
-  <mat-toolbar-row>
-    <div>
-      <mat-icon class="menu" mat-raised-button (click)="drawer.toggle()" style="cursor: pointer">
-        menu
-      </mat-icon>
-    </div>
-    <div class="logo-c">
-      <img class="logo" src="assets/img/logo13.png" alt="logo" routerLink="pagina-principal">
-    </div>
-    <div class="location_on" fxShow fxHide.xs fxHide.sm style="margin-right: 10px;">
-      <mat-icon style="color: red; font-size: 1.5rem;">
-         location_on
-        </mat-icon>
-      <span  icon="pi pi-arrow-down"
-        style="font-size: 0.8rem; color: red; text-decoration-line: underline; font-weight: bold;" (click)="openDialog()">
-        Digite sua localização </span>
-      <mat-icon class="seta">arrow_drop_down</mat-icon>
-    </div>
-    <div class="flex-auto mat-form-class">
-      <span class="p-input-icon-left w-100">
-        <i class="pi pi-search"></i>
-        <input type="text" pInputText [(ngModel)]="value" placeholder="Pesquisar" class="p-inputtext-sm w-100">
-      </span>
-    </div>
-    <div fxShow fxHide.xs fxHide.sm class="flex items-center" routerLink="/login">
-      <mat-icon class="iconEntrar"><i class="pi pi-user"></i></mat-icon>
-      <a class="entrar">Entrar</a>
-    </div>
-    <mat-icon fxShow fxHide.xs fxHide.sm (click)="drawerCarrinho.toggle()">add_shopping_cart</mat-icon>
-    <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs fxShow.sm>
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar-row>
-  <mat-menu #dropMenu="matMenu">
-    <button mat-menu-item (click)="drawerCarrinho.toggle()">
-      <mat-icon>add_shopping_cart</mat-icon>
-      <a>Carrinho</a>
-    </button>
-    <button mat-menu-item>
-      <mat-icon class="iconEntrar" routerLink="/login">account_circle</mat-icon>
-      <a routerLink="/login">Entrar</a>
-    </button>
-    <mat-divider></mat-divider>
-  </mat-menu>
-</mat-toolbar>
-<p-dialog header="Adicione ou escolha um endereço" [(visible)]="displayPosition"
-  [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [position]="position" [modal]="true" [style]="{width: '33vw'}"
-  [draggable]="false" [resizable]="false">
-  <app-dialog-localizacao></app-dialog-localizacao>
-  <ng-template pTemplate="footer">
-    <p-button (click)="displayPosition=false" styleClass="p-button-text"></p-button>
-    <mat-divider class="w-100 mt-5"></mat-divider>
-    <div class="uml-1">
-      <i class="pi pi-send mr-2"></i>
-      <span class="uml">Usar minha localização</span>
-    </div>
-  </ng-template>
-</p-dialog>
+<div class="container">
+  <div class="img">
+    <img src="assets/img/logo-header.png" alt="imagem de paes">
+  </div>
+  <div class="paragrafo-icones-header">
+    <img class="icon-localizacao" src="assets/img/carbon_location-filled.svg" alt="icone-localização">
+    <p class="p-localizacao">Escoha um endereço</p>
+    <img class="icon-seta" src="assets/img/eva_arrow-down-fill.svg" alt=" icone-seta">
+  </div>
+  <div class="links">
+    <p class="links-p">Inicio</p>
+    <p class="links-p">Padarias</p>
+    <p class="links-p">Contato</p>
+    <p class="links-p">Sobre</p>
+  </div>
+  <div class="input">
+    <span class="p-input-icon-right input-place-icon">
+      <i class="pi pi-search" style="color: #E49011;" ></i>
+      <input type="text pInputText" placeholder="Buscar itens e ouros" class="p-inputtext-lg">
+    </span>
+  </div>
+  <div class="btn">
+    <button type="button" name="entrar">Entrar</button>
+    <mat-icon>ligature</mat-icon>
+  </div>
+</div>
+
