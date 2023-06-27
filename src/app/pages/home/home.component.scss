@@ -1,7 +1,16 @@
-.container {
-  width: 320px;
-  height: 568px;
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42.7px;
+}
+
+.button {
+  display: inline-flex;
+  padding: 8.8px 22px 6.2px 15.8px;
+  align-items: flex-end;
+  gap: 5px;
+  border-radius: 20px;
+  border: 1px solid #E49011;
   background: #FFF;
-  position: fixed;
-  bottom: 0;
 }

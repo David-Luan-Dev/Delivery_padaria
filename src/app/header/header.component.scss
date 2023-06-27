@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   width: 22.03%;
+  right: 40px;
 }
 /*Estilização do parágrafo*/
 .paragrafo {
@@ -27,7 +28,6 @@
   width: 82.192px;
   height: 60px;
   flex-shrink: 0;
-  margin-left: 10px;
 }
 /*Estilização do icone de localização (mi_search)*/
 .icon-localizacao {
@@ -48,7 +48,8 @@
   display: flex;
   align-items: center;
   gap: 25%;
-  margin-right: 16.8625%;
+  margin-right: 7.3625%;
+  left: 40px;
 }
 /*Estilização das tags (a)*/
 .menus-filhos {
@@ -95,7 +96,7 @@ input {
 /*div interna ao form*/
 .input-wrapper input {
   padding-left: 10px;
-  width: 450px;
+  width: 400px;
 }
 /*div interna ao form que estiliza as dimensões do icon*/
 .input-wrapper .icon {
@@ -118,10 +119,10 @@ input {
 .btn {
   display: inline-flex;
   position: relative;
-  left: 11.875rem;
+  left: 4.25%;
   padding: 0.5% 1.125%;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   border-radius: 8px;
   background: #e49011;
   color: #fffffa;
@@ -129,12 +130,13 @@ input {
   font-family: Poppins;
   font-weight: 700;
   border: none;
+  gap: 1px;
 }
 /*Estilização da div carrinho (img/mdi_cart)*/
 .icone-carrinho {
   display: flex;
   position: relative;
-  left: 12.25%; //para análise
+  left: 8%; //para análise
   margin: 1.25% 0px 1.25% 1.25%; /* Espaçamento à esquerda do ícone do carrinho */
   align-items: center;
 } /*Estilização do icone (img/mdi_cart)*/
