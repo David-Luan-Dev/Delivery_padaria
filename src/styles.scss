@@ -1,5 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/poppins');
-*{
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
   font-family: "poppins";
 }
 body {
@@ -8,8 +8,14 @@ body {
   padding: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .app-content {
   margin-top: 70px; /* A altura do header */

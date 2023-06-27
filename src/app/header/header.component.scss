@@ -12,8 +12,7 @@
 .paragrafo-icons {
   display: flex;
   align-items: center;
-  width: 19%;
-  right: 40px;
+  margin-right: 40px;
 }
 /*Estilização do parágrafo*/
 .paragrafo {
@@ -35,13 +34,13 @@
   height: 20px;
   flex-shrink: 0;
   color: #fc7310;
-  margin: 0px 0px 10px 4px;
+  margin: 0px 0px 10px 0px;
 }
 /*Estilização do icone eva_arrow-down-fill*/
 .icon-seta {
   width: 10px;
   height: 20px;
-  margin: 0px 0px 10px 4px;
+  margin: 0px 0px 10px 0px;
 }
 /*Estilização da div menu com as tags (a)*/
 .menu-pai {
@@ -137,7 +136,7 @@ input {
 .icone-carrinho {
   display: flex;
   position: relative;
-  margin: 1.25% 0px 1.25% 10%; /* Espaçamento à esquerda do ícone do carrinho */
+  margin: 1.25% 20px 1.25% 10%; /* Espaçamento à esquerda do ícone do carrinho */
   align-items: center;
   gap: 16px;
 } /*Estilização do icone (img/mdi_cart)*/
