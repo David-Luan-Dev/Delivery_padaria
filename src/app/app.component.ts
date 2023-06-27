@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'delivery_padaria';
-  constructor(private primengConfig: PrimeNGConfig) { }
+export class AppComponent {
 
-  ngOnInit() {
-    this.primengConfig.ripple = true;
+
+  constructor(){
+    this.teste()
   }
+  teste(){
+    console.log(
+      window.screen.width
+    )
+ }
 
 }

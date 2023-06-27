@@ -1,0 +1,212 @@
+/*Estilização da tag superior header*/
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 4px 4px 0px rgba(228, 144, 17, 0.1);
+}
+/*Dimensionamento do paragrafo e dos icones*/
+.paragrafo-icons {
+  display: flex;
+  align-items: center;
+  width: 22.03%;
+}
+/*Estilização do parágrafo*/
+.paragrafo {
+  display: flex;
+  align-items: center;
+  color: #e3b34d;
+  font-size: 16px;
+  font-family: Poppins;
+}
+// Estilização da logo
+.img img {
+  width: 82.192px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+/*Estilização do icone de localização (mi_search)*/
+.icon-localizacao {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #fc7310;
+  margin: 0px 0px 10px 4px;
+}
+/*Estilização do icone eva_arrow-down-fill*/
+.icon-seta {
+  width: 10px;
+  height: 20px;
+  margin: 0px 0px 10px 4px;
+}
+/*Estilização da div menu com as tags (a)*/
+.menu-pai {
+  display: flex;
+  align-items: center;
+  gap: 25%;
+  margin-right: 16.8625%;
+}
+/*Estilização das tags (a)*/
+.menus-filhos {
+  color: #1e1e1e;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: Poppins;
+  text-decoration: none;
+}
+/*Aplicação de efeito ativo quando a rota estiver ativa*/
+a.router-link-active {
+  color: #e49011;
+  text-decoration: underline;
+}
+/*Aplicação de efeito ativo quando a rota estiver ativa*/
+a:focus {
+  color: #e49011;
+  text-decoration: underline;
+}
+/*Estilização do input de pesquisa*/
+input {
+  display: inline-flex;
+  height: 30px;
+  padding: 2px 2px 3px 5px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 11px;
+  border: 1px solid #717171;
+}
+/*Div da tag form*/
+.input-wrapper {
+  display: flex;
+  position: relative;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  align-items: center;
+}
+/*div interna ao form*/
+.input-container {
+  position: relative;
+}
+/*div interna ao form*/
+.input-wrapper input {
+  padding-left: 10px;
+  width: 450px;
+}
+/*div interna ao form que estiliza as dimensões do icon*/
+.input-wrapper .icon {
+  width: 24px;
+  height: 24px;
+}
+/*Estilização do placeholder do input de pesquisa*/
+::placeholder {
+  color: #e3b34d;
+  font-size: 16px;
+  font-family: Poppins;
+}
+.input-wrapper .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+/*Estilização do button (Entrar)*/
+.btn {
+  display: inline-flex;
+  position: relative;
+  left: 11.875rem;
+  padding: 0.5% 1.125%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #e49011;
+  color: #fffffa;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  border: none;
+}
+/*Estilização da div carrinho (img/mdi_cart)*/
+.icone-carrinho {
+  display: flex;
+  position: relative;
+  left: 12.25%; //para análise
+  margin: 1.25% 0px 1.25% 1.25%; /* Espaçamento à esquerda do ícone do carrinho */
+  align-items: center;
+} /*Estilização do icone (img/mdi_cart)*/
+.icone-carrinho img {
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #1e1e1e;
+}
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 320px) {
+  .header {
+    width: 320px;
+    height: 67.291px;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(228, 144, 17, 0.1);
+  }
+  .img img {
+    width: 66.384px;
+    height: 49.348px;
+    flex-shrink: 0;
+  }
+  .icon-localizacao {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .icon-seta {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .paragrafo {
+    color: #e3b34d;
+    font-size: 14px;
+    font-family: Poppins;
+  }
+  .paragrafo-icons {
+    width: 100%;
+    top: 50px;
+    flex-shrink: 0;
+  }
+  .menu-pai {
+    visibility: hidden;
+  }
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+}
+
+/*tamanho.
+Trabalhar com a responsividade:
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.*/
