@@ -1,16 +1,40 @@
-.button-group {
+.grupo-botoes {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 42.7px;
+  gap: 20px;
+  position: fixed;
+  top: 88px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
 }
 
 .button {
   display: inline-flex;
-  padding: 8.8px 22px 6.2px 15.8px;
+  padding: 8.8px 15.8px 6.2px 22.8px;
+  justify-content: flex-end;
   align-items: flex-end;
-  gap: 5px;
+  gap: 1px;
   border-radius: 20px;
-  border: 1px solid #e49011;
-  background: #fff;
+  border: 1px solid #FC7310;
+  background: rgba(255, 255, 255, 0.00);
+  font-family: proppis;
+  color: #717171;
+  text-align: center;
+  font-size: 19px;
+  line-height: 24.15px;
 }
+
+/*Aplicação de efeito ativo quando a rota estiver ativa*/
+.paragrafo-btns .router-link-active {
+  color: #e49011;
+  text-decoration: underline;
+}
+/*Aplicação de efeito ativo quando a rota estiver ativa*/
+button:focus {
+  color: #e49011;
+  text-decoration: underline;
+}
+

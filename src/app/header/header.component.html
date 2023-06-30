@@ -1,33 +1,130 @@
 <header class="header">
-  <div class="img">
-    <img src="assets/img/logo-header.png" alt="imagem de paes">
+  <div class="div-logo">
+    <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
-  <div class="paragrafo-icons">
-    <div>
-      <img class="icon-localizacao" src="assets/img/carbon_location-filled.svg" alt="icone-localização">
-    </div>
-    <div class="paragrafo">
-      <p class="p-localizacao">Escoha um endereço</p>
-    </div>
-    <div>
-      <img class="icon-seta" src="assets/img/eva_arrow-down-fill.svg" alt=" icone-seta">
-    </div>
+  <div class="paragrafo-e-icones">
+    <img class="icon-localizacao" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
+    <p class="p-localizacao">Rio de Janeiro</p>
+    <img class="icon-seta" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
   </div>
-  <div class="menu-pai">
-    <a class="menus-filhos" routerLink="home" routerLinkActive="active">Início</a>
-    <a class="menus-filhos" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
-    <a class="menus-filhos" routerLink="/placeholder" routerLinkActive="active">Contato</a>
-    <a class="menus-filhos" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  <div class="borda-vertical">
+    <img src="assets/img/Vector2.svg" alt="">
   </div>
-  <br>
+  <div class="div-menu">
+    <a class="div-menu-filho" routerLink="home" routerLinkActive="active">Início</a>
+    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  </div>
   <form class="input-wrapper">
-    <div class="input-container">
-      <input type="text" name="search" placeholder="Buscar por itens e outros">
-      <img src="assets/img/mi_search.svg" alt="Ícone" class="icon">
-    </div>
+    <input type="text" name="search" placeholder="Buscar por itens e outros">
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon">
   </form>
   <div class="icone-carrinho">
-      <button class="btn">Entrar</button>
-      <img src="assets/img/mdi_cart.svg" alt="">
+    <button class="btn">Entrar</button>
+    <img src="assets/img/mdi_cart.svg" alt="">
   </div>
 </header>
+<!--Aqui começa a parte da que corresponde as telas de 1025 a 1200-->
+<header class="header-tela-dois">
+  <div class="div-logo-tela-dois">
+    <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
+  </div>
+
+  <div class="div-menu-tela-dois">
+    <a class="div-menu-filho-tela-dois" routerLink="home" routerLinkActive="active">Início
+      <img class="icon-seta-invertida-tela-dois" src="assets/img/Group.svg" alt="">
+    </a>
+    <!-- <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Sobre</a> -->
+  </div>
+  <form class="input-wrapper-tela-dois">
+    <input type="text" name="search" placeholder="Buscar por itens e outros">
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-search-tela-dois">
+  </form>
+  <div class="paragrafo-e-icones-tela-dois">
+    <img class="icon-localizacao-tela-dois" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
+    <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
+    <img class="icon-seta-inveritda" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+  </div>
+  <div class="borda-vertical-tela-dois">
+    <img src="assets/img/Vector2.svg" alt="">
+  </div>
+  <div class="icone-carrinho-tela-dois">
+    <button class="btn-tela-dois">Entrar</button>
+    <img src="assets/img/mdi_cart.svg" alt="icone seta">
+  </div>
+</header>
+
+<!--Aqui começa a parte da que corresponde as telas de 769 a 1024-->
+<header class="header-tela-tres">
+  <div class="div-logo-tela-tres">
+    <img class="logo2-tela-tres" src="assets/img/logo2.png" alt="imagem de paes">
+  </div>
+  <div class="paragrafo-e-icones-tela-tres">
+    <img class="icon-localizacao-tela-tres" src="assets/img/carbon_location-filled-tela-tres.svg" alt="icone-localização">
+    <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
+    <img class="icon-seta-inveritda" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+  </div>
+</header>
+<div class="fixed-group">
+  <div class="item-fixo-tela-tres">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar">
+    <span>Buscar</span>
+  </div>
+  <div class="item-fixo-tela-tres">
+    <img src="assets/img/bi_card-checklist.svg" alt="Pedidos">
+    <span>Pedidos</span>
+  </div>
+  <div class="item-fixo-tela-tres">
+    <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato">
+    <span>Contatos</span>
+  </div>
+  <div class="item-fixo-tela-tres">
+    <img src="assets/img/gg_profile.svg" alt="Perfil">
+    <span>Perfil</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="div-menu-tela-tres">
+  <a class="div-menu-filho-tela-tres" routerLink="home" routerLinkActive="active">Início
+    <img class="icon-seta-invertida-tela-tres" src="assets/img/Group.svg" alt="">
+  </a>
+   <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+  <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+  <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+</div>
+<form class="input-wrapper-tela-tres">
+  <input type="text" name="search" placeholder="Buscar por itens e outros">
+  <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-search-tela-tres">
+</form>
+
+<div class="borda-vertical-tela-tres">
+  <img src="assets/img/Vector2.svg" alt="">
+</div>
+<div class="icone-carrinho-tela-tres">
+  <button class="btn-tela-tres">Entrar</button>
+  <img src="assets/img/mdi_cart.svg" alt="icone seta">
+</div>-->
+
