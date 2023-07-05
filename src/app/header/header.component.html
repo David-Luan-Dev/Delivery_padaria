@@ -1,8 +1,9 @@
+<!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
 <header class="header">
   <div class="div-logo">
     <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
-  <div class="paragrafo-e-icones">
+  <div class="paragrafo-e-icones" (click)="openDialog()">
     <img class="icon-localizacao" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
     <p class="p-localizacao">Rio de Janeiro</p>
     <img class="icon-seta" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
@@ -25,6 +26,32 @@
     <img src="assets/img/mdi_cart.svg" alt="">
   </div>
 </header>
+<!---Início do carrossel da tela um-->
+<div class="grupo-botoes-tela-um">
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-um">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <img src="assets/img/Frame-1.svg" alt="imagem 1">
+    <span class="paragrafo-btn-tela-um">Pra Retirar</span>
+  </button>
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-um">Entrega grátis</span>
+  </button>
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-um">Entrega parceira</span>
+  </button>
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-um">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-um">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+</div>
+
 <!--Aqui começa a parte da que corresponde as telas de 1025 a 1200-->
 <header class="header-tela-dois">
   <div class="div-logo-tela-dois">
@@ -43,7 +70,7 @@
     <input type="text" name="search" placeholder="Buscar por itens e outros">
     <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-search-tela-dois">
   </form>
-  <div class="paragrafo-e-icones-tela-dois">
+  <div class="paragrafo-e-icones-tela-dois" (click)="openDialog()">
     <img class="icon-localizacao-tela-dois" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
     <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
     <img class="icon-seta-inveritda" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
@@ -56,13 +83,38 @@
     <img src="assets/img/mdi_cart.svg" alt="icone seta">
   </div>
 </header>
+<!---Início do carrossel da tela dois-->
+<div class="grupo-botoes-tela-dois">
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-dois">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <img src="assets/img/Frame-1.svg" alt="imagem 1">
+    <span class="paragrafo-btns-tela-dois">Pra Retirar</span>
+  </button>
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-dois">Entrega grátis</span>
+  </button>
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-dois">Entrega parceira</span>
+  </button>
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-dois">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-dois">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+</div>
 
 <!--Aqui começa a parte da que corresponde as telas de 769 a 1024-->
 <header class="header-tela-tres">
   <div class="div-logo-tela-tres">
     <img class="logo2-tela-tres" src="assets/img/logo2.png" alt="imagem de paes">
   </div>
-  <div class="paragrafo-e-icones-tela-tres">
+  <div class="paragrafo-e-icones-tela-tres" (click)="openDialog()">
     <div class="img-tela-tres">
       <img class="icon-localizacao-tela-tres" src="assets/img/carbon_location-filled-tela-tres.svg"
         alt="icone-localização">
