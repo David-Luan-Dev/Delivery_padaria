@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-l
     HeaderComponent,
     HomeComponent,
     DialogLocalizacaoComponent,
+    LoginComponent,
 
   ],
   imports: [
