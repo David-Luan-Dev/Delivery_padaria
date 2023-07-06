@@ -1,0 +1,29 @@
+.titulo-vale-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+h1 {
+  font-family: poppins;
+}
+p {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.fechar {
+  cursor: pointer;
+}
+.example-section {
+  margin: 12px 0;
+}
+.Refeicao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.img-vale {
+  width: 24px;
+  margin-right: 15px;
+}

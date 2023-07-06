@@ -36,26 +36,23 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 //Componentes
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './component/Pages/pagina-principal/pagina-principal.component';
 import { TelaLoginComponent } from './component/Pages/tela-login/tela-login.component';
-import PadariasComponent from './component/Pages/padarias/padarias.component';
-import { CadastroPadariasComponent } from './component/Pages/cadastro-padarias/cadastro-padarias.component';
 import { CadastroCelularComponent } from './component/Pages/tela-login/cadastro-celular/cadastro-celular.component';
-import { FromPagamentoComponent } from './component/Pages/pagina-principal/from-pagamento/from-pagamento.component';
-import { DialogDistanciaComponent } from './component/Pages/pagina-principal/dialog-distancia/dialog-distancia.component';
-import { EntregaGratisComponent } from './component/Pages/entrega-gratis/entrega-gratis.component';
-import { PraRetirarComponent } from './component/Pages/pra-retirar/pra-retirar.component';
-import { EntregaParceiraComponent } from './component/Pages/entrega-parceira/entrega-parceira.component';
+import { FromPagamentoComponent } from './component/template/layout/header/from-pagamento/from-pagamento.component';
+import { DialogDistanciaComponent } from './component/template/layout/header/dialog-distancia/dialog-distancia.component';
 import { InformarEmailComponent } from './component/Pages/tela-login/informar-email/informar-email.component';
-import { OrdenarComponent } from './component/Pages/pagina-principal/ordenar-modal/ordenar.component';
+import { OrdenarComponent } from './component/template/layout/header/ordenar-modal/ordenar.component';
 import { CodigoVerificadorCelularComponent } from './component/Pages/tela-login/cadastro-celular/codigo-verificador-celular/codigo-verificador-celular.component';
 import { CodigoVerificadorEmailComponent } from './component/Pages/tela-login/informar-email/codigo-verificador-email/codigo-verificador-email.component';
-import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
-
+import {
+  ErrorStateMatcher,
+  ShowOnDirtyErrorStateMatcher,
+} from '@angular/material/core';
 
 const layoutPrimeng = [InputTextModule, ButtonModule];
 
@@ -63,20 +60,13 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
   declarations: [
     PaginaPrincipalComponent,
     TelaLoginComponent,
-    PadariasComponent,
-    CadastroPadariasComponent,
     CadastroCelularComponent,
     OrdenarComponent,
     FromPagamentoComponent,
     DialogDistanciaComponent,
-    EntregaGratisComponent,
-    PraRetirarComponent,
-    EntregaParceiraComponent,
     InformarEmailComponent,
     CodigoVerificadorCelularComponent,
     CodigoVerificadorEmailComponent,
-
-
   ],
   imports: [
     RouterModule,
@@ -110,8 +100,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
     MatRadioModule,
     MatDatepickerModule,
     MatCardModule,
-
-
+    FlexLayoutModule,
   ],
   providers: [
     {
@@ -122,7 +111,7 @@ const layoutPrimeng = [InputTextModule, ButtonModule];
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { floatLabel: 'always' },
     },
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+    { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher },
   ],
   bootstrap: [AppComponent],
 })

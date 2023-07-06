@@ -9,44 +9,7 @@
       </button>
       <button mat-button (click)="drawer.toggle()"><i class="pi pi-times"></i></button>
     </div>
-    <div class="secoes">
-      <span>SEÇÕES</span>
-    </div>
-    <mat-divider></mat-divider>
-    <div class="menu-button-span">
-      <button mat-button class="menu-button" routerLink="/padarias">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-        <span>Padarias</span>
-      </button>
-      <button mat-button class="menu-button">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-        <span>Supermercados</span>
-      </button>
-      <button mat-button class="menu-button">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-        <span>Restaurantes</span>
-      </button>
-      <button mat-button class="menu-button">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-        <span>Farmácias</span>
-      </button>
-    </div>
-    <div class="outros">
-      <span>Outros</span>
-    </div>
-    <mat-divider></mat-divider>
-    <div class="parte2">
-      <ul>
-        <li>Parceiro entregador</li>
-        <li routerLink="padarias">Cadastre sua padaria</li>
-        <li>Cadastre sua loja</li>
-        <li></li>
-      </ul>
-    </div>
-    <div class="img-brasil">
-      <img class="brazil" src="assets/img/brazil.png" alt="logo">
-      <span>Brasil</span>
-    </div>
+    
   </mat-drawer>
   <mat-drawer #drawerCarrinho class="mat-elevation-z1" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="'over'" [opened]="false" position="end">

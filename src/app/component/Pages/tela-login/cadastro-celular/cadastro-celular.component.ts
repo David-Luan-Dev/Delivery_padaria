@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CodigoVerificadorCelularComponent } from './codigo-verificador-celular/codigo-verificador-celular.component';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { ServicoCompartilhadoService } from 'src/app/servico-compartilhado.service';
+
 
 @Component({
   selector: 'app-cadastro-celular',
@@ -9,20 +11,34 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./cadastro-celular.component.scss']
 })
 export class CadastroCelularComponent implements OnInit{
-  codigo1: string = "";
-  frase: string = "Informe o número do seu celular para continuar";
+  numeroCelularForm = this.formBuilder.group({
+    numero: ['', [Validators.required]],
+  });
+
 
   constructor(
     public formBuilder: FormBuilder,
-     private dialog: MatDialog
-     ) {}
+    private dialog: MatDialog,
+    private cs: ServicoCompartilhadoService
+    ) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
 
-  }
+  enviarCodigo(): void {
+    if (this.numeroCelularForm.valid) {
+      const numeroCelular = this.numeroCelularForm.get('numero')?.value;
 
-  codigo(){
-    console.log(this.codigo1);
+      // Gerar código aleatório
+      const codigoAleatorio = Math.floor(100000 + Math.random() * 900000).toString();
+
+      // Armazenar o código no serviço
+      this.cs.setCodigoGerado(codigoAleatorio);
+
+      // Enviar o código para o número de telefone via WhatsApp (implementação necessária)
+
+      console.log(`Código gerado: ${codigoAleatorio}`);
+      console.log(`Enviando código para o número: ${numeroCelular}`);
+    }
   }
 
   public codigoVerificadorDialog() {
@@ -31,7 +47,6 @@ export class CadastroCelularComponent implements OnInit{
       height: '380px',
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
-
     });
   }
 }

@@ -15,13 +15,13 @@ interface NumeroEmail {
 })
 export class InformarEmailComponent implements OnInit{
 
-
-
   codigo1: NumeroEmail = {
     codigo: ""
   };
 
-  constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
+  constructor(
+    public formBuilder: FormBuilder,
+    private dialog: MatDialog) {}
 
   ngOnInit(): void {}
 

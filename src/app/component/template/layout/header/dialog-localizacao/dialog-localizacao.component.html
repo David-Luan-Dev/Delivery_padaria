@@ -1,4 +1,33 @@
-<div class="btn-h3-button">
+<div class="container-modal">
+  <div class="x-modal" [mat-dialog-close]>
+    <img class="x-modal-img" src="assets/img/refatorando/Frame-x.svg" alt="icone x">
+  </div>
+  <div class="conteudo-interno">
+    <img class="img-casa-modal" src="assets/img/refatorando/image.png" alt="imagem de uma casa">
+  </div>
+  <div class="h2">
+    <h2>¿Onde você quer receber seu pedido?</h2>
+  </div>
+  <div class="paragrafo-modal">
+    <p>Informe seu endereço para validar a disponibilidade e cobertura na sua região.</p>
+  </div>
+  <div class="div-input-modal">
+    <img class="img-localizacao-modal" src="assets/img/refatorando/carbon_location-filled.svg" alt="icone de localização">
+    <input type="text" placeholder="Escreva o endereço de entrega">
+  </div>
+  <div class="btn-localizacao">
+    <button class="btn-flutuante" [ngClass]="{'visivel': mostrarBotaoFlutuante}">
+      <img src="assets/img/refatorando/my-location-icon.svg" alt="">
+      Usar minha localização
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="btn-h3-button">
   <h3 mat-dialog-title>{{data}}</h3>
 
   <mat-icon class="mat-18" mat-dialog-close>close</mat-icon>
@@ -22,4 +51,4 @@
   </div>
   <mat-icon class="icone-navigation">assistant navigation</mat-icon>
   <h5>Usar minha localização</h5>
-</div>
+</div> -->

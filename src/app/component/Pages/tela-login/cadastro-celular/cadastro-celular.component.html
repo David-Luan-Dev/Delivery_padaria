@@ -1,14 +1,14 @@
 <mat-icon [mat-dialog-close]>keyboard_arrow_left</mat-icon>
 <div class="h2">
-  <h2 matDialogTitle>{{ frase }}</h2>
+  <h2 matDialogTitle>Informe o número do seu celular para continuar</h2>
 </div>
   <div class="example-form">
-    <form class="example-form" #formNumero="ngForm" (ngSubmit)="codigo()">
+    <form class="example-form" [formGroup]="numeroCelularForm" (ngSubmit)="enviarCodigo()">
       <mat-form-field class="example-full-width" appearance="outline">
         <span matPrefix></span>
-        <input type="tel" name="phone" matInput value="" placeholder="(00) 00000-0000"
-         [(ngModel)]="codigo1" #numeroCelular="ngModel" required minlength="3">
-         <mat-hint *ngIf="numeroCelular.invalid && (numeroCelular.touched || numeroCelular.dirty)">
+        <input type="number" name="numero" matInput value="" placeholder="(00) 00000-0000"
+         formControlName="numero" required minlength="3">
+         <mat-hint *ngIf="numeroCelularForm.invalid && (numeroCelularForm.touched || numeroCelularForm.dirty)">
           Campo obrigatório
         </mat-hint>
       </mat-form-field>
@@ -20,7 +20,7 @@
   </div>
   <div class="btn">
     <button mat-raised-button color="warn" (click)="codigoVerificadorDialog()"
-    [disabled]="!formNumero.valid">WhatsApp</button>
+    [disabled]="!numeroCelularForm.valid">WhatsApp</button>
   </div>
 
 

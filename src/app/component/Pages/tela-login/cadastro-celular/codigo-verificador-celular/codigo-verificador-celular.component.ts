@@ -1,16 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators } from '@angular/forms';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators,   } from '@angular/forms';
+import { ServicoCompartilhadoService } from 'src/app/servico-compartilhado.service';
+
 
 @Component({
   selector: 'app-codigo-verificador-celular',
   templateUrl: './codigo-verificador-celular.component.html',
-  styleUrls: ['./codigo-verificador-celular.component.scss'],
+  styleUrls: ['./codigo-verificador-celular.component.scss']
 })
-export class CodigoVerificadorCelularComponent implements OnInit {
+export class CodigoVerificadorCelularComponent implements OnInit{
   CodigoVerificador!: FormGroup;
+  codigoGerado: string = '';
 
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private cs: ServicoCompartilhadoService
+    ){}
 
   ngOnInit(): void {
     this.CodigoVerificador = this.fb.group({
@@ -20,17 +25,16 @@ export class CodigoVerificadorCelularComponent implements OnInit {
       codigo4: ['', [Validators.required, Validators.minLength(1)]],
       codigo5: ['', [Validators.required, Validators.minLength(1)]],
       codigo6: ['', [Validators.required, Validators.minLength(1)]],
-    });
+  });
+  this.codigoGerado = this.cs.getCodigoGerado();
   }
 
   mudarFoco(
     elementoAtual: HTMLInputElement,
-    proximoElemento: HTMLInputElement
-  ) {
-    if (proximoElemento) {
-      proximoElemento.focus();
-    }
+     proximoElemento: HTMLInputElement) {
+      if(proximoElemento) {
+        proximoElemento.focus()
+      }
   }
 
-  enviarCodigo() {}
 }

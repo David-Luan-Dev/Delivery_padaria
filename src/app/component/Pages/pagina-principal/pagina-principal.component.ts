@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { OrdenarComponent } from './ordenar-modal/ordenar.component';
-import { FromPagamentoComponent } from './from-pagamento/from-pagamento.component';
-import { DialogDistanciaComponent } from './dialog-distancia/dialog-distancia.component';
-import { EntregaGratisComponent } from '../entrega-gratis/entrega-gratis.component';
+import { OrdenarComponent } from '../../template/layout/header/ordenar-modal/ordenar.component';
+import { FromPagamentoComponent } from '../../template/layout/header/from-pagamento/from-pagamento.component';
+import { DialogDistanciaComponent } from '../../template/layout/header/dialog-distancia/dialog-distancia.component';
 
 @Component({
   selector: 'app-pagina-principal',
@@ -13,7 +12,6 @@ import { EntregaGratisComponent } from '../entrega-gratis/entrega-gratis.compone
 })
 export class PaginaPrincipalComponent implements OnInit {
   FormGroup!: FormGroup;
-  numeroDivs = 10;
   value = ``;
   value2!: string;
   displaydialog!: boolean;
@@ -25,36 +23,8 @@ export class PaginaPrincipalComponent implements OnInit {
   checkedTicketRefeicao: boolean = true;
   checkedBenRefeicao: boolean = true;
 
-  constructor(
-    public formBuilder: FormBuilder,
-    private dialog: MatDialog
-    ) {}
+  constructor(public formBuilder: FormBuilder, private dialog: MatDialog) {}
 
-    gerarArrayDivs(): number[] {
-      return Array(this.numeroDivs).fill(0).map((_,index) => index)
-    }
-  produtos = [
-    {
-      item: 'Café',
-      descricao: 'pimpilena',
-    },
-    {
-      item: 'pão',
-      descricao: 'françes',
-    },
-    {
-      item: 'acuçar',
-      descricao: 'união',
-    },
-    {
-      item: 'arroz',
-      descricao: 'tio joão',
-    },
-    {
-      item: 'farinha',
-      descricao: 'rosca',
-    },
-  ];
 
   ngOnInit(): void {
     this.FormGroup = this.formBuilder.group({
@@ -62,7 +32,7 @@ export class PaginaPrincipalComponent implements OnInit {
       senha: ['', Validators.required],
     });
   }
-  //Dialog Material componente ordenar
+  //Dialog Material
   public openDialog() {
     this.dialog.open(OrdenarComponent, {
       width: '450px',
@@ -71,7 +41,6 @@ export class PaginaPrincipalComponent implements OnInit {
       exitAnimationDuration: '500ms',
     });
   }
-  //Dialog Material componente de forma de pagamento
   public openDialogfromPagamento() {
     this.dialog.open(FromPagamentoComponent, {
       width: '350px',
@@ -80,7 +49,6 @@ export class PaginaPrincipalComponent implements OnInit {
       exitAnimationDuration: '500ms',
     });
   }
-  //Dialog material componente distância
   public openDialogDistancia() {
     this.dialog.open(DialogDistanciaComponent, {
       width: '600px',

@@ -9,7 +9,7 @@
   padding: 0;
   position: fixed;
 }
-
+//Dimensões do header 
 .container-header {
   position: fixed;
   top: 0px;
@@ -17,7 +17,7 @@
   right: 0px;
   z-index: 30;
   display: flex;
-  height: 4.4rem;
+  height: 4.375rem;
   width: 100vw;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -27,7 +27,6 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 60ms;
-
 }
 
 mat-drawer {

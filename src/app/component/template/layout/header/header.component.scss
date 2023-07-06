@@ -1,83 +1,1368 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;//adicionado após
-}
-.paragrafo-icones-header {
-  display: flex;
-  align-items: center;
 
+/* Estilos para telas extra grandes e TVs (1201px e mais) */
+@media (min-width: 1201px) {
+  /*Ocultamento de outras telas*/
+  .header-tela-dois {
+    display: none;
+  }
+  .header-tela-tres {
+    display: none;
+  }
+  .groupo-icones-img-fixo {
+    display: none;
+  }
+  .menu-tela-tres {
+    display: none;
+  }
+  /*Ocultamento da tela 1025 a 1200*/
+  .header-tela-dois {
+    display: none;
+  }
+  .grupo-botoes {
+    display: none;
+  }
+  /*Estilização da tag superior header*/
+  .header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(228, 144, 17, 0.1);
+    background: #fff;
+  }
+
+  //Estilização da div-logo e da logo.
+  .div-logo {
+    display: flex;
+    position: relative;
+    //right: 0.3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    display: flex;
+    width: 4.45206rem;
+    height: 3.75rem;
+    flex-shrink: 1;
+    background: lightgray -22.661px -8.225px / 164.565% 126.805% no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Estilização do paragrafo e dos icones div pai e div filho
+  .paragrafo-e-icones {
+    //width: 21.375rem;
+    display: flex;
+    align-items: center;
+    //width: 11.48333rem;
+    padding-right: 0px;
+    gap: 0.25rem;
+    position: relative;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .paragrafo-e-icones p {
+    display: flex;
+    color: #e3b34d;
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 1;
+  }
+  .icon-localizacao {
+    flex-shrink: 1;
+    color: #fc7310;
+    margin: 0% 0% 5% 0%;
+  }
+  .icon-seta {
+    margin: 0% 0% 5% 0%;
+  }
+  .p-localizacao {
+    color: #e3b34d;
+    font-size: 1rem;
+    font-family: proppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // Borda vertical ao lado do menu
+  .borda-vertical {
+    width: 0px;
+    flex-shrink: 0;
+    position: relative;
+    right: 1rem;
+  }
+
+  .borda-vertical img {
+    opacity: 0.30000001192092896;
+  }
+  // Estilização da div que contém os menus
+  .div-menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    position: relative;
+  }
+  //Estilização dos menus
+  .div-menu-filho {
+    color: #1e1e1e;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+    text-decoration: none;
+  }
+  //Estilização da div que contém o input
+  .input-wrapper {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    height: 1.875rem;
+    padding: 0.125rem 0.10419rem 0.1875rem 0.3125rem;
+    border-radius: 0.6875rem;
+    flex-shrink: 0;
+    border: 1px solid #717171;
+  }
+
+  //Dimensões do input
+  input {
+    display: flex;
+    border: none;
+    outline: none;
+    width: 21.66667rem;
+  }
+
+  /*Estilização do placeholder do input de pesquisa*/
+  ::placeholder {
+    display: flex;
+    color: #717171;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  //Estilização da img carrinho
+  .icone-carrinho {
+    display: flex;
+    position: relative;
+    right: 0.5rem;
+    gap: 1rem;
+  }
+  /*Estilização do botão entrar*/
+  .btn {
+    display: inline-flex;
+    padding: 0.5rem 0.72919rem 0.5rem 0.6875rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #e49011;
+    border: none;
+    color: #fffffa;
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes-tela-um {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 20px;
+    position: relative;
+    top: 4.5rem;
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  //Estilização dos botões do corrossel
+  .button-tela-um {
+    display: inline-flex;
+    padding: 8.8px 15.8px 6.2px 22.8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1px;
+    border-radius: 20px;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 19px;
+    line-height: 24.15px;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes-tela-um::-webkit-scrollbar {
+    display: none;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns-tela-um .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
 }
-.img {
-  width: 82.192px;
-  height: 60px;
-  flex-shrink: 0;
-}
-.icon-localizacao {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  color: #fc7310;
-  margin: 0px 3px 6px 0px;
-}
-.p-localizacao {
-  color: #e3b34d;
-  font-size: 16px;
-  font-family: Poppins;
-}
-.icon-seta {
-  width: 10px;
-  height: 20px;
-  flex-shrink: 0;
-  color: #e49011;
-  margin: 0px 3px 6px 3px;
-}
-//links-- inicio - padarias - contato - sobre
-.links {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.links-p {
-  color: #e49011;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-  font-family: Poppins;
-  color: #1e1e1e;
-}
-input {
-  display: inline-flex;
-  height: 30px;
-  width: 400px;
-  padding: 2px 2px 3px 5px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 160px;
-  flex-shrink: 0;
-  border-radius: 11px;
-  border: 1px solid #717171;
-  margin: 3px; //adicionado
-}
-.input-place-icon {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-::placeholder {
-  color: #e3b34d;
-  font-size: 16px;
-  font-family: Poppins;
+/* Estilos para telas de 1025px a 1200px tela dois*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /*Ocultamento da tela 1248 a superior*/
+  .header {
+    display: none;
+  }
+  .header-tela-tres {
+    display: none;
+  }
+  .groupo-icones-img-fixo {
+    display: none;
+  }
+  .menu-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-um {
+    display: none;
+  }
+
+  /*Estilização da tag superior header*/
+  .header-tela-dois {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.44219rem;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(228, 144, 17, 0.1);
+    background: #fff;
+  }
+
+  //Estilização da div que contém a logo
+  .div-logo-tela-dois {
+    display: flex;
+    position: relative;
+    left: 0.3rem;
+    width: 5.3375rem;
+    height: 3.80756rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  //Estilização da logo principal na parte superior esquerda da tela
+  .logo-tela-dois {
+    flex-shrink: 1;
+    width: 5.3375rem;
+    height: 3.80756rem;
+    background: lightgray -30.652px -8.351px / 185.67% 126.805% no-repeat;
+  }
+
+  //Div pai que contém a div com os menus filhos
+  .div-menu-tela-dois {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1.68rem;
+  }
+  //Estilização da div que contem os menus filho
+  .div-menu-filho-tela-dois {
+    display: flex;
+    width: 3.12919rem;
+    height: 1.51775rem;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #e49011;
+    text-shadow: 0px 4.682926654815674px 4.682926654815674px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1.17075rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img seta invertida
+  .icon-seta-invertida-tela-dois {
+    width: 0.50956rem;
+    height: 0.24513rem;
+    flex-shrink: 0;
+    background: #fff;
+  }
+  // Estilização do paragrafo e dos icones div pai e div filho
+  .paragrafo-e-icones-tela-dois {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+    gap: 0.25rem;
+    position: relative;
+    right: 0.5rem;
+    top: 12%;
+    cursor: pointer;
+  }
+  //Estilização do parágrafo p dentro da div que conttem o parágrago e os icones
+  .paragrafo-e-icones-tela-dois p {
+    display: flex;
+    color: #e3b34d;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 1;
+  }
+
+  .icon-setaInvertidatela-dois {
+    width: 0.73169rem;
+    height: 1.46344rem;
+    flex-shrink: 0;
+  }
+  //icon de localização ao lado da tela dois
+  .icon-localizacao-tela-dois {
+    flex-shrink: 1;
+    color: #fc7310;
+    margin: 0% 0% 7% 0%;
+  }
+  //Seta ao lado do parágrafo tela-dois
+  .icon-seta-invertida-tela-dois {
+    margin: 19% 0% 0% 2%;
+  }
+  //Estilização do parágrafo de localização da tela dois
+  .p-localizacao-tela-dois {
+    color: #e3b34d;
+    font-size: 1rem;
+    font-family: proppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  //Seta invertida dentro da div paragráfo-icones-tela-dois
+  .icon-seta-inveritda {
+    margin: 0% 0% 8% 0%;
+  }
+
+  // Borda vertical ao lado do menu
+  .borda-vertical-tela-dois {
+    width: 0px;
+    height: 1.875rem;
+    flex-shrink: 0;
+    position: relative;
+    right: 1rem;
+    opacity: 0.5;
+    color: #000000;
+  }
+  //Estilização do input
+  .input-wrapper-tela-dois {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    display: inline-flex;
+    padding: 0.20619rem 0.60438rem 0.33538rem 1.16925rem;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0.99763rem;
+    border: 1.306px solid #717171;
+    position: relative;
+    top: 6%;
+  }
+  input {
+    display: flex;
+    border: none;
+    outline: none;
+    width: 21.66667rem;
+  }
+  /*Estilização do placeholder do input de pesquisa*/
+  ::placeholder {
+    display: flex;
+    color: #717171;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .icone-carrinho-tela-dois {
+    display: flex;
+    position: relative;
+    right: 2rem;
+    gap: 1rem;
+  }
+  .btn-tela-dois {
+    display: inline-flex;
+    padding: 0.2585rem 0.64031rem 0.279rem 0.60969rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.521rem;
+    background: #e49011;
+    border: none;
+    color: #fffffa;
+    font-size: 1.17075rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+//Estilização do carrossel
+  .grupo-botoes-tela-dois {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 2rem;
+    position: fixed;
+    top: 5rem;
+    bottom: 0;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+   .grupo-botoes-tela-dois::-webkit-scrollbar {
+    display: none;
+  }
+  .button-tela-dois {
+    display: inline-flex;
+    padding: 0.55rem 0.9875rem 0.3875rem 1.425rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.0625rem;
+    border-radius: 1.25rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0.00);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 1.1875rem;
+    line-height: 1.50938rem;
+  }
+    /*Aplicação de efeito ativo quando a rota estiver ativa*/
+    .paragrafo-btns-tela-dois .router-link-active {
+      color: #e49011;
+      text-decoration: underline;
+    }
+    /*Aplicação de efeito ativo quando a rota estiver ativa*/
+    button:focus {
+      color: #e49011;
+      text-decoration: underline;
+    }
 }
 
-button {
-  color: #fffffa;
-  font-size: 20px;
-  font-family: Poppins;
-  font-weight: 700;
-  display: inline-flex;
-  padding: 8px 18px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background: #e49011;
+/* Estilos para telas de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-tela-dois {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .grupo-botoes-tela-um {
+    display: none;
+  }
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .header-tela-tres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 8.38869rem;
+    flex-shrink: 0;
+    background: #fff;
+    position: fixed;
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
+      rgba(228, 144, 17, 0.1);
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+  }
+
+  .div-logo-tela-tres {
+    display: flex;
+    position: relative;
+    left: 1.5rem;
+  }
+
+  .paragrafo-e-icones-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+  }
+
+  .paragrafo-localizacao-tela-tres {
+    color: #e3b34d;
+    font-size: 2.09606rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+
+  .img-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 4% 0% 8% 1%;
+  }
+  .icon-localizacao-tela-tres {
+    width: 2.99438rem;
+    height: 2.99438rem;
+    flex-shrink: 0;
+  }
+
+  .img-seta-invertida-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 0% 0% 3% 1%;
+    flex-shrink: 0;
+  }
+
+  .icon-seta-inveritda {
+    width: 1.04806rem;
+    height: 2.09606rem;
+  }
+
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
+  .menu-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 7rem;
+    height: 2.35956rem;
+    flex-shrink: 0;
+    border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
+    gap: 3.35rem;
+  }
+
+  /*div de cada item do menu*/
+  .menu-filho-tela-tres {
+    display: flex;
+    position: relative;
+    color: #1e1e1e;
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1.90431rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    left: 2.06rem;
+  }
+
+  /*aplicação de estilos para ser aplicada após o click (Ativo)*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 6.375rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    width: 100%;
+    bottom: 0;
+    gap: 8.42rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 20px;
+    position: fixed;
+    top: 10rem;
+    bottom: 0;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes::-webkit-scrollbar {
+    display: none;
+  }
+  .button {
+    display: inline-flex;
+    padding: 0.55rem 0.9875rem 0.3875rem 1.425rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.0625rem;
+    border-radius: 1.25rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 1.1875rem;
+    line-height: 1.50938rem;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-tela-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //Estilização do span
+  .item-fixo-tela-tres span {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img
+  .item-fixo-tela-tres img {
+    display: flex;
+    //width: 3.85863rem;
+    //height: 3.85188rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 5px;
+  }
 }
+/*Estilização das para tamanhos de telas de 481px até 768px*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .header-tela-dois {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .grupo-botoes {
+    display: none;
+  }
+  .grupo-botoes-tela-um {
+    display: none;
+  }
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .header-tela-tres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 5.26369rem;
+    flex-shrink: 0;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
+      rgba(228, 144, 17, 0.1);
+  }
+  .div-logo-tela-tres {
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+  }
+  .logo2-tela-tres {
+    width: 6.2365rem;
+    height: 3.86013rem;
+    flex-shrink: 0;
+  }
+
+  .paragrafo-e-icones-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .paragrafo-localizacao-tela-tres {
+    color: #e3b34d;
+    font-size: 1.31525rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+  .img-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 4% 0% 8% 1%;
+  }
+  .icon-localizacao-tela-tres {
+    width: 1.87894rem;
+    height: 1.87894rem;
+    flex-shrink: 0;
+  }
+  .img-seta-invertida-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 0% 0% 3% 1%;
+    flex-shrink: 0;
+  }
+  .icon-seta-inveritda {
+    width: 1.04806rem;
+    height: 2.09606rem;
+  }
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
+  .menu-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    height: 2.35956rem;
+    flex-shrink: 0;
+    border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
+    gap: 2.17rem;
+  }
+  /*div de cada item do menu*/
+  .menu-filho-tela-tres {
+    display: flex;
+    position: relative;
+    color: #1e1e1e;
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    left: 1.36rem;
+  }
+  /*aplicação de estilos para ser aplicada após o click (Ativo)*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 6.375rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    width: 100%;
+    bottom: 0;
+    //right: 50%;
+    //left: 50%;
+    gap: 4.9rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 1.52rem;
+    position: relative;
+    top: 15px;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes::-webkit-scrollbar {
+    display: none;
+  }
+  .button {
+    display: inline-flex;
+    padding: 0.4505rem 1.10356rem 0.34713rem 1.16713rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.308rem;
+    border-radius: 1.25rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 0.97263rem;
+    line-height: 1.23625rem;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-tela-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //Estilização do span
+  .item-fixo-tela-tres span {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img
+  .item-fixo-tela-tres img {
+    display: flex;
+    //width: 3.85863rem;
+    //height: 3.85188rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-tela-dois {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .grupo-botoes {
+    display: none;
+  }
+  .grupo-botoes-tela-um {
+    display: none;
+  }
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .header-tela-tres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 4.20569rem;
+    flex-shrink: 0;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
+      rgba(228, 144, 17, 0.1);
+  }
+  .div-logo-tela-tres {
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+  }
+  .logo2-tela-tres {
+    width: 4.149rem;
+    height: 3.08425rem;
+    flex-shrink: 0;
+  }
+
+  .paragrafo-e-icones-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .paragrafo-localizacao-tela-tres {
+    color: #e3b34d;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+  .img-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 2% 0% 8% 1%;
+  }
+  .icon-localizacao-tela-tres {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+  .img-seta-invertida-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 0% 0% 5% 1%;
+    flex-shrink: 0;
+  }
+  .icon-seta-inveritda {
+    width: 0.4375rem;
+    height: 0.875rem;
+    flex-shrink: 0;
+  }
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
+  .menu-tela-tres {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    height: 2.35956rem;
+    flex-shrink: 0;
+    border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
+    gap: 3.5rem;
+  }
+  /*div de cada item do menu*/
+  .menu-filho-tela-tres {
+    display: flex;
+    position: relative;
+    color: #1e1e1e;
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    left: 1.5rem;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .menu-tela-tres::-webkit-scrollbar {
+    display: none;
+  }
+  /*aplicação de estilos para ser aplicada após o click (Ativo)*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 3.6875rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    width: 100%;
+    bottom: 0;
+    //right: 50%;
+    //left: 50%;
+    gap: 1.56rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 1.03rem;
+    position: relative;
+    top: 15px;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes::-webkit-scrollbar {
+    display: none;
+  }
+  .button {
+    display: inline-flex;
+    padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.22744rem;
+    border-radius: 0.87731rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 0.97263rem;
+    line-height: 1.23625rem;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-tela-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //Estilização do span
+  .item-fixo-tela-tres span {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img
+  .item-fixo-tela-tres img {
+    display: flex;
+    //width: 3.85863rem;
+    //height: 3.85188rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 319px) {
+  .header-tela-dois {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .grupo-botoes-tela-um {
+    display: none;
+  }
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .header-tela-tres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 4.20569rem;
+    flex-shrink: 0;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
+      rgba(228, 144, 17, 0.1);
+  }
+  .div-logo-tela-tres {
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+  }
+  .logo2-tela-tres {
+    width: 4.149rem;
+    height: 3.08425rem;
+    flex-shrink: 0;
+  }
+
+  .paragrafo-e-icones-tela-tres {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .paragrafo-localizacao-tela-tres {
+    color: #e3b34d;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+  .img-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 2% 0% 8% 1%;
+  }
+  .icon-localizacao-tela-tres {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+  .img-seta-invertida-tela-tres {
+    display: flex;
+    align-items: center;
+    margin: 0% 0% 5% 1%;
+    flex-shrink: 0;
+  }
+  .icon-seta-inveritda {
+    width: 0.4375rem;
+    height: 0.875rem;
+    flex-shrink: 0;
+  }
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
+  .menu-tela-tres {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    height: 2.35956rem;
+    flex-shrink: 0;
+    border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
+    gap: 3.5rem;
+  }
+  /*div de cada item do menu*/
+  .menu-filho-tela-tres {
+    display: flex;
+    position: relative;
+    color: #1e1e1e;
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    left: 1.5rem;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .menu-tela-tres::-webkit-scrollbar {
+    display: none;
+  }
+  /*aplicação de estilos para ser aplicada após o click (Ativo)*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 3.6875rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    width: 100%;
+    bottom: 0;
+    //right: 50%;
+    //left: 50%;
+    gap: 1.56rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 1.03rem;
+    position: relative;
+    top: 15px;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes::-webkit-scrollbar {
+    display: none;
+  }
+  .button {
+    display: inline-flex;
+    padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.22744rem;
+    border-radius: 0.87731rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 0.97263rem;
+    line-height: 1.23625rem;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-tela-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //Estilização do span
+  .item-fixo-tela-tres span {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img
+  .item-fixo-tela-tres img {
+    display: flex;
+    //width: 3.85863rem;
+    //height: 3.85188rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

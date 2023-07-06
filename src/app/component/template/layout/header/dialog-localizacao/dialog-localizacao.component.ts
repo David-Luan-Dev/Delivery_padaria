@@ -7,14 +7,20 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./dialog-localizacao.component.scss'],
 })
 export class DialogLocalizacaoComponent implements OnInit {
-  public value = '';
-  constructor(
-    public matDialogRef: MatDialogRef<DialogLocalizacaoComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: string
-  ) {}
+  mostrarBotaoFlutuante: boolean = false;
+  constructor() {}
 
-  ngOnInit(): void {}
-  public closeDialog() {
-    this.matDialogRef.close();
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.mostrarBotaoFlutuante = true;
+    }, 500);
+  }
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      const botaoFlutante = document.querySelector('.btn-flutuante')
+      if(botaoFlutante) {
+        botaoFlutante.classList.remove('inicial')
+      }
+    }, 100)
   }
 }
