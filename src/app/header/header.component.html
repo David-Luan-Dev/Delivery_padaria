@@ -1,5 +1,5 @@
 <!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
-<header class="header">
+<header class="header" *ngIf="!isTelaLogin" >
   <div class="div-logo">
     <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
@@ -22,7 +22,7 @@
     <img src="assets/img/mi_search.svg" alt="Ícone" class="icon">
   </form>
   <div class="icone-carrinho">
-    <button class="btn">Entrar</button>
+    <button class="btn" routerLink="app-login">Entrar</button>
     <img src="assets/img/mdi_cart.svg" alt="">
   </div>
 </header>
@@ -177,6 +177,7 @@
     <span>Perfil</span>
   </div>
 </div>
+
 
 
 
