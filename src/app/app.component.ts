@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
   modifyHeader(location: any) {
     console.log(location.url);
-    if (location.url === '/app-login') {
+    if (location.url === '/app-login' || location.url === '/informar-email' || location.url === '/informar-celular') {
       this.showHeader = false;
     } else {
       this.showHeader = true;
