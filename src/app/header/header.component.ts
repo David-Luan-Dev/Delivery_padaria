@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatMenuModule} from '@angular/material/menu';
 import {
   MatDialog,
   MatDialogRef,
@@ -14,6 +15,7 @@ import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localiza
 })
 export class HeaderComponent implements OnInit {
   isTelaLogin: boolean = false;
+  isMenuOpen: boolean = false;
 
   constructor(public dialog: MatDialog) {
 
@@ -32,5 +34,13 @@ export class HeaderComponent implements OnInit {
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });
+  }
+
+  openMenu(): void {
+    this.isMenuOpen = true;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 }

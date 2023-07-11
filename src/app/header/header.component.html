@@ -26,7 +26,7 @@
     <img src="assets/img/mdi_cart.svg" alt="">
   </div>
 </header>
-<!---Início do carrossel da tela um-->
+<!---Início do carrossel da tela um 1201px ou maior-->
 <div class="grupo-botoes-tela-um">
   <button class="button-tela-um" routerLink="/placeholder" routerLinkActive="active">
     <span class="paragrafo-btns-tela-um">Ordenar</span>
@@ -57,14 +57,18 @@
   <div class="div-logo-tela-dois">
     <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
-
-  <div class="div-menu-tela-dois">
-    <a class="div-menu-filho-tela-dois" routerLink="home" routerLinkActive="active">Início
+  <!--Conteúdo do menu de opções em telas entre 1025px e 1200px-->
+  <div class="div-menu-tela-dois"  (mouseenter)="openMenu()" (mouseleave)="closeMenu()"><!--testando-->
+    <a class="mat-menu-tigger-for" [matMenuTriggerFor]="menu" >
+      Inicio
       <img class="icon-seta-invertida-tela-dois" src="assets/img/Group.svg" alt="">
+      <mat-menu #menu="matMenu">
+        <a class="div-menu-filho-tela-dois" routerLink="home" routerLinkActive="active">Início</a>
+        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+      </mat-menu>
     </a>
-    <!-- <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
-    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Contato</a>
-    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Sobre</a> -->
   </div>
   <form class="input-wrapper-tela-dois">
     <input type="text" name="search" placeholder="Buscar por itens e outros">

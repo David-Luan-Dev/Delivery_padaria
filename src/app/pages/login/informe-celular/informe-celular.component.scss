@@ -13,7 +13,7 @@
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .setas-voltar {
     color: #e49011;
-    text-shadow: 0px 4px 4px 0px #fff;
+    text-shadow: #FFF 0px 4px 0px;
     font-family: poppins;
     font-size: 6rem;
     font-style: normal;
@@ -22,6 +22,7 @@
     position: relative;
     left: 1rem;
     grid-area: 0.05rem;
+    color: #E49011;
   }
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
