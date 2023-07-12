@@ -1,28 +1,28 @@
 <!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
-<header class="header" *ngIf="!isTelaLogin" >
-  <div class="div-logo">
-    <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
+<header class="header-tela-um" *ngIf="!isTelaLogin" >
+  <div class="div-logo-tela-um">
+    <img class="logo-tela-um" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
-  <div class="paragrafo-e-icones" (click)="openDialog()">
-    <img class="icon-localizacao" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
-    <p class="p-localizacao">Rio de Janeiro</p>
-    <img class="icon-seta" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+  <div class="paragrafo-e-icones-tela-um" (click)="openDialog()">
+    <img class="icon-localizacao-tela-um" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
+    <p class="p-localizacao-tela-um">Rio de Janeiro</p>
+    <img class="icon-seta-tela-um" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
   </div>
-  <div class="borda-vertical">
+  <div class="borda-vertical-tela-um">
     <img src="assets/img/Vector2.svg" alt="">
   </div>
-  <div class="div-menu">
-    <a class="div-menu-filho" routerLink="home" routerLinkActive="active">Início</a>
-    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
-    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Contato</a>
-    <a class="div-menu-filho" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  <div class="div-menu-tela-um">
+    <a class="div-menu-filho-tela-um" routerLink="home" routerLinkActive="active">Início</a>
+    <a class="div-menu-filho-tela-um" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="div-menu-filho-tela-um" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="div-menu-filho-tela-um" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
   </div>
-  <form class="input-wrapper">
-    <input type="text" name="search" placeholder="Buscar por itens e outros">
-    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon">
+  <form class="input-wrapper-tela-um">
+    <input class="input-tela-um" type="text" name="search" placeholder="Buscar por itens e outros">
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-tela-um">
   </form>
-  <div class="icone-carrinho">
-    <button class="btn" routerLink="app-login">Entrar</button>
+  <div class="icone-carrinho-tela-um">
+    <button class="btn-tela-um" routerLink="app-login">Entrar</button>
     <img src="assets/img/mdi_cart.svg" alt="">
   </div>
 </header>
@@ -52,14 +52,14 @@
   </button>
 </div>
 
-<!--Aqui começa a parte da que corresponde as telas de 1025 a 1200-->
+<!--Aqui começa a parte da que corresponde as telas de 1025px a 1200px tela-dois-->
 <header class="header-tela-dois">
   <div class="div-logo-tela-dois">
     <img class="log" src="assets/img/logo-header.png" alt="imagem de paes">
   </div>
   <!--Conteúdo do menu de opções em telas entre 1025px e 1200px-->
-  <div class="div-menu-tela-dois"  (mouseenter)="openMenu()" (mouseleave)="closeMenu()"><!--testando-->
-    <a class="mat-menu-tigger-for" [matMenuTriggerFor]="menu" >
+  <div class="div-menu-tela-dois"><!--testando-->
+    <a class="mat-menu-tigger-for-tela-dois" [matMenuTriggerFor]="menu"> <!--testando-->
       Inicio
       <img class="icon-seta-invertida-tela-dois" src="assets/img/Group.svg" alt="">
       <mat-menu #menu="matMenu">
@@ -77,7 +77,7 @@
   <div class="paragrafo-e-icones-tela-dois" (click)="openDialog()">
     <img class="icon-localizacao-tela-dois" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização">
     <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
-    <img class="icon-seta-inveritda" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+    <img class="icon-seta-inveritda-tela-dois" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
   </div>
   <div class="borda-vertical-tela-dois">
     <img src="assets/img/Vector2.svg" alt="">
@@ -113,10 +113,10 @@
   </button>
 </div>
 
-<!--Aqui começa a parte da que corresponde as telas de 769 a 1024-->
+<!--Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três-->
 <header class="header-tela-tres">
   <div class="div-logo-tela-tres">
-    <img class="logo2-tela-tres" src="assets/img/logo2.png" alt="imagem de paes">
+    <img class="logo-tela-tres" src="assets/img/logo2.png" alt="imagem de paes">
   </div>
   <div class="paragrafo-e-icones-tela-tres" (click)="openDialog()">
     <div class="img-tela-tres">
@@ -127,43 +127,43 @@
       <p class="paragrafo-localizacao-tela-tres">Escolha um endereço</p>
     </div>
     <div class="img-seta-invertida-tela-tres">
-      <img class="icon-seta-inveritda" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+      <img class="icon-seta-inveritda-tela-tres" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
     </div>
   </div>
+  <div class="menu-tela-tres">
+    <a class="menu-filho-tela-tres" routerLink="home" routerLinkActive="active">Início</a>
+    <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  </div>
 </header>
-<div class="menu-tela-tres">
-  <a class="menu-filho-tela-tres" routerLink="home" routerLinkActive="active">Início</a>
-  <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
-  <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Contato</a>
-  <a class="menu-filho-tela-tres" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
-</div>
-<!---Início do carrossel-->
-<div class="grupo-botoes">
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
-    <span class="paragrafo-btns">Ordenar</span>
+<!---Início do carrossel que ainda faz parte da tela-tres-->
+<div class="grupo-botoes-tela-tres">
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-tres">Ordenar</span>
     <img src="assets/img/Frame.svg" alt="imagem 1">
   </button>
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
     <img src="assets/img/Frame-1.svg" alt="imagem 1">
-    <span class="paragrafo-btns">Pra Retirar</span>
+    <span class="paragrafo-btns-tela-tres">Pra Retirar</span>
   </button>
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
-    <span class="paragrafo-btns">Entrega grátis</span>
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-tres">Entrega grátis</span>
   </button>
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
-    <span class="paragrafo-btns">Entrega parceira</span>
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-tres">Entrega parceira</span>
   </button>
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
-    <span class="paragrafo-btns">vale refeição</span>
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-tres">vale refeição</span>
     <img src="assets/img/Frame.svg" alt="imagem 1">
   </button>
-  <button class="button" routerLink="/placeholder" routerLinkActive="active">
-    <span class="paragrafo-btns">Distância</span>
+  <button class="button-tela-tres" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-tres">Distância</span>
     <img src="assets/img/Frame.svg" alt="imagem 1">
   </button>
 </div>
 
-<div class="groupo-icones-img-fixo">
+<div class="groupo-icones-img-fixo-tela-tres">
   <div class="item-fixo-tela-tres">
     <img src="assets/img/material-symbols_search.svg" alt="Buscar">
     <span>Buscar</span>
@@ -177,6 +177,212 @@
     <span>Contatos</span>
   </div>
   <div class="item-fixo-tela-tres">
+    <img src="assets/img/gg_profile.svg" alt="Perfil">
+    <span>Perfil</span>
+  </div>
+</div>
+<!--Aqui começa o conteúdo das telas 481px e 768px tela-quatro-->
+<header class="header-tela-quatro">
+  <div class="div-logo-tela-quatro">
+    <img class="logo-tela-quatro" src="assets/img/logo2.png" alt="imagem de paes">
+  </div>
+  <div class="paragrafo-e-icones-tela-quatro" (click)="openDialog()">
+    <div class="img-tela-quatro">
+      <img class="icon-localizacao-tela-quatro" src="assets/img/carbon_location-filled-tela-tres.svg"
+        alt="icone-localização-tela-quatro">
+    </div>
+    <div class="text-tela-quatro">
+      <p class="paragrafo-localizacao-tela-quatro">Escolha um endereço</p>
+    </div>
+    <div class="img-seta-invertida-tela-quatro">
+      <img class="icon-seta-inveritda-tela-quatro" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+    </div>
+  </div>
+</header>
+<div class="menu-tela-quatro">
+  <a class="menu-filho-tela-quatro" routerLink="home" routerLinkActive="active">Início</a>
+  <a class="menu-filho-tela-quatro" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+  <a class="menu-filho-tela-quatro" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+  <a class="menu-filho-tela-quatro" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+</div>
+<!---Início do carrossel que ainda faz parte da tela-tres-->
+<div class="grupo-botoes-tela-quatro">
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-quarto">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <img src="assets/img/Frame-1.svg" alt="imagem 1">
+    <span class="paragrafo-btns-tela-quatro">Pra Retirar</span>
+  </button>
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-quatro">Entrega grátis</span>
+  </button>
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-quatro">Entrega parceira</span>
+  </button>
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-quatro">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-quatro" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-quatro">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+</div>
+
+<div class="groupo-icones-img-fixo-tela-quatro">
+  <div class="item-fixo-tela-quatro">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar">
+    <span>Buscar</span>
+  </div>
+  <div class="item-fixo-tela-quatro">
+    <img src="assets/img/bi_card-checklist.svg" alt="Pedidos">
+    <span>Pedidos</span>
+  </div>
+  <div class="item-fixo-tela-quatro">
+    <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato">
+    <span>Contatos</span>
+  </div>
+  <div class="item-fixo-tela-quatro">
+    <img src="assets/img/gg_profile.svg" alt="Perfil">
+    <span>Perfil</span>
+  </div>
+</div>
+
+<!--Aqui começa a parte da que corresponde as telas entre 320px e 480px tela-cinco-->
+<header class="header-tela-cinco">
+  <div class="div-logo-tela-cinco">
+    <img class="logo2-tela-cinco" src="assets/img/logo2.png" alt="imagem de paes">
+  </div>
+  <div class="paragrafo-e-icones-tela-cinco" (click)="openDialog()">
+    <div class="img-tela-cinco">
+      <img class="icon-localizacao-tela-cinco" src="assets/img/carbon_location-filled-tela-tres.svg"
+        alt="icone-localização">
+    </div>
+    <div class="text-tela-cinco">
+      <p class="paragrafo-localizacao-tela-cinco">Escolha um endereço</p>
+    </div>
+    <div class="img-seta-invertida-tela-cinco">
+      <img class="icon-seta-inveritda-tela-cinco" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+    </div>
+  </div>
+  <!-- <div class="menu-tela-cinco">
+    <a class="menu-filho-tela-cinco" routerLink="home" routerLinkActive="active">Início</a>
+    <a class="menu-filho-tela-cinco" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="menu-filho-tela-cinco" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="menu-filho-tela-cinco" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  </div> -->
+</header>
+<!---Início do carrossel da tela cinco 320px a 480px ou inferiores-->
+<div class="grupo-botoes-tela-cinco">
+  <button class="button-tela-cinco" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-tela-cinco">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button" routerLink="/placeholder" routerLinkActive="active">
+    <img src="assets/img/Frame-1.svg" alt="imagem 1">
+    <span class="paragrafo-btns-tela-cinco">Pra Retirar</span>
+  </button>
+  <button class="button-tela-cinco" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-cinco">Entrega grátis</span>
+  </button>
+  <button class="button-tela-cinco" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-cinco">Entrega parceira</span>
+  </button>
+  <button class="button-tela-cinco-tela-cinco" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-cinco">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-cinco" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-cinco">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+</div>
+
+<div class="groupo-icones-img-fixo-tela-cinco">
+  <div class="item-fixo-tela-cinco">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar">
+    <span>Buscar</span>
+  </div>
+  <div class="item-fixo-tela-cinco">
+    <img src="assets/img/bi_card-checklist.svg" alt="Pedidos">
+    <span>Pedidos</span>
+  </div>
+  <div class="item-fixo-tela-cinco">
+    <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato">
+    <span>Contatos</span>
+  </div>
+  <div class="item-fixo-tela-cinco">
+    <img src="assets/img/gg_profile.svg" alt="Perfil">
+    <span>Perfil</span>
+  </div>
+</div>
+
+<!--Aqui começa a parte da que corresponde as tela 319 e inferiores tela-seis-->
+<header class="header-tela-seis">
+  <div class="div-logo-tela-seis">
+    <img class="logo2-tela-seis" src="assets/img/logo2.png" alt="imagem de paes">
+  </div>
+  <div class="paragrafo-e-icones-tela-seis" (click)="openDialog()">
+    <div class="img-tela-seis">
+      <img class="icon-localizacao-tela-seis" src="assets/img/carbon_location-filled-tela-tres.svg"
+        alt="icone-localização-tela-seis">
+    </div>
+    <div class="text-tela-cinco-tela-seis">
+      <p class="paragrafo-localizacao-tela-seis">Escolha um endereço</p>
+    </div>
+    <div class="img-seta-invertida-tela-seis">
+      <img class="icon-seta-inveritda-tela-seis" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta">
+    </div>
+  </div>
+  <!-- <div class="menu-tela-seis">
+    <a class="menu-filho-tela-seis" routerLink="home" routerLinkActive="active">Início</a>
+    <a class="menu-filho-tela-seis" routerLink="/placeholder" routerLinkActive="active">Padarias</a>
+    <a class="menu-filho-tela-seis" routerLink="/placeholder" routerLinkActive="active">Contato</a>
+    <a class="menu-filho-tela-seis" routerLink="/placeholder" routerLinkActive="active">Sobre</a>
+  </div> -->
+</header>
+<!---Início do carrossel da tela cinco 319px ou inferiores-->
+<div class="grupo-botoes-tela-seis">
+  <button class="button-tela-seis" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-tela-seis">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-seis" routerLink="/placeholder" routerLinkActive="active">
+    <img src="assets/img/Frame-1.svg" alt="imagem 1">
+    <span class="paragrafo-btns-tela-seis">Pra Retirar</span>
+  </button>
+  <button class="button-tela-seis" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-seis">Entrega grátis</span>
+  </button>
+  <button class="button-tela-seis" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-seis">Entrega parceira</span>
+  </button>
+  <button class="button-tela-cinco-tela-seis" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-seis">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+  <button class="button-tela-seis" routerLink="/placeholder" routerLinkActive="active">
+    <span class="paragrafo-btns-tela-seis">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1">
+  </button>
+</div>
+
+<div class="groupo-icones-img-fixo-tela-seis">
+  <div class="item-fixo-tela-seis">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar">
+    <span>Buscar</span>
+  </div>
+  <div class="item-fixo-tela-seis">
+    <img src="assets/img/bi_card-checklist.svg" alt="Pedidos">
+    <span>Pedidos</span>
+  </div>
+  <div class="item-fixo-tela-seis">
+    <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato">
+    <span>Contatos</span>
+  </div>
+  <div class="item-fixo-tela-seis">
     <img src="assets/img/gg_profile.svg" alt="Perfil">
     <span>Perfil</span>
   </div>

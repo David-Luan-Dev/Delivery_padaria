@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {MatMenuModule} from '@angular/material/menu';
+import { Component, ElementRef, OnInit, ViewChild, HostListener } from '@angular/core';
+import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
 import {
   MatDialog,
   MatDialogRef,
@@ -15,7 +15,10 @@ import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localiza
 })
 export class HeaderComponent implements OnInit {
   isTelaLogin: boolean = false;
-  isMenuOpen: boolean = false;
+  // @ViewChild('menuContainer', { static: true }) menuContainer!: ElementRef;
+  // @ViewChild(MatMenuTrigger) menuTrigger!: MatMenuTrigger;
+
+  private closeTimeoutId: number | undefined; //testando
 
   constructor(public dialog: MatDialog) {
 
@@ -36,11 +39,35 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  openMenu(): void {
-    this.isMenuOpen = true;
-  }
 
-  closeMenu(): void {
-    this.isMenuOpen = false;
-  }
+
+  // openMenu(): void {
+  //   clearTimeout(this.closeTimeoutId);
+  //   this.menuTrigger.openMenu();
+  //   const icon = this.menuContainer.nativeElement.querySelector('.icon-seta-invertida-tela-dois');
+  //   if (icon) {
+  //     icon.classList.add('up');
+  //   }
+  // }
+
+  // closeMenuWithDelay(): void {
+  //   this.closeTimeoutId = window.setTimeout(() => {
+  //     this.menuTrigger.closeMenu();
+  //     const icon = this.menuContainer.nativeElement.querySelector('.icon-seta-invertida-tela-dois');
+  //     if (icon) {
+  //       icon.classList.remove('up');
+  //     }
+  //   }, 3000); // Ajuste o valor conforme necessário (em milissegundos)
+  // }
+
+  // @HostListener('mouseenter')
+  // onMouseEnter(): void {
+  //   this.openMenu();
+  // }
+
+  // @HostListener('mouseleave')
+  // onMouseLeave(): void {
+  //   this.closeMenuWithDelay();
+  // }
 }
+

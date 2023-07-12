@@ -7,21 +7,60 @@
   .header-tela-tres {
     display: none;
   }
-  .groupo-icones-img-fixo {
+  .header-tela-quatro {
+    display: none;
+  }
+  .header-tela-cinco {
+    display: none;
+  }
+  .header-tela-seis {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-dois {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-tres {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-quatro {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-cinco {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-seis {
     display: none;
   }
   .menu-tela-tres {
     display: none;
   }
-  /*Ocultamento da tela 1025 a 1200*/
-  .header-tela-dois {
+
+  .mat-menu-tigger-for {
     display: none;
   }
-  .grupo-botoes {
+
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+
+  .grupo-botoes-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-cinco {
+    display: none;
+  }
+  .grupo-botoes-tela-seis {
+    display: none;
+  }
+   /*como essa div está abaixo dos headers precisa também ser ocultada em outras telas*/
+   .menu-tela-quatro {
     display: none;
   }
   /*Estilização da tag superior header*/
-  .header {
+  .header-tela-um {
     display: flex;
     position: fixed;
     align-items: center;
@@ -38,25 +77,25 @@
   }
 
   //Estilização da div-logo e da logo.
-  .div-logo {
+  .div-logo-tela-um {
     display: flex;
     position: relative;
     //right: 0.3rem;
     margin: 0;
     padding: 0;
   }
-  .logo {
+  .logo-tela-um {
     display: flex;
     width: 4.45206rem;
     height: 3.75rem;
     flex-shrink: 1;
-    background: lightgray -22.661px -8.225px / 164.565% 126.805% no-repeat;
+    //background: lightgray -22.661px -8.225px / 164.565% 126.805% no-repeat;
     margin: 0;
     padding: 0;
   }
 
   // Estilização do paragrafo e dos icones div pai e div filho
-  .paragrafo-e-icones {
+  .paragrafo-e-icones-tela-um {
     //width: 21.375rem;
     display: flex;
     align-items: center;
@@ -67,7 +106,7 @@
     right: 1rem;
     cursor: pointer;
   }
-  .paragrafo-e-icones p {
+  .paragrafo-e-icones-tela-um p {
     display: flex;
     color: #e3b34d;
     font-size: 1.25rem;
@@ -78,15 +117,15 @@
     position: relative;
     flex-shrink: 1;
   }
-  .icon-localizacao {
+  .icon-localizacao-tela-um {
     flex-shrink: 1;
     color: #fc7310;
     margin: 0% 0% 5% 0%;
   }
-  .icon-seta {
+  .icon-seta-tela-um {
     margin: 0% 0% 5% 0%;
   }
-  .p-localizacao {
+  .p-localizacao-tela-um {
     color: #e3b34d;
     font-size: 1rem;
     font-family: proppins;
@@ -96,25 +135,25 @@
   }
 
   // Borda vertical ao lado do menu
-  .borda-vertical {
+  .borda-vertical-tela-um {
     width: 0px;
     flex-shrink: 0;
     position: relative;
     right: 1rem;
   }
 
-  .borda-vertical img {
-    opacity: 0.30000001192092896;
+  .borda-vertical-tela-um img {
+    opacity: 0.50000001192092896;
   }
   // Estilização da div que contém os menus
-  .div-menu {
+  .div-menu-tela-um {
     display: inline-flex;
     align-items: flex-start;
     gap: 1.20rem;
     position: relative;
   }
   //Estilização dos menus
-  .div-menu-filho {
+  .div-menu-filho-tela-um {
     color: #1e1e1e;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 1.25rem;
@@ -126,7 +165,7 @@
     text-decoration: none;
   }
   //Estilização da div que contém o input
-  .input-wrapper {
+  .input-wrapper-tela-um {
     display: flex;
     display: inline-flex;
     align-items: center;
@@ -138,7 +177,7 @@
   }
 
   //Dimensões do input
-  input {
+  .input-tela-um {
     display: flex;
     border: none;
     outline: none;
@@ -157,14 +196,14 @@
     opacity: 0.5;
   }
   //Estilização da img carrinho
-  .icone-carrinho {
+  .icone-carrinho-tela-um {
     display: flex;
     position: relative;
     right: 0.9rem;
     gap: 1rem;
   }
   /*Estilização do botão entrar/header*/
-  .btn {
+  .btn-tela-um {
     display: inline-flex;
     padding: 0.5rem 0.72919rem 0.5rem 0.6875rem;
     justify-content: center;
@@ -183,7 +222,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
   }
   //hover do botão Entrar do header
-  .btn:hover {
+  .btn-tela-um:hover {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
   }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
@@ -213,6 +252,11 @@
     left: 0;
     right: 0;
     z-index: 999;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .grupo-button-tela-um:hover {
+    transform: translateY(-3px); transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   }
   //Estilização dos botões do corrossel
   .button-tela-um {
@@ -234,7 +278,7 @@
   //hover para os botões do carrossel da tela header
   .button-tela-um:hover {
     transform: translateY(-3px); transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-um::-webkit-scrollbar {
@@ -254,13 +298,34 @@
 /* Estilos para telas de 1025px a 1200px tela dois*/
 @media (min-width: 1025px) and (max-width: 1200px) {
   /*Ocultamento da tela 1248 a superior*/
-  .header {
+  .header-tela-um { //tela-um
     display: none;
   }
   .header-tela-tres {
     display: none;
   }
-  .groupo-icones-img-fixo {
+  .header-tela-quatro {
+    display: none;
+  }
+  .header-tela-cinco {
+    display: none;
+  }
+  .header-tela-seis {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-um {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-tres {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-quatro {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-cinco {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-seis {
     display: none;
   }
   .menu-tela-tres {
@@ -269,7 +334,22 @@
   .grupo-botoes-tela-um {
     display: none;
   }
-
+  .grupo-botoes-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-cinco {
+    display: none;
+  }
+  .grupo-botoes-tela-seis {
+    display: none;
+  }
+   /*como essa div está abaixo dos headers precisa também ser ocultada em outras telas*/
+   .menu-tela-quatro {
+    display: none;
+  }
   /*Estilização da tag superior header*/
   .header-tela-dois {
     display: flex;
@@ -305,7 +385,7 @@
     height: 3.80756rem;
     background: lightgray -30.652px -8.351px / 185.67% 126.805% no-repeat;
   }
-  .mat-menu-tigger-for {
+  .mat-menu-tigger-for-tela-dois {
     display: flex;
     gap: 0.2rem;
     color: #e49011;
@@ -329,15 +409,6 @@
   .icon-seta-invertida-tela-dois:hover {
     transform: rotate(-180deg);
   }
-  .mat-menu-panel.menu-opened {
-  /* Estilos para o menu aberto */
-  display: flex;
-    gap: 0.2rem;
-    color: #e49011;
-    font-size: 1.17075rem;
-    font-family: Poppins;
-    position: relative;
-}
   //Div pai que contém a div com os menus filhos
   .div-menu-tela-dois {
     display: flex;
@@ -388,11 +459,6 @@
     flex-shrink: 1;
   }
 
-  .icon-setaInvertidatela-dois {
-    width: 0.73169rem;
-    height: 1.46344rem;
-    flex-shrink: 0;
-  }
   //icon de localização ao lado da tela dois
   .icon-localizacao-tela-dois {
     flex-shrink: 1;
@@ -401,8 +467,12 @@
   }
   //Seta ao lado do parágrafo tela-dois
   .icon-seta-invertida-tela-dois {
-    margin: 19% 0% 0% 2%;
+    width: 0.73169rem;
+    height: 1.46344rem;
+    flex-shrink: 0;
+    margin: 19% 0% 5% 2%;
   }
+
   //Estilização do parágrafo de localização da tela dois
   .p-localizacao-tela-dois {
     color: #e3b34d;
@@ -413,19 +483,14 @@
     line-height: normal;
   }
 
-  //Seta invertida dentro da div paragráfo-icones-tela-dois
-  .icon-seta-inveritda {
-    margin: 0% 0% 8% 0%;
-  }
-
   // Borda vertical ao lado do menu
   .borda-vertical-tela-dois {
     width: 0px;
     height: 1.875rem;
     flex-shrink: 0;
     position: relative;
-    right: 1rem;
-    opacity: 0.5;
+    right: 0.5rem;
+    opacity: 0.9;
     color: #000000;
   }
   //Estilização do input
@@ -462,7 +527,7 @@
   .icone-carrinho-tela-dois {
     display: flex;
     position: relative;
-    right: 2rem;
+    right: 1rem;
     gap: 1rem;
   }
   .btn-tela-dois {
@@ -548,18 +613,55 @@
   }
 }
 
-/* Estilos para telas de 769px a 1024px */
+/* Estilos para telas de 769px a 1024px tela-três */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .header-tela-um {
+    display: none;
+  }
   .header-tela-dois {
     display: none;
   }
-  .header {
+  .header-tela-quatro {
+    display: none;
+  }
+  .header-tela-cinco {
+    display: none;
+  }
+  .header-tela-seis {
     display: none;
   }
   .grupo-botoes-tela-um {
     display: none;
   }
   .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-seis {
+    display: none;
+  }
+  .grupo-botoes-tela-dois {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-um {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-dois {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-quatro {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-cinco {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-seis {
+    display: none;
+  }
+  /*como essa div está abaixo dos headers precisa também ser ocultada em outras telas*/
+  .menu-tela-quatro {
     display: none;
   }
   .header-tela-tres {
@@ -585,7 +687,11 @@
     position: relative;
     left: 1.5rem;
   }
-
+  .logo-tela-tres {
+    width: 9.97056rem;
+    height: 4.58344rem;
+    flex-shrink: 0;
+  }
   .paragrafo-e-icones-tela-tres {
     display: flex;
     width: 100%;
@@ -615,17 +721,19 @@
     height: 2.99438rem;
     flex-shrink: 0;
   }
-
+  //div que contém a setá invertida ao lado do paragrafo
   .img-seta-invertida-tela-tres {
     display: flex;
     align-items: center;
     margin: 0% 0% 3% 1%;
     flex-shrink: 0;
-  }
 
-  .icon-seta-inveritda {
+  }
+  //seta invertida
+  .icon-seta-inveritda-tela-tres {
     width: 1.04806rem;
     height: 2.09606rem;
+    flex-shrink: 0;
   }
 
   /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
@@ -638,7 +746,7 @@
     height: 2.35956rem;
     flex-shrink: 0;
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
-    gap: 3.35rem;
+    gap: 2.12rem;
   }
 
   /*div de cada item do menu*/
@@ -646,9 +754,8 @@
     display: flex;
     position: relative;
     color: #1e1e1e;
-    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
-      rgba(0, 0, 0, 0.25);
-    font-size: 1.90431rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.5625rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -669,25 +776,9 @@
     text-decoration: underline;
   }
 
-  /*conteúdo da parte inferior da tela*/
-  .groupo-icones-img-fixo {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    height: 6.375rem;
-    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
-    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
-      rgba(228, 144, 17, 0.1);
-    width: 100%;
-    bottom: 0;
-    gap: 8.42rem;
-    z-index: 9999;
-    background: rgba(13, 12, 10, 0.06);
-  }
+
   /*Estilização do Carrossel*/
-  .grupo-botoes {
+  .grupo-botoes-tela-tres {
     display: flex;
     //justify-content: center;
     align-items: center;
@@ -703,10 +794,10 @@
     flex-shrink: 0;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .grupo-botoes::-webkit-scrollbar {
+  .grupo-botoes-tela-tres::-webkit-scrollbar {
     display: none;
   }
-  .button {
+  .button-tela-tres {
     display: inline-flex;
     padding: 0.55rem 0.9875rem 0.3875rem 1.425rem;
     justify-content: flex-end;
@@ -723,21 +814,16 @@
   }
 
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .paragrafo-btns .router-link-active {
+  .paragrafo-btns-tela-tres .router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  button:focus {
+  .button:focus {
     color: #e49011;
     text-decoration: underline;
   }
-  //div que agrupa o span e a img
-  .item-fixo-tela-tres {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+
   //Estilização do span
   .item-fixo-tela-tres span {
     display: flex;
@@ -765,16 +851,46 @@
     flex-shrink: 0;
     margin-right: 5px;
   }
+    /*conteúdo da parte inferior da tela*/
+    .groupo-icones-img-fixo-tela-tres {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      height: 6.375rem;
+      border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+      box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+        rgba(228, 144, 17, 0.1);
+      width: 100%;
+      bottom: 0;
+      gap: 8.42rem;
+      z-index: 9999;
+      background: rgba(13, 12, 10, 0.06);
+    }
+      //div que agrupa o span e a img
+  .item-fixo-tela-tres-tela-tres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-/*Estilização das para tamanhos de telas de 481px até 768px*/
+/*Estilização das para tamanhos de telas de 481px até 768px tela-quatro*/
 @media (min-width: 481px) and (max-width: 768px) {
-  .header-tela-dois {
+  .header-tela-um {//tela 1201 ou superiores ocultas nessa media
     display: none;
   }
-  .header {
+  .header-tela-dois { //telas 1025px a 1200px
     display: none;
   }
-  .grupo-botoes {
+  .header-tela-tres {
+    display: none;
+  }
+
+  .header-tela-cinco { //telas 319px ou inferiores
+    display: none;
+  }
+  .header-tela-seis {
     display: none;
   }
   .grupo-botoes-tela-um {
@@ -783,7 +899,35 @@
   .grupo-botoes-tela-dois {
     display: none;
   }
-  .header-tela-tres {
+  .grupo-botoes-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-cinco {
+    display: none;
+  }
+  .grupo-botoes-tela-seis {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-um {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-dois {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-tres {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-cinco {
+    display: none;
+  }
+  .groupo-icones-img-fixo-tela-seis {
+    display: none;
+  }
+
+  .header-tela-quatro {
     width: 100%;
     display: flex;
     align-items: center;
@@ -794,18 +938,18 @@
     box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
       rgba(228, 144, 17, 0.1);
   }
-  .div-logo-tela-tres {
+  .div-logo-tela-quatro {
     display: flex;
     position: relative;
-    left: 0.5rem;
+    left: 0.8rem;
   }
-  .logo2-tela-tres {
+  .logo-tela-quatro {
     width: 6.2365rem;
     height: 3.86013rem;
     flex-shrink: 0;
   }
 
-  .paragrafo-e-icones-tela-tres {
+  .paragrafo-e-icones-tela-quatro {
     display: flex;
     width: 100%;
     align-items: center;
@@ -813,7 +957,7 @@
     left: 3rem;
     cursor: pointer;
   }
-  .paragrafo-localizacao-tela-tres {
+  .paragrafo-localizacao-tela-quatro {
     color: #e3b34d;
     font-size: 1.31525rem;
     font-family: Poppins;
@@ -822,28 +966,28 @@
     line-height: normal;
     position: relative;
   }
-  .img-tela-tres {
+  .img-tela-quatro {
     display: flex;
     align-items: center;
     margin: 4% 0% 8% 1%;
   }
-  .icon-localizacao-tela-tres {
+  .icon-localizacao-tela-quatro {
     width: 1.87894rem;
     height: 1.87894rem;
     flex-shrink: 0;
   }
-  .img-seta-invertida-tela-tres {
+  .img-seta-invertida-tela-quatro {
     display: flex;
     align-items: center;
     margin: 0% 0% 3% 1%;
     flex-shrink: 0;
   }
-  .icon-seta-inveritda {
+  .icon-seta-inveritda-tela-quatro {
     width: 1.04806rem;
     height: 2.09606rem;
   }
-  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
-  .menu-tela-tres {
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 481 a 768*/
+  .menu-tela-quatro {
     display: flex;
     width: 100%;
     align-items: center;
@@ -854,7 +998,7 @@
     gap: 2.17rem;
   }
   /*div de cada item do menu*/
-  .menu-filho-tela-tres {
+  .menu-filho-tela-quatro {
     display: flex;
     position: relative;
     color: #1e1e1e;
@@ -879,7 +1023,7 @@
     text-decoration: underline;
   }
   /*conteúdo da parte inferior da tela*/
-  .groupo-icones-img-fixo {
+  .groupo-icones-img-fixo-tela-quatro {
     display: flex;
     position: fixed;
     align-items: center;
@@ -898,7 +1042,7 @@
     background: rgba(13, 12, 10, 0.06);
   }
   /*Estilização do Carrossel*/
-  .grupo-botoes {
+  .grupo-botoes-tela-quatro {
     display: flex;
     //justify-content: center;
     align-items: center;
@@ -913,10 +1057,10 @@
     flex-shrink: 0;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .grupo-botoes::-webkit-scrollbar {
+  .grupo-botoes-tela-quatro::-webkit-scrollbar {
     display: none;
   }
-  .button {
+  .button-tela-quatro {
     display: inline-flex;
     padding: 0.4505rem 1.10356rem 0.34713rem 1.16713rem;
     justify-content: flex-end;
@@ -933,7 +1077,7 @@
   }
 
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .paragrafo-btns .router-link-active {
+  .paragrafo-btns-tela-quatro .router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
@@ -943,13 +1087,13 @@
     text-decoration: underline;
   }
   //div que agrupa o span e a img
-  .item-fixo-tela-tres {
+  .item-fixo-tela-quatro {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   //Estilização do span
-  .item-fixo-tela-tres span {
+  .item-fixo-tela-quatro span {
     display: flex;
     width: auto;
     height: auto;
@@ -963,7 +1107,7 @@
     line-height: normal;
   }
   //Estilização da img
-  .item-fixo-tela-tres img {
+  .item-fixo-tela-quatro img {
     display: flex;
     //width: 3.85863rem;
     //height: 3.85188rem;
@@ -976,14 +1120,21 @@
     margin-right: 5px;
   }
 }
+//Aqui começa a estilização das telas entre 320px e 480px tela-cinco
 @media (min-width: 320px) and (max-width: 480px) {
-  .header-tela-dois {
+  .header-tela-um {
+    display: none;//telas 1201 ou superiores
+  }
+  .header-tela-dois {//telas 1025px a 1200px
     display: none;
   }
-  .header {
+  .header-tela-tres {
     display: none;
   }
-  .grupo-botoes {
+  .header-tela-quatro {
+    display: none;
+  }
+  .header-tela-seis {
     display: none;
   }
   .grupo-botoes-tela-um {
@@ -992,7 +1143,20 @@
   .grupo-botoes-tela-dois {
     display: none;
   }
-  .header-tela-tres {
+  .grupo-botoes-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-seis {
+    display: none;
+  }
+   /*como essa div está abaixo dos headers precisa também ser ocultada em outras telas*/
+   .menu-tela-quatro {
+    display: none;
+  }
+  .header-tela-cinco {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1003,18 +1167,18 @@
     box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
       rgba(228, 144, 17, 0.1);
   }
-  .div-logo-tela-tres {
+  .div-logo-tela-cinco {
     display: flex;
     position: relative;
     left: 0.5rem;
   }
-  .logo2-tela-tres {
+  .logo2-tela-cinco {
     width: 4.149rem;
     height: 3.08425rem;
     flex-shrink: 0;
   }
 
-  .paragrafo-e-icones-tela-tres {
+  .paragrafo-e-icones-tela-cinco {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1022,7 +1186,7 @@
     left: 3rem;
     cursor: pointer;
   }
-  .paragrafo-localizacao-tela-tres {
+  .paragrafo-localizacao-tela-cinco {
     color: #e3b34d;
     font-size: 0.875rem;
     font-family: Poppins;
@@ -1031,29 +1195,29 @@
     line-height: normal;
     position: relative;
   }
-  .img-tela-tres {
+  .img-tela-cinco {
     display: flex;
     align-items: center;
     margin: 2% 0% 8% 1%;
   }
-  .icon-localizacao-tela-tres {
+  .icon-localizacao-tela-cinco {
     width: 1.25rem;
     height: 1.25rem;
     flex-shrink: 0;
   }
-  .img-seta-invertida-tela-tres {
+  .img-seta-invertida-tela-cinco {
     display: flex;
     align-items: center;
     margin: 0% 0% 5% 1%;
     flex-shrink: 0;
   }
-  .icon-seta-inveritda {
+  .icon-seta-inveritda-tela-cinco {
     width: 0.4375rem;
     height: 0.875rem;
     flex-shrink: 0;
   }
-  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
-  .menu-tela-tres {
+
+  .menu-tela-cinco {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -1066,7 +1230,7 @@
     gap: 3.5rem;
   }
   /*div de cada item do menu*/
-  .menu-filho-tela-tres {
+  .menu-filho-tela-cinco {
     display: flex;
     position: relative;
     color: #1e1e1e;
@@ -1081,7 +1245,7 @@
     left: 1.5rem;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .menu-tela-tres::-webkit-scrollbar {
+  .menu-tela-cinco::-webkit-scrollbar {
     display: none;
   }
   /*aplicação de estilos para ser aplicada após o click (Ativo)*/
@@ -1095,7 +1259,7 @@
     text-decoration: underline;
   }
   /*conteúdo da parte inferior da tela*/
-  .groupo-icones-img-fixo {
+  .groupo-icones-img-fixo-tela-cinco {
     display: flex;
     position: fixed;
     align-items: center;
@@ -1113,8 +1277,9 @@
     z-index: 9999;
     background: rgba(13, 12, 10, 0.06);
   }
-  /*Estilização do Carrossel*/
-  .grupo-botoes {
+
+  /*Estilização do Carrossel, compartilha configuração com a tela-dois*/
+  .grupo-botoes-tela-cinco {
     display: flex;
     //justify-content: center;
     align-items: center;
@@ -1129,10 +1294,10 @@
     flex-shrink: 0;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .grupo-botoes::-webkit-scrollbar {
+  .grupo-botoes-tela-cinco::-webkit-scrollbar {
     display: none;
   }
-  .button {
+  .button-tela-cinco {
     display: inline-flex;
     padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
     justify-content: flex-end;
@@ -1149,7 +1314,7 @@
   }
 
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .paragrafo-btns .router-link-active {
+  .paragrafo-btns-tela-cinco .router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
@@ -1159,13 +1324,13 @@
     text-decoration: underline;
   }
   //div que agrupa o span e a img
-  .item-fixo-tela-tres {
+  .item-fixo-tela-cinco {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   //Estilização do span
-  .item-fixo-tela-tres span {
+  .item-fixo-tela-cinco span {
     display: flex;
     width: auto;
     height: auto;
@@ -1179,7 +1344,7 @@
     line-height: normal;
   }
   //Estilização da img
-  .item-fixo-tela-tres img {
+  .item-fixo-tela-cinco img {
     display: flex;
     //width: 3.85863rem;
     //height: 3.85188rem;
@@ -1192,10 +1357,19 @@
   }
 }
 @media (max-width: 319px) {
+  .header-tela-um {
+    display: none;
+  }
   .header-tela-dois {
     display: none;
   }
-  .header {
+  .header-tela-tres {
+    display: none;
+  }
+  .header-tela-quatro {
+    display: none;
+  }
+  .header-tela-ceinco {
     display: none;
   }
   .grupo-botoes-tela-um {
@@ -1204,7 +1378,20 @@
   .grupo-botoes-tela-dois {
     display: none;
   }
-  .header-tela-tres {
+  .grupo-botoes-tela-tres {
+    display: none;
+  }
+  .grupo-botoes-tela-quatro {
+    display: none;
+  }
+  .grupo-botoes-tela-cinco {
+    display: none;
+  }
+   /*como essa div está abaixo dos headers precisa também ser ocultada em outras telas*/
+   .menu-tela-quatro {
+    display: none;
+  }
+  .header-tela-seis {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1215,18 +1402,18 @@
     box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
       rgba(228, 144, 17, 0.1);
   }
-  .div-logo-tela-tres {
+  .div-logo-tela-seis {
     display: flex;
     position: relative;
     left: 0.5rem;
   }
-  .logo2-tela-tres {
+  .logo-tela-seis {
     width: 4.149rem;
     height: 3.08425rem;
     flex-shrink: 0;
   }
 
-  .paragrafo-e-icones-tela-tres {
+  .paragrafo-e-icones-tela-seis {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1234,7 +1421,7 @@
     left: 3rem;
     cursor: pointer;
   }
-  .paragrafo-localizacao-tela-tres {
+  .paragrafo-localizacao-tela-seis {
     color: #e3b34d;
     font-size: 0.875rem;
     font-family: Poppins;
@@ -1243,29 +1430,29 @@
     line-height: normal;
     position: relative;
   }
-  .img-tela-tres {
+  .img-tela-seis {
     display: flex;
     align-items: center;
     margin: 2% 0% 8% 1%;
   }
-  .icon-localizacao-tela-tres {
+  .icon-localizacao-tela-seis {
     width: 1.25rem;
     height: 1.25rem;
     flex-shrink: 0;
   }
-  .img-seta-invertida-tela-tres {
+  .img-seta-invertida-tela-seis {
     display: flex;
     align-items: center;
     margin: 0% 0% 5% 1%;
     flex-shrink: 0;
   }
-  .icon-seta-inveritda {
+  .icon-seta-inveritda-tela-seis {
     width: 0.4375rem;
     height: 0.875rem;
     flex-shrink: 0;
   }
   /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
-  .menu-tela-tres {
+  .menu-tela-seis {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -1278,7 +1465,7 @@
     gap: 3.5rem;
   }
   /*div de cada item do menu*/
-  .menu-filho-tela-tres {
+  .menu-filho-tela-seis {
     display: flex;
     position: relative;
     color: #1e1e1e;
@@ -1293,7 +1480,7 @@
     left: 1.5rem;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .menu-tela-tres::-webkit-scrollbar {
+  .menu-tela-seis::-webkit-scrollbar {
     display: none;
   }
   /*aplicação de estilos para ser aplicada após o click (Ativo)*/
@@ -1306,8 +1493,8 @@
     color: #e49011;
     text-decoration: underline;
   }
-  /*conteúdo da parte inferior da tela*/
-  .groupo-icones-img-fixo {
+  /*conteúdo da parte inferior da tela telas menores ou igual a 320px*/
+  .groupo-icones-img-fixo-tela-seis {
     display: flex;
     position: fixed;
     align-items: center;
@@ -1325,8 +1512,8 @@
     z-index: 9999;
     background: rgba(13, 12, 10, 0.06);
   }
-  /*Estilização do Carrossel*/
-  .grupo-botoes {
+  /*Estilização do Carrossel tela-tres 320px ou menores*/
+  .grupo-botoes-tela-seis {
     display: flex;
     //justify-content: center;
     align-items: center;
@@ -1341,10 +1528,10 @@
     flex-shrink: 0;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .grupo-botoes::-webkit-scrollbar {
+  .grupo-botoes-tela-seis::-webkit-scrollbar {
     display: none;
   }
-  .button {
+  .button-seis {
     display: inline-flex;
     padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
     justify-content: flex-end;
@@ -1361,7 +1548,7 @@
   }
 
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .paragrafo-btns .router-link-active {
+  .paragrafo-btns-tela-seis .router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
@@ -1371,13 +1558,13 @@
     text-decoration: underline;
   }
   //div que agrupa o span e a img
-  .item-fixo-tela-tres {
+  .item-fixo-tela-seis {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   //Estilização do span
-  .item-fixo-tela-tres span {
+  .item-fixo-tela-seis span {
     display: flex;
     width: auto;
     height: auto;
@@ -1391,7 +1578,7 @@
     line-height: normal;
   }
   //Estilização da img
-  .item-fixo-tela-tres img {
+  .item-fixo-tela-seis img {
     display: flex;
     //width: 3.85863rem;
     //height: 3.85188rem;
