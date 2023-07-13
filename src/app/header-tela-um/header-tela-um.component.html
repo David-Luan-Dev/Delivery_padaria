@@ -1,0 +1,114 @@
+<!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
+<header class="header-tela-um" *ngIf="!isTelaLogin">
+  <div class="div-logo-tela-um">
+    <img
+      class="logo-tela-um"
+      src="assets/img/logo-header.png"
+      alt="imagem de paes"
+    />
+  </div>
+  <div class="paragrafo-e-icones-tela-um" (click)="openDialog()">
+    <img
+      class="icon-localizacao-tela-um"
+      src="assets/img/carbon_location-filled-atual.svg"
+      alt="icone-localização"
+    />
+    <p class="p-localizacao-tela-um">Rio de Janeiro</p>
+    <img
+      class="icon-seta-tela-um"
+      src="assets/img/eva_arrow-down-fill-atual.svg"
+      alt=" icone-seta"
+    />
+  </div>
+  <div class="borda-vertical-tela-um">
+    <img src="assets/img/Vector2.svg" alt="" />
+  </div>
+  <div class="div-menu-tela-um">
+    <a
+      class="div-menu-filho-tela-um"
+      routerLink="home"
+      routerLinkActive="active"
+      >Início</a
+    >
+    <a
+      class="div-menu-filho-tela-um"
+      routerLink="/placeholder"
+      routerLinkActive="active"
+      >Padarias</a
+    >
+    <a
+      class="div-menu-filho-tela-um"
+      routerLink="/placeholder"
+      routerLinkActive="active"
+      >Contato</a
+    >
+    <a
+      class="div-menu-filho-tela-um"
+      routerLink="/placeholder"
+      routerLinkActive="active"
+      >Sobre</a
+    >
+  </div>
+  <form class="input-wrapper-tela-um">
+    <input
+      class="input-tela-um"
+      type="text"
+      name="search"
+      placeholder="Buscar por itens e outros"
+    />
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-tela-um" />
+  </form>
+  <div class="icone-carrinho-tela-um">
+    <button class="btn-tela-um" routerLink="app-login">Entrar</button>
+    <img src="assets/img/mdi_cart.svg" alt="" />
+  </div>
+</header>
+<!---Início do carrossel da tela um 1201px ou maior-->
+<div class="grupo-botoes-tela-um">
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-um">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <img src="assets/img/Frame-1.svg" alt="imagem 1" />
+    <span class="paragrafo-btn-tela-um">Pra Retirar</span>
+  </button>
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-um">Entrega grátis</span>
+  </button>
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-um">Entrega parceira</span>
+  </button>
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-um">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+  <button
+    class="button-tela-um"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-um">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+</div>

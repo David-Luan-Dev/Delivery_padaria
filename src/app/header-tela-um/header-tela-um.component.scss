@@ -1,0 +1,240 @@
+/* Estilos para telas extra grandes e TVs (1201px e mais) */
+@media (min-width: 1201px) {
+  /*Estilização da tag superior header*/
+  .header-tela-um {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.375rem;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(228, 144, 17, 0.1);
+    background: #fff;
+  }
+
+  //Estilização da div-logo e da logo.
+  .div-logo-tela-um {
+    display: flex;
+    position: relative;
+    //right: 0.3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .logo-tela-um {
+    display: flex;
+    width: 4.45206rem;
+    height: 3.75rem;
+    flex-shrink: 1;
+    //background: lightgray -22.661px -8.225px / 164.565% 126.805% no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Estilização do paragrafo e dos icones div pai e div filho
+  .paragrafo-e-icones-tela-um {
+    //width: 21.375rem;
+    display: flex;
+    align-items: center;
+    //width: 11.48333rem;
+    padding-right: 0px;
+    gap: 0.25rem;
+    position: relative;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .paragrafo-e-icones-tela-um p {
+    display: flex;
+    color: #e3b34d;
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 1;
+  }
+  .icon-localizacao-tela-um {
+    flex-shrink: 1;
+    color: #fc7310;
+    margin: 0% 0% 5% 0%;
+  }
+  .icon-seta-tela-um {
+    margin: 0% 0% 5% 0%;
+  }
+  .p-localizacao-tela-um {
+    color: #e3b34d;
+    font-size: 1rem;
+    font-family: proppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  // Borda vertical ao lado do menu
+  .borda-vertical-tela-um {
+    width: 0px;
+    flex-shrink: 0;
+    position: relative;
+    right: 1rem;
+  }
+
+  .borda-vertical-tela-um img {
+    opacity: 0.50000001192092896;
+  }
+  // Estilização da div que contém os menus
+  .div-menu-tela-um {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    position: relative;
+  }
+  //Estilização dos menus
+  .div-menu-filho-tela-um {
+    color: #1e1e1e;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+    text-decoration: none;
+  }
+  //Estilização da div que contém o input
+  .input-wrapper-tela-um {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    height: 1.875rem;
+    padding: 0.125rem 0.10419rem 0.1875rem 0.3125rem;
+    border-radius: 0.6875rem;
+    flex-shrink: 0;
+    border: 1px solid #717171;
+  }
+
+  //Dimensões do input
+  .input-tela-um {
+    display: flex;
+    border: none;
+    outline: none;
+    width: 21.66667rem;
+  }
+
+  /*Estilização do placeholder do input de pesquisa*/
+  ::placeholder {
+    display: flex;
+    color: #717171;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  //Estilização da img carrinho
+  .icone-carrinho-tela-um {
+    display: flex;
+    position: relative;
+    right: 0.9rem;
+    gap: 1rem;
+  }
+  /*Estilização do botão entrar/header*/
+  .btn-tela-um {
+    display: inline-flex;
+    padding: 0.5rem 0.72919rem 0.5rem 0.6875rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #e49011;
+    border: none;
+    color: #fffffa;
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    right: 0.9rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  //hover do botão Entrar do header
+  .btn-tela-um:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Estilização do Carrossel*/
+  .grupo-botoes-tela-um {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 20px;
+    position: relative;
+    top: 4.5rem;
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .grupo-button-tela-um:hover {
+    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  }
+  //Estilização dos botões do corrossel
+  .button-tela-um {
+    display: inline-flex;
+    padding: 8.8px 15.8px 6.2px 22.8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1px;
+    border-radius: 20px;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 19px;
+    line-height: 24.15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  //hover para os botões do carrossel da tela header
+  .button-tela-um:hover {
+    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes-tela-um::-webkit-scrollbar {
+    display: none;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns-tela-um .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+}

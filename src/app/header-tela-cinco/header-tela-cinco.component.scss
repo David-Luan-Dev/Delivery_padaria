@@ -1,0 +1,202 @@
+//Aqui começa a estilização das telas entre 320px e 480px tela-cinco
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-tela-cinco {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 4.20569rem;
+    flex-shrink: 0;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
+      rgba(228, 144, 17, 0.1);
+  }
+  .div-logo-tela-cinco {
+    display: flex;
+    position: relative;
+    left: 0.5rem;
+  }
+  .logo2-tela-cinco {
+    width: 4.149rem;
+    height: 3.08425rem;
+    flex-shrink: 0;
+  }
+
+  .paragrafo-e-icones-tela-cinco {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .paragrafo-localizacao-tela-cinco {
+    color: #e3b34d;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+  .img-tela-cinco {
+    display: flex;
+    align-items: center;
+    margin: 2% 0% 8% 1%;
+  }
+  .icon-localizacao-tela-cinco {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+  .img-seta-invertida-tela-cinco {
+    display: flex;
+    align-items: center;
+    margin: 0% 0% 5% 1%;
+    flex-shrink: 0;
+  }
+  .icon-seta-inveritda-tela-cinco {
+    width: 0.4375rem;
+    height: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .menu-tela-cinco {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    height: 2.35956rem;
+    flex-shrink: 0;
+    border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
+    gap: 3.5rem;
+  }
+  /*div de cada item do menu*/
+  .menu-filho-tela-cinco {
+    display: flex;
+    position: relative;
+    color: #1e1e1e;
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
+      rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    left: 1.5rem;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .menu-tela-cinco::-webkit-scrollbar {
+    display: none;
+  }
+  /*aplicação de estilos para ser aplicada após o click (Ativo)*/
+  a.router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  a:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo-tela-cinco {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 3.6875rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    width: 100%;
+    bottom: 0;
+    //right: 50%;
+    //left: 50%;
+    gap: 1.56rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
+  /*Estilização do Carrossel, compartilha configuração com a tela-dois*/
+  .grupo-botoes-tela-cinco {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 3.4375rem;
+    gap: 1.03rem;
+    position: relative;
+    top: 15px;
+    left: 0.86rem;
+    flex-shrink: 0;
+  }
+  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+  .grupo-botoes-tela-cinco::-webkit-scrollbar {
+    display: none;
+  }
+  .button-tela-cinco {
+    display: inline-flex;
+    padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.22744rem;
+    border-radius: 0.87731rem;
+    border: 1px solid #fc7310;
+    background: rgba(255, 255, 255, 0);
+    font-family: proppis;
+    color: #717171;
+    text-align: center;
+    font-size: 0.97263rem;
+    line-height: 1.23625rem;
+  }
+
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  .paragrafo-btns-tela-cinco .router-link-active {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  /*Aplicação de efeito ativo quando a rota estiver ativa*/
+  button:focus {
+    color: #e49011;
+    text-decoration: underline;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-tela-cinco {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //Estilização do span
+  .item-fixo-tela-cinco span {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  //Estilização da img
+  .item-fixo-tela-cinco img {
+    display: flex;
+    //width: 3.85863rem;
+    //height: 3.85188rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+}

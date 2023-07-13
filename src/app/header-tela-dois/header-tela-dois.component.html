@@ -1,0 +1,122 @@
+<!--Aqui começa a parte da que corresponde as telas de 1025px a 1200px tela-dois-->
+<header class="header-tela-dois">
+  <div class="div-logo-tela-dois">
+    <img class="log" src="assets/img/logo-header.png" alt="imagem de paes" />
+  </div>
+  <!--Conteúdo do menu de opções em telas entre 1025px e 1200px-->
+  <div class="div-menu-tela-dois">
+    <!--testando-->
+    <a class="mat-menu-tigger-for-tela-dois" [matMenuTriggerFor]="menu">
+      <!--testando-->
+      Inicio
+      <img
+        class="icon-seta-invertida-tela-dois"
+        src="assets/img/Group.svg"
+        alt=""
+      />
+      <mat-menu #menu="matMenu">
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="home"
+          routerLinkActive="active"
+          >Início</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          >Padarias</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          >Contato</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          >Sobre</a
+        >
+      </mat-menu>
+    </a>
+  </div>
+  <form class="input-wrapper-tela-dois">
+    <input type="text" name="search" placeholder="Buscar por itens e outros" />
+    <img
+      src="assets/img/mi_search.svg"
+      alt="Ícone"
+      class="icon-search-tela-dois"
+    />
+  </form>
+  <div class="paragrafo-e-icones-tela-dois" (click)="openDialog()">
+    <img
+      class="icon-localizacao-tela-dois"
+      src="assets/img/carbon_location-filled-atual.svg"
+      alt="icone-localização"
+    />
+    <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
+    <img
+      class="icon-seta-inveritda-tela-dois"
+      src="assets/img/eva_arrow-down-fill-atual.svg"
+      alt=" icone-seta"
+    />
+  </div>
+  <div class="borda-vertical-tela-dois">
+    <img src="assets/img/Vector2.svg" alt="" />
+  </div>
+  <div class="icone-carrinho-tela-dois">
+    <button class="btn-tela-dois">Entrar</button>
+    <img src="assets/img/mdi_cart.svg" alt="icone seta" />
+  </div>
+</header>
+<!---Início do carrossel da tela dois-->
+<div class="grupo-botoes-tela-dois">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-dois">Ordenar</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <img src="assets/img/Frame-1.svg" alt="imagem 1" />
+    <span class="paragrafo-btns-tela-dois">Pra Retirar</span>
+  </button>
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-dois">Entrega grátis</span>
+  </button>
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-dois">Entrega parceira</span>
+  </button>
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-dois">vale refeição</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
+    <span class="paragrafo-btns-tela-dois">Distância</span>
+    <img src="assets/img/Frame.svg" alt="imagem 1" />
+  </button>
+</div>

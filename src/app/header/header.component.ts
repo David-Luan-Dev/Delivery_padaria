@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild, HostListener } from '@angular/core';
-import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
+import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 import {
   MatDialog,
   MatDialogRef,
@@ -14,31 +14,17 @@ import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localiza
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  isTelaLogin: boolean = false;
-  // @ViewChild('menuContainer', { static: true }) menuContainer!: ElementRef;
-  // @ViewChild(MatMenuTrigger) menuTrigger!: MatMenuTrigger;
+  width: number = 0
 
-  private closeTimeoutId: number | undefined; //testando
-
-  constructor(public dialog: MatDialog) {
-
+  @HostListener('window:resize', ['$event'])
+  getScreenSize() {
+    this.width = window.screen.width;
+    console.log(this.width);
   }
 
   ngOnInit(): void {
-
+    this.getScreenSize();
   }
-
-
-  public openDialog() {
-    this.dialog.open(DialogLocalizacaoComponent, {
-      data: 'Adicione ou escolha um endereço',
-      width: '43.106rem',
-      height: '32.07294rem',
-      enterAnimationDuration: '300ms',
-      exitAnimationDuration: '300ms',
-    });
-  }
-
 
 
   // openMenu(): void {

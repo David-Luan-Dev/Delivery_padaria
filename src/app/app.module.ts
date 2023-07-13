@@ -14,6 +14,12 @@ import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-l
 import { LoginComponent } from './pages/login/login.component';
 import { InformeEmailComponent } from './pages/login/informe-email/informe-email.component';
 import { InformeCelularComponent } from './pages/login/informe-celular/informe-celular.component';
+import { HeaderTelaUmComponent } from './header-tela-um/header-tela-um.component';
+import { HeaderTelaDoisComponent } from './header-tela-dois/header-tela-dois.component';
+import { HeaderTelaTresComponent } from './header-tela-tres/header-tela-tres.component';
+import { HeaderTelaQuatroComponent } from './header-tela-quatro/header-tela-quatro.component';
+import { HeaderTelaCincoComponent } from './header-tela-cinco/header-tela-cinco.component';
+import { HeaderTelaSeisComponent } from './header-tela-seis/header-tela-seis.component';
 
 
 @NgModule({
@@ -25,6 +31,12 @@ import { InformeCelularComponent } from './pages/login/informe-celular/informe-c
     LoginComponent,
     InformeEmailComponent,
     InformeCelularComponent,
+    HeaderTelaUmComponent,
+    HeaderTelaDoisComponent,
+    HeaderTelaTresComponent,
+    HeaderTelaQuatroComponent,
+    HeaderTelaCincoComponent,
+    HeaderTelaSeisComponent,
 
   ],
   imports: [
