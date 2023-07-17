@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
-
+//import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
+import { DialogLocalizacaoTelaQuatroComponent } from './dialog-localizacao-tela-quatro/dialog-localizacao-tela-quatro.component';
 @Component({
   selector: 'app-header-tela-quatro',
   templateUrl: './header-tela-quatro.component.html',
-  styleUrls: ['./header-tela-quatro.component.scss']
+  styleUrls: ['./header-tela-quatro.component.scss'],
 })
 export class HeaderTelaQuatroComponent {
   isTelaLogin: boolean = false;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {}
   // <!--representa as telas de 1200px pra cima-->
-  public openDialog() {
-    this.dialog.open(DialogLocalizacaoComponent, {
+  public openDialogTelaQuatro() {
+    this.dialog.open(DialogLocalizacaoTelaQuatroComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '43.106rem',
-      height: '32.07294rem',
+      width: '30.0625rem',
+      height: '48.0625rem',
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });

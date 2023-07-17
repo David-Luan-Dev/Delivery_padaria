@@ -11,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
+import { DialogLocalizacaoTelaCincoComponent } from './header-tela-cinco/dialog-localizacao/dialog-localizacao-tela-cinco.component';
+import { DialogLocalizacaoTelaQuatroComponent } from './header-tela-quatro/dialog-localizacao-tela-quatro/dialog-localizacao-tela-quatro.component';
 import { LoginComponent } from './pages/login/login.component';
 import { InformeEmailComponent } from './pages/login/informe-email/informe-email.component';
 import { InformeCelularComponent } from './pages/login/informe-celular/informe-celular.component';
@@ -20,6 +22,10 @@ import { HeaderTelaTresComponent } from './header-tela-tres/header-tela-tres.com
 import { HeaderTelaQuatroComponent } from './header-tela-quatro/header-tela-quatro.component';
 import { HeaderTelaCincoComponent } from './header-tela-cinco/header-tela-cinco.component';
 import { HeaderTelaSeisComponent } from './header-tela-seis/header-tela-seis.component';
+import { DialogLocalizacaoTelaSeisComponent } from './header-tela-seis/dialog-localizacao-tela-seis/dialog-localizacao-tela-seis.component';
+import { DialogLocalizacaoTelaTresComponent } from './header-tela-tres/dialog-localizacao-tela-tres/dialog-localizacao-tela-tres.component';
+import { DialogLocalizacaoTelaDoisComponent } from './header-tela-dois/dialog-localizacao-tela-dois/dialog-localizacao-tela-dois.component';
+import { DialogLocalizacaoTelaUmComponent } from './header-tela-um/dialog-localizacao-tela-um/dialog-localizacao-tela-um.component';
 
 
 @NgModule({
@@ -28,6 +34,8 @@ import { HeaderTelaSeisComponent } from './header-tela-seis/header-tela-seis.com
     HeaderComponent,
     HomeComponent,
     DialogLocalizacaoComponent,
+    DialogLocalizacaoTelaQuatroComponent,
+    DialogLocalizacaoTelaCincoComponent,
     LoginComponent,
     InformeEmailComponent,
     InformeCelularComponent,
@@ -37,6 +45,10 @@ import { HeaderTelaSeisComponent } from './header-tela-seis/header-tela-seis.com
     HeaderTelaQuatroComponent,
     HeaderTelaCincoComponent,
     HeaderTelaSeisComponent,
+    DialogLocalizacaoTelaSeisComponent,
+    DialogLocalizacaoTelaTresComponent,
+    DialogLocalizacaoTelaDoisComponent,
+    DialogLocalizacaoTelaUmComponent,
 
   ],
   imports: [

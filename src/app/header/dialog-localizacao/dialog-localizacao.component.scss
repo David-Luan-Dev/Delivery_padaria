@@ -1,439 +1,855 @@
-//Div que contém todo o conteúdo
-.container-modal {
-  display: flex;
-  justify-content: center;
-  padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.28294rem;
-}
-.x-modal {
-  display: flex;
-  position: relative;
-  top: 0.8rem;
-  right: 1rem;
-  left: 48%;
-  //margin: 1rem;
-}
-//Estilização da img casa
-.img-casa-modal {
-  width: 5.13169rem;
-  height: 6.41456rem;
-  position: relative;
-  top: 3.22rem;
-}
+// @media (min-width: 1201px) {
+//    //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 5.13169rem;
+//   height: 6.41456rem;
+//   position: relative;
+//   top: 3.22rem;
+// }
 
-//Estilização h2 modal
-h2 {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 1.28294rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.92438rem;
-  position: relative;
-  top: 3.5rem;
-}
-//Estilização do parágrafo
-p {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 0.87606rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.67294rem;
-  position: relative;
-  top: 1.8rem;
-}
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 1.28294rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 1.92438rem;
+//   position: relative;
+//   top: 3.5rem;
+// }
+// //Estilização do parágrafo
+// p {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.87606rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 1.67294rem;
+//   position: relative;
+//   top: 1.8rem;
+// }
 
-//Estilização da img x, de fechar a modal
-.x-modal-img {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-}
-.div-input-modal {
-  display: inline-flex;
-  padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
-  align-items: center;
-  border-radius: 0.57731rem;
-  border: 1.026px solid #f7f8f9;
-  background: #f7f8f9;
-  width: 33.4875rem;
-  height: 2.6185rem;
-  box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
-  position: relative;
-  top: 2rem;
-}
-//Img de localização
-.img-localizacao-modal {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-  position: relative;
-  bottom: 0.5rem;
-  right: 3rem;
-}
-//Estilização do input do dialog localização
-input {
-  display: flex;
-  width: 32.98381rem;
-  height: 1.21875rem;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  right: 2.5rem;
-  flex-shrink: 0;
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-  outline: none;
-}
-//Estilização do placeholder
-::placeholder {
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.btn-localizacao {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 14%;
-  right: 35%;
-  z-index: 9999;
-}
-button {
-  padding: 0.3rem 2.5425rem 0rem 2.61375rem;
-  display: inline-flex;
-  border-radius: 1.125rem;
-  gap: 1.125rem;
-  align-items: center;
-  font-family: Poppins;
-  font-size: 0.89806rem;
-  background: #000;
-  border-radius: 1.125rem;
-  color: #e49011;
-}
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: inline-flex;
+//   padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
+//   align-items: center;
+//   border-radius: 0.57731rem;
+//   border: 1.026px solid #f7f8f9;
+//   background: #f7f8f9;
+//   width: 33.4875rem;
+//   height: 2.6185rem;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   position: relative;
+//   top: 2rem;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   bottom: 0.5rem;
+//   right: 3rem;
+// }
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   width: 32.98381rem;
+//   height: 1.21875rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   right: 2.5rem;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   position: fixed;
+//   bottom: 14%;
+//   right: 35%;
+//   z-index: 9999;
+// }
+// button {
+//   padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   gap: 1.125rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.89806rem;
+//   background: #000;
+//   border-radius: 1.125rem;
+//   color: #e49011;
+// }
 
-.btn-flutuante {
-  /* Estilos do botão flutuante */
-  opacity: 0;
-  transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
-}
+// .btn-flutuante {
+//   /* Estilos do botão flutuante */
+//   opacity: 0;
+//   transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+// }
 
-//botão abaixo da modal
-.btn-flutuante.inicial {
-  pointer-events: none;
-  position: fixed;
-  bottom: -50px;
-  right: -50px;
-}
+// //botão abaixo da modal
+// .btn-flutuante.inicial {
+//   pointer-events: none;
+//   position: fixed;
+//   bottom: -50px;
+//   right: -50px;
+// }
 
-.btn-flutuante.visivel {
-  opacity: 1;
-}
-@media (min-width: 769px) and (max-width: 1024px){
-  //Div que contém todo o conteúdo
-.container-modal {
-  display: flex;
-  justify-content: center;
-  padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.28294rem;
-}
-.x-modal {
-  display: flex;
-  position: relative;
-  top: 0.8rem;
-  right: 1rem;
-  left: 48%;
-  //margin: 1rem;
-}
-//Estilização da img casa
-.img-casa-modal {
-  width: 5.13169rem;
-  height: 6.41456rem;
-  position: relative;
-  top: 3.22rem;
-}
+// .btn-flutuante.visivel {
+//   opacity: 1;
+// }
+// }
 
-//Estilização h2 modal
-h2 {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 1.28294rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.92438rem;
-  position: relative;
-  top: 3.5rem;
-}
-//Estilização do parágrafo
-p {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 0.80606rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.67294rem;
-  position: relative;
-  top: 1.8rem;
-  white-space: nowrap;
-}
+// @media (min-width: 1025px) and (max-width: 1200px){
+//   //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 5.13169rem;
+//   height: 6.41456rem;
+//   position: relative;
+//   top: 3.22rem;
+// }
 
-//Estilização da img x, de fechar a modal
-.x-modal-img {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-}
-.div-input-modal {
-  display: inline-flex;
-  padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
-  align-items: center;
-  border-radius: 0.57731rem;
-  border: 1.026px solid #f7f8f9;
-  background: #f7f8f9;
-  width: 30.4875rem;
-  height: 2.6185rem;
-  box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
-  position: relative;
-  top: 2rem;
-}
-//Img de localização
-.img-localizacao-modal {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-  position: relative;
-  bottom: 0.5rem;
-  right: 3rem;
-}
-//Estilização do input do dialog localização
-input {
-  display: flex;
-  width: 32.98381rem;
-  height: 1.21875rem;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  right: 2.5rem;
-  flex-shrink: 0;
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-  outline: none;
-}
-//Estilização do placeholder
-::placeholder {
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.btn-localizacao {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 14%;
-  right: 35%;
-  z-index: 9999;
-}
-button {
-  padding: 0.3rem 2.5425rem 0rem 2.61375rem;
-  display: inline-flex;
-  border-radius: 1.125rem;
-  gap: 1.125rem;
-  align-items: center;
-  font-family: Poppins;
-  font-size: 0.89806rem;
-  background: #000;
-  border-radius: 1.125rem;
-  color: #e49011;
-}
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 1.28294rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 1.92438rem;
+//   position: relative;
+//   top: 3.5rem;
+// }
+// //Estilização do parágrafo
+// p {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.87606rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 1.67294rem;
+//   position: relative;
+//   top: 1.8rem;
+// }
 
-.btn-flutuante {
-  /* Estilos do botão flutuante */
-  opacity: 0;
-  transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
-}
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: inline-flex;
+//   padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
+//   align-items: center;
+//   border-radius: 0.57731rem;
+//   border: 1.026px solid #f7f8f9;
+//   background: #f7f8f9;
+//   width: 33.4875rem;
+//   height: 2.6185rem;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   position: relative;
+//   top: 2rem;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   bottom: 0.5rem;
+//   right: 3rem;
+// }
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   width: 32.98381rem;
+//   height: 1.21875rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   right: 2.5rem;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   position: fixed;
+//   bottom: 14%;
+//   right: 35%;
+//   z-index: 9999;
+// }
+// button {
+//   padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   gap: 1.125rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.89806rem;
+//   background: #000;
+//   border-radius: 1.125rem;
+//   color: #e49011;
+// }
 
-//botão abaixo da modal
-.btn-flutuante.inicial {
-  pointer-events: none;
-  position: fixed;
-  bottom: -50px;
-  right: -50px;
-}
+// .btn-flutuante {
+//   /* Estilos do botão flutuante */
+//   opacity: 0;
+//   transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+// }
 
-.btn-flutuante.visivel {
-  opacity: 1;
-}
- }
+// //botão abaixo da modal
+// .btn-flutuante.inicial {
+//   pointer-events: none;
+//   position: fixed;
+//   bottom: -50px;
+//   right: -50px;
+// }
 
- @media (min-width: 480px) and (max-width: 768px) {
-    //Div que contém todo o conteúdo
-.container-modal {
-  display: flex;
-  justify-content: center;
-  padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.28294rem;
-}
-.x-modal {
-  display: flex;
-  position: relative;
-  top: 0.8rem;
-  right: 1rem;
-  left: 48%;
-  //margin: 1rem;
-}
-//Estilização da img casa
-.img-casa-modal {
-  width: 5.13169rem;
-  height: 6.41456rem;
-  position: relative;
-  top: 3.22rem;
-}
+// .btn-flutuante.visivel {
+//   opacity: 1;
+// }
+// }
 
-//Estilização h2 modal
-h2 {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 1.28294rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.92438rem;
-  position: relative;
-  top: 3.5rem;
-}
-//Estilização do parágrafo
-p {
-  color: #2e2c36;
-  text-align: center;
-  font-size: 0.80606rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.67294rem;
-  position: relative;
-  top: 1.8rem;
-  white-space: nowrap;
-}
+// @media (min-width: 769px) and (max-width: 1024px){
+//   //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 5.13169rem;
+//   height: 6.41456rem;
+//   position: relative;
+//   top: 3.22rem;
+// }
 
-//Estilização da img x, de fechar a modal
-.x-modal-img {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-}
-.div-input-modal {
-  display: inline-flex;
-  padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
-  align-items: center;
-  border-radius: 0.57731rem;
-  border: 1.026px solid #f7f8f9;
-  background: #f7f8f9;
-  width: 30.4875rem;
-  height: 2.6185rem;
-  box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
-  position: relative;
-  top: 2rem;
-}
-//Img de localização
-.img-localizacao-modal {
-  width: 1.5395rem;
-  height: 1.5395rem;
-  flex-shrink: 0;
-  position: relative;
-  bottom: 0.5rem;
-  right: 3rem;
-}
-//Estilização do input do dialog localização
-input {
-  display: flex;
-  width: 32.98381rem;
-  height: 1.21875rem;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  right: 2.5rem;
-  flex-shrink: 0;
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-  outline: none;
-}
-//Estilização do placeholder
-::placeholder {
-  color: #757575;
-  font-size: 0.89806rem;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.btn-localizacao {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 14%;
-  right: 35%;
-  z-index: 9999;
-}
-button {
-  padding: 0.3rem 2.5425rem 0rem 2.61375rem;
-  display: inline-flex;
-  border-radius: 1.125rem;
-  gap: 1.125rem;
-  align-items: center;
-  font-family: Poppins;
-  font-size: 0.89806rem;
-  background: #000;
-  border-radius: 1.125rem;
-  color: #e49011;
-}
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 1.28294rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 1.92438rem;
+//   position: relative;
+//   top: 3.5rem;
+// }
+// //Estilização do parágrafo
+// p {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.80606rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 1.67294rem;
+//   position: relative;
+//   top: 1.8rem;
+//   white-space: nowrap;
+// }
 
-.btn-flutuante {
-  /* Estilos do botão flutuante */
-  opacity: 0;
-  transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
-}
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: inline-flex;
+//   padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
+//   align-items: center;
+//   border-radius: 0.57731rem;
+//   border: 1.026px solid #f7f8f9;
+//   background: #f7f8f9;
+//   width: 30.4875rem;
+//   height: 2.6185rem;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   position: relative;
+//   top: 2rem;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   bottom: 0.5rem;
+//   right: 3rem;
+// }
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   width: 32.98381rem;
+//   height: 1.21875rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   right: 2.5rem;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   position: fixed;
+//   bottom: 14%;
+//   right: 35%;
+//   z-index: 9999;
+// }
+// button {
+//   padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   gap: 1.125rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.89806rem;
+//   background: #000;
+//   border-radius: 1.125rem;
+//   color: #e49011;
+// }
 
-//botão abaixo da modal
-.btn-flutuante.inicial {
-  pointer-events: none;
-  position: fixed;
-  bottom: -50px;
-  right: -50px;
-}
+// .btn-flutuante {
+//   /* Estilos do botão flutuante */
+//   opacity: 0;
+//   transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+// }
 
-.btn-flutuante.visivel {
-  opacity: 1;
-}
- }
+// //botão abaixo da modal
+// .btn-flutuante.inicial {
+//   pointer-events: none;
+//   position: fixed;
+//   bottom: -50px;
+//   right: -50px;
+// }
+
+// .btn-flutuante.visivel {
+//   opacity: 1;
+// }
+//  }
+
+//  @media (min-width: 481px) and (max-width: 768px) {
+//     //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   margin: 0;
+//   padding: 0;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 3.57888rem;
+//   height: 4.47356rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   top: 1rem;
+// }
+
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.9375rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 1.34206rem;
+//   position: relative;
+//   top: 2rem;
+// }
+// //Estilização do parágrafo
+// p {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.625rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 1.16669rem;
+//   position: relative;
+//   top: 0;
+//   white-space: nowrap;
+// }
+
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   width: 23.4875rem;
+//   height: 2rem;
+//   padding: 0.69988rem 1.60363rem 0.69988rem 0rem;
+//   border-radius: 0.57731rem;
+//   border: 1.026px solid #f7f8f9;
+//   background: #f7f8f9;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   top: 1rem;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   bottom: 0;
+//   right: 1rem;
+// }
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-start;
+//   width: 18.98381rem;
+//   height: 1rem;
+//   position: relative;
+//   flex-direction: column;
+//   left: 0;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   position: relative;
+
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   position: relative;
+//   top: 1.5rem;
+// }
+// button {
+//   padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   gap: 1.125rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.89806rem;
+//   background: #000;
+//   border-radius: 1.125rem;
+//   color: #e49011;
+// }
+
+// .btn-flutuante {
+//   /* Estilos do botão flutuante */
+//   opacity: 0;
+//   transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+// }
+
+// //botão abaixo da modal
+// .btn-flutuante.inicial {
+//   pointer-events: none;
+//   position: fixed;
+//   bottom: -50px;
+//   right: -50px;
+// }
+
+// .btn-flutuante.visivel {
+//   opacity: 1;
+//  }
+// }
+
+// @media (min-width: 320px) and (max-width: 480px){
+//   //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 2.5rem;
+//   height: 3.12494rem;
+//   position: relative;
+//   top: 0.5rem;
+// }
+
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.875rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 0.89288rem;
+//   position: relative;
+//   top: 1rem;
+// }
+// //Estilização do parágrafo
+// p {
+//  display: none;
+// }
+
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: flex;
+//   padding: 0.78869rem 0.74406rem 0.78869rem 0.8155rem;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 0.26788rem;
+//   border: 0.476px solid #F7F8F9;
+//   background: #f7f8f9;
+//   width: 16.4875rem;
+//   height: 1.9rem;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   position: relative;
+//   top: 1rem;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+//   bottom: 0.3rem;
+//   right: 0;
+// }
+
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   width: 14.98381rem;
+//   height: 1.21875rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   position: relative;
+//   left: 0.5rem;
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: fixed;
+//   bottom: 24rem;
+//   right: 6.5rem;
+//   //z-index: 9999;
+// }
+// button {
+//   padding: 0.3rem 0.7rem 0rem 0.7rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   gap: 1rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.89806rem;
+//   background: #000;
+//   border-radius: 1.125rem;
+//   color: #e49011;
+// }
+
+// .btn-flutuante {
+//   /* Estilos do botão flutuante */
+//   opacity: 0;
+//   transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+// }
+
+// //botão abaixo da modal
+// .btn-flutuante.inicial {
+//   pointer-events: none;
+//   position: fixed;
+//   bottom: -50px;
+//   right: -50px;
+// }
+
+// .btn-flutuante.visivel {
+//   opacity: 1;
+//  }
+//}
+// @media (max-width: 319px) {
+//     //Div que contém todo o conteúdo
+// .container-modal {
+//   display: flex;
+//   justify-content: center;
+//   padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 1.28294rem;
+// }
+// .x-modal {
+//   display: flex;
+//   position: relative;
+//   top: 0.8rem;
+//   right: 1rem;
+//   left: 48%;
+//   //margin: 1rem;
+// }
+// //Estilização da img casa
+// .img-casa-modal {
+//   width: 2.2rem;
+//   height: 3rem;
+//   position: relative;
+//   top: 0.5rem;
+// }
+
+// //Estilização h2 modal
+// h2 {
+//   color: #2e2c36;
+//   text-align: center;
+//   font-size: 0.875rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 0.89288rem;
+//   position: relative;
+//   top: 1rem;
+// }
+// //Estilização do parágrafo
+// p {
+//  display: none;
+// }
+
+// //Estilização da img x, de fechar a modal
+// .x-modal-img {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+// }
+// .div-input-modal {
+//   display: flex;
+//   padding: 0.78869rem 0rem 0.78869rem 0rem;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 0.26788rem;
+//   border: 0.476px solid #F7F8F9;
+//   background: #f7f8f9;
+//   width: 14.4875rem;
+//   height: 1.9rem;
+//   box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+//   position: relative;
+//   top: 0;
+// }
+// //Img de localização
+// .img-localizacao-modal {
+//   width: 1.5395rem;
+//   height: 1.5395rem;
+//   flex-shrink: 0;
+//   position: relative;
+// }
+
+// //Estilização do input do dialog localização
+// input {
+//   display: flex;
+//   width: 10.98381rem;
+//   flex-direction: column;
+//   justify-content: center;
+//   position: relative;
+//   flex-shrink: 0;
+//   color: #757575;
+//   font-size: 0.89806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   border: none;
+//   outline: none;
+// }
+// //Estilização do placeholder
+// ::placeholder {
+//   color: #757575;
+//   font-size: 0.59806rem;
+//   font-family: Poppins;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   position: relative;
+//   left: 0.5rem;
+// }
+// .btn-localizacao {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position:relative;
+
+//   //z-index: 9999;
+// }
+// button {
+//   padding: 0.3rem 0.7rem 0rem 0.7rem;
+//   display: inline-flex;
+//   border-radius: 1.125rem;
+//   align-items: center;
+//   font-family: Poppins;
+//   font-size: 0.59806rem;
+//   background: #000;
+//   color: #e49011;
+// }
+// }
