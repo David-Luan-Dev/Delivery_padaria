@@ -14,7 +14,7 @@ import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localiza
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  width: number = 0
+  width: number = 0;
 
   @HostListener('window:resize', ['$event'])
   getScreenSize() {
@@ -22,6 +22,8 @@ export class HeaderComponent implements OnInit {
     console.log(this.width);
   }
 
+  constructor() {}
+  
   ngOnInit(): void {
     this.getScreenSize();
   }

@@ -9,6 +9,7 @@ import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-
 })
 export class HeaderTelaDoisComponent {
   isTelaLogin: boolean = false;
+  nomeMenu: string = 'Início'
 
   constructor(public dialog: MatDialog) { }
   // <!--representa as telas de 1200px pra cima-->

@@ -1,3 +1,4 @@
+
 /* Estilos para telas de 1025px a 1200px tela dois*/
 @media (min-width: 1025px) and (max-width: 1200px) {
   /*Estilização da tag superior header*/
@@ -21,7 +22,7 @@
   .div-logo-tela-dois {
     display: flex;
     position: relative;
-    left: 0.3rem;
+
     width: 5.3375rem;
     height: 3.80756rem;
     margin: 0;
@@ -51,7 +52,7 @@
     flex-shrink: 0;
     background: #fff;
     position: relative;
-    bottom: 0.5rem;
+    bottom: 0rem;
     transform: rotate(0deg); /* Definimos a rotação inicial */
     transition: transform 0.3s; /* Adicionamos uma transição suave */
   }
@@ -64,15 +65,20 @@
     display: flex;
     align-items: center;
     position: relative;
-    right: 1.68rem;
+    left: 0rem;
+    top: 0.1rem;
+
   }
   //Estilização da div que contem os menus filho
   .div-menu-filho-tela-dois {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 8.12919rem;
-    height: 4.51775rem;
+    justify-content: flex-start;
+    width: 7.12919rem;
+    height: 2.51775rem;
+    overflow: hidden;
+    position: relative;
+    left: 0.3rem;
     flex-shrink: 0;
     text-decoration: none;
     color: #1c1c1b;
@@ -109,6 +115,21 @@
     flex-shrink: 1;
   }
 
+  /* mat-menu-custom.scss */
+.matMenu {
+  position: relative;
+}
+
+.matMenu::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
   //icon de localização ao lado da tela dois
   .icon-localizacao-tela-dois {
     flex-shrink: 1;
@@ -116,13 +137,11 @@
     margin: 0% 0% 7% 0%;
   }
   //Seta ao lado do parágrafo tela-dois
-  .icon-seta-invertida-tela-dois {
-    width: 0.73169rem;
-    height: 1.46344rem;
-    flex-shrink: 0;
-    margin: 19% 0% 5% 2%;
+  .icon-seta-inveritda-paragrafo-tela-dois {
+    display: flex;
+    position: relative;
+    bottom: 0.5rem;
   }
-
   //Estilização do parágrafo de localização da tela dois
   .p-localizacao-tela-dois {
     color: #e3b34d;
@@ -132,7 +151,6 @@
     font-weight: 400;
     line-height: normal;
   }
-
   // Borda vertical ao lado do menu
   .borda-vertical-tela-dois {
     width: 0px;
@@ -197,7 +215,7 @@
   }
   //hover para o botão entrar/header telas 1025px a 1200px
   .btn-tela-dois:hover {
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    opacity: 0.5;
   }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a.router-link-active {

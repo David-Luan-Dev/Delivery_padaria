@@ -13,7 +13,7 @@
   .div-logo-tela-seis {
     display: flex;
     position: relative;
-    left: 0.5rem;
+    left: 0.1rem;
   }
   .logo-tela-seis {
     width: 4.149rem;
@@ -26,7 +26,7 @@
     width: 100%;
     align-items: center;
     position: relative;
-    left: 3rem;
+    left: 0.5rem;
     cursor: pointer;
   }
   .paragrafo-localizacao-tela-seis {
@@ -70,7 +70,7 @@
     height: 2.35956rem;
     flex-shrink: 0;
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
-    gap: 3.5rem;
+    gap: 0.8rem;
   }
   /*div de cada item do menu*/
   .menu-filho-tela-seis {
@@ -139,7 +139,7 @@
   .grupo-botoes-tela-seis::-webkit-scrollbar {
     display: none;
   }
-  .button-seis {
+  .button-tela-seis {
     display: inline-flex;
     padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
     justify-content: flex-end;

@@ -30,7 +30,6 @@
     width: 4.45206rem;
     height: 3.75rem;
     flex-shrink: 1;
-    //background: lightgray -22.661px -8.225px / 164.565% 126.805% no-repeat;
     margin: 0;
     padding: 0;
   }
@@ -50,7 +49,7 @@
   .paragrafo-e-icones-tela-um p {
     display: flex;
     color: #e3b34d;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -104,6 +103,9 @@
     line-height: normal;
     width: auto;
     text-decoration: none;
+  }
+  .div-menu-filho-tela-um:hover {
+    color: #e49011;
   }
   //Estilização da div que contém o input
   .input-wrapper-tela-um {
@@ -159,12 +161,12 @@
     font-weight: 700;
     line-height: normal;
     position: relative;
-    right: 0.9rem;
+    right: 0.1rem;
     transition: transform 0.3s, box-shadow 0.3s;
   }
   //hover do botão Entrar do header
   .btn-tela-um:hover {
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+    opacity: 0.5;
   }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a.router-link-active {
