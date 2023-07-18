@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogLocalizacaoTelaCincoComponent } from './dialog-localizacao/dialog-localizacao-tela-cinco.component';
+import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
 
 @Component({
   selector: 'app-header-tela-cinco',
@@ -9,11 +9,12 @@ import { DialogLocalizacaoTelaCincoComponent } from './dialog-localizacao/dialog
 })
 export class HeaderTelaCincoComponent {
   isTelaLogin: boolean = false;
+  @Output() teste!: string
 
   constructor(public dialog: MatDialog) { }
   // <!--representa as telas de 1200px pra cima-->
   public openDialogTelaCinco() {
-    this.dialog.open(DialogLocalizacaoTelaCincoComponent, {
+    this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
       width: '28rem',
       height: '35.5rem',

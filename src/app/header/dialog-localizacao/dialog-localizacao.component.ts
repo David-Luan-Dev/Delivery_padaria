@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 
 
 
@@ -8,22 +8,18 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./dialog-localizacao.component.scss'],
 
 })
-export class DialogLocalizacaoComponent implements OnInit{
-  mostrarBotaoFlutuante: boolean = false;
+export class DialogLocalizacaoComponent implements OnInit {
+  width: number = 0;
+  innerWidth: number = 0;
 
-  constructor() {}
+  @HostListener('window:resize', ['$event'])
+  getScreenSize() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.mostrarBotaoFlutuante = true;
-    }, 500);
-  }
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      const botaoFlutante = document.querySelector('.btn-flutuante')
-      if(botaoFlutante) {
-        botaoFlutante.classList.remove('inicial')
-      }
-    }, 100)
+    this.getScreenSize();
   }
 }

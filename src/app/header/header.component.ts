@@ -15,15 +15,15 @@ import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localiza
 })
 export class HeaderComponent implements OnInit {
   width: number = 0;
+  innerWidth: number = 0;
 
   @HostListener('window:resize', ['$event'])
   getScreenSize() {
-    this.width = window.screen.width;
-    console.log(this.width);
+    this.innerWidth = window.innerWidth;
   }
 
-  constructor() {}
-  
+  constructor() { }
+
   ngOnInit(): void {
     this.getScreenSize();
   }

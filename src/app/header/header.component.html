@@ -1,28 +1,20 @@
 <!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
-<app-header-tela-um *ngIf="width >= 1201"></app-header-tela-um>
+<app-header-tela-um *ngIf="innerWidth >= 1201"></app-header-tela-um>
 
 <!--Aqui começa a parte da que corresponde as telas de 1025px a 1200px tela-dois-->
-<app-header-tela-dois
-  *ngIf="width >= 1025 && width <= 1200"
-></app-header-tela-dois>
+<app-header-tela-dois *ngIf="innerWidth >= 1025 && innerWidth <= 1200"></app-header-tela-dois>
 
 <!--Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três-->
-<app-header-tela-tres
-  *ngIf="width >= 769 && width <= 1024"
-></app-header-tela-tres>
+<app-header-tela-tres *ngIf="innerWidth >= 769 && innerWidth <= 1024"></app-header-tela-tres>
 
 <!--Aqui começa a parte da que corresponde as telas entre 481 e 768 tela-cinco-->
-<app-header-tela-quatro
-  *ngIf="width >= 481 && width <= 768"
-></app-header-tela-quatro>
+<app-header-tela-quatro *ngIf="innerWidth >= 481 && innerWidth <= 768"></app-header-tela-quatro>
 
 <!-- Aqui começa a estilização das telas entre 320px e 480px tela-cinco -->
-<app-header-tela-cinco
-  *ngIf="width >= 320 && width <= 480"
-></app-header-tela-cinco>
+<app-header-tela-cinco *ngIf="innerWidth >= 320 && innerWidth <= 480"></app-header-tela-cinco>
 
 <!-- max - 319px -->
-<app-header-tela-seis *ngIf="width <= 319"></app-header-tela-seis>
+<app-header-tela-seis *ngIf="innerWidth <= 319"></app-header-tela-seis>
 <!--<div class="div-menu-tela-tres">
   <a class="div-menu-filho-tela-tres" routerLink="home" routerLinkActive="active">Início
     <img class="icon-seta-invertida-tela-tres" src="assets/img/Group.svg" alt="">

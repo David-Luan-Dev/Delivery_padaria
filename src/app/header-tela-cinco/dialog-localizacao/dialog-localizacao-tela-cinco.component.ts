@@ -8,20 +8,21 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./dialog-localizacao-tela-cinco.component.scss'],
 
 })
-export class DialogLocalizacaoTelaCincoComponent implements OnInit{
+export class DialogLocalizacaoTelaCincoComponent implements OnInit {
   mostrarBotaoFlutuante: boolean = false;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     setTimeout(() => {
       this.mostrarBotaoFlutuante = true;
     }, 500);
   }
+
   ngAfterViewInit(): void {
     setTimeout(() => {
       const botaoFlutante = document.querySelector('.btn-flutuante')
-      if(botaoFlutante) {
+      if (botaoFlutante) {
         botaoFlutante.classList.remove('inicial')
       }
     }, 100)
