@@ -168,6 +168,23 @@
   .btn-tela-um:hover {
     opacity: 0.5;
   }
+  .numero-sobre-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: poppins;
+    position: relative;
+    left: 1rem;
+    top: 0.8rem;
+    width: 1.5625rem;
+    height: 1.55038rem;
+    flex-shrink: 0;
+    border-radius: 100%;
+   background-color: #FB1111;;
+  }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a.router-link-active {
     color: #e49011;

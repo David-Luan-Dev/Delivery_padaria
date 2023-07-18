@@ -17,7 +17,7 @@
           (click)="nomeMenu = 'Contato'">Contato</a>
         <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active"
           (click)="nomeMenu = 'Sobre'">Sobre</a>
-          <span class="borda-abaixo"></span>
+          <div class="borda-abaixo"></div>
       </mat-menu>
     </a>
   </div>
@@ -35,7 +35,12 @@
   </div>
   <div class="icone-carrinho-tela-dois">
     <button class="btn-tela-dois">Entrar</button>
-    <img src="assets/img/mdi_cart.svg" alt="icone seta" />
+    <div class="carrinho">
+      <div class="numero-sobre-carrinho">
+        {{numero}}
+      </div>
+      <img src="assets/img/mdi_cart.svg" alt="icone seta" />
+    </div>
   </div>
 </header>
 <!---Início do carrossel da tela dois-->

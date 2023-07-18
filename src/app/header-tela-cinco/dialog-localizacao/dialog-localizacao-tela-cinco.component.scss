@@ -50,9 +50,9 @@ p {
 }
 .div-input-modal {
   display: flex;
-  padding: 0.78869rem 0.74406rem 0.78869rem 0.8155rem;
   align-items: center;
   justify-content: center;
+  padding: 0.78869rem 0.74406rem 0.78869rem 0.8155rem;
   border-radius: 0.26788rem;
   border: 0.476px solid #F7F8F9;
   background: #f7f8f9;
@@ -109,13 +109,13 @@ input {
   top: 2rem;
 }
 button {
-  padding: 0.3rem 0.7rem 0rem 0.7rem;
+  padding: 0.1rem 0.3rem 0rem 0.3rem;
   display: inline-flex;
   border-radius: 1.125rem;
-  gap: 1rem;
+  gap: 0;
   align-items: center;
   font-family: Poppins;
-  font-size: 0.89806rem;
+  font-size: 0.69806rem;
   background: #000;
   border-radius: 1.125rem;
   color: #e49011;

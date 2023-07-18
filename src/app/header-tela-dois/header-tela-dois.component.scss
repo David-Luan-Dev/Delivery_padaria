@@ -43,6 +43,15 @@
     font-size: 1.17075rem;
     font-family: Poppins;
     position: relative;
+
+  }
+  .borda-abaixo {
+    width: 110px;
+    border-bottom: 2px solid #e49011;
+    box-shadow: 0px 4px 4px 0px #e49011;
+    position: relative;
+    bottom: 0;
+    top: 0.2rem;
   }
 
   //Estilização da img seta invertida junto com o menu ao lado da logo
@@ -64,6 +73,7 @@
   .div-menu-tela-dois {
     display: flex;
     align-items: center;
+
     position: relative;
     left: 0rem;
     top: 0.1rem;
@@ -73,12 +83,12 @@
   .div-menu-filho-tela-dois {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 7.12919rem;
     height: 2.51775rem;
     overflow: hidden;
     position: relative;
-    left: 0.3rem;
+    left: 0;
     flex-shrink: 0;
     text-decoration: none;
     color: #1c1c1b;
@@ -226,6 +236,23 @@
   a:focus {
     color: #e49011;
     text-decoration: underline;
+  }
+  .numero-sobre-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: poppins;
+    position: relative;
+    left: 1rem;
+    top: 0.8rem;
+    width: 1.5625rem;
+    height: 1.55038rem;
+    flex-shrink: 0;
+    border-radius: 100%;
+   background-color: #FB1111;;
   }
   //Estilização do carrossel
   .grupo-botoes-tela-dois {

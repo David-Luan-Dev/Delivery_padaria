@@ -9,6 +9,7 @@ import { DialogLocalizacaoTelaUmComponent } from './dialog-localizacao-tela-um/d
 })
 export class HeaderTelaUmComponent {
   isTelaLogin: boolean = false;
+  numero: number = 7;
 
   constructor(public dialog: MatDialog) { }
   // <!--representa as telas de 1200px pra cima-->

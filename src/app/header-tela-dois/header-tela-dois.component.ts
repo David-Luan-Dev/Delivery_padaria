@@ -10,6 +10,7 @@ import { DialogLocalizacaoTelaDoisComponent } from './dialog-localizacao-tela-do
 export class HeaderTelaDoisComponent {
   isTelaLogin: boolean = false;
   nomeMenu: string = 'Início'
+  numero: number = 7;
 
   constructor(public dialog: MatDialog) { }
   // <!--representa as telas de 1200px pra cima-->

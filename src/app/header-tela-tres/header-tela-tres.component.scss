@@ -149,12 +149,12 @@
   }
 
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .paragrafo-btns-tela-tres .router-link-active {
+  button.router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
-  .button:focus {
+  button:focus {
     color: #e49011;
     text-decoration: underline;
   }

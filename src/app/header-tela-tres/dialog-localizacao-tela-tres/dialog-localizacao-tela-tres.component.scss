@@ -81,7 +81,7 @@ p {
 //Estilização do input do dialog localização
 input {
   display: flex;
-  width: 32.98381rem;
+  width: 29.98381rem;
   height: 1.21875rem;
   flex-direction: column;
   justify-content: center;
@@ -109,9 +109,12 @@ input {
 .btn-localizacao {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
-  bottom: 12.5rem;
-  right: 14rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 36rem;
   z-index: 9999;
 }
 button {

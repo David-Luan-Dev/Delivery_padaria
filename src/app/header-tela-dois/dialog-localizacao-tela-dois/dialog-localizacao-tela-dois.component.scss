@@ -108,9 +108,12 @@ input {
 .btn-localizacao {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
-  bottom: 12.5rem;
-  right: 22rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 36rem;
   z-index: 9999;
  }
 button {
