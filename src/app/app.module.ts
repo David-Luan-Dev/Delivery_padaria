@@ -26,6 +26,13 @@ import { DialogLocalizacaoTelaSeisComponent } from './header-tela-seis/dialog-lo
 import { DialogLocalizacaoTelaTresComponent } from './header-tela-tres/dialog-localizacao-tela-tres/dialog-localizacao-tela-tres.component';
 import { DialogLocalizacaoTelaDoisComponent } from './header-tela-dois/dialog-localizacao-tela-dois/dialog-localizacao-tela-dois.component';
 import { DialogLocalizacaoTelaUmComponent } from './header-tela-um/dialog-localizacao-tela-um/dialog-localizacao-tela-um.component';
+import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
+import { LoginTelaUmComponent } from './pages/login-pai/login-tela-um/login-tela-um.component';
+import { LoginTelaDoisComponent } from './pages/login-pai/login-tela-dois/login-tela-dois.component';
+import { LoginTelaTresComponent } from './pages/login-pai/login-tela-tres/login-tela-tres.component';
+import { LoginTelaQuatroComponent } from './pages/login-pai/login-tela-quatro/login-tela-quatro.component';
+import { LoginTelaCincoComponent } from './pages/login-pai/login-tela-cinco/login-tela-cinco.component';
+import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-tela-seis.component';
 
 
 @NgModule({
@@ -49,6 +56,13 @@ import { DialogLocalizacaoTelaUmComponent } from './header-tela-um/dialog-locali
     DialogLocalizacaoTelaTresComponent,
     DialogLocalizacaoTelaDoisComponent,
     DialogLocalizacaoTelaUmComponent,
+    LoginPaiComponent,
+    LoginTelaUmComponent,
+    LoginTelaDoisComponent,
+    LoginTelaTresComponent,
+    LoginTelaQuatroComponent,
+    LoginTelaCincoComponent,
+    LoginTelaSeisComponent,
 
   ],
   imports: [
