@@ -11,28 +11,19 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #E49011;
+    background-color: #e49011;
   }
   .setas-voltar {
-    color: #E49011;
-    text-shadow: #FFF 0px 4px 0px;
-    font-family: Palanquin Dark;
-    font-size: 6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-    right: 40%;
-
-  }
-  p {
-    color: #E49011;
-    text-shadow: 0px 4px 4px 0px #FFF;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
     font-family: poppins;
-    font-size: 6rem;
+    font-size: 4.85919rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: fixed;
+    top: 0.2rem;
+    left: 1rem;
   }
   .div-pai-img-form {
     display: flex;
@@ -43,31 +34,35 @@
     position: relative;
     background-size: cover;
     background-position: center top;
-    height: 100%;
-    width: 100%;
+    width: 110.1075rem;
+    height: 110.1075rem;
     overflow: hidden;
-    //gap: 3.97rem;
     padding: 0;
     margin: 0;
-    top: -403px;
+    bottom: 70%;
   }
-
   .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18.875rem;
-    height: 18.875rem;
+    width: 15.24881rem;
+    height: 15.24881rem;
+    flex-shrink: 0;
     position: fixed;
-    top: 0.5rem;
+    top: 2.31rem;
+    bottom: 0.78rem;
     border-radius: 20.702rem;
     background: #fff;
-    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
     overflow: hidden;
+    fill: #fff;
+    filter: drop-shadow(0px 9.759231567382812px 9.759231567382812px #717171);
   }
   .logo-sobreposta {
     display: flex;
     position: absolute;
+    width: 18.875rem;
+    height: 11.41669rem;
+    flex-shrink: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -79,34 +74,33 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 38.871rem;
+    height: 35.871rem;
     position: fixed;
-    top: 20rem;
+    top: 18rem;
     bottom: 0;
     border-radius: 0.68819rem;
     background: #fff;
     box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px
         rgba(0, 0, 0, 0.06),
       0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
-    //padding: 0.64625rem 4.30106rem 3.09675rem 4.30094rem;
     padding: 2.64625rem 3rem 2.09675rem 3rem;
   }
 
   //Frase: falta pouco para matar sua fome
   h1 {
     display: flex;
-    width: 30rem;
+    width: 22rem;
     color: #414143;
     text-align: center;
     font-family: Poppins;
-    font-size: 3.81719rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 4.30106rem;
+    line-height: 3.36713rem;
     letter-spacing: -0.01238rem;
     position: relative;
-    bottom: 15%;
-    left: 5%;
+    bottom: 23%;
+    left: 9%;
   }
   //Frase: Como deseja continuar
   h2 {
@@ -114,14 +108,14 @@
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 2.3rem;
+    font-size: 2.22231rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 3.56131rem;
+    line-height: 2.788rem;
     white-space: nowrap;
     position: relative;
-    bottom: 15%;
-    left: 2%;
+    bottom: 22%;
+    left: 1%;
   }
   .button-google-fecebook {
     display: flex;
@@ -134,86 +128,95 @@
   //botão facebook-google
   .button-facebook {
     display: inline-flex;
-    height: 4.30106rem;
-    padding: 0.86019rem 2.44694rem 0.86019rem 2.44694rem;
     align-items: center;
-    gap: 1.14581rem;
+    height: 3.36713rem;
+    padding: 0.67344rem 4.06344rem 0.67344rem 1.34688rem;
+    gap: 1.67988rem;
     flex-shrink: 0;
-    //margin: 1%;
-    border-radius: 0.34406rem;
+    border-radius: 0.26938rem;
     background: #4065b4;
     white-space: nowrap;
+    position: relative;
+    bottom: 2.33rem;
   }
   //Span do botão facebook
   .span-facebook {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.75rem;
+    font-size: 1.37rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.0645rem;
+    line-height: 1.61625rem;
   }
   .button-google {
     display: inline-flex;
-    height: 4.30106rem;
-    padding: 0.86019rem 3.44694rem 0.86019rem 1.72044rem;
     align-items: center;
-    gap: 1.14581rem;
     flex-shrink: 0;
-    border-radius: 0.34406rem;
     white-space: nowrap;
-    position: inherit;
-    border-radius: 0.34406rem;
-    border: 3px solid #dcdcdc;
+    padding: 0.41731rem 6.94944rem 0.46388rem 1.27219rem;
+    gap: 2.69075rem;
+    border-radius: 0.26938rem;
+    border: 2.349px solid #dcdcdc;
     background: #fff;
+    position: relative;
+    bottom: 2rem;
   }
   .span-google {
     color: #3c4043;
     font-family: Poppins;
-    font-size: 1.75rem;
+    font-size: 1.22319rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.0645rem;
-    letter-spacing: 0.0215rem;
-
+    line-height: normal;
+    letter-spacing: 0.01681rem;
+    position: relative;
   }
   .btn-email-celular {
     display: flex;
     gap: 0.2rem;
     position: relative;
-    bottom: 10%;
+    bottom: 5.4rem;
   }
-  .button-email-celular {
+  .button-celular {
     display: inline-flex;
-    width: 100%;
-    padding: 1.20431rem 4rem 1.03225rem 4.96944rem;
     align-items: flex-start;
-    border-radius: 0.34406rem;
-    border: 3px solid #dcdcdc;
     background: #fff;
-
+    padding: 0.94281rem 3.98869rem 0.80813rem 3.89038rem;
+    border-radius: 0.26938rem;
+    border: 2.349px solid #dcdcdc;
+  }
+  .button-email {
+    display: inline-flex;
+    padding: 0.94281rem 5.00431rem 0.80813rem 4.2035rem;
+    align-items: flex-start;
+    border-radius: 0.26938rem;
+    border: 2.349px solid #dcdcdc;
+    background: #fff;
   }
   .span-email-celular {
     color: #a6a6a6;
     text-align: center;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 1.56569rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.0645rem;
+    line-height: 1.61625rem;
   }
   .border {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 3%;
+    bottom: 4rem;
     left: 0%;
   }
   .bordar-horizontal {
-    border: 1px solid black;
-    width: 32rem;
+    border: 1px solid rgba(106, 105, 110, 0.8);
     opacity: 0.5;
+    width: 27.625rem;
+    height: 0.0625rem;
+    flex-shrink: 0;
+    border-top: 2.349px solid rgba(106, 105, 110, 0.8);
   }
 }
