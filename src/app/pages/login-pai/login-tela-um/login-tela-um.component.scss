@@ -11,11 +11,12 @@
     width: 100%;
     position: fixed;
     overflow: hidden;
-    background-color: #E49011;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
   }
   .setas-voltar {
-    color: #E49011;
-    text-shadow: #FFF 0px 4px 0px;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
     font-family: poppins;
     font-size: 6rem;
     font-style: normal;
@@ -23,15 +24,10 @@
     line-height: normal;
     position: relative;
     left: 0;
-
   }
   .div-pai-img-form {
     display: flex;
-    background-image: url("/assets/img/login/pseudo-1201.svg");
-    background-repeat: no-repeat;
     position: relative;
-    //background-size: cover;
-    //background-position: center top;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -100,7 +96,7 @@
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 3.56131rem;;
+    line-height: 3.56131rem;
     white-space: nowrap;
     position: relative;
     bottom: 10%;
@@ -169,7 +165,6 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.0215rem;
-
   }
   .btn-email-celular {
     display: flex;
@@ -184,7 +179,6 @@
     border-radius: 0.34406rem;
     border: 3px solid #dcdcdc;
     background: #fff;
-
   }
   .span-email-celular {
     color: #a6a6a6;
