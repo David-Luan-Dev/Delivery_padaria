@@ -3,62 +3,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
     bottom: 0;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-color: #E49011;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
   }
-  p {
-    display: flex;
-    font-size: 3.03938rem;
+  .setas-voltar {
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 1.85919rem;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     line-height: normal;
     position: fixed;
+    top: 0.2rem;
     left: 1rem;
-    top: 1rem;
-    font-family: poppins;
-    color: #E49011;
-    text-shadow: 0px 2.026245594024658px 2.026245594024658px 0px #FFF;
   }
   .div-pai-img-form {
     display: flex;
-    justify-content: center;
-    background-image: url("/assets/img/login/pseudo-481a768.svg");
-    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    background-size: cover;
-    background-position: center top;
-    width: 68.87088rem;
-    height: 68.87088rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     padding: 0;
     margin: 0;
-    bottom: 18rem;
   }
   .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 9.53794rem;
-    height: 9.53794rem;
+    width: 8.24881rem;
+    height: 8.24881rem;
+    flex-shrink: 0;
     position: fixed;
-    top: 1%;
-    border-radius: 9.53794rem;
+    top: 0.5rem;
+    bottom: 0.78rem;
+    border-radius: 8.702rem;
     background: #fff;
-    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
     overflow: hidden;
+    fill: #fff;
+    filter: drop-shadow(0px 9.759231567382812px 9.759231567382812px #717171);
   }
   .logo-sobreposta {
     display: flex;
-    width: 11.80606rem;
-    height: 7.141rem;
     position: absolute;
+    width: 8rem;
+    height: 8rem;
+    flex-shrink: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -69,31 +69,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 21.48219rem;
-    padding: 1.78538rem 2.10613rem 2.80588rem 2.10606rem;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.337rem;
-    background: #FFF;
-    height: 25rem;
+    align-items: flex-start;
+    height: 360.871px;
+    width: 330px;
     position: fixed;
-    top: 12rem;
-    box-shadow: 0px 2.6958060264587402px 10.783224105834961px 0px rgba(0, 0, 0, 0.06), 0px 0.6739515066146851px 2.6958060264587402px 0px rgba(0, 0, 0, 0.05);
+    top: 9rem;
+    bottom: 0;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px
+        rgba(0, 0, 0, 0.06),
+      0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
+    //padding: 2.64625rem 3rem 2.09675rem 3rem;
   }
   //Frase: falta pouco para matar sua fome
   h1 {
     display: flex;
-    width: 12rem;
+    width: 14rem;
     color: #414143;
+    text-align: center;
     font-family: Poppins;
-    font-size: 1.87644rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.10613rem;
-    letter-spacing: -0.00606rem;
+    line-height: 2rem;
+    letter-spacing: -0.01238rem;
     position: relative;
-    bottom: 3.5rem;
-    left: 0;
+    left: 15%;
+    bottom: 1rem;
   }
   //Frase: Como deseja continuar
   h2 {
@@ -101,128 +104,131 @@
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.39rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.74388rem;
+    line-height: 1.788rem;
     white-space: nowrap;
     position: relative;
-    bottom: 3rem;
-    left: 0%;
+    left: 17%;
+    bottom: 1rem;
   }
   .button-google-fecebook {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     position: relative;
-    bottom: 3rem;
-    right: 0.5rem;
     gap: 0.5rem;
+    left: 10%;
+    bottom: 1rem;
   }
   //botão facebook-google
   .button-facebook {
     display: inline-flex;
-    align-items: flex-start;
-    height: 2.10613rem;
-    white-space: nowrap;
-    padding: 0.42125rem 3.11313rem 0.42119rem 0.84244rem;
-    gap: 1.05075rem;
-    border-radius: 0.1685rem;
+    align-items: center;
+    height: 2rem;
+    width: 80%;
+    padding: 6px 0 6px 0;
+    gap: 1.67988rem;
     flex-shrink: 0;
+    border-radius: 2px;
     background: #4065b4;
+    white-space: nowrap;
+    position: relative;
+    border: none;
   }
   .button-facebook img {
-    width: 1.26369rem;
-    height: 1.26369rem;
-    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0.3rem;
   }
   //Span do botão facebook
   .span-facebook {
+    color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 0.85694rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 500;
-    color: #FFF;
-    line-height: 1.01094rem;
+    line-height: 1.61625rem;
   }
   .button-google {
     display: inline-flex;
     align-items: center;
-    white-space: nowrap;
-    position: inherit;
-    padding: 0.26113rem 4.29931rem 0.29875rem 0.79569rem;
-    gap: 1.683rem;
-    border-radius: 0.1685rem;
-    border: 1.469px solid #DCDCDC;
     flex-shrink: 0;
-    font-size: 0.76513rem;
+    white-space: nowrap;
+    width: 78%;
+    padding: 4px 0 4px 0;
+    gap: 2.69075rem;
+    border-radius: 2px;
+    border: 2.949px solid #dcdcdc;
     background: #fff;
+    position: relative;
+
   }
   .button-google img {
-    width: 0.75819rem;
-    height: 0.75819rem;
-    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    left: 0.3rem;
   }
   .span-google {
     color: #3c4043;
     font-family: Poppins;
-    font-size: 0.76513rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.0105rem;
+    letter-spacing: 0.01681rem;
+    position: relative;
   }
   .btn-email-celular {
     display: flex;
     justify-content: center;
-    gap: 0.8rem;
+    align-items: center;
+    gap: 0.2rem;
     position: relative;
-    bottom: 2rem;
-    right: 0.7rem;
+    left: 10%;
+    top: 0.3rem;
+
   }
   .button-celular {
     display: inline-flex;
     align-items: flex-start;
-    position: relative;
-    left: 0.5rem;
-    padding: 0.58969rem 2.49488rem 0.50544rem 2.43338rem;
-    border-radius: 0.1685rem;
-    border: 1.469px solid #DCDCDC;
-    background: #FFF;
+    background: #fff;
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
+    border: 2px solid #dcdcdc;
   }
   .button-email {
     display: inline-flex;
-    padding: 0.58969rem 3.036rem 0.50544rem 3.02925rem;
     align-items: flex-start;
-    border-radius: 0.1685rem;
-    border: 1.469px solid #DCDCDC;
-    background: #FFF;
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
+    border: 2.349px solid #dcdcdc;
+    background: #fff;
   }
   .span-email-celular {
     color: #a6a6a6;
     text-align: center;
     font-family: Poppins;
-    font-size: 0.97931rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.0645rem;
-
+    line-height: 1.5rem;
   }
   .border {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 0;
-    left: 0;
+    top: 1.5rem;
+    left: 1.8rem;
   }
   .bordar-horizontal {
-    width: 18.27913rem;
-    height: 0.03906rem;
-    flex-shrink: 0;
-    position: relative;
-    right: 0.5rem;
-    border-top: 1.469px solid rgba(106, 105, 110, 0.80);
+    border-top: 1px solid rgba(220, 220, 220, 0.80);
+    width: 17rem;
   }
 }

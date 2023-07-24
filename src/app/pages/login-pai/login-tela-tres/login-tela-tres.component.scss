@@ -11,13 +11,14 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #e49011;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
   }
   .setas-voltar {
     color: #e49011;
     text-shadow: #fff 0px 4px 0px;
     font-family: poppins;
-    font-size: 4.85919rem;
+    font-size: 1.85919rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -29,29 +30,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/assets/img/login/pseudo-769.png");
-    background-repeat: no-repeat;
     position: relative;
-    background-size: cover;
-    background-position: center top;
-    width: 110.1075rem;
-    height: 110.1075rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     padding: 0;
     margin: 0;
-    bottom: 70%;
   }
   .img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15.24881rem;
-    height: 15.24881rem;
+    width: 8.24881rem;
+    height: 8.24881rem;
     flex-shrink: 0;
     position: fixed;
-    top: 2.31rem;
+    top: 0.8rem;
     bottom: 0.78rem;
-    border-radius: 20.702rem;
+    border-radius: 8.702rem;
     background: #fff;
     overflow: hidden;
     fill: #fff;
@@ -60,8 +56,8 @@
   .logo-sobreposta {
     display: flex;
     position: absolute;
-    width: 18.875rem;
-    height: 11.41669rem;
+    width: 8rem;
+    height: 8rem;
     flex-shrink: 0;
     top: 50%;
     left: 50%;
@@ -72,35 +68,35 @@
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
-    height: 35.871rem;
+    height: 360.871px;
+    width: 330px;
     position: fixed;
-    top: 18rem;
+    top: 10rem;
     bottom: 0;
-    border-radius: 0.68819rem;
+    border-radius: 5px;
     background: #fff;
     box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px
         rgba(0, 0, 0, 0.06),
       0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
-    padding: 2.64625rem 3rem 2.09675rem 3rem;
+    //padding: 2.64625rem 3rem 2.09675rem 3rem;
   }
-
   //Frase: falta pouco para matar sua fome
   h1 {
     display: flex;
-    width: 22rem;
+    width: 14rem;
     color: #414143;
     text-align: center;
     font-family: Poppins;
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 3.36713rem;
+    line-height: 2rem;
     letter-spacing: -0.01238rem;
     position: relative;
-    bottom: 23%;
-    left: 9%;
+    left: 15%;
+    bottom: 1rem;
   }
   //Frase: Como deseja continuar
   h2 {
@@ -108,43 +104,52 @@
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 2.22231rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.788rem;
+    line-height: 1.788rem;
     white-space: nowrap;
     position: relative;
-    bottom: 22%;
-    left: 1%;
+    left: 17%;
+    bottom: 1rem;
   }
   .button-google-fecebook {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     position: relative;
-    bottom: 15%;
     gap: 0.5rem;
+    left: 10%;
+    bottom: 1rem;
   }
   //botão facebook-google
   .button-facebook {
     display: inline-flex;
     align-items: center;
-    height: 3.36713rem;
-    padding: 0.67344rem 4.06344rem 0.67344rem 1.34688rem;
+    height: 2rem;
+    width: 80%;
+    padding: 6px 0 6px 0;
     gap: 1.67988rem;
     flex-shrink: 0;
-    border-radius: 0.26938rem;
+    border-radius: 2px;
     background: #4065b4;
     white-space: nowrap;
     position: relative;
-    bottom: 2.33rem;
+    border: none;
+  }
+  .button-facebook img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0.3rem;
   }
   //Span do botão facebook
   .span-facebook {
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.37rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.61625rem;
@@ -154,18 +159,25 @@
     align-items: center;
     flex-shrink: 0;
     white-space: nowrap;
-    padding: 0.41731rem 6.94944rem 0.46388rem 1.27219rem;
+    width: 78%;
+    padding: 4px 0 4px 0;
     gap: 2.69075rem;
-    border-radius: 0.26938rem;
-    border: 2.349px solid #dcdcdc;
+    border-radius: 2px;
+    border: 2.949px solid #dcdcdc;
     background: #fff;
     position: relative;
-    bottom: 2rem;
+
+  }
+  .button-google img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    left: 0.3rem;
   }
   .span-google {
     color: #3c4043;
     font-family: Poppins;
-    font-size: 1.22319rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -174,49 +186,59 @@
   }
   .btn-email-celular {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.2rem;
     position: relative;
-    bottom: 5.4rem;
+    left: 10%;
+    top: 0.3rem;
+
   }
   .button-celular {
     display: inline-flex;
     align-items: flex-start;
     background: #fff;
-    padding: 0.94281rem 3.98869rem 0.80813rem 3.89038rem;
-    border-radius: 0.26938rem;
-    border: 2.349px solid #dcdcdc;
-  }
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
+    border: 2px solid #dcdcdc;
+  transition: background-color 0.3s ease;
+}
+
+.button-celular:hover {
+background-color: #e49011;
+}
   .button-email {
     display: inline-flex;
-    padding: 0.94281rem 5.00431rem 0.80813rem 4.2035rem;
     align-items: flex-start;
-    border-radius: 0.26938rem;
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
     border: 2.349px solid #dcdcdc;
     background: #fff;
-  }
+  transition: background-color 0.3s ease;
+}
+
+.button-email:hover {
+background-color: #e49011;
+}
   .span-email-celular {
     color: #a6a6a6;
     text-align: center;
     font-family: Poppins;
-    font-size: 1.56569rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.61625rem;
+    line-height: 1.5rem;
   }
   .border {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 4rem;
-    left: 0%;
+    top: 1.5rem;
+    left: 1.8rem;
   }
   .bordar-horizontal {
-    border: 1px solid rgba(106, 105, 110, 0.8);
-    opacity: 0.5;
-    width: 27.625rem;
-    height: 0.0625rem;
-    flex-shrink: 0;
-    border-top: 2.349px solid rgba(106, 105, 110, 0.8);
+    border-top: 1px solid rgba(220, 220, 220, 0.80);
+    width: 17rem;
   }
 }
