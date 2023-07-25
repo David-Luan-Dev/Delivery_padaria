@@ -14,7 +14,8 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
-  .setas-voltar {
+  .seta-voltar {
+    display: flex;
     color: #e49011;
     text-shadow: #fff 0px 4px 0px;
     font-family: poppins;
@@ -23,7 +24,7 @@
     font-weight: 400;
     line-height: normal;
     position: fixed;
-    top: 0.2rem;
+    top: 1.5rem;
     left: 1rem;
   }
   .div-pai-img-form {
