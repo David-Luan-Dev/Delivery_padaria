@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
 import { LoginComponent } from './pages/login/login.component';
-import { InformeEmailComponent } from './pages/login/informe-email/informe-email.component';
+import { InformeEmailComponent } from './pages/login-pai/login-tela-um/informe-email/informe-email.component';
 import { InformeCelularComponent } from './pages/login-pai/login-tela-um/informe-celular/informe-celular.component';
 import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
 
