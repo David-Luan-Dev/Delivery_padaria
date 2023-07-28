@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import {MatDialogModule} from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import {MatMenuModule} from '@angular/material/menu';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,9 +38,10 @@ import { LoginTelaTresComponent } from './pages/login-pai/login-tela-tres/login-
 import { LoginTelaQuatroComponent } from './pages/login-pai/login-tela-quatro/login-tela-quatro.component';
 import { LoginTelaCincoComponent } from './pages/login-pai/login-tela-cinco/login-tela-cinco.component';
 import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-tela-seis.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
+import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 
-
-
+export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +53,8 @@ import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-
     LoginComponent,
     InformeEmailComponent,
     InformeCelularComponent,
+    InformCodigoCelularComponent,
+    LoginPaiComponent,
     HeaderTelaUmComponent,
     HeaderTelaDoisComponent,
     HeaderTelaTresComponent,
@@ -57,7 +65,6 @@ import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-
     DialogLocalizacaoTelaTresComponent,
     DialogLocalizacaoTelaDoisComponent,
     DialogLocalizacaoTelaUmComponent,
-    LoginPaiComponent,
     LoginTelaUmComponent,
     LoginTelaDoisComponent,
     LoginTelaTresComponent,
@@ -65,16 +72,22 @@ import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-
     LoginTelaCincoComponent,
     LoginTelaSeisComponent,
 
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatMenuModule
+    MatMenuModule,
+    ReactiveFormsModule,
+    CommonModule,
+    NgxMaskDirective,
+     NgxMaskPipe,
+     MatInputModule,
+     MatFormFieldModule
+
   ],
-  providers: [],
+  providers: [provideNgxMask()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,20 +5,55 @@
   <div class="div-pai-img-form">
     <!--Parte da elipse-->
     <div class="img">
-      <img class="logo-sobreposta" src="assets/img/logo2-login.png" alt="logo da tela de login">
+      <img
+       class="logo-sobreposta"
+       src="assets/img/logo2-login.png"
+        alt="logo da tela de login">
     </div>
     <!--Início do furmulário-->
-    <div class="container-formulario">
+    <form
+     class="container-formulario"
+     [formGroup]="celularForm">
       <div class="titulo">
-        <h1>Informe o número do seu celular para continuar</h1>
+        <h1>
+          Informe o número do seu celular para continuar
+        </h1>
       </div>
       <div class="input-informar-email">
         <div class="lado-esquerdo-do-input">
           <div class="codigo-postal-e-bandeira-do-brasil">
-            <img class="icone-bandeira-do-brasil" src="assets/img/login/brasil.png" alt="bandeira do brasil">
+            <img
+             class="icone-bandeira-do-brasil"
+             src="assets/img/login/brasil.png"
+             alt="bandeira do brasil">
             <p class="codigo-postal">+55</p>
           </div>
-          <input type="text" placeholder="Informe o seu número de celular">
+          <div class="input-e-validacao">
+            <input
+              class="placeholder" type="tel" name="phone"
+             [placeholder]="isInputFocused
+             ? ' ' : 'Informe o seu número de celular'"
+             (focus)="onInputFocus()"
+             formControlName="celularFormControl"
+             mask="(00) 00000-0000">
+          <div
+            *ngIf="celularFormControl.hasError('required')
+            && celularFormControl.touched"
+            class="error-message">
+             <p class="mensagem-erro">
+              O número do celular inválido.
+             </p>
+          </div>
+            <!-- Error message for pattern validation -->
+            <div
+             *ngIf="celularFormControl.hasError('pattern')
+              && celularFormControl.touched"
+              class="error-message">
+               <p class="mensagem-erro">
+                O número do celular deve conter 11 dígitos numéricos.
+            </p>
+            </div>
+          </div>
         </div>
         <span class="texto-acima-do-botao-whatsApp">
           <p>
@@ -26,12 +61,12 @@
           </p>
         </span>
       </div>
-      <div class="btn-whatsApp" >
-        <button>
+      <div class="btn-whatsApp"  routerLink="/codigo-celular" >
+        <button [disabled]="!celularForm.valid">
             WhatsApp
         </button>
       </div>
       <div class="borda"></div>
-    </div>
+    </form>
   </div>
 </div>
