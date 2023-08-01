@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 
 
 @Component({

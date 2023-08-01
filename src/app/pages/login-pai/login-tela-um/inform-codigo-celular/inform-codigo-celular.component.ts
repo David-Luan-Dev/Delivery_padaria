@@ -8,7 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class InformCodigoCelularComponent implements AfterViewInit {
   codigoForm!: FormGroup;
-  @ViewChildren('input0, input1, input2, input3, input4, input5') inputs!: QueryList<ElementRef>;
+  @ViewChildren('input0, input1, input2, input3, input4, input5')
+  inputs!: QueryList<ElementRef>;
 
   constructor(private formBilder: FormBuilder){
     this.codigoForm = this.formBilder.group({
@@ -36,6 +37,7 @@ export class InformCodigoCelularComponent implements AfterViewInit {
     });
     this.configurarOunvintesEntrada();
   }
+
     configurarOunvintesEntrada(): void {
       this.inputs.forEach((input, index) => {
         input.nativeElement.addEventListener('input',
@@ -55,6 +57,7 @@ export class InformCodigoCelularComponent implements AfterViewInit {
         [nextIndex].nativeElement.focus();
       }
     }
+
     this.printCode();
   }
   printCode(): void {

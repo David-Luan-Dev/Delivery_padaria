@@ -7,8 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
-
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,8 +37,8 @@ import { LoginTelaTresComponent } from './pages/login-pai/login-tela-tres/login-
 import { LoginTelaQuatroComponent } from './pages/login-pai/login-tela-quatro/login-tela-quatro.component';
 import { LoginTelaCincoComponent } from './pages/login-pai/login-tela-cinco/login-tela-cinco.component';
 import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-tela-seis.component';
-import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
 
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
@@ -84,7 +83,9 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     NgxMaskDirective,
      NgxMaskPipe,
      MatInputModule,
-     MatFormFieldModule
+     MatFormFieldModule,
+     FormsModule,
+
 
   ],
   providers: [provideNgxMask()],

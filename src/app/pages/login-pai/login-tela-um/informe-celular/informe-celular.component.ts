@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 
@@ -20,7 +20,6 @@ export class InformeCelularComponent {
     });
   }
 
-  // Helper method to get the celularFormControl
   get celularFormControl(): FormControl {
     return this.celularForm.get('celularFormControl') as FormControl;
   }
@@ -28,4 +27,5 @@ export class InformeCelularComponent {
   onInputFocus() {
     this.isInputFocused = true;
   }
+
 }

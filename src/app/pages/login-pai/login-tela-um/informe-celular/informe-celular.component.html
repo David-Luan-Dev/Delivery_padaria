@@ -29,30 +29,30 @@
             <p class="codigo-postal">+55</p>
           </div>
           <div class="input-e-validacao">
-            <input
-              class="placeholder" type="tel" name="phone"
-             [placeholder]="isInputFocused
-             ? ' ' : 'Informe o seu número de celular'"
-             (focus)="onInputFocus()"
-             formControlName="celularFormControl"
-             mask="(00) 00000-0000">
-          <div
-            *ngIf="celularFormControl.hasError('required')
-            && celularFormControl.touched"
-            class="error-message">
-             <p class="mensagem-erro">
-              O número do celular inválido.
-             </p>
-          </div>
-            <!-- Error message for pattern validation -->
-            <div
-             *ngIf="celularFormControl.hasError('pattern')
+            <mat-form-field appearance="outline">
+              <mat-label class="mat-label">Informe o seu número de celular</mat-label>
+              <input matInput
+                type="tel" name="phone"
+                [ngClass]="{'erro' : celularFormControl.invalid
+                && celularFormControl.touched}"
+                [style.color]="celularFormControl.invalid
+                && celularFormControl.touched"
+                (focus)="onInputFocus()"
+                formControlName="celularFormControl"
+                mask="(00) 00000-0000">
+                <mat-error
+                *ngIf="celularFormControl.hasError('required')
+                && celularFormControl.touched"
+                >
+                  Número de celular inválido.
+              </mat-error>
+              <mat-error
+              *ngIf="celularFormControl.hasError('pattern')
               && celularFormControl.touched"
               class="error-message">
-               <p class="mensagem-erro">
-                O número do celular deve conter 11 dígitos numéricos.
-            </p>
-            </div>
+                Número icompleto
+            </mat-error>
+          </mat-form-field>
           </div>
         </div>
         <span class="texto-acima-do-botao-whatsApp">
@@ -62,7 +62,9 @@
         </span>
       </div>
       <div class="btn-whatsApp"  routerLink="/codigo-celular" >
-        <button [disabled]="!celularForm.valid">
+        <button
+          [disabled]="!celularForm.valid"
+          >
             WhatsApp
         </button>
       </div>
