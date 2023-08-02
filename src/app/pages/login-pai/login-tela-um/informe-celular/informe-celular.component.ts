@@ -1,6 +1,8 @@
 
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { DadosCompartilhadosService } from 'src/app/services/dados-compartilhados.service';
 
 
 @Component({
@@ -12,16 +14,26 @@ export class InformeCelularComponent {
   celularForm: FormGroup;
   isInputFocused: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    public setCelularValue: DadosCompartilhadosService,
+    public router: Router
+  ) {
     this.celularForm = this.formBuilder.group({
       celularFormControl: ['',
-      [Validators.required,
-      Validators.pattern(/^\d{11}$/)]]
+        [Validators.required,
+        Validators.pattern(/^\d{11}$/)]]
     });
   }
 
   get celularFormControl(): FormControl {
     return this.celularForm.get('celularFormControl') as FormControl;
+  }
+
+  EnviarCelular() {
+    this.router.navigate(['/codigo-celular']);
+    const numeroCelularValidado = this.celularForm.get('celularFormControl')?.value;
+    this.setCelularValue.setCelularValue(numeroCelularValidado);
   }
 
   onInputFocus() {
