@@ -17,22 +17,43 @@
       <div class="input-informar-email">
         <div class="lado-esquerdo-do-input">
           <div class="codigo-postal-e-bandeira-do-brasil">
-            <img class="icone-bandeira-do-brasil" src="assets/img/login/brasil.png" alt="bandeira do brasil">
+            <img 
+              class="icone-bandeira-do-brasil" 
+              src="assets/img/login/brasil.png" 
+              alt="bandeira do brasil"
+            >
             <p class="codigo-postal">+55</p>
           </div>
-          <form class="input-e-validacao" [formGroup]="celularForm">
+          <form 
+            class="input-e-validacao" 
+            [formGroup]="celularForm"
+          >
             <mat-form-field appearance="outline">
-              <mat-label class="mat-label">Informe o seu número de celular</mat-label>
-              <input matInput type="tel" name="phone" [ngClass]="{'erro' : celularFormControl.invalid
-                && celularFormControl.touched}" [style.color]="celularFormControl.invalid
-                && celularFormControl.touched" (focus)="onInputFocus()" formControlName="celularFormControl"
-                mask="(00) 00000-0000">
-              <mat-error *ngIf="celularFormControl.hasError('required')
-                && celularFormControl.touched">
+              <mat-label class="mat-label">
+                  Informe o seu número de celular
+              </mat-label>
+              <input 
+                matInput type="tel" 
+                name="phone" 
+                class="input"
+                [ngClass]="{'erro' : celularFormControl.invalid
+                && celularFormControl.touched}" 
+                [style.color]="celularFormControl.invalid
+                && celularFormControl.touched" 
+                (focus)="onInputFocus()" 
+                formControlName="celularFormControl"
+                mask="(00) 00000-0000"
+              >
+              <mat-error 
+                *ngIf="celularFormControl.hasError('required')
+                && celularFormControl.touched"
+              >
                 Número de celular inválido.
               </mat-error>
-              <mat-error *ngIf="celularFormControl.hasError('pattern')
-              && celularFormControl.touched" class="error-message">
+              <mat-error 
+                *ngIf="celularFormControl.hasError('pattern')
+                && celularFormControl.touched" class="error-message"
+              >
                 Número icompleto
               </mat-error>
             </mat-form-field>

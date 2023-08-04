@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { DadosCompartilhadosService } from 'src/app/services/dados-compartilhados.service';
@@ -17,7 +17,7 @@ export class InformeCelularComponent {
   constructor(
     private formBuilder: FormBuilder,
     public setCelularValue: DadosCompartilhadosService,
-    public router: Router
+    public router: Router,
   ) {
     this.celularForm = this.formBuilder.group({
       celularFormControl: ['',
@@ -34,6 +34,7 @@ export class InformeCelularComponent {
     this.router.navigate(['/codigo-celular']);
     const numeroCelularValidado = this.celularForm.get('celularFormControl')?.value;
     this.setCelularValue.setCelularValue(numeroCelularValidado);
+    console.log("Codigo enviado com sucesso para: " + this.celularFormControl.value);
   }
 
   onInputFocus() {

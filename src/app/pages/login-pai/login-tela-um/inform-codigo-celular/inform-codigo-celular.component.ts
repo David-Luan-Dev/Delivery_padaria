@@ -8,9 +8,12 @@ import { DadosCompartilhadosService } from 'src/app/services/dados-compartilhado
   styleUrls: ['./inform-codigo-celular.component.scss']
 })
 export class InformCodigoCelularComponent implements AfterViewInit {
+  
   codigoForm!: FormGroup;
   @ViewChildren('input0, input1, input2, input3, input4, input5')
   inputs!: QueryList<ElementRef>;
+  
+  codigoIncorreto: boolean = false;
 
   constructor(
     private formBilder: FormBuilder,
@@ -63,12 +66,14 @@ export class InformCodigoCelularComponent implements AfterViewInit {
       if (nextIndex < this.inputs.length) {
         this.inputs.toArray()
         [nextIndex].nativeElement.focus();
+      } else {
+        this.validateCode();
       }
     }
 
     this.printCode(input);
   }
-
+   
   printCode(input: ElementRef): void {
     let code = '';
     this.inputs.forEach(input => {
@@ -76,4 +81,25 @@ export class InformCodigoCelularComponent implements AfterViewInit {
     });
     console.log('Código digitado: ', code)
   }
+  
+  //validação do código e mostrar a div erro ou sucesso
+  validateCode(): void {
+    const enteredCode = this.getCodeFromInputs();
+    const expectedCode = '123456';  //vai entrar alteração aqui
+
+    this.codigoIncorreto = enteredCode !== expectedCode;
+  }
+
+  getCodeFromInputs(): string {
+    let code = '';
+    this.inputs.forEach(input => {
+      code += input.nativeElement.value;
+    });
+    return code;
+  }
+
+  onSubmit() {
+ 
+  }
+
 }
