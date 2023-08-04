@@ -1,0 +1,152 @@
+//Tela quatro 
+@media (min-width: 481px) and (max-width: 768px) {
+  //Div que contém todo o conteúdo
+.container-modal {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 0;
+padding: 0;
+padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
+gap: 1.28294rem;
+}
+.x-modal {
+display: flex;
+position: relative;
+top: 0.8rem;
+right: 1rem;
+left: 48%;
+//margin: 1rem;
+}
+//Estilização da img casa
+.img-casa-modal {
+width: 3.57888rem;
+height: 4.47356rem;
+flex-shrink: 0;
+position: relative;
+top: 1rem;
+}
+
+//Estilização h2 modal
+h2 {
+color: #2e2c36;
+text-align: center;
+font-size: 0.9375rem;
+font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+line-height: 1.34206rem;
+position: relative;
+top: 2rem;
+}
+//Estilização do parágrafo
+p {
+color: #2e2c36;
+text-align: center;
+font-size: 0.625rem;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: 1.16669rem;
+position: relative;
+top: 0;
+}
+
+//Estilização da img x, de fechar a modal
+.x-modal-img {
+width: 1.5395rem;
+height: 1.5395rem;
+flex-shrink: 0;
+}
+.div-input-modal {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 19rem;
+height: 1.5rem;
+padding: 1.1855rem 1.11838rem 1.1855rem 2.72888rem;
+border-radius: 0.57731rem;
+border: 1.026px solid #f7f8f9;
+background: #f7f8f9;
+box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
+top: 1rem;
+}
+//Img de localização
+.img-localizacao-modal {
+width: 1.5395rem;
+height: 1.5395rem;
+flex-shrink: 0;
+position: relative;
+bottom: 0;
+right: 1rem;
+}
+//Estilização do input do dialog localização
+input {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 18.98381rem;
+height: 1rem;
+position: relative;
+flex-direction: column;
+left: 0;
+flex-shrink: 0;
+color: #757575;
+font-size: 0.89806rem;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border: none;
+outline: none;
+}
+//Estilização do placeholder
+::placeholder {
+color: #757575;
+font-size: 0.6875rem;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+
+}
+.btn-localizacao {
+display: flex;
+justify-content: center;
+position: relative;
+top: 2.5rem;
+}
+button {
+padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+display: inline-flex;
+border-radius: 1.125rem;
+gap: 1.125rem;
+align-items: center;
+font-family: Poppins;
+font-size: 0.89806rem;
+background: #000;
+border-radius: 1.125rem;
+color: #e49011;
+}
+
+.btn-flutuante {
+/* Estilos do botão flutuante */
+opacity: 0;
+transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+}
+
+//botão abaixo da modal
+.btn-flutuante.inicial {
+pointer-events: none;
+position: fixed;
+bottom: -50px;
+right: -50px;
+}
+
+.btn-flutuante.visivel {
+opacity: 1;
+}
+}

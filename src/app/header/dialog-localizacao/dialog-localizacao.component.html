@@ -1,0 +1,16 @@
+<app-dialog-localizacao-tela-um *ngIf="innerWidth >= 1201"></app-dialog-localizacao-tela-um>
+
+<!--Aqui começa a parte da que corresponde as telas de 1025px a 1200px tela-dois-->
+<app-dialog-localizacao-tela-dois *ngIf="innerWidth >= 1025 && innerWidth <= 1200"></app-dialog-localizacao-tela-dois>
+
+<!-- Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três -->
+<app-dialog-localizacao-tela-tres *ngIf="innerWidth >= 769 && innerWidth <= 1024"></app-dialog-localizacao-tela-tres>
+
+<!--Aqui começa a parte da que corresponde as telas entre 481 e 768 tela-cinco-->
+<app-dialog-localizacao-tela-quatro *ngIf="innerWidth >= 481 && innerWidth <= 768"></app-dialog-localizacao-tela-quatro>
+
+<!-- Aqui começa a estilização das telas entre 320px e 480px tela-cinco -->
+<app-dialog-localizacao-tela-cinco *ngIf="innerWidth >= 320 && innerWidth <= 480"></app-dialog-localizacao-tela-cinco>
+
+<!-- max - 319px -->
+<app-dialog-localizacao-tela-seis *ngIf="innerWidth <= 319"></app-dialog-localizacao-tela-seis>

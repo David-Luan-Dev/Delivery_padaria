@@ -1,0 +1,244 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  .setas-voltar {
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 1.85919rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: fixed;
+    top: 0.2rem;
+    left: 1rem;
+  }
+  .div-pai-img-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.24881rem;
+    height: 8.24881rem;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0.8rem;
+    bottom: 0.78rem;
+    border-radius: 8.702rem;
+    background: #fff;
+    overflow: hidden;
+    fill: #fff;
+    filter: drop-shadow(0px 9.759231567382812px 9.759231567382812px #717171);
+  }
+  .logo-sobreposta {
+    display: flex;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    flex-shrink: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 360.871px;
+    width: 330px;
+    position: fixed;
+    top: 10rem;
+    bottom: 0;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px
+        rgba(0, 0, 0, 0.06),
+      0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
+    //padding: 2.64625rem 3rem 2.09675rem 3rem;
+  }
+  //Frase: falta pouco para matar sua fome
+  h1 {
+    display: flex;
+    width: 14rem;
+    color: #414143;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: -0.01238rem;
+    position: relative;
+    left: 15%;
+    bottom: 1rem;
+  }
+  //Frase: Como deseja continuar
+  h2 {
+    display: flex;
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.788rem;
+    white-space: nowrap;
+    position: relative;
+    left: 17%;
+    bottom: 1rem;
+  }
+  .button-google-fecebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    gap: 0.5rem;
+    left: 10%;
+    bottom: 1rem;
+  }
+  //botão facebook-google
+  .button-facebook {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    width: 80%;
+    padding: 6px 0 6px 0;
+    gap: 1.67988rem;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #4065b4;
+    white-space: nowrap;
+    position: relative;
+    border: none;
+  }
+  .button-facebook img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0.3rem;
+  }
+  //Span do botão facebook
+  .span-facebook {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.61625rem;
+  }
+  .button-google {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    width: 78%;
+    padding: 4px 0 4px 0;
+    gap: 2.69075rem;
+    border-radius: 2px;
+    border: 2.949px solid #dcdcdc;
+    background: #fff;
+    position: relative;
+
+  }
+  .button-google img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    left: 0.3rem;
+  }
+  .span-google {
+    color: #3c4043;
+    font-family: Poppins;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.01681rem;
+    position: relative;
+  }
+  .btn-email-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    position: relative;
+    left: 10%;
+    top: 0.3rem;
+
+  }
+  .button-celular {
+    display: inline-flex;
+    align-items: flex-start;
+    background: #fff;
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
+    border: 2px solid #dcdcdc;
+  transition: background-color 0.3s ease;
+}
+
+.button-celular:hover {
+background-color: #e49011;
+}
+  .button-email {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 45px 4px 45px;
+    border-radius: 4px;
+    border: 2.349px solid #dcdcdc;
+    background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button-email:hover {
+background-color: #e49011;
+}
+  .span-email-celular {
+    color: #a6a6a6;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  .border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1.5rem;
+    left: 1.8rem;
+  }
+  .bordar-horizontal {
+    border-top: 1px solid rgba(220, 220, 220, 0.80);
+    width: 17rem;
+  }
+}

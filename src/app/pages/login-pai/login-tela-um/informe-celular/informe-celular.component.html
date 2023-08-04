@@ -1,0 +1,77 @@
+<div class="container">
+  <h2 routerLink="/app-login">
+    <span class="setas-voltar">&lt;&lt;</span>
+  </h2>
+  <div class="div-pai-img-form">
+    <!--Parte da elipse-->
+    <div class="img">
+      <img class="logo-sobreposta" src="assets/img/logo2-login.png" alt="logo da tela de login">
+    </div>
+    <!--Início do furmulário-->
+    <div class="container-formulario">
+      <div class="titulo">
+        <h1>
+          Informe o número do seu celular para continuar
+        </h1>
+      </div>
+      <div class="input-informar-email">
+        <div class="lado-esquerdo-do-input">
+          <div class="codigo-postal-e-bandeira-do-brasil">
+            <img 
+              class="icone-bandeira-do-brasil" 
+              src="assets/img/login/brasil.png" 
+              alt="bandeira do brasil"
+            >
+            <p class="codigo-postal">+55</p>
+          </div>
+          <form 
+            class="input-e-validacao" 
+            [formGroup]="celularForm"
+            
+          >
+            <mat-form-field appearance="outline">
+              <mat-label class="mat-label">
+                  Informe o seu número de celular
+              </mat-label>
+              <input 
+                matInput type="tel" 
+                name="phone" 
+                class="input"
+                [ngClass]="{'erro' : celularFormControl.invalid
+                && celularFormControl.touched}" 
+                [style.color]="celularFormControl.invalid
+                && celularFormControl.touched" 
+                (focus)="onInputFocus()" 
+                formControlName="celularFormControl"
+                mask="(00) 00000-0000"
+              >
+              <mat-error 
+                *ngIf="celularFormControl.hasError('required')
+                && celularFormControl.touched"
+              >
+                Número de celular inválido.
+              </mat-error>
+              <mat-error 
+                *ngIf="celularFormControl.hasError('pattern')
+                && celularFormControl.touched" class="error-message"
+              >
+                Número icompleto
+              </mat-error>
+            </mat-form-field>
+          </form>
+        </div>
+        <span class="texto-acima-do-botao-whatsApp">
+          <p>
+            Como deseja receber seu código?
+          </p>
+        </span>
+      </div>
+      <div class="btn-whatsApp">
+        <button [disabled]="!celularForm.valid" (click)="EnviarCelular()">
+          WhatsApp
+        </button>
+      </div>
+      <div class="borda"></div>
+    </div>
+  </div>
+</div>

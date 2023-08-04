@@ -1,0 +1,1578 @@
+@media (min-width: 1201px) {
+  .container {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    grid-area: 0.05rem;
+    color: #e49011;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    position: absolute;
+    border-radius: 20.702rem;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 201.9707794189453px;
+    height: 201.97076416015625px;
+    top: 200px;
+    left: 101.01513671875px;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 250px;
+    height: 151.21463012695312px;
+    top: 261.3779296875px;
+    left: 137px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 11rem;
+    right: 18rem;
+    border-radius: 6.244px;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+    width: 398.049px;
+    height: 262.244px;
+    flex-shrink: 0;
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 1.5rem;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 14.049px;
+    line-height: 16.156px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 1rem;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    left: 2.5rem;
+    bottom: 1.2rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 3px;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 18.608px;
+    height: 18.608px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 14.049px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.361px;
+    position: relative;
+    top: 5px;
+  }
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 64.78px;
+    height: 37.46px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 3.122px;
+    background: #dcdcdc;
+    position: relative;
+    top: 5px;
+  }
+  .mat-label {
+    font-size: 11.488px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 400;
+    color: #a6a6a6;
+  }
+  mat-form-field {
+    display: flex;
+    width: 247.415px;
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+  }
+ 
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.46px;
+  }
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  mat-error {
+    font-size: 9px;
+  }
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    top: 1rem;
+  }
+  .texto-acima-do-botao-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1.9rem;
+    right: 2.3rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12.488px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.361px;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1rem;
+    border: none;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+    border-radius: 3.122px;
+    transition: 0.1s;
+    width: 317.415px;
+    height: 39.024px;
+    flex-shrink: 0;
+  }
+  button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 317.415px;
+    position: relative;
+    top: 25px;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    grid-area: 0.05rem;
+    color: #e49011;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    position: absolute;
+    border-radius: 20.702rem;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 201.9707794189453px;
+    height: 201.97076416015625px;
+    top: 200px;
+    left: 71.01513671875px;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 250px;
+    height: 151.21463012695312px;
+    top: 261.3779296875px;
+    left: 137px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 283.529px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 9rem;
+    right: 13rem;
+    border-radius: 6.275px;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 14.118px;
+    line-height: 16.235px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    bottom: 1.5rem;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 16.699px;
+    height: 16.699px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 12.118px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.431px;
+    position: relative;
+    top: 0.3rem;
+  }
+  //Placeholder do input
+  mat-label {
+    color: #a6a6a6;
+    font-family: Poppins;
+    font-size: 11.549px;
+    position: relative;
+    bottom: 9px;
+  }
+
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    gap: 3px;
+    width: 65.098px;
+    height: 37.647px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #dcdcdc;
+  }
+  mat-form-field {
+    flex-shrink: 0;
+    outline: none;
+    border-radius: 3.137px;
+    position: relative;
+    width: 258.627px;
+  }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texto-acima-do-botao-whatsApp {
+    position: relative;
+    top: 1.2rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15rem;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0rem;
+    width: 321.569px;
+    height: 39.216px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 2.353px;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+    border-radius: 4px;
+    transition: 0.1s;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 321.569px;
+    position: relative;
+    top: 12px;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    display: flex;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 1rem;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 125.9707794189453px;
+    height: 125.97076416015625px;
+    bottom: 0.7rem;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 150px;
+    height: 111.21463012695312px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 10rem;
+    border-radius: 4.706px;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    width: 100%;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 14.588px;
+    line-height: 12.176px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    bottom: 4rem;
+    white-space: nowrap;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 10.588px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.824px;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 11px;
+    gap: 0.1rem;
+    width: 60.824px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 2.353px;
+    background: #dcdcdc;
+  }
+  mat-form-field {
+    position: relative;
+    width: 325.471px;
+    font-size: 9.412px;
+  }
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+  mat-label {
+    font-size: 12px;
+    position: relative;
+    bottom: 9px;
+  }
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texto-acima-do-botao-whatsApp {
+    position: relative;
+    top: 1.8rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11.412px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.824px;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0rem;
+    width: 100%;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 390.176px;
+    height: 29.412px;
+    flex-shrink: 0;
+    border: none;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12.765px;
+    line-height: 9.412px;
+    font-style: normal;
+    border-radius: 2.353px;
+    height: 39px;
+    transition: 0.1s;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 350.176px;
+    position: relative;
+    top: 1rem;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    display: flex;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 130.9707794189453px;
+    height: 130.97076416015625px;
+    position: relative;
+    top: 2%;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 150px;
+    height: 101.21463012695312px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 300px;
+    flex-shrink: 0;
+    position: fixed;
+    border-radius: 5px;
+    top: 10rem;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    width: 100%;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 14.025px;
+    height: 14.025px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 10.588px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.64556rem;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  //Placeholder do input
+  mat-label {
+    color: #a6a6a6;
+    font-family: Poppins;
+    font-size: 10.412px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    position: relative;
+    bottom: 11px;
+    border-radius: 2px;
+    background: #dcdcdc;
+    width: 60.824px;
+    height: 37px;
+    flex-shrink: 0;
+  }
+  mat-form-field {
+    position: relative;
+    width: 300.471px;
+  }
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+  mat-error {
+    font-size: 9px;
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: #000;
+  }
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texto-acima-do-botao-whatsApp {
+    position: relative;
+    top: 1rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 11.412px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.824px;
+    position: relative;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    position: relative;
+    top: 0.5rem;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 11.765px;
+    font-style: normal;
+    line-height: 11.412px;
+    border-radius: 2.353px;
+    height: 35px;
+    transition: 0.1s;
+    width: 365.176px;
+    height: 37.412px;
+    flex-shrink: 0;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 50%;
+    position: relative;
+    top: 15px;
+    opacity: 0.5;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    display: flex;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 130.9707794189453px;
+    height: 130.97076416015625px;
+    position: relative;
+    top: 2%;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 150px;
+    height: 101.21463012695312px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    flex-shrink: 0;
+    position: fixed;
+    border-radius: 3px;
+    top: 10rem;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    width: 100%;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 12.025px;
+    height: 12.025px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 8.588px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.64556rem;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  //Placeholder do input
+  mat-label {
+    color: #a6a6a6;
+    font-family: Poppins;
+    font-size: 9.412px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    position: relative;
+    bottom: 11px;
+    border-radius: 5px;
+    background: #dcdcdc;
+    width: 40.824px;
+    height: 35px;
+    flex-shrink: 0;
+    border: 1px solid grey;
+  }
+  mat-form-field {
+    position: relative;
+    width: 240.471px;
+  }
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+  mat-error {
+    font-size: 9px;
+  }
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texto-acima-do-botao-whatsApp {
+    position: relative;
+    top: 1rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10.412px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.824px;
+    position: relative;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    position: relative;
+    top: 0.5rem;
+    right: 1px;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 11.765px;
+    font-style: normal;
+    line-height: 11.412px;
+    border-radius: 2.353px;
+    height: 35px;
+    transition: 0.1s;
+    width: 284.176px;
+    height: 37.412px;
+    flex-shrink: 0;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 50%;
+    position: relative;
+    top: 15px;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 319px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(90deg, black, #e49011);
+    background-size: 150% 150%;
+  }
+  //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
+  .setas-voltar {
+    display: flex;
+    color: #e49011;
+    text-shadow: #fff 0px 4px 0px;
+    font-family: poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+  }
+  //div que contém a imagem que pega a tela toda e a elipse
+  .div-pai-img-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  //Elipse com a logo dentro
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+    overflow: hidden;
+    width: 130.9707794189453px;
+    height: 130.97076416015625px;
+    position: relative;
+    top: 2%;
+  }
+  //Logo que está dentro da elipse
+  .logo-sobreposta {
+    display: flex;
+    width: 150px;
+    height: 101.21463012695312px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  //Div que contem a div de todo o conteudo do formúlario
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 250px;
+    flex-shrink: 0;
+    position: fixed;
+    border-radius: 3px;
+    top: 10rem;
+    background: #fff;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
+      rgba(0, 0, 0, 0.05);
+  }
+
+  //Div que contém o titulo (informe o numero do seu celular para continuar)
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Titulo (informe o numero do seu celular para continuar)
+  h1 {
+    display: flex;
+    width: 100%;
+    color: #717171;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  //Div que contém o input e abandeira do Brasil
+  .input-informar-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 1rem;
+  }
+  //Div com o 55+ e a bandeira do Brasil
+  .lado-esquerdo-do-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.7rem;
+    position: relative;
+    left: 7px;
+  }
+  //imagem da bandeira do Brasil
+  .icone-bandeira-do-brasil {
+    width: 12.025px;
+    height: 12.025px;
+    flex-shrink: 0;
+  }
+  //Conteúdo ao lado da bandeira do Barasil(55+)
+  .codigo-postal {
+    color: #717171;
+    font-family: poppins;
+    font-size: 8.588px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.64556rem;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  //Placeholder do input
+  mat-label {
+    color: #a6a6a6;
+    font-family: Poppins;
+    font-size: 8.412px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .codigo-postal-e-bandeira-do-brasil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    position: relative;
+    bottom: 11px;
+    left: 10px;
+    border-radius: 5px;
+    background: #dcdcdc;
+    width: 15%;
+    height: 35px;
+    flex-shrink: 0;
+    border: 1px solid grey;
+  }
+  mat-form-field {
+    position: relative;
+    width: 90%;
+  }
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+  mat-error {
+    font-size: 9px;
+  }
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+  .input-e-validacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texto-acima-do-botao-whatsApp {
+    position: relative;
+    top: 1rem;
+  }
+  .texto-acima-do-botao-whatsApp p {
+    color: #717171;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10.412px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.824px;
+    position: relative;
+    max-width: 100%;
+    min-width: 50%;
+  }
+  .btn-whatsApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    position: relative;
+    top: 0.5rem;
+    right: 1px;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    background: #e49011;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 11.765px;
+    font-style: normal;
+    line-height: 11.412px;
+    border-radius: 2.353px;
+    height: 35px;
+    transition: 0.1s;
+    width: 89%;
+    height: 37.412px;
+    flex-shrink: 0;
+  }
+  .borda {
+    border-top: 1px solid #e49011;
+    width: 50%;
+    position: relative;
+    top: 15px;
+    opacity: 0.5;
+  }
+}
+

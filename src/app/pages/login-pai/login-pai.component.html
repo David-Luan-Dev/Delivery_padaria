@@ -1,0 +1,17 @@
+<!---Aqui começa a parte que vai representar as telas de 1200px pra cima-->
+<app-login-tela-um *ngIf="innerWidth >= 1201"></app-login-tela-um>
+
+<!--Aqui começa a parte da que corresponde as telas de 1025px a 1200px tela-dois-->
+<app-login-tela-dois *ngIf="innerWidth >= 1025 && innerWidth <= 1200"></app-login-tela-dois>
+
+<!--Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três-->
+<app-login-tela-tres *ngIf="innerWidth >= 769 && innerWidth <= 1024"></app-login-tela-tres>
+
+<!--Aqui começa a parte da que corresponde as telas entre 481 e 768 tela-cinco-->
+<app-login-tela-quatro *ngIf="innerWidth >= 481 && innerWidth <= 768"></app-login-tela-quatro>
+
+<!-- Aqui começa a estilização das telas entre 320px e 480px tela-cinco -->
+<app-login-tela-cinco *ngIf="innerWidth >= 320 && innerWidth <= 480"></app-login-tela-cinco>
+
+<!-- max - 319px -->
+<app-login-tela-seis *ngIf="innerWidth <= 319"></app-login-tela-seis>

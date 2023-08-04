@@ -1,17 +1,28 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "poppins";
+  box-sizing: 0;
+}
+body {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  height: 100vh;
-  margin: 0;
-  margin: 0;
-  padding: 0px;
+  height: 100%;
 }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// .app-content {
+//   margin-top: 4.375rem; /* A altura do header */
+// }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
