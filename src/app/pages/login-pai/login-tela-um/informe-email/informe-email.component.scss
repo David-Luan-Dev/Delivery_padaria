@@ -97,18 +97,10 @@
     font-weight: 400;
     line-height: 16.235px;
     position: relative;
-    bottom: 1rem;
+    bottom: 3rem;
 
   }
-  //Div que contém o input e abandeira do Brasil
-  .input-informar-email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 2rem;
-  }
+
   //Div com o 55+ e a bandeira do Brasil
   .div-input {
     display: flex;
@@ -117,35 +109,75 @@
     position: relative;
     top: 18px;
   }
-  //Placeholder do input
-  ::placeholder {
+  //label do input
+  mat-label {
     color: #a6a6a6;
     font-family: Poppins;
     font-size: 12.549px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14.431px;
     position: relative;
-    left: 0.5rem;
+    bottom: 5px;
   }
 
-  input {
+  mat-form-field {
+    width: 318.627px;
     flex-shrink: 0;
     outline: none;
-    position: relative;
-    width: 304.816px;
-    height: 37.647px;
-    flex-shrink: 0;
-    z-index: 1;
-    line-height: 20px;
     border-radius: 3.137px;
-    border: 1.55px solid #DCDCDC;
+    position: relative;
+    bottom: 50px;
+    padding: 0;
   }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
   .texto-acima-do-botao-continuar {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 1.2rem;
+    top: 20px;
   }
   p {
     width: 71%;
@@ -158,8 +190,6 @@
     font-weight: 400;
     line-height: 13.398px;
     letter-spacing: -0.372px;
-    position: relative;
-    top: 20px;
   }
   .btn-whatsApp {
     display: flex;
@@ -173,7 +203,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 1rem;
+    top: 1.8rem;
     width: 321.569px;
     height: 39.216px;
     flex-shrink: 0;
@@ -191,12 +221,12 @@
     border-top: 1px solid #e49011;
     width: 321.569px;
     position: relative;
-    top: 25px;
+    top: 45px;
     opacity: 0.5;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
-   .container {
+  .container {
     display: flex;
     top: 0;
     bottom: 0;
@@ -214,13 +244,14 @@
     color: #e49011;
     text-shadow: #fff 0px 4px 0px;
     font-family: poppins;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: relative;
     left: 1rem;
     top: 1rem;
+    grid-area: 0.05rem;
     color: #e49011;
   }
   //div que contém a imagem que pega a tela toda e a elipse
@@ -241,14 +272,14 @@
     width: 201.971px;
     height: 201.971px;
     flex-shrink: 0;
-    top: 160px;
+    top: 200px;
     left: 131.01513671875px;
   }
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
     width: 250px;
-    height: 151.215px;
+    height: 151.21463012695312px;
     top: 261.3779296875px;
     left: 137px;
     position: absolute;
@@ -265,9 +296,9 @@
     align-items: center;
     flex-shrink: 0;
     position: fixed;
-    top: 9rem;
-    right: 10rem;
-    border-radius: 6.275px;
+    top: 11rem;
+    right: 15rem;
+    border-radius: 6.244px;
     background: #fff;
     box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
       rgba(0, 0, 0, 0.05);
@@ -293,18 +324,10 @@
     font-weight: 400;
     line-height: 16.235px;
     position: relative;
-    bottom: 1rem;
+    bottom: 3rem;
 
   }
-  //Div que contém o input e abandeira do Brasil
-  .input-informar-email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 2rem;
-  }
+
   //Div com o 55+ e a bandeira do Brasil
   .div-input {
     display: flex;
@@ -313,37 +336,78 @@
     position: relative;
     top: 18px;
   }
-  //Placeholder do input
-  ::placeholder {
+  //label do input
+  mat-label {
     color: #a6a6a6;
     font-family: Poppins;
     font-size: 12.549px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14.431px;
     position: relative;
-    left: 0.5rem;
+    bottom: 5px;
   }
 
-  input {
+  mat-form-field {
+    width: 318.627px;
     flex-shrink: 0;
     outline: none;
-    position: relative;
-    width: 304.816px;
-    height: 37.647px;
-    flex-shrink: 0;
-    z-index: 1;
     border-radius: 3.137px;
-    border: 1.55px solid #DCDCDC;
+    position: relative;
+    bottom: 50px;
+    padding: 0;
   }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
   .texto-acima-do-botao-continuar {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 1.2rem;
+    top: 20px;
   }
   p {
-    width: 70%;
+    width: 71%;
     display: flex;
     color: #717171;
     text-align: center;
@@ -353,8 +417,6 @@
     font-weight: 400;
     line-height: 13.398px;
     letter-spacing: -0.372px;
-    position: relative;
-    top: 20px;
   }
   .btn-whatsApp {
     display: flex;
@@ -368,7 +430,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 1rem;
+    top: 1.8rem;
     width: 321.569px;
     height: 39.216px;
     flex-shrink: 0;
@@ -386,7 +448,7 @@
     border-top: 1px solid #e49011;
     width: 321.569px;
     position: relative;
-    top: 25px;
+    top: 45px;
     opacity: 0.5;
   }
 }
@@ -490,7 +552,7 @@
     font-size: 10.588px;
     font-style: normal;
     line-height: 12.176px;
-    bottom: 0.2rem;
+    bottom: 1.8rem;
   }
   //Div que contém o input e abandeira do Brasil
   .input-informar-email {
@@ -509,29 +571,72 @@
     position: relative;
     top: 18px;
   }
-  //Placeholder do input
-  ::placeholder {
+
+   //label do input
+   mat-label {
     color: #a6a6a6;
     font-family: Poppins;
     font-size: 12.549px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14.431px;
     position: relative;
-    left: 0.5rem;
+    bottom: 5px;
   }
 
-  input {
+  mat-form-field {
+    width: 280.627px;
     flex-shrink: 0;
     outline: none;
-    position: relative;
-    width: 228.612px;
-    height: 28.235px;
-    flex-shrink: 0;
-    z-index: 1;
     border-radius: 3.137px;
-    border: 1.55px solid #DCDCDC;
+    position: relative;
+    bottom: 50px;
+    padding: 0;
   }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
+  
   .texto-acima-do-botao-continuar {
     display: flex;
     position: relative;
@@ -709,29 +814,72 @@
     position: relative;
     top: 18px;
   }
-  //Placeholder do input
-  ::placeholder {
-    position: relative;
-    left: 0.5rem;
-    color: #A6A6A6;
+
+   //label do input
+   mat-label {
+    color: #a6a6a6;
     font-family: Poppins;
-    font-size: 9.412px;
+    font-size: 12.549px;
     font-style: normal;
     font-weight: 400;
-    line-height: 10.824px;
+    position: relative;
+    bottom: 5px;
   }
 
-  input {
+  mat-form-field {
+    width: 318.627px;
     flex-shrink: 0;
     outline: none;
-    position: relative;
-    width: 228.612px;
-    height: 28.235px;
-    flex-shrink: 0;
-    z-index: 1;
     border-radius: 3.137px;
-    border: 1.55px solid #DCDCDC;
+    position: relative;
+    bottom: 50px;
+    padding: 0;
   }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
+
   .texto-acima-do-botao-continuar {
     display: flex;
     position: relative;
@@ -1118,17 +1266,69 @@
     font-weight: 400;
     line-height: 9.02px
   }
-  input {
+  // input {
+  //   flex-shrink: 0;
+  //   outline: none;
+  //   position: relative;
+  //   width: 190.51px;
+  //   height: 23.529px;
+  //   flex-shrink: 0;;
+  //   z-index: 1;
+  //   border-radius: 1.961px;
+  //   border: 1.55px solid #DCDCDC;
+  // }
+
+  mat-form-field {
     flex-shrink: 0;
     outline: none;
+    border-radius: 3.137px;
     position: relative;
-    width: 190.51px;
-    height: 23.529px;
-    flex-shrink: 0;;
-    z-index: 1;
-    border-radius: 1.961px;
-    border: 1.55px solid #DCDCDC;
+    width: 100%;
   }
+
+  //Sobrescreve o mat-form-field o heigth
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 37.463px;
+  }
+
+  :host ::ng-deep .mat-form-field-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .mat-mdc-form-field-infix {
+    padding-top: 11px !important;
+  }
+
+
+  input.ng-invalid.ng-touched::placeholder {
+    color: red;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+  input:focus + ::placeholder {
+    color: red;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .erro {
+    border: 1px solid red;
+    color: red;
+    font-size: 7px;
+  }
+  .erro ::placeholder {
+    color: red;
+  }
+  .mensagem-erro {
+    font-size: 8px;
+    color: red;
+  }
+
+
   .texto-acima-do-botao-continuar {
     display: flex;
     position: relative;

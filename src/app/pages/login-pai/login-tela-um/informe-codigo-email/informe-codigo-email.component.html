@@ -1,0 +1,101 @@
+<div class="container">
+    <h2 routerLink="/app-login">
+      <span class="setas-voltar">&lt;&lt;</span>
+    </h2>
+    <div class="div-pai-img-form">
+      <div class="img">
+        <img class="logo-sobreposta" 
+        src="assets/img/logo2-login.png" 
+        alt="logo da tela de login"
+      >
+      </div>
+      <!--Início do furmulário-->
+      <form 
+        [formGroup]="codigoForm" 
+        class="container-formulario"
+        (ngSubmit)="onSubmit()" 
+      >
+      <div 
+      class="codigo-invalido"
+      *ngIf="codigoIncorreto"
+    >
+    <img class="warning" src="assets/img/login/warning.png" alt="">
+      <p class="codigo-invalido-paragrafo">
+        Código expirado ou inválido!
+      </p>
+      <img class="remove" src="assets/img/login/remove.png" alt="">
+    </div>
+        <div 
+          class="titulo"
+        >
+          <h1>
+            Digite o código de 6 dígitos que enviamos por para
+            <span 
+              class="telefone"
+            >
+              {{getCelularValue}}
+            </span>
+          </h1>
+        </div>
+       
+        <div class="input-e-validacao">
+          <input #input0 class="placeholder" 
+            formControlName="0" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1" 
+            [ngClass]="{ 'border-red': hasError('0', 'required')
+            || hasError('0', 'pattern') }"
+          >
+          <input #input1 class="placeholder" 
+            formControlName="1" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1"
+            [ngClass]="{ 'border-red': hasError('1', 'required')
+            || hasError('1', 'pattern') }"
+          >
+          <input #input2 class="placeholder" 
+            formControlName="2" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1" 
+            [ngClass]="{ 'border-red': hasError('2', 'required')
+            || hasError('2', 'pattern') }"
+          >
+          <input #input3 class="placeholder" 
+            formControlName="3" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1" 
+            [ngClass]="{ 'border-red': hasError('3', 'required')
+            || hasError('3', 'pattern') }"
+          >
+          <input #input4 class="placeholder" 
+            formControlName="4" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1" 
+            [ngClass]="{ 'border-red': hasError('4', 'required')
+            || hasError('4', 'pattern') }"
+          >
+          <input #input5 class="placeholder" 
+            formControlName="5" type="text" 
+            pattern="[0-9]" placeholder="0"
+            [maxlength]="1" 
+            [ngClass]="{ 'border-red': hasError('5', 'required')
+            || hasError('5', 'pattern') }"
+          >
+        </div>
+        <div class="btn-continuar">
+          <button [disabled]="!codigoForm.valid"
+          routerLink="/home"
+        >
+            Continuar
+          </button>
+        </div>
+        <div class="container-p">
+          <p>
+            Não recebi meu código
+          </p>
+        </div>
+        <div class="borda"></div>
+      </form>
+    </div>
+  </div>
+  

@@ -9,14 +9,41 @@
       <img class="logo-sobreposta" src="assets/img/logo2-login.png" alt="logo da tela de login">
     </div>
     <!--Início do furmulário-->
-    <div class="container-formulario">
+    <form 
+      class="container-formulario"
+      [formGroup]="emailForm"
+     
+    >
       <div class="titulo">
         <h1>Informe  seu e-mail para continuar</h1>
       </div>
-      <div class="input-informar-email">
-        <div class="div-input">
-          <input type="text" placeholder="Informe o seu e-mail">
-        </div>
+      <mat-form-field appearance="outline" class="input-informar-email">
+        <mat-label>
+          Informe o seu e-mail
+        </mat-label>
+          <input matInput
+            type="text" 
+            name="email" 
+            formControlName="emailFormControl"
+            [ngClass]="{'erro' : emailFormControl.invalid
+              && emailFormControl.touched}"
+            [style.color]="emailFormControl.invalid
+               && emailFormControl.touched"
+            (focus)="onInputFocus()"
+          >
+          <mat-error 
+            *ngIf="emailFormControl.hasError('required')
+            && emailFormControl.touched"
+          >
+            E-mail inválido
+          </mat-error>
+          <mat-error
+            *ngIf="emailFormControl.hasError('email')
+            && emailFormControl.invalid" 
+            class="error-email"
+          >
+
+          </mat-error>
         <span class="texto-acima-do-botao-continuar">
           <p>
             O Delivery-Padaria poderá enviar comunicações neste e-mail.
@@ -25,13 +52,18 @@
              ou se desinscrever na sua caixa de e-mail.
           </p>
         </span>
-      </div>
-      <div class="btn-continuar">
-        <button>
-            Continuar
-        </button>
-      </div>
-      <div class="borda"></div>
+      </mat-form-field>
+      <div class="btn-continuar"  >
+        <button
+        (click)="submitForm()"
+        routerLink="/codigo-email" 
+        [disabled]="!emailForm.valid"
+        >
+        Continuar
+      </button>
     </div>
-  </div>
+    <div class="borda"></div>
+  </form>
 </div>
+</div>
+

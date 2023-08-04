@@ -6,6 +6,7 @@ import { InformeEmailComponent } from './pages/login-pai/login-tela-um/informe-e
 import { InformeCelularComponent } from './pages/login-pai/login-tela-um/informe-celular/informe-celular.component';
 import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
+import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
 
 const routes: Routes = [
 
@@ -15,6 +16,7 @@ const routes: Routes = [
 {path: 'informar-email', component: InformeEmailComponent},
 {path: 'informar-celular', component: InformeCelularComponent},
 {path: 'codigo-celular', component: InformCodigoCelularComponent},
+{path: 'codigo-email', component: InformeCodigoEmailComponent},
 ];
 
 @NgModule({

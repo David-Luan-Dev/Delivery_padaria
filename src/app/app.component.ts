@@ -23,7 +23,9 @@ export class AppComponent implements OnInit {
     if (location.url === '/app-login'
     || location.url === '/informar-email'
     || location.url === '/informar-celular'
-    || location.url === '/codigo-celular') {
+    || location.url === '/codigo-celular'
+    || location.url === '/codigo-email'
+    ) {
       this.showHeader = false;
     } else {
       this.showHeader = true;

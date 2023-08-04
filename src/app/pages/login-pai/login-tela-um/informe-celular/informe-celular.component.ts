@@ -34,6 +34,7 @@ export class InformeCelularComponent {
     this.router.navigate(['/codigo-celular']);
     const numeroCelularValidado = this.celularForm.get('celularFormControl')?.value;
     this.setCelularValue.setCelularValue(numeroCelularValidado);
+    
     console.log("Codigo enviado com sucesso para: " + this.celularFormControl.value);
   }
 
