@@ -12,24 +12,25 @@
     <form 
       class="container-formulario"
       [formGroup]="emailForm"
-     
     >
       <div class="titulo">
         <h1>Informe  seu e-mail para continuar</h1>
       </div>
       <mat-form-field appearance="outline" class="input-informar-email">
-        <mat-label>
+        <mat-label class="label">
           Informe o seu e-mail
         </mat-label>
           <input matInput
             type="text" 
             name="email" 
+            placeholder="Informe o seu e-mail"
             formControlName="emailFormControl"
             [ngClass]="{'erro' : emailFormControl.invalid
               && emailFormControl.touched}"
             [style.color]="emailFormControl.invalid
                && emailFormControl.touched"
-            (focus)="onInputFocus()"
+               (focus)="updateFocusState(true)"
+               (blur)="updateFocusState(false)"
           >
           <mat-error 
             *ngIf="emailFormControl.hasError('required')
@@ -42,7 +43,7 @@
             && emailFormControl.invalid" 
             class="error-email"
           >
-
+            e-mail incompleto
           </mat-error>
         <span class="texto-acima-do-botao-continuar">
           <p>
