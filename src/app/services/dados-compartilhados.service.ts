@@ -5,10 +5,17 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DadosCompartilhadosService {
+  
   private celularValueSubject = new BehaviorSubject<string>('');
 
   celularValue$ = this.celularValueSubject.asObservable();
-  celularValue!: string
+  celularValue!: string;
+  
+  private emailValueSubject = new BehaviorSubject<string>('');
+  
+  emailvalue$ = this.emailValueSubject.asObservable();
+  emailValue!: string;
+
 
   setCelularValue(value: string): void {
     this.celularValueSubject.next(value);
@@ -20,5 +27,16 @@ export class DadosCompartilhadosService {
     });
 
     return this.celularValue;
+  }
+
+  setEmailValue(value: string): void {
+    this.emailValueSubject.next(value);
+  }
+
+  getEmailValue() {
+    this.emailvalue$.subscribe(value => {
+      this.emailValue = value;
+    });
+    return this.emailValue;
   }
 }
