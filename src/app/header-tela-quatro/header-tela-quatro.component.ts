@@ -15,8 +15,11 @@ export class HeaderTelaQuatroComponent {
   public openDialogTelaQuatro() {
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '30.0625rem',
-      height: '48.0625rem',
+      width: '481px',
+      height: '580px',
+      position: {
+        top: '10px'
+      },
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });

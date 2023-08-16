@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
-//import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
+
 @Component({
   selector: 'app-header-tela-seis',
   templateUrl: './header-tela-seis.component.html',
@@ -15,8 +15,11 @@ export class HeaderTelaSeisComponent {
   public openDialogTelaSeis() {
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '20rem',
-      height: '35.5rem',
+      width: '280px',
+      height: '400px',
+      position: {
+        top: '15px'
+      },
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });

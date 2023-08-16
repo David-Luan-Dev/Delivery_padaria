@@ -15,9 +15,12 @@ export class HeaderTelaTresComponent {
   public openDialogTelaTres() {
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '43.106rem',
-      height: '32.07294rem',
-      enterAnimationDuration: '300ms',
+      width: '480px',
+      height: '370.167px',
+      position: {
+        top: '20px'
+      },
+      enterAnimationDuration: '10ms',
       exitAnimationDuration: '300ms',
     });
   }

@@ -10,8 +10,9 @@ margin: 0;
 padding: 0;
 padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
 gap: 1.28294rem;
+z-index: 999;
 }
-.x-modal {
+.fechar-modal {
 display: flex;
 position: relative;
 top: 0.8rem;
@@ -21,80 +22,79 @@ left: 48%;
 }
 //Estilização da img casa
 .img-casa-modal {
-width: 3.57888rem;
-height: 4.47356rem;
+width: 2.57888rem;
+height: 3.47356rem;
 flex-shrink: 0;
 position: relative;
-top: 1rem;
+top: 0.5rem;
 }
 
 //Estilização h2 modal
 h2 {
 color: #2e2c36;
 text-align: center;
-font-size: 0.9375rem;
+font-size: 15px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 800;
-line-height: 1.34206rem;
+line-height: 1rem;
 position: relative;
-top: 2rem;
+top: 0.5rem;
 }
 //Estilização do parágrafo
 p {
 color: #2e2c36;
 text-align: center;
-font-size: 0.625rem;
+font-size: 8px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 400;
 line-height: 1.16669rem;
 position: relative;
-top: 0;
+bottom: 25px;
 }
 
 //Estilização da img x, de fechar a modal
 .x-modal-img {
-width: 1.5395rem;
-height: 1.5395rem;
+width: 1.2395rem;
+height: 1.2395rem;
 flex-shrink: 0;
 }
 .div-input-modal {
 display: flex;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+justify-content: flex-start;
 position: relative;
-width: 19rem;
-height: 1.5rem;
-padding: 1.1855rem 1.11838rem 1.1855rem 2.72888rem;
+width: 340px;
+padding: 0.8rem 1.11838rem 0.8rem 2.72888rem;
 border-radius: 0.57731rem;
 border: 1.026px solid #f7f8f9;
 background: #f7f8f9;
 box-shadow: 0px 3.1148204803466797px 3.1148204803466797px 0px #fc7310;
-top: 1rem;
+bottom: 35px;
 }
 //Img de localização
 .img-localizacao-modal {
-width: 1.5395rem;
-height: 1.5395rem;
+width: 1rem;
+height: 1rem;
 flex-shrink: 0;
 position: relative;
 bottom: 0;
-right: 1rem;
+right: 35px;
 }
 //Estilização do input do dialog localização
 input {
 display: flex;
 justify-content: center;
 align-items: flex-start;
-width: 18.98381rem;
+width: 11rem;
 height: 1rem;
 position: relative;
 flex-direction: column;
-left: 0;
+right: 35px;
 flex-shrink: 0;
 color: #757575;
-font-size: 0.89806rem;
+font-size: 12px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 400;
@@ -105,7 +105,7 @@ outline: none;
 //Estilização do placeholder
 ::placeholder {
 color: #757575;
-font-size: 0.6875rem;
+font-size: 12px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 400;
@@ -117,16 +117,17 @@ position: relative;
 display: flex;
 justify-content: center;
 position: relative;
-top: 2.5rem;
+bottom: 10px;
 }
 button {
-padding: 0.3rem 2.5425rem 0rem 2.61375rem;
+border: none;
+padding: 0.3rem 1.5425rem 0.3rem 1.61375rem;
 display: inline-flex;
 border-radius: 1.125rem;
 gap: 1.125rem;
 align-items: center;
 font-family: Poppins;
-font-size: 0.89806rem;
+font-size: 10px;
 background: #000;
 border-radius: 1.125rem;
 color: #e49011;
@@ -136,6 +137,10 @@ color: #e49011;
 /* Estilos do botão flutuante */
 opacity: 0;
 transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
+}
+.btn-flutuante img {
+  width: 15px;
+  height: 15px;
 }
 
 //botão abaixo da modal

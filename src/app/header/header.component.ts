@@ -1,11 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, HostListener } from '@angular/core';
-import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
-import {
-  MatDialog,
-  MatDialogRef,
-  MatDialogModule,
-} from '@angular/material/dialog';
-import { DialogLocalizacaoComponent } from './dialog-localizacao/dialog-localizacao.component';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 
 @Component({

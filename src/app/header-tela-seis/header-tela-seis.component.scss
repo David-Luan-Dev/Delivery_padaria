@@ -1,23 +1,29 @@
 @media (max-width: 319px) {
   .header-tela-seis {
-    width: 100%;
+    //width: 100%;
+    //max-width: 100%;
+    //min-width: 100%;
+    //height: auto;
     display: flex;
-    align-items: center;
-    height: 4.20569rem;
-    flex-shrink: 0;
+    //align-items: center;
+    //height: 4.20569rem;
+   // flex-shrink: 0;
     background: #fff;
-    position: relative;
+   // position: relative;
     box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
       rgba(228, 144, 17, 0.1);
+   // padding: 0;
+    //margin: 0;
+    
   }
   .div-logo-tela-seis {
     display: flex;
     position: relative;
-    left: 0.1rem;
+    
   }
   .logo-tela-seis {
-    width: 4.149rem;
-    height: 3.08425rem;
+    width: 3rem;
+    height: 3rem;
     flex-shrink: 0;
   }
   .paragrafo-e-icones-tela-seis {
@@ -25,7 +31,6 @@
     width: 100%;
     align-items: center;
     position: relative;
-    left: 0.5rem;
     cursor: pointer;
   }
   .paragrafo-localizacao-tela-seis {
@@ -66,7 +71,7 @@
     width: 100%;
     align-items: center;
     position: relative;
-    height: 2.35956rem;
+    height: 2.05956rem;
     flex-shrink: 0;
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
     gap: 0.8rem;
@@ -78,7 +83,7 @@
     color: #1e1e1e;
     text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
       rgba(0, 0, 0, 0.25);
-    font-size: 1rem;
+    font-size: 14px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -86,10 +91,7 @@
     text-decoration: none;
     left: 1.5rem;
   }
-  /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
-  .menu-tela-seis::-webkit-scrollbar {
-    display: none;
-  }
+
   /*aplicação de estilos para ser aplicada após o click (Ativo)*/
   a.router-link-active {
     color: #e49011;
@@ -103,54 +105,51 @@
   /*conteúdo da parte inferior da tela telas menores ou igual a 320px*/
   .groupo-icones-img-fixo-tela-seis {
     display: flex;
-    position: fixed;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
     flex-shrink: 0;
-    height: 3.6875rem;
+    height: 3rem;
     border-top: 1.594px solid rgba(228, 144, 17, 0.34);
     box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
       rgba(228, 144, 17, 0.1);
     width: 100%;
     bottom: 0;
-    //right: 50%;
-    //left: 50%;
-    gap: 1.56rem;
+    gap: 1rem;
     z-index: 9999;
     background: rgba(13, 12, 10, 0.06);
   }
   /*Estilização do Carrossel tela-tres 320px ou menores*/
   .grupo-botoes-tela-seis {
     display: flex;
-    //justify-content: center;
     align-items: center;
     overflow-x: scroll;
-    scrollbar-width: none;
     white-space: nowrap;
-    height: 3.4375rem;
-    gap: 1.03rem;
-    position: relative;
-    top: 15px;
-    left: 0.86rem;
+    height: 3.2rem;
+    gap: 1rem;
     flex-shrink: 0;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
   }
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-seis::-webkit-scrollbar {
     display: none;
   }
   .button-tela-seis {
+    width: 100%;
     display: inline-flex;
-    padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
+    padding: 0.156rem 0.94569rem 0.10613rem 1.00013rem;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 0.22744rem;
+    gap: 5px;
     border-radius: 0.87731rem;
     border: 1px solid #fc7310;
     background: rgba(255, 255, 255, 0);
     font-family: proppis;
     color: #717171;
     text-align: center;
-    font-size: 0.97263rem;
+    font-size: 12px;
     line-height: 1.23625rem;
   }
 
@@ -178,7 +177,7 @@
     flex-direction: column;
     flex-shrink: 0;
     color: #1e1e1e;
-    font-size: 0.875rem;
+    font-size: 0.675rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -187,11 +186,9 @@
   //Estilização da img
   .item-fixo-tela-seis img {
     display: flex;
-    //width: 3.85863rem;
-    //height: 3.85188rem;
     width: 1.5rem;
     height: 1.5rem;
-    padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
+    //padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;

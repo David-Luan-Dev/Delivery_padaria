@@ -13,7 +13,7 @@ export class DialogLocalizacaoTelaTresComponent {
   ngOnInit(): void {
     setTimeout(() => {
       this.mostrarBotaoFlutuante = true;
-    }, 500);
+    });
   }
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -21,6 +21,6 @@ export class DialogLocalizacaoTelaTresComponent {
       if(botaoFlutante) {
         botaoFlutante.classList.remove('inicial')
       }
-    }, 100)
+    }, 10)
   }
 }

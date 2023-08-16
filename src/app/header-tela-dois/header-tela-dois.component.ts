@@ -18,9 +18,12 @@ export class HeaderTelaDoisComponent {
     this.cd.detectChanges();
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '43.106rem',
-      height: '32.07294rem',
-      enterAnimationDuration: '300ms',
+      width: '500px',
+      height: '350px',
+      position: {
+        top: '15px'
+      },
+      enterAnimationDuration: '10ms',
       exitAnimationDuration: '300ms',
     });
     this.cd.detectChanges();
