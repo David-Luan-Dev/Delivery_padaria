@@ -13,7 +13,7 @@ export class DialogLocalizacaoTelaUmComponent {
   ngOnInit(): void {
     setTimeout(() => {
       this.mostrarBotaoFlutuante = true;
-    }, 500);
+    });
   }
   ngAfterViewInit(): void {
     setTimeout(() => {

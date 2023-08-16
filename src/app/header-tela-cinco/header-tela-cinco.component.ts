@@ -17,8 +17,12 @@ export class HeaderTelaCincoComponent {
     const dialogConfig = new MatDialogConfig();
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-     // width: '600px',
-      height: '440px',
+      width: '320px',
+      height: '438px',
+      position: {
+        // bottom:  '155px'
+       top: '25px'
+      },
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });
