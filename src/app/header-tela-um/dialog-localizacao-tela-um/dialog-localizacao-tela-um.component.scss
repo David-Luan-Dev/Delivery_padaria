@@ -120,10 +120,10 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
     right: 0;
     left: 0;
-    bottom: 115px;
+    top: 385px;
+    bottom: 400px;
     z-index: 9999;
   }
 
@@ -141,129 +141,9 @@
     color: #e49011;
   }
 
-  .btn-flutuante {
-    /* Estilos do botão flutuante */
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-    /* Adicione uma transição de opacidade */
-  }
   .btn-flutuante img {
     width: 20px;
     height: 20px;
   }
+} 
 
-  //botão abaixo da modal
-  .btn-flutuante.inicial {
-    pointer-events: none;
-    position: fixed;
-    bottom: -50px;
-    right: -50px;
-  }
-
-  .btn-flutuante.visivel {
-    opacity: 1;
-  }
-}
-@media (min-width: 1201px) and (min-height: 500px) {
-  
-  .btn-localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    bottom: 220px;
-    z-index: 9999;
-  }
-
-  button {
-    border: none;
-    padding: 0.3rem 2rem 0rem 2rem;
-    display: inline-flex;
-    border-radius: 1.125rem;
-    gap: 1.125rem;
-    align-items: center;
-    font-family: Poppins;
-    font-size: 12px;
-    background: #000;
-    border-radius: 1.125rem;
-    color: #e49011;
-  }
-
-  .btn-flutuante {
-    /* Estilos do botão flutuante */
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-    /* Adicione uma transição de opacidade */
-  }
-  .btn-flutuante img {
-    width: 20px;
-    height: 20px;
-  }
-
-  //botão abaixo da modal
-  .btn-flutuante.inicial {
-    pointer-events: none;
-    position: fixed;
-    bottom: -50px;
-    right: -50px;
-  }
-
-  .btn-flutuante.visivel {
-    opacity: 1;
-  }
-  
-}
-@media (max-width: 1280px) and (max-height: 800px) {
-    
-  .btn-localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    bottom: 399px;
-    z-index: 9999;
-  }
-
-  button {
-    border: none;
-    padding: 0.3rem 2rem 0rem 2rem;
-    display: inline-flex;
-    border-radius: 1.125rem;
-    gap: 1.125rem;
-    align-items: center;
-    font-family: Poppins;
-    font-size: 12px;
-    background: #000;
-    border-radius: 1.125rem;
-    color: #e49011;
-  }
-
-  .btn-flutuante {
-    /* Estilos do botão flutuante */
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-    /* Adicione uma transição de opacidade */
-  }
-  .btn-flutuante img {
-    width: 20px;
-    height: 20px;
-  }
-
-  //botão abaixo da modal
-  .btn-flutuante.inicial {
-    pointer-events: none;
-    position: fixed;
-    bottom: -50px;
-    right: -50px;
-  }
-
-  .btn-flutuante.visivel {
-    opacity: 1;
-  }
-}

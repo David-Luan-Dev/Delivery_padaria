@@ -120,10 +120,10 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: 75px;
     right: 0;
     left: 0;
-    top: 16rem;
+    //top: 150px;
     z-index: 9999;
     opacity: 1;
   }
@@ -142,26 +142,9 @@
     color: #e49011;
   }
 
-  .btn-flutuante {
-    /* Estilos do botão flutuante */
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-    /* Adicione uma transição de opacidade */
-  }
   .btn-flutuante img {
     width: 20px;
     height: 20px;
   }
 
-  //botão abaixo da modal
-  .btn-flutuante.inicial {
-    pointer-events: none;
-    position: fixed;
-    bottom: -50px;
-    right: -50px;
-  }
-
-  .btn-flutuante.visivel {
-    opacity: 1;
-  }
 }

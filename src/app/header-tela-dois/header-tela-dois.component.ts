@@ -21,7 +21,7 @@ export class HeaderTelaDoisComponent {
       width: '500px',
       height: '350px',
       position: {
-        top: '15px'
+        //top: '15px'
       },
       enterAnimationDuration: '10ms',
       exitAnimationDuration: '300ms',

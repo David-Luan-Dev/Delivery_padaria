@@ -13,8 +13,8 @@
   .x-modal {
     display: flex;
     position: relative;
-    top: 0.9rem;
-    left: 100px;
+    top: 0.5rem;
+    left: 95px;
     //margin: 1rem;
   }
     //Estilização da img x, de fechar a modal
@@ -74,7 +74,7 @@
     flex-shrink: 0;
     position: relative;
     bottom: 0.1rem;
-    right: 0rem;
+    right: 30px;
   }
 
   //Estilização do input do dialog localização
@@ -85,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    right: 25px;
     flex-shrink: 0;
     color: #757575;
     font-size: 8px;

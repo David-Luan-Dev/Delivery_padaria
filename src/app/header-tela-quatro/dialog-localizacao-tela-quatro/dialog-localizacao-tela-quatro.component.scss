@@ -133,25 +133,9 @@ border-radius: 1.125rem;
 color: #e49011;
 }
 
-.btn-flutuante {
-/* Estilos do botão flutuante */
-opacity: 0;
-transition: opacity 0.3s ease-out; /* Adicione uma transição de opacidade */
-}
 .btn-flutuante img {
   width: 15px;
   height: 15px;
 }
 
-//botão abaixo da modal
-.btn-flutuante.inicial {
-pointer-events: none;
-position: fixed;
-bottom: -50px;
-right: -50px;
-}
-
-.btn-flutuante.visivel {
-opacity: 1;
-}
 }

@@ -6,21 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./dialog-localizacao-tela-um.component.scss']
 })
 export class DialogLocalizacaoTelaUmComponent {
-  mostrarBotaoFlutuante: boolean = false;
+  //mostrarBotaoFlutuante: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.mostrarBotaoFlutuante = true;
-    });
+    // setTimeout(() => {
+    //   this.mostrarBotaoFlutuante = true;
+    // });
   }
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      const botaoFlutante = document.querySelector('.btn-flutuante')
-      if(botaoFlutante) {
-        botaoFlutante.classList.remove('inicial')
-      }
-    }, 100)
-  }
+  // ngAfterViewInit(): void {
+  //   setTimeout(() => {
+  //     const botaoFlutante = document.querySelector('.btn-flutuante')
+  //     if(botaoFlutante) {
+  //       botaoFlutante.classList.remove('inicial')
+  //     }
+  //   }, 100)
+  // }
 }
