@@ -7,7 +7,7 @@
     height: 8.38869rem;
     flex-shrink: 0;
     background: #fff;
-    position: fixed;
+    position: relative;
     box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
       rgba(228, 144, 17, 0.1);
     justify-content: space-between;
@@ -36,6 +36,7 @@
     left: 3rem;
     top: 2.55rem;
     cursor: pointer;
+    z-index: 999;
   }
 
   .paragrafo-localizacao-tela-tres {
@@ -197,7 +198,7 @@
     box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
       rgba(228, 144, 17, 0.1);
     gap: 2.31rem;
-    z-index: 9999;
+    z-index: 998;
     background: rgba(13, 12, 10, 0.06);
   }
   //div que agrupa o span e a img

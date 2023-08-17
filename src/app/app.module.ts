@@ -39,7 +39,9 @@ import { LoginTelaCincoComponent } from './pages/login-pai/login-tela-cinco/logi
 import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-tela-seis.component';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
-import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component'; 
+import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
+import { PesquisaComponent } from './pages/pesquisa/pesquisa.component'; 
+
 
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
@@ -72,6 +74,9 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     LoginTelaCincoComponent,
     LoginTelaSeisComponent,
     InformeCodigoEmailComponent,
+    PesquisaComponent,
+    
+    
 
   ],
   imports: [
@@ -87,7 +92,7 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
      MatInputModule,
      MatFormFieldModule,
      FormsModule,
-
+  
 
   ],
   providers: [provideNgxMask()],

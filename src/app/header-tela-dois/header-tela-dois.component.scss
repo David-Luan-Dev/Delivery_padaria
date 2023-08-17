@@ -4,7 +4,7 @@
   /*Estilização da tag superior header*/
   .header-tela-dois {
     display: flex;
-    position: fixed;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     margin: 0;
@@ -185,11 +185,65 @@
     position: relative;
     top: 6%;
   }
-  input {
+  .input-tela-dois {
     display: flex;
     border: none;
     outline: none;
     width: 21.66667rem;
+  }
+  .input-wrapper-tela-dois:focus-within{
+    border: 1px solid  #e49011;
+  }
+
+  //dimensões do card / filter lista input
+  .seach-filter-lista-tela-dois{
+    position: absolute;
+    top: 110%;
+    right: 11%;
+    width: 21.66667rem ;
+    height: 6.25rem;
+    flex-shrink: 0;
+    background-color: white;
+    box-shadow: 4px 5px 4px 4px rgba(228, 144, 17, 0.10);
+    z-index: 999;
+  }
+
+  .seach-filter-lista-tela-dois h3 {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+  .seach-filter-lista-tela-dois hr {
+    width:  21.66667rem;
+    height: 0rem;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    color: rgba(113, 113, 113, 0.41);
+    position: relative;
+    bottom: 16%;
+  }
+  .suggestions-tela-dois {
+    list-style: none;
+    color: #717171;
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    right: 11.5%;
+    bottom: 1.4rem;
+   }
+
+  .suggestions-tela-dois img {
+    width: 0.74856rem;
+    height: 0.54544rem;
+    flex-shrink: 0;
+    
   }
   /*Estilização do placeholder do input de pesquisa*/
   ::placeholder {
