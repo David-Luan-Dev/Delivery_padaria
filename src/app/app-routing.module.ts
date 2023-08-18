@@ -7,6 +7,7 @@ import { InformeCelularComponent } from './pages/login-pai/login-tela-um/informe
 import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
+import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 
 const routes: Routes = [
 
@@ -17,6 +18,7 @@ const routes: Routes = [
 {path: 'informar-celular', component: InformeCelularComponent},
 {path: 'codigo-celular', component: InformCodigoCelularComponent},
 {path: 'codigo-email', component: InformeCodigoEmailComponent},
+{path:'pesquisa', component: PesquisaComponent},
 ];
 
 @NgModule({

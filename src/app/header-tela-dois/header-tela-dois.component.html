@@ -21,9 +21,34 @@
       </mat-menu>
     </a>
   </div>
-  <form class="input-wrapper-tela-dois">
-    <input type="text" name="search" placeholder="Buscar por itens e outros" />
+  <form class="input-wrapper-tela-dois" #meuForm>
+    <input
+    (click)=" handleClick()"
+    class="input-tela-dois"
+    type="text" 
+    name="search" 
+    placeholder="Buscar por itens e outros"
+    (blur)="onBlur()"
+    [(ngModel)]="searchTerm"
+    />
     <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-search-tela-dois" />
+    <div class="seach-filter-lista-tela-dois" *ngIf=" showSuggestions, isInputFocused " ><!--Card-filter-buscar inicio-->
+      <h3>Buscar recentes</h3>
+      <hr>
+      <ul class="filter-list-tela-dois">
+        <li 
+        class="suggestions-tela-dois" 
+        *ngFor="let suggestions of suggestions" 
+        (click)="selectSuggestions(suggestions)"
+        >
+            <img class="icone-lista-tela-dois"
+            src="assets/img/Vector.svg" 
+            alt="icone-lista">
+            {{suggestions}}
+        </li>
+      
+      </ul>  
+    </div><!--Card-filter-buscar-fim-->
   </form>
   <div class="paragrafo-e-icones-tela-dois" (click)="openDialogTelaDois()">
     <img class="icon-localizacao-tela-dois" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização" />

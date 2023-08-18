@@ -1,6 +1,6 @@
 <!--Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três-->
-<header class="header-tela-tres">
-  <div class="div-logo-tela-tres">
+<div class="header-tela-tres">
+  <div class="div-logo-tela-tres" routerLink="">
     <img
       class="logo-tela-tres"
       src="assets/img/logo2.png"
@@ -18,7 +18,7 @@
     <div class="text-tela-tres">
       <p class="paragrafo-localizacao-tela-tres" (click)="openDialogTelaTres()">Escolha um endereço</p>
     </div>
-    <div class="img-seta-invertida-tela-tres">
+    <div class="img-seta-invertida-tela-tres" (click)="openDialogTelaTres()">
       <img
         class="icon-seta-inveritda-tela-tres"
         src="assets/img/eva_arrow-down-fill-atual.svg"
@@ -49,7 +49,7 @@
       >Sobre</a
     >
   </div>
-</header>
+</div>
 <!---Início do carrossel que ainda faz parte da tela-tres-->
 <div class="grupo-botoes-tela-tres">
   <button
@@ -101,8 +101,8 @@
 </div>
 
 <div class="groupo-icones-img-fixo-tela-tres">
-  <div class="item-fixo-tela-tres">
-    <img src="assets/img/material-symbols_search.svg" alt="Buscar" />
+  <div class="item-fixo-tela-tres" routerLink="/pesquisa">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar"  >
     <span>Buscar</span>
   </div>
   <div class="item-fixo-tela-tres">

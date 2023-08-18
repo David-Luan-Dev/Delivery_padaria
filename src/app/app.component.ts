@@ -25,6 +25,8 @@ export class AppComponent implements OnInit {
     || location.url === '/informar-celular'
     || location.url === '/codigo-celular'
     || location.url === '/codigo-email'
+    || location.url === '/pesquisa'
+    || location.url === '/pesquisa-tela-quatro'
     ) {
       this.showHeader = false;
     } else {
@@ -35,4 +37,5 @@ export class AppComponent implements OnInit {
   teste() {
     console.log(window.screen.width);
   }
+ 
 }
