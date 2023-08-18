@@ -41,8 +41,7 @@ import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/in
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component'; 
-
-
+import { InputEmailComponent } from './input-email/input-email.component'; 
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
   declarations: [
@@ -75,9 +74,7 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     LoginTelaSeisComponent,
     InformeCodigoEmailComponent,
     PesquisaComponent,
-    
-    
-
+    InputEmailComponent,
   ],
   imports: [
     BrowserModule,

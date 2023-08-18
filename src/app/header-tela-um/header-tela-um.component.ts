@@ -29,9 +29,12 @@ export class HeaderTelaUmComponent {
     this.cd.detectChanges();
     this.dialog.open(DialogLocalizacaoComponent, {
       data: 'Adicione ou escolha um endereço',
-      width: '43.106rem',
-      height: '32.07294rem',
-      enterAnimationDuration: '300ms',
+      width: '511px',
+      height: '330px',
+      position: {
+        top: '38px'
+      },
+      enterAnimationDuration: '10ms',
       exitAnimationDuration: '300ms',
     });
     this.cd.detectChanges();
