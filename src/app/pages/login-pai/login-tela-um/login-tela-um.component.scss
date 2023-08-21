@@ -25,7 +25,13 @@
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 1rem;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+  .setas-voltar img {
+    width: 92px;
+    height: 70px;
+    flex-shrink: 0;
   }
   .div-pai-img-form {
     display: flex;
