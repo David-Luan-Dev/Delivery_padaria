@@ -8,11 +8,11 @@ import { DadosCompartilhadosService } from 'src/app/services/dados-compartilhado
   styleUrls: ['./inform-codigo-celular.component.scss']
 })
 export class InformCodigoCelularComponent implements AfterViewInit {
-  
+
   codigoForm!: FormGroup;
   @ViewChildren('input0, input1, input2, input3, input4, input5')
   inputs!: QueryList<ElementRef>;
-  
+
   codigoIncorreto: boolean = false;
 
   constructor(
@@ -28,9 +28,9 @@ export class InformCodigoCelularComponent implements AfterViewInit {
       5: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
     })
 
-    // Object.values(this.codigoForm.controls).forEach(control => {
-    //   control.markAsTouched();
-    // });
+    Object.values(this.codigoForm.controls).forEach(control => {
+      control.markAsTouched();
+    });
   }
 
   hasError(controlName: string, errorName: string) {
@@ -73,7 +73,7 @@ export class InformCodigoCelularComponent implements AfterViewInit {
 
     this.printCode(input);
   }
-   
+
   printCode(input: ElementRef): void {
     let code = '';
     this.inputs.forEach(input => {
@@ -81,7 +81,7 @@ export class InformCodigoCelularComponent implements AfterViewInit {
     });
     console.log('Código digitado: ', code)
   }
-  
+
   //validação do código e mostrar a div erro ou sucesso
   validateCode(): void {
     const enteredCode = this.getCodeFromInputs();
@@ -99,7 +99,7 @@ export class InformCodigoCelularComponent implements AfterViewInit {
   }
 
   onSubmit() {
- 
+
   }
 
 }

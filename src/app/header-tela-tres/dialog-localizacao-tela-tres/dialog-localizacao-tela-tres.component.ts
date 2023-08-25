@@ -11,16 +11,7 @@ export class DialogLocalizacaoTelaTresComponent {
   constructor() {}
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.mostrarBotaoFlutuante = true;
-    // });
+
   }
-  // ngAfterViewInit(): void {
-  //   setTimeout(() => {
-  //     const botaoFlutante = document.querySelector('.btn-flutuante')
-  //     if(botaoFlutante) {
-  //       botaoFlutante.classList.remove('inicial')
-  //     }
-  //   }, 10)
-  // }
+
 }

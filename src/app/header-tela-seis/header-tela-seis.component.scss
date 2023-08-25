@@ -1,31 +1,22 @@
 @media (max-width: 319px) {
   .header-tela-seis {
-    //width: 100%;
-    //max-width: 100%;
-    //min-width: 100%;
-    //height: auto;
     display: flex;
-    //align-items: center;
-    //height: 4.20569rem;
-   // flex-shrink: 0;
     background: #fff;
-   // position: relative;
-    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
-      rgba(228, 144, 17, 0.1);
-   // padding: 0;
-    //margin: 0;
-    
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px rgba(228, 144, 17, 0.1);
   }
+
   .div-logo-tela-seis {
     display: flex;
     position: relative;
-    
+
   }
+
   .logo-tela-seis {
     width: 3rem;
     height: 3rem;
     flex-shrink: 0;
   }
+
   .paragrafo-e-icones-tela-seis {
     display: flex;
     width: 100%;
@@ -33,6 +24,7 @@
     position: relative;
     cursor: pointer;
   }
+
   .paragrafo-localizacao-tela-seis {
     color: #e3b34d;
     font-size: 0.875rem;
@@ -42,27 +34,32 @@
     line-height: normal;
     position: relative;
   }
+
   .img-tela-seis {
     display: flex;
     align-items: center;
     margin: 2% 0% 8% 1%;
   }
+
   .icon-localizacao-tela-seis {
     width: 1.25rem;
     height: 1.25rem;
     flex-shrink: 0;
   }
+
   .img-seta-invertida-tela-seis {
     display: flex;
     align-items: center;
     margin: 0% 0% 5% 1%;
     flex-shrink: 0;
   }
+
   .icon-seta-inveritda-tela-seis {
     width: 0.4375rem;
     height: 0.875rem;
     flex-shrink: 0;
   }
+
   /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
   .menu-tela-seis {
     display: flex;
@@ -76,13 +73,13 @@
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
     gap: 0.8rem;
   }
+
   /*div de cada item do menu*/
   .menu-filho-tela-seis {
     display: flex;
     position: relative;
     color: #1e1e1e;
-    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
-      rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px rgba(0, 0, 0, 0.25);
     font-size: 14px;
     font-family: Poppins;
     font-style: normal;
@@ -97,11 +94,13 @@
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a:focus {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*conteúdo da parte inferior da tela telas menores ou igual a 320px*/
   .groupo-icones-img-fixo-tela-seis {
     display: flex;
@@ -112,14 +111,14 @@
     flex-shrink: 0;
     height: 3rem;
     border-top: 1.594px solid rgba(228, 144, 17, 0.34);
-    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px rgba(228, 144, 17, 0.1);
     width: 100%;
     bottom: 0;
     gap: 1rem;
     z-index: 9999;
     background: rgba(13, 12, 10, 0.06);
   }
+
   /*Estilização do Carrossel tela-tres 320px ou menores*/
   .grupo-botoes-tela-seis {
     display: flex;
@@ -132,10 +131,12 @@
     scrollbar-width: none;
     scrollbar-color: transparent transparent;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-seis::-webkit-scrollbar {
     display: none;
   }
+
   .button-tela-seis {
     width: 100%;
     display: inline-flex;
@@ -158,17 +159,20 @@
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   button:focus {
     color: #e49011;
     text-decoration: underline;
   }
+
   //div que agrupa o span e a img
   .item-fixo-tela-seis {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   //Estilização do span
   .item-fixo-tela-seis span {
     display: flex;
@@ -183,12 +187,12 @@
     font-weight: 400;
     line-height: normal;
   }
+
   //Estilização da img
   .item-fixo-tela-seis img {
     display: flex;
     width: 1.5rem;
     height: 1.5rem;
-    //padding: 0.4815rem 0.48238rem 0.4815rem 0.48231rem;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;

@@ -12,12 +12,12 @@ export class InformeCodigoEmailComponent {
   codigoForm!: FormGroup;
   @ViewChildren('input0, input1, input2, input3, input4, input5')
   inputs!: QueryList<ElementRef>;
-  
+
   codigoIncorreto: boolean = false;
 
   constructor(
     private formBilder: FormBuilder,
-    public setCelularValue: DadosCompartilhadosService
+    public setEmailValue: DadosCompartilhadosService
   ) {
     this.codigoForm = this.formBilder.group({
       0: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
@@ -28,9 +28,9 @@ export class InformeCodigoEmailComponent {
       5: ['', [Validators.required, Validators.pattern(/^[0-9]+$/)]],
     })
 
-    // Object.values(this.codigoForm.controls).forEach(control => {
-    //   control.markAsTouched();
-    // });
+    Object.values(this.codigoForm.controls).forEach(control => {
+      control.markAsTouched();
+    });
   }
 
   hasError(controlName: string, errorName: string) {
@@ -38,8 +38,8 @@ export class InformeCodigoEmailComponent {
     return control ? control.hasError(errorName) : false;
   }
 
-  get getCelularValue() {
-    return this.setCelularValue.getCelularValue();
+  get getEmailValue() {
+    return this.setEmailValue.getEmailValue();
   }
 
   ngAfterViewInit(): void {
@@ -73,7 +73,7 @@ export class InformeCodigoEmailComponent {
 
     this.printCode(input);
   }
-   
+
   printCode(input: ElementRef): void {
     let code = '';
     this.inputs.forEach(input => {
@@ -81,7 +81,7 @@ export class InformeCodigoEmailComponent {
     });
     console.log('Código digitado: ', code)
   }
-  
+
   //validação do código e mostrar a div erro ou sucesso
   validateCode(): void {
     const enteredCode = this.getCodeFromInputs();
@@ -99,6 +99,6 @@ export class InformeCodigoEmailComponent {
   }
 
   onSubmit() {
- 
+
   }
 }

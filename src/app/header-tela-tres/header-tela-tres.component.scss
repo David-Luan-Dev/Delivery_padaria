@@ -8,8 +8,7 @@
     flex-shrink: 0;
     background: #fff;
     position: relative;
-    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px rgba(228, 144, 17, 0.1);
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -23,11 +22,13 @@
     position: relative;
     left: 1.5rem;
   }
+
   .logo-tela-tres {
     width: 9.97056rem;
     height: 4.58344rem;
     flex-shrink: 0;
   }
+
   .paragrafo-e-icones-tela-tres {
     display: flex;
     width: 100%;
@@ -54,11 +55,13 @@
     align-items: center;
     margin: 4% 0% 8% 1%;
   }
+
   .icon-localizacao-tela-tres {
     width: 2.99438rem;
     height: 2.99438rem;
     flex-shrink: 0;
   }
+
   //div que contém a setá invertida ao lado do paragrafo
   .img-seta-invertida-tela-tres {
     display: flex;
@@ -66,6 +69,7 @@
     margin: 0% 0% 3% 1%;
     flex-shrink: 0;
   }
+
   //seta invertida
   .icon-seta-inveritda-tela-tres {
     width: 1.04806rem;
@@ -129,10 +133,12 @@
     left: 0.86rem;
     flex-shrink: 0;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-tres::-webkit-scrollbar {
     display: none;
   }
+
   .button-tela-tres {
     display: inline-flex;
     padding: 0.55rem 0.9875rem 0.3875rem 1.425rem;
@@ -154,6 +160,7 @@
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   button:focus {
     color: #e49011;
@@ -171,6 +178,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   //Estilização da img
   .item-fixo-tela-tres img {
     display: flex;
@@ -183,6 +191,7 @@
     align-items: center;
     flex-shrink: 0;
   }
+
   /*conteúdo da parte inferior da tela*/
   .groupo-icones-img-fixo-tela-tres {
     display: flex;
@@ -195,12 +204,12 @@
     width: 100%;
     height: 10.33066rem;
     border-top: 1.594px solid rgba(228, 144, 17, 0.34);
-    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px rgba(228, 144, 17, 0.1);
     gap: 2.31rem;
     z-index: 998;
     background: rgba(13, 12, 10, 0.06);
   }
+
   //div que agrupa o span e a img
   .item-fixo-tela-tres {
     display: flex;

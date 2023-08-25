@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatDialogModule} from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import {MatMenuModule} from '@angular/material/menu';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+
+import { MaterialModule } from './material/material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,9 +38,8 @@ import { LoginTelaSeisComponent } from './pages/login-pai/login-tela-seis/login-
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
-import { PesquisaComponent } from './pages/pesquisa/pesquisa.component'; 
-import { InputEmailComponent } from './input-email/input-email.component'; 
-export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
+import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
+export const options: Partial<null | IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,22 +71,18 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     LoginTelaSeisComponent,
     InformeCodigoEmailComponent,
     PesquisaComponent,
-    InputEmailComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule,
-    MatMenuModule,
     ReactiveFormsModule,
     CommonModule,
     NgxMaskDirective,
-     NgxMaskPipe,
-     MatInputModule,
-     MatFormFieldModule,
-     FormsModule,
-  
+    NgxMaskPipe,
+    FormsModule,
+    MaterialModule
 
   ],
   providers: [provideNgxMask()],

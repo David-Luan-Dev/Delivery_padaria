@@ -21,7 +21,7 @@ export class HeaderTelaCincoComponent {
       height: '438px',
       position: {
         // bottom:  '155px'
-       top: '25px'
+        top: '25px'
       },
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',

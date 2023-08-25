@@ -8,14 +8,15 @@
     position: relative;
     flex-shrink: 0;
     background: #fff;
-    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px rgba(228, 144, 17, 0.1);
   }
+
   .div-logo-tela-quatro {
     display: flex;
     position: relative;
     left: 0;
   }
+
   .logo-tela-quatro {
     width: 6.2365rem;
     height: 3.86013rem;
@@ -30,6 +31,7 @@
     left: 0;
     cursor: pointer;
   }
+
   .paragrafo-localizacao-tela-quatro {
     color: #e3b34d;
     font-size: 1.62206rem;
@@ -39,26 +41,31 @@
     line-height: normal;
     position: relative;
   }
+
   .img-tela-quatro {
     display: flex;
     align-items: center;
     margin: 4% 0% 8% 0%;
   }
+
   .icon-localizacao-tela-quatro {
     width: 1.87894rem;
     height: 1.87894rem;
     flex-shrink: 0;
   }
+
   .div-seta-invertida-tela-quatro {
     display: flex;
     align-items: center;
     //margin: 0% 0% 0% 1%;
     flex-shrink: 0;
   }
+
   .icon-seta-inveritda-tela-quatro {
     width: 1.04806rem;
     height: 2.09606rem;
   }
+
   /*Div pai, parte que vai ficar fixa na parte inferior da tela de 481 a 768*/
   .menu-tela-quatro {
     display: flex;
@@ -70,13 +77,13 @@
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
     gap: 0.79rem;
   }
+
   /*div de cada item do menu*/
   .menu-filho-tela-quatro {
     display: flex;
     position: relative;
     color: #1e1e1e;
-    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
-      rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px rgba(0, 0, 0, 0.25);
     font-size: 1.25rem;
     font-family: Poppins;
     font-style: normal;
@@ -85,11 +92,13 @@
     text-decoration: none;
     left: 0.89rem;
   }
+
   /*aplicação de estilos para ser aplicada após o click (Ativo)*/
   a.router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a:focus {
     color: #e49011;
@@ -111,10 +120,12 @@
     left: 0.23rem;
     flex-shrink: 0;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-quatro::-webkit-scrollbar {
     display: none;
   }
+
   .button-tela-quatro {
     display: inline-flex;
     padding: 0.4505rem 1.10356rem 0.34713rem 1.16713rem;
@@ -136,36 +147,39 @@
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   button:focus {
     color: #e49011;
     text-decoration: underline;
   }
-    /*conteúdo da parte inferior da tela*/
-    .groupo-icones-img-fixo-tela-quatro {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      width: 100%;
-      height: 6.375rem;
-      position: fixed;
-      bottom: 0;
-      border-top: 1.594px solid rgba(228, 144, 17, 0.34);
-      box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
-        rgba(228, 144, 17, 0.1);
-      //right: 50%;
-      //left: 50%;
-      gap: 1.39rem;
-      z-index: 9999;
-      background: rgba(13, 12, 10, 0.06);
-    }
+
+  /*conteúdo da parte inferior da tela*/
+  .groupo-icones-img-fixo-tela-quatro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 6.375rem;
+    position: fixed;
+    bottom: 0;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px rgba(228, 144, 17, 0.1);
+    //right: 50%;
+    //left: 50%;
+    gap: 1.39rem;
+    z-index: 9999;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
   //div que agrupa o span e a img
   .item-fixo-tela-quatro {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   //Estilização do span
   .item-fixo-tela-quatro span {
     display: flex;
@@ -180,6 +194,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   //Estilização da img
   .item-fixo-tela-quatro img {
     display: flex;

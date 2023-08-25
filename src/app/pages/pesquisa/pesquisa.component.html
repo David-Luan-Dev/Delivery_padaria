@@ -1,61 +1,62 @@
 <!--Aqui começa a parte da que corresponde as telas de 769 a 1024 tela-três-->
 <header class="header-pesquisa">
-    <div class="icon-home-pesquisa" routerLink="">
-      <img
-        src="assets/img/pesquisa/ic_baseline-home.svg"
-        alt="imagem home-casa"
-      />
-    </div>
-    <form class="form-pesquisa" #meuForm>
-        <input
-          (click)=" handleClick()"
-          class="input-pesquisa"
-          type="text"
-          name="search"
-          placeholder="Buscar por itens e outros"
-          (blur)="onBlur()"
-          [(ngModel)]="searchTerm"
-          />
-        <img src="assets/img/mi_search.svg" alt="Ícone" class=" search-icon" />
-    
-      </form>
-      
-      <div class="seach-filter-lista" *ngIf=" showSuggestions, isInputFocused " ><!--Card-filter-buscar-->
-        <h3>Buscar recentes</h3>
-        <hr>
-        <ul class="filter-list">
-          <li 
-          class="suggestions" 
-          *ngFor="let suggestions of suggestions" 
-          (click)="selectSuggestions(suggestions)"
-          >
-              <img class="icone-lista"
-              src="assets/img/Vector.svg" 
-              alt="icone-lista">
-              {{suggestions}}
-          </li>
-        
-        </ul>  
-      </div><!--Card-filter-buscar-->
-    </header>
-  
-        <!-- Menu fixo -->
-  <div class="menu-fixo-pesquisa">
-    <div class="item-fixo-pesquisa">
-      <img src="assets/img/material-symbols_search.svg" alt="Buscar">
-      <span>Buscar</span>
-    </div>
-    <div class="item-fixo-pesquisa">
-      <img src="assets/img/bi_card-checklist.svg" alt="Pedidos" />
-      <span>Pedidos</span>
-    </div>
-    <div class="item-fixo-pesquisa">
-      <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato" />
-      <span>Contatos</span>
-    </div>
-    <div class="item-fixo-pesquisa" routerLink="/app-login">
-      <img src="assets/img/gg_profile.svg" class="perfil-img" alt="Perfil" />
-      <span>Entrar</span>
-    </div>
-  </div> 
-  
+  <div class="icon-home-pesquisa" routerLink="">
+    <img
+      src="assets/img/pesquisa/ic_baseline-home.svg"
+      alt="imagem home-casa"
+    />
+  </div>
+  <form class="form-pesquisa" #meuForm>
+    <input
+      (click)="handleClick()"
+      class="input-pesquisa"
+      type="text"
+      name="search"
+      placeholder="Buscar por itens e outros"
+      (blur)="onBlur()"
+      [(ngModel)]="searchTerm"
+    />
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="search-icon" />
+  </form>
+
+  <div class="seach-filter-lista" *ngIf="showSuggestions; isInputFocused">
+    <!--Card-filter-buscar-->
+    <h3>Buscar recentes</h3>
+    <hr />
+    <ul class="filter-list">
+      <li
+        class="suggestions"
+        *ngFor="let suggestions of suggestions"
+        (click)="selectSuggestions(suggestions)"
+      >
+        <img
+          class="icone-lista"
+          src="assets/img/Vector.svg"
+          alt="icone-lista"
+        />
+        {{ suggestions }}
+      </li>
+    </ul>
+  </div>
+  <!--Card-filter-buscar-->
+</header>
+
+<!-- Menu fixo -->
+<div class="menu-fixo-pesquisa">
+  <div class="item-fixo-pesquisa">
+    <img src="assets/img/material-symbols_search.svg" alt="Buscar" />
+    <span>Buscar</span>
+  </div>
+  <div class="item-fixo-pesquisa">
+    <img src="assets/img/bi_card-checklist.svg" alt="Pedidos" />
+    <span>Pedidos</span>
+  </div>
+  <div class="item-fixo-pesquisa">
+    <img src="assets/img/ic_baseline-contact-phone.svg" alt="Contato" />
+    <span>Contatos</span>
+  </div>
+  <div class="item-fixo-pesquisa" routerLink="/app-login">
+    <img src="assets/img/gg_profile.svg" class="perfil-img" alt="Perfil" />
+    <span>Entrar</span>
+  </div>
+</div>

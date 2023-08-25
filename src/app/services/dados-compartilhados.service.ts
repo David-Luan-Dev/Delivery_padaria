@@ -7,11 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 export class DadosCompartilhadosService {
   
   private celularValueSubject = new BehaviorSubject<string>('');
+  private emailValueSubject = new BehaviorSubject<string>('');
 
   celularValue$ = this.celularValueSubject.asObservable();
   celularValue!: string;
   
-  private emailValueSubject = new BehaviorSubject<string>('');
   
   emailvalue$ = this.emailValueSubject.asObservable();
   emailValue!: string;

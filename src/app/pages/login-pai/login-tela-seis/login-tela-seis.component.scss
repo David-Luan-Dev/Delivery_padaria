@@ -1,224 +1,234 @@
-@media (max-width: 319px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background: linear-gradient(90deg, black, #e49011);
-    background-size: 150% 150%;
-  }
-  .setas-voltar {
-    display: flex;
-    color: #E49011;
-    text-shadow: #FFF 0px 4px 0px;
-    font-family: Palanquin Dark;
-    font-size: 6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: fixed;
-    left: 0.3rem;
-    top: 0.3rem;
-  }
-  .setas-voltar img {
-    width: 50px;
-    height: 38.043px;
-    flex-shrink: 0;
-  }
-  .div-pai-img-form {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-  }
-  .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8.34538rem;
-    height: 8.34538rem;
-    position: fixed;
-    top: 4%;
-    border-radius: 100%;
-    background: #fff;
-    box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
-    overflow: hidden;
-  }
-  .logo-sobreposta {
-    display: flex;
-    width: 8.85438rem;
-    height: 8.85438rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-  }
-  //Div que contem a div de todo o conteudo do formúlario
-  .container-formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 25rem;
-    width: 100%;
-    position: fixed;
-    top: 10.5rem;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(90deg, black, #e49011);
+  background-size: 150% 150%;
+}
 
-    background: #fff;
-    box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px
-        rgba(0, 0, 0, 0.06),
-      0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
-    //padding: 0.64625rem 4.30106rem 3.09675rem 4.30094rem;
-    padding: 1.29863rem 1rem 1.99969rem 1rem;
-  }
-  //Frase: falta pouco para matar sua fome
-  h1 {
-    display: flex;
-    width: 9rem;
-    color: #414143;
-    font-family: Poppins;
-    font-size: 1.37644rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: -0.00606rem;
-    position: relative;
-    bottom: 2rem;
-    left: 0.7rem;
-  }
-  .spacer {
-    white-space: pre;
-  }
-  //Frase: Como deseja continuar
-  h2 {
-    display: flex;
-    color: #717171;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 0.7rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.56131rem;
-    white-space: nowrap;
-    position: relative;
-    bottom: 3rem;
- 
-  }
-  .button-google-fecebook {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    bottom: 5rem;
-    //left: 0.6rem;
-    gap: 0.5rem;
-  }
-  //botão facebook-google
-  .button-facebook {
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 0.12256rem;
-    background: #4065b4;
-    white-space: nowrap;
-    padding: 0.36019rem 1.04694rem 0.36019rem 1.02044rem;
-    gap: 0.94581rem;
-    border: none;
-  }
-  .button-facebook img {
-    width: 0.8rem;
-    height: 0.8rem;
-    flex-shrink: 0;
-  }
-  //Span do botão facebook
-  .span-facebook {
-    color: #fff;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 0.72325rem;
-    font-style: normal;
-    font-weight: 500;
-    color: #FFF;
-    line-height: 1.01094rem;
-  }
-  .button-google {
-    display: inline-flex;
-    padding: 0.26019rem 0.9rem 0.26019rem 1.02044rem;
-    align-items: center;
-    gap: 1.14581rem;
-    flex-shrink: 0;
-    border-radius: 0.34406rem;
-    white-space: nowrap;
-    position: inherit;
-    border-radius: 0.12256rem;
-    border: 1px solid #dcdcdc;
-    background: #fff;
-  }
-  .button-google img {
-    width: 0.7rem;
-    height: 0.7rem;
-    flex-shrink: 0;
-  }
-  .span-google {
-    color: #3c4043;
-    font-family: Poppins;
-    font-size: 0.62325rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    letter-spacing: 0.0215rem;
-  }
-  .btn-email-celular {
-    display: flex;
-    justify-content: center;
-    gap: 0.2rem;
-    position: relative;
-    bottom: 3rem;
+.setas-voltar {
+  position: fixed;
+  left: 0.3rem;
+  top: 0.3rem;
+}
 
-  }
-  .button-email-celular {
-    display: inline-flex;
-    align-items: flex-start;
-    border-radius: 0.12256rem;
-    border: 1.469px solid #DCDCDC;
-    background: #FFF;
-    width: 103px;
-    padding: 0.22894rem 1.81725rem 0.22894rem 1.81725rem;
-    position: relative; 
-  }
-  .span-email-celular {
-    color: #a6a6a6;
-    text-align: center;
-    justify-content: center;
-    font-family: Poppins;
-    font-size: 0.61231rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2645rem;
-  }
-  .border {
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 2rem;
-  }
-  .bordar-horizontal {
-    width: 13rem;
-    border-top: 1px solid rgba(106, 105, 110, 0.80);
-    opacity: 0.5;
-  }
+.setas-voltar img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.div-pai-img-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.34538rem;
+  height: 8.34538rem;
+  position: fixed;
+  top: 4%;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0px 13.249284744262695px 13.249284744262695px 0px #717171;
+  overflow: hidden;
+}
+
+.logo-sobreposta {
+  display: flex;
+  width: 8.85438rem;
+  height: 8.85438rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+//Div que contem a div de todo o conteudo do formúlario
+.container-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
+  position: fixed;
+  top: 10.5rem;
+
+  background: #fff;
+  box-shadow: 0px 5.50537633895874px 22.02150535583496px 0px rgba(0, 0, 0, 0.06),
+    0px 1.376344084739685px 5.50537633895874px 0px rgba(0, 0, 0, 0.05);
+  //padding: 0.64625rem 4.30106rem 3.09675rem 4.30094rem;
+  padding: 1.29863rem 1rem 1.99969rem 1rem;
+}
+
+//Frase: falta pouco para matar sua fome
+h1 {
+  display: flex;
+  width: 9rem;
+  color: #414143;
+  font-family: Poppins;
+  font-size: 1.37644rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.00606rem;
+  position: relative;
+  bottom: 2rem;
+  left: 0.7rem;
+}
+
+.spacer {
+  white-space: pre;
+}
+
+//Frase: Como deseja continuar
+h2 {
+  display: flex;
+  color: #717171;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.56131rem;
+  white-space: nowrap;
+  position: relative;
+  bottom: 3rem;
+
+}
+
+.button-google-fecebook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 5rem;
+  //left: 0.6rem;
+  gap: 0.5rem;
+}
+
+//botão facebook-google
+.button-facebook {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.12256rem;
+  background: #4065b4;
+  white-space: nowrap;
+  padding: 0.36019rem 1.04694rem 0.36019rem 1.02044rem;
+  gap: 0.94581rem;
+  border: none;
+}
+
+.button-facebook img {
+  width: 0.8rem;
+  height: 0.8rem;
+  flex-shrink: 0;
+}
+
+//Span do botão facebook
+.span-facebook {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.72325rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+  line-height: 1.01094rem;
+}
+
+.button-google {
+  display: inline-flex;
+  padding: 0.26019rem 0.9rem 0.26019rem 1.02044rem;
+  align-items: center;
+  gap: 1.14581rem;
+  flex-shrink: 0;
+  border-radius: 0.34406rem;
+  white-space: nowrap;
+  position: inherit;
+  border-radius: 0.12256rem;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.button-google img {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex-shrink: 0;
+}
+
+.span-google {
+  color: #3c4043;
+  font-family: Poppins;
+  font-size: 0.62325rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.0215rem;
+}
+
+.btn-email-celular {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  position: relative;
+  bottom: 3rem;
+
+}
+
+.button-email-celular {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 0.12256rem;
+  border: 1.469px solid #DCDCDC;
+  background: #FFF;
+  width: 103px;
+  padding: 0.22894rem 1.81725rem 0.22894rem 1.81725rem;
+  position: relative;
+}
+
+.span-email-celular {
+  color: #a6a6a6;
+  text-align: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-size: 0.61231rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2645rem;
+}
+
+.border {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 2rem;
+}
+
+.bordar-horizontal {
+  width: 13rem;
+  border-top: 1px solid rgba(106, 105, 110, 0.80);
+  opacity: 0.5;
 }
