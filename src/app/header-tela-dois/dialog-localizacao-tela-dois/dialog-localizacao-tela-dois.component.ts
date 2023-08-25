@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class DialogLocalizacaoTelaDoisComponent {
   mostrarBotaoFlutuante: boolean = false;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -18,7 +18,7 @@ export class DialogLocalizacaoTelaDoisComponent {
   ngAfterViewInit(): void {
     setTimeout(() => {
       const botaoFlutante = document.querySelector('.btn-flutuante')
-      if(botaoFlutante) {
+      if (botaoFlutante) {
         botaoFlutante.classList.remove('inicial')
       }
     }, 300)

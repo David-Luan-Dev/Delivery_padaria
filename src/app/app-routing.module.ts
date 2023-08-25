@@ -11,7 +11,7 @@ import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
 
 const routes: Routes = [
 
-{ path: 'home', component: HomeComponent },
+//{ path: 'home', component: HomeComponent },
 { path: 'dialog-localizacao', component: DialogLocalizacaoComponent},
 { path: 'app-login', component: LoginPaiComponent},
 {path: 'informar-email', component: InformeEmailComponent},

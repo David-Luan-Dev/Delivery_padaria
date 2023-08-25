@@ -46,44 +46,48 @@
       class="div-menu-filho-tela-um"
       routerLink="/placeholder"
       routerLinkActive="active"
-      >Sobre</a>
+      >Sobre</a
+    >
   </div>
   <!--começar aqui-->
   <form class="input-wrapper-tela-um" #meuForm>
     <input
-      (click)=" handleClick()"
+      (click)="handleClick()"
       class="input-tela-um"
       type="text"
       name="search"
       placeholder="Buscar por itens e outros"
       (blur)="onBlur()"
       [(ngModel)]="searchTerm"
-     />
-    <img src="assets/img/mi_search.svg" alt="Ícone" class=" icon-tela-um" />
+    />
+    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-tela-um" />
 
-    <div class="seach-filter-lista" *ngIf=" showSuggestions, isInputFocused " ><!--Card-filter-buscar-->
+    <div class="seach-filter-lista" *ngIf="showSuggestions; isInputFocused">
+      <!--Card-filter-buscar-->
       <h3>Buscar recentes</h3>
-      <hr>
+      <hr />
       <ul class="filter-list">
-        <li 
-        class="suggestions" 
-        *ngFor="let suggestions of suggestions" 
-        (click)="selectSuggestions(suggestions)"
+        <li
+          class="suggestions"
+          *ngFor="let suggestions of suggestions"
+          (click)="selectSuggestions(suggestions)"
         >
-            <img class="icone-lista"
-            src="assets/img/Vector.svg" 
-            alt="icone-lista">
-            {{suggestions}}
+          <img
+            class="icone-lista"
+            src="assets/img/Vector.svg"
+            alt="icone-lista"
+          />
+          {{ suggestions }}
         </li>
-      
-      </ul>  
-    </div><!--Card-filter-buscar-->
+      </ul>
+    </div>
+    <!--Card-filter-buscar-->
   </form>
   <!--Fim-->
   <div class="icone-carrinho-tela-um">
     <button class="btn-tela-um" routerLink="app-login">Entrar</button>
     <div class="carrinho">
-      <div class="numero-sobre-carrinho">{{numero}}</div>
+      <div class="numero-sobre-carrinho">{{ numero }}</div>
       <img src="assets/img/mdi_cart.svg" alt="" />
     </div>
   </div>

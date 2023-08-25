@@ -834,13 +834,11 @@
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 420px;
-    height: 300px;
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
     position: fixed;
-    border-radius: 5px;
     top: 10rem;
     background: #fff;
     box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
@@ -855,7 +853,7 @@
     justify-content: flex-start;
     position: relative;
     position: relative;
-    bottom: 1rem;
+    top: 2rem;
   }
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
@@ -875,7 +873,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 1rem;
+    top: 1.5rem;
   }
   //Div com o 55+ e a bandeira do Brasil
   .lado-esquerdo-do-input {
@@ -983,7 +981,7 @@
   }
   .texto-acima-do-botao-whatsApp {
     position: relative;
-    top: 1rem;
+    top: 2rem;
   }
   .texto-acima-do-botao-whatsApp p {
     color: #717171;
@@ -1002,7 +1000,7 @@
     position: relative;
     width: 100%;
     position: relative;
-    top: 0.5rem;
+    top: 3.5rem;
   }
   button {
     display: inline-flex;
@@ -1025,9 +1023,9 @@
   }
   .borda {
     border-top: 1px solid #e49011;
-    width: 50%;
+    width:365.176px;
     position: relative;
-    top: 15px;
+    top: 65px;
     opacity: 0.5;
   }
 }
@@ -1094,13 +1092,12 @@
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
     position: fixed;
-    border-radius: 3px;
     top: 10rem;
     background: #fff;
     box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
@@ -1115,7 +1112,7 @@
     justify-content: flex-start;
     position: relative;
     position: relative;
-    bottom: 1rem;
+    top: 2rem;
   }
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
@@ -1135,7 +1132,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 1rem;
+    top: 2rem;
   }
   //Div com o 55+ e a bandeira do Brasil
   .lado-esquerdo-do-input {
@@ -1166,7 +1163,8 @@
   mat-label {
     color: #a6a6a6;
     font-family: Poppins;
-    font-size: 9.412px;
+    font-weight: 400;
+    font-size: 10.412px;
     position: relative;
     bottom: 10px;
   }
@@ -1188,6 +1186,9 @@
   mat-form-field {
     position: relative;
     width: 240.471px;
+  }
+  .input {
+    font-size: 12px;
   }
   //Sobrescreve o mat-form-field o heigth
   :host ::ng-deep .mat-mdc-text-field-wrapper {
@@ -1257,7 +1258,7 @@
     position: relative;
     width: 100%;
     position: relative;
-    top: 0.5rem;
+    top: 2.5rem;
     right: 1px;
   }
   button {
@@ -1275,15 +1276,15 @@
     border-radius: 2.353px;
     height: 35px;
     transition: 0.1s;
-    width: 284.176px;
+    width: 18rem;
     height: 37.412px;
     flex-shrink: 0;
   }
   .borda {
     border-top: 1px solid #e49011;
-    width: 50%;
+    width: 18rem;
     position: relative;
-    top: 15px;
+    top: 3.5em;
     opacity: 0.5;
   }
 }
@@ -1350,13 +1351,11 @@
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 250px;
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
     position: fixed;
-    border-radius: 3px;
     top: 10rem;
     background: #fff;
     box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
@@ -1370,7 +1369,7 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    bottom: 1rem;
+    top: 2.5rem;
   }
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
@@ -1378,7 +1377,7 @@
     width: 100%;
     color: #717171;
     font-family: Poppins;
-    font-size: 10px;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 400;
     white-space: nowrap;
@@ -1391,7 +1390,7 @@
     align-items: center;
     width: 100%;
     position: relative;
-    bottom: 1rem;
+    top: 2rem;
   }
   //Div com o 55+ e a bandeira do Brasil
   .lado-esquerdo-do-input {
@@ -1519,7 +1518,7 @@
     position: relative;
     width: 100%;
     position: relative;
-    top: 0.5rem;
+    top: 2.5rem;
     right: 1px;
   }
   button {
@@ -1543,9 +1542,9 @@
   }
   .borda {
     border-top: 1px solid #e49011;
-    width: 50%;
+    width: 89%;
     position: relative;
-    top: 15px;
+    top: 3rem;
     opacity: 0.5;
   }
 }

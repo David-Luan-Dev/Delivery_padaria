@@ -1,13 +1,13 @@
 @media (min-width: 769px) and (max-width: 1024px) {
+
   //Div que contém todo o conteúdo
   .container-modal {
     display: flex;
     justify-content: center;
-    // padding: 0rem 1.28294rem 1.28294rem 1.28294rem;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    z-index: 999!important;
+    z-index: 999 !important;
   }
 
   .fechar-modal {
@@ -48,7 +48,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22.816px;
-    /* 142.601% */
     position: relative;
     bottom: 30px;
   }
@@ -62,7 +61,6 @@
 
   .div-input-modal {
     display: inline-flex;
-    //padding: 1.69988rem 1.60363rem 1.69988rem 3.91288rem;
     align-items: center;
     border-radius: 0.57731rem;
     border: 1.026px solid #f7f8f9;
@@ -124,7 +122,6 @@
     top: 396px;
     right: 0;
     left: 0;
-    //top: 420px;
     z-index: 9999;
   }
 
@@ -142,27 +139,9 @@
     color: #e49011;
   }
 
-  // .btn-flutuante {
-  //   /* Estilos do botão flutuante */
-  //   opacity: 0;
-  //   transition: opacity 0.3s ease-out;
-  //   /* Adicione uma transição de opacidade */
-  // }
-
   .btn-flutuante img {
     width: 20px;
     height: 20px;
   }
 
-  // //botão abaixo da modal
-  // .btn-flutuante.inicial {
-  //   pointer-events: none;
-  //   position: fixed;
-  //   bottom: -50px;
-  //   right: -50px;
-  // }
-
-  // .btn-flutuante.visivel {
-  //   opacity: 1;
-  // }
 }

@@ -11,14 +11,15 @@
     flex-shrink: 0;
     background: #fff;
     position: relative;
-    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.582062721252441px 9.582062721252441px 0px rgba(228, 144, 17, 0.1);
   }
+
   .div-logo-tela-cinco {
     display: flex;
     position: relative;
     left: 0.5rem;
   }
+
   .logo-tela-cinco {
     width: 4.149rem;
     height: 3.08425rem;
@@ -34,6 +35,7 @@
     top: 0.9rem;
     cursor: pointer;
   }
+
   .paragrafo-localizacao-tela-cinco {
     color: #e3b34d;
     font-size: 0.875rem;
@@ -43,22 +45,26 @@
     line-height: normal;
     position: relative;
   }
+
   .img-tela-cinco {
     display: flex;
     align-items: center;
     margin: 2% 0% 8% 1%;
   }
+
   .icon-localizacao-tela-cinco {
     width: 1.25rem;
     height: 1.25rem;
     flex-shrink: 0;
   }
+
   .img-seta-invertida-tela-cinco {
     display: flex;
     align-items: center;
     margin: 0% 0% 5% 1%;
     flex-shrink: 0;
   }
+
   .icon-seta-inveritda-tela-cinco {
     width: 0.4375rem;
     height: 0.875rem;
@@ -77,13 +83,13 @@
     border-bottom: 1.573px solid rgba(113, 113, 113, 0.46);
     gap: 1.3rem;
   }
+
   /*div de cada item do menu*/
   .menu-filho-tela-cinco {
     display: flex;
     position: relative;
     color: #1e1e1e;
-    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px
-      rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 6.292109489440918px 6.292109489440918px 0px rgba(0, 0, 0, 0.25);
     font-size: 1rem;
     font-family: Poppins;
     font-style: normal;
@@ -92,20 +98,24 @@
     text-decoration: none;
     left: 1.5rem;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .menu-tela-cinco::-webkit-scrollbar {
     display: none;
   }
+
   /*aplicação de estilos para ser aplicada após o click (Ativo)*/
   a.router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a:focus {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*conteúdo da parte inferior da tela*/
   .groupo-icones-img-fixo-tela-cinco {
     display: flex;
@@ -117,8 +127,7 @@
 
     height: 4.3125rem;
     border-top: 1.594px solid rgba(228, 144, 17, 0.34);
-    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
-      rgba(228, 144, 17, 0.1);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px rgba(228, 144, 17, 0.1);
     bottom: 0;
     gap: 2.5rem;
     z-index: 9999;
@@ -140,10 +149,12 @@
     left: 0.86rem;
     flex-shrink: 0;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-cinco::-webkit-scrollbar {
     display: none;
   }
+
   .button-tela-cinco {
     display: inline-flex;
     padding: 0.386rem 0.94569rem 0.30613rem 1.00013rem;
@@ -165,17 +176,20 @@
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   button:focus {
     color: #e49011;
     text-decoration: underline;
   }
+
   //div que agrupa o span e a img
   .item-fixo-tela-cinco {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   //Estilização do span
   .item-fixo-tela-cinco span {
     display: flex;
@@ -190,6 +204,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   //Estilização da img
   .item-fixo-tela-cinco img {
     display: flex;

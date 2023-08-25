@@ -15,21 +15,14 @@
     background-size: 150% 150%;
   }
   .seta-voltar {
-    display: flex;
-    color: #e49011;
-    text-shadow: #fff 0px 4px 0px;
-    font-family: poppins;
-    font-size: 1.85919rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     position: fixed;
-    top: 1.5rem;
-    left: 1rem;
+    top: 0.5rem;
+    left: 0.5rem;
   }
   .seta-voltar img {
-    width: 72px;
-    height: 54.783px;
+    width: 45px;
+    height: 45px;
     flex-shrink: 0;
   }
   .div-pai-img-form {

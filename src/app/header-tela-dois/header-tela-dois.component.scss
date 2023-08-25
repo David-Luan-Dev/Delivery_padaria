@@ -1,6 +1,6 @@
-
 /* Estilos para telas de 1025px a 1200px tela dois*/
 @media (min-width: 1025px) and (max-width: 1200px) {
+
   /*Estilização da tag superior header*/
   .header-tela-dois {
     display: flex;
@@ -36,6 +36,7 @@
     height: 3.80756rem;
     background: lightgray -30.652px -8.351px / 185.67% 126.805% no-repeat;
   }
+
   .mat-menu-tigger-for-tela-dois {
     display: flex;
     gap: 0.2rem;
@@ -45,6 +46,7 @@
     position: relative;
 
   }
+
   .borda-abaixo {
     width: 110px;
     border-bottom: 2px solid #e49011;
@@ -62,13 +64,17 @@
     background: #fff;
     position: relative;
     bottom: 0rem;
-    transform: rotate(0deg); /* Definimos a rotação inicial */
-    transition: transform 0.3s; /* Adicionamos uma transição suave */
+    transform: rotate(0deg);
+    /* Definimos a rotação inicial */
+    transition: transform 0.3s;
+    /* Adicionamos uma transição suave */
   }
+
   //invertendo a seta para indicar que o menu está aberto
   .icon-seta-invertida-tela-dois:hover {
     transform: rotate(-180deg);
   }
+
   //Div pai que contém a div com os menus filhos
   .div-menu-tela-dois {
     display: flex;
@@ -79,6 +85,7 @@
     top: 0.1rem;
 
   }
+
   //Estilização da div que contem os menus filho
   .div-menu-filho-tela-dois {
     display: flex;
@@ -92,8 +99,7 @@
     flex-shrink: 0;
     text-decoration: none;
     color: #1c1c1b;
-    text-shadow: 0px 4.682926654815674px 4.682926654815674px 0px
-      rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4.682926654815674px 4.682926654815674px 0px rgba(0, 0, 0, 0.25);
     font-size: 1.17075rem;
     font-family: Poppins;
     font-style: normal;
@@ -112,6 +118,7 @@
     top: 12%;
     cursor: pointer;
   }
+
   //Estilização do parágrafo p dentro da div que conttem o parágrago e os icones
   .paragrafo-e-icones-tela-dois p {
     display: flex;
@@ -126,19 +133,19 @@
   }
 
   /* mat-menu-custom.scss */
-.matMenu {
-  position: relative;
-}
+  .matMenu {
+    position: relative;
+  }
 
-.matMenu::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+  .matMenu::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
 
   //icon de localização ao lado da tela dois
   .icon-localizacao-tela-dois {
@@ -146,12 +153,14 @@
     color: #fc7310;
     margin: 0% 0% 7% 0%;
   }
+
   //Seta ao lado do parágrafo tela-dois
   .icon-seta-inveritda-paragrafo-tela-dois {
     display: flex;
     position: relative;
     bottom: 0.5rem;
   }
+
   //Estilização do parágrafo de localização da tela dois
   .p-localizacao-tela-dois {
     color: #e3b34d;
@@ -161,6 +170,7 @@
     font-weight: 400;
     line-height: normal;
   }
+
   // Borda vertical ao lado do menu
   .borda-vertical-tela-dois {
     width: 0px;
@@ -171,6 +181,7 @@
     opacity: 0.9;
     color: #000000;
   }
+
   //Estilização do input
   .input-wrapper-tela-dois {
     display: flex;
@@ -185,22 +196,24 @@
     position: relative;
     top: 6%;
   }
+
   .input-tela-dois {
     display: flex;
     border: none;
     outline: none;
     width: 21.66667rem;
   }
-  .input-wrapper-tela-dois:focus-within{
-    border: 1px solid  #e49011;
+
+  .input-wrapper-tela-dois:focus-within {
+    border: 1px solid #e49011;
   }
 
   //dimensões do card / filter lista input
-  .seach-filter-lista-tela-dois{
+  .seach-filter-lista-tela-dois {
     position: absolute;
     top: 110%;
     right: 11%;
-    width: 21.66667rem ;
+    width: 21.66667rem;
     height: 6.25rem;
     flex-shrink: 0;
     background-color: white;
@@ -217,8 +230,9 @@
     line-height: normal;
 
   }
+
   .seach-filter-lista-tela-dois hr {
-    width:  21.66667rem;
+    width: 21.66667rem;
     height: 0rem;
     flex-shrink: 0;
     stroke-width: 1px;
@@ -226,6 +240,7 @@
     position: relative;
     bottom: 16%;
   }
+
   .suggestions-tela-dois {
     list-style: none;
     color: #717171;
@@ -237,14 +252,15 @@
     position: relative;
     right: 11.5%;
     bottom: 1.4rem;
-   }
+  }
 
   .suggestions-tela-dois img {
     width: 0.74856rem;
     height: 0.54544rem;
     flex-shrink: 0;
-    
+
   }
+
   /*Estilização do placeholder do input de pesquisa*/
   ::placeholder {
     display: flex;
@@ -256,12 +272,14 @@
     line-height: normal;
     opacity: 0.5;
   }
+
   .icone-carrinho-tela-dois {
     display: flex;
     position: relative;
     right: 1rem;
     gap: 1rem;
   }
+
   .btn-tela-dois {
     display: inline-flex;
     padding: 0.2585rem 0.64031rem 0.279rem 0.60969rem;
@@ -277,20 +295,24 @@
     font-weight: 700;
     line-height: normal;
   }
+
   //hover para o botão entrar/header telas 1025px a 1200px
   .btn-tela-dois:hover {
     opacity: 0.5;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a.router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   a:focus {
     color: #e49011;
     text-decoration: underline;
   }
+
   .numero-sobre-carrinho {
     display: flex;
     align-items: center;
@@ -306,8 +328,10 @@
     height: 1.55038rem;
     flex-shrink: 0;
     border-radius: 100%;
-   background-color: #FB1111;;
+    background-color: #FB1111;
+    ;
   }
+
   //Estilização do carrossel
   .grupo-botoes-tela-dois {
     display: flex;
@@ -326,10 +350,12 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
+
   /* Para navegadores baseados no WebKit (Chrome, Safari, etc.) */
   .grupo-botoes-tela-dois::-webkit-scrollbar {
     display: none;
   }
+
   .button-tela-dois {
     display: inline-flex;
     padding: 0.55rem 0.9875rem 0.3875rem 1.425rem;
@@ -346,16 +372,19 @@
     line-height: 1.50938rem;
     transition: transform 0.3s, box-shadow 0.3s;
   }
+
   .button-tela-dois:hover {
     transform: translateY(-3px);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   .paragrafo-btns-tela-dois .router-link-active {
     color: #e49011;
     text-decoration: underline;
   }
+
   /*Aplicação de efeito ativo quando a rota estiver ativa*/
   button:focus {
     color: #e49011;

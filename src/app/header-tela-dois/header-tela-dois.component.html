@@ -6,54 +6,96 @@
   <!--Conteúdo do menu de opções em telas entre 1025px e 1200px-->
   <div class="div-menu-tela-dois">
     <a class="mat-menu-tigger-for-tela-dois" [matMenuTriggerFor]="menu">
-      {{nomeMenu}}
-      <img class="icon-seta-invertida-tela-dois" src="assets/img/Group.svg" alt="" />
+      {{ nomeMenu }}
+      <img
+        class="icon-seta-invertida-tela-dois"
+        src="assets/img/Group.svg"
+        alt=""
+      />
       <mat-menu class="matMenu" #menu="matMenu">
-        <a class="div-menu-filho-tela-dois" routerLink="home" routerLinkActive="active"
-          (click)="nomeMenu = 'Início'">Início</a>
-        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active"
-          (click)="nomeMenu= 'Padarias'">Padarias</a>
-        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active"
-          (click)="nomeMenu = 'Contato'">Contato</a>
-        <a class="div-menu-filho-tela-dois" routerLink="/placeholder" routerLinkActive="active"
-          (click)="nomeMenu = 'Sobre'">Sobre</a>
-          <div class="borda-abaixo"></div>
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="home"
+          routerLinkActive="active"
+          (click)="nomeMenu = 'Início'"
+          >Início</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          (click)="nomeMenu = 'Padarias'"
+          >Padarias</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          (click)="nomeMenu = 'Contato'"
+          >Contato</a
+        >
+        <a
+          class="div-menu-filho-tela-dois"
+          routerLink="/placeholder"
+          routerLinkActive="active"
+          (click)="nomeMenu = 'Sobre'"
+          >Sobre</a
+        >
+        <div class="borda-abaixo"></div>
       </mat-menu>
     </a>
   </div>
   <form class="input-wrapper-tela-dois" #meuForm>
     <input
-    (click)=" handleClick()"
-    class="input-tela-dois"
-    type="text" 
-    name="search" 
-    placeholder="Buscar por itens e outros"
-    (blur)="onBlur()"
-    [(ngModel)]="searchTerm"
+      (click)="handleClick()"
+      class="input-tela-dois"
+      type="text"
+      name="search"
+      placeholder="Buscar por itens e outros"
+      (blur)="onBlur()"
+      [(ngModel)]="searchTerm"
     />
-    <img src="assets/img/mi_search.svg" alt="Ícone" class="icon-search-tela-dois" />
-    <div class="seach-filter-lista-tela-dois" *ngIf=" showSuggestions, isInputFocused " ><!--Card-filter-buscar inicio-->
+    <img
+      src="assets/img/mi_search.svg"
+      alt="Ícone"
+      class="icon-search-tela-dois"
+    />
+    <div
+      class="seach-filter-lista-tela-dois"
+      *ngIf="showSuggestions; isInputFocused"
+    >
+      <!--Card-filter-buscar inicio-->
       <h3>Buscar recentes</h3>
-      <hr>
+      <hr />
       <ul class="filter-list-tela-dois">
-        <li 
-        class="suggestions-tela-dois" 
-        *ngFor="let suggestions of suggestions" 
-        (click)="selectSuggestions(suggestions)"
+        <li
+          class="suggestions-tela-dois"
+          *ngFor="let suggestions of suggestions"
+          (click)="selectSuggestions(suggestions)"
         >
-            <img class="icone-lista-tela-dois"
-            src="assets/img/Vector.svg" 
-            alt="icone-lista">
-            {{suggestions}}
+          <img
+            class="icone-lista-tela-dois"
+            src="assets/img/Vector.svg"
+            alt="icone-lista"
+          />
+          {{ suggestions }}
         </li>
-      
-      </ul>  
-    </div><!--Card-filter-buscar-fim-->
+      </ul>
+    </div>
+    <!--Card-filter-buscar-fim-->
   </form>
   <div class="paragrafo-e-icones-tela-dois" (click)="openDialogTelaDois()">
-    <img class="icon-localizacao-tela-dois" src="assets/img/carbon_location-filled-atual.svg" alt="icone-localização" />
+    <img
+      class="icon-localizacao-tela-dois"
+      src="assets/img/carbon_location-filled-atual.svg"
+      alt="icone-localização"
+    />
     <p class="p-localizacao-tela-dois">Rio de Janeiro</p>
-    <img class="icon-seta-inveritda-paragrafo-tela-dois" src="assets/img/eva_arrow-down-fill-atual.svg" alt=" icone-seta" />
+    <img
+      class="icon-seta-inveritda-paragrafo-tela-dois"
+      src="assets/img/eva_arrow-down-fill-atual.svg"
+      alt=" icone-seta"
+    />
   </div>
   <div class="borda-vertical-tela-dois">
     <img src="assets/img/Vector2.svg" alt="" />
@@ -62,7 +104,7 @@
     <button class="btn-tela-dois" routerLink="app-login">Entrar</button>
     <div class="carrinho">
       <div class="numero-sobre-carrinho">
-        {{numero}}
+        {{ numero }}
       </div>
       <img src="assets/img/mdi_cart.svg" alt="icone seta" />
     </div>
@@ -70,25 +112,49 @@
 </header>
 <!---Início do carrossel da tela dois-->
 <div class="grupo-botoes-tela-dois">
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <span class="paragrafo-btns-tela-dois">Ordenar</span>
     <img src="assets/img/Frame.svg" alt="imagem 1" />
   </button>
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <img src="assets/img/Frame-1.svg" alt="imagem 1" />
     <span class="paragrafo-btns-tela-dois">Pra Retirar</span>
   </button>
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <span class="paragrafo-btns-tela-dois">Entrega grátis</span>
   </button>
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <span class="paragrafo-btns-tela-dois">Entrega parceira</span>
   </button>
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <span class="paragrafo-btns-tela-dois">vale refeição</span>
     <img src="assets/img/Frame.svg" alt="imagem 1" />
   </button>
-  <button class="button-tela-dois" routerLink="/placeholder" routerLinkActive="active">
+  <button
+    class="button-tela-dois"
+    routerLink="/placeholder"
+    routerLinkActive="active"
+  >
     <span class="paragrafo-btns-tela-dois">Distância</span>
     <img src="assets/img/Frame.svg" alt="imagem 1" />
   </button>

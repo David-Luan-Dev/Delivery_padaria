@@ -12,6 +12,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -19,10 +20,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
     width: 50px;
     height: 50px;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -30,6 +33,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -43,6 +47,7 @@
     top: 190px;
     left: 100px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -56,6 +61,7 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
@@ -67,10 +73,9 @@
     right: 17rem;
     border-radius: 6.244px;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-      width: 410px;
-    height: 282.244px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 410px;
+    height: 302.244px;
     flex-shrink: 0;
   }
 
@@ -83,6 +88,7 @@
     position: relative;
     bottom: 1.2rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
@@ -95,6 +101,7 @@
     width: 300.258px;
     position: relative;
   }
+
   .telefone {
     color: #3E3E3E;
     text-align: center;
@@ -102,8 +109,10 @@
     font-size: 15.504px;
     font-style: normal;
     font-weight: 600;
-    line-height: 17.054px; /* 110% */
+    line-height: 17.054px;
+    /* 110% */
   }
+
   //Div que contém o input e abandeira do Brasil
   .input-informar-email {
     display: flex;
@@ -114,6 +123,7 @@
     position: relative;
     bottom: 1.2rem;
   }
+
   //Placeholder do input
   .placeholder {
     color: #717171;
@@ -124,6 +134,7 @@
     font-weight: 400;
     line-height: 21.141px;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
@@ -133,10 +144,12 @@
     bottom: 25px;
     gap: 2px;
   }
+
   //caso haja erro no campo
   .border-red {
     border: 2px solid red;
   }
+
   input {
     width: 45.948px;
     height: 35.957px;
@@ -146,20 +159,25 @@
     opacity: 0.5;
     background: #FFF;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
   }
+
   .container-p {
     display: flex;
     align-items: center;
@@ -167,6 +185,7 @@
     position: relative;
     top: 1rem;
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
@@ -176,6 +195,7 @@
     font-weight: 400;
     line-height: 12.403px;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
@@ -184,6 +204,7 @@
     bottom: 10px;
     width: 100%;
   }
+
   .codigo-invalido {
     display: flex;
     align-items: center;
@@ -192,8 +213,9 @@
     background-color: #EE4C58;
     border-radius: 3px;
     position: relative;
-    bottom: 1.6rem;
+    bottom: 2.6rem;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
@@ -208,9 +230,10 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.5rem;  
+    top: 0.5rem;
     left: 30px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
@@ -236,10 +259,12 @@
     height: 39.024px;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
     width: 320px;
@@ -248,6 +273,7 @@
     opacity: 0.5;
   }
 }
+
 @media (min-width: 1025px) and (max-width: 1200px) {
   .container {
     display: flex;
@@ -262,6 +288,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -269,10 +296,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
     width: 50px;
     height: 50px;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -280,6 +309,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -293,6 +323,7 @@
     top: 200px;
     left: 101.01513671875px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -306,6 +337,7 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
@@ -317,9 +349,8 @@
     right: 10rem;
     border-radius: 6.244px;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-      width: 400px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 420px;
     height: 262.244px;
     flex-shrink: 0;
   }
@@ -333,6 +364,7 @@
     position: relative;
     bottom: 1.5rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
@@ -355,8 +387,9 @@
     background-color: #EE4C58;
     border-radius: 3px;
     position: relative;
-    bottom: 1rem;
+    bottom: 1.5rem;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
@@ -371,9 +404,10 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.5rem;  
+    top: 0.5rem;
     left: 20px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
@@ -388,8 +422,10 @@
     font-size: 15.504px;
     font-style: normal;
     font-weight: 600;
-    line-height: 17.054px; /* 110% */
+    line-height: 17.054px;
+    /* 110% */
   }
+
   //Placeholder do input
   .placeholder {
     color: #717171;
@@ -400,6 +436,7 @@
     font-weight: 400;
     line-height: 21.141px;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
@@ -409,6 +446,7 @@
     bottom: 1.2rem;
     gap: 2px;
   }
+
   input {
     width: 45.948px;
     height: 35.957px;
@@ -418,20 +456,25 @@
     opacity: 0.5;
     background: #FFF;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
@@ -439,6 +482,7 @@
     width: 100%;
     gap: 2px;
   }
+
   .container-p {
     display: flex;
     align-items: center;
@@ -446,6 +490,7 @@
     position: relative;
     top: 1rem;
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
@@ -455,6 +500,7 @@
     font-weight: 400;
     line-height: 12.403px;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
@@ -463,6 +509,7 @@
     width: 100%;
     bottom: 5px;
   }
+
   button {
     display: inline-flex;
     align-items: center;
@@ -481,10 +528,12 @@
     height: 39.024px;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
     width: 320px;
@@ -493,6 +542,7 @@
     opacity: 0.5;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
     display: flex;
@@ -509,6 +559,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -516,10 +567,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
     width: 50px;
     height: 50px;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -529,6 +582,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -542,6 +596,7 @@
     flex-shrink: 0;
     top: 20px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -556,6 +611,7 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
@@ -566,9 +622,8 @@
     top: 15rem;
     border-radius: 6.244px;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-      width: 400px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 400px;
     height: 262.244px;
     flex-shrink: 0;
   }
@@ -582,6 +637,7 @@
     position: relative;
     bottom: 1.5rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
@@ -604,8 +660,9 @@
     background-color: #EE4C58;
     border-radius: 3px;
     position: relative;
-    bottom: 2rem;
+    bottom: 2.2rem;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
@@ -620,20 +677,22 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.4rem;  
+    top: 0.4rem;
     left: 15px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
     position: relative;
     left: 208px;
   }
+
   .telefone {
     color: #3E3E3E;
     text-align: center;
     font-family: Poppins;
-    font-size: 11.628px;
+    font-size: 13.566px;
     font-style: normal;
     font-weight: 600;
     line-height: 12.791px;
@@ -644,11 +703,12 @@
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 10.336px;
+    font-size: 12.336px;
     font-style: normal;
     font-weight: 400;
     line-height: 21.141px;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
@@ -658,25 +718,31 @@
     position: relative;
     bottom: 1.8rem;
   }
+
   input {
-    width: 35.961px;
-    height: 29.967px;
+    width: 36px;
+    height: 36px;
     flex-shrink: 0;
     border-radius: 2.397px;
     border: 2.067px solid rgba(113, 113, 113, 0.40);
     opacity: 0.5;
     background: #FFF;
+    font-size: 14px;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
@@ -689,6 +755,7 @@
     position: relative;
     top: 1rem;
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
@@ -698,6 +765,7 @@
     font-weight: 400;
     line-height: 12.403px;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
@@ -706,6 +774,7 @@
     width: 100%;
     bottom: 1rem;
   }
+
   button {
     display: inline-flex;
     align-items: center;
@@ -724,10 +793,12 @@
     height: 35.416px;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
     width: 320px;
@@ -753,6 +824,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -760,10 +832,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
     width: 50px;
     height: 50px;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -773,6 +847,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -786,6 +861,7 @@
     flex-shrink: 0;
     top: 20px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -800,20 +876,18 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: fixed;
-    top: 15rem;
-    border-radius: 6.244px;
+    top: 14rem;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-    width: 300px;
-    height: 217.674px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
   }
 
@@ -824,32 +898,33 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 1.5rem;
+    top: 1.5rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 10.566px;
+    font-size: 1rem;
     line-height: 16.298px;
     font-style: normal;
     font-weight: 400;
     width: 190px;
     position: relative;
-    top: 0.5rem;
+    top: 2rem;
   }
 
   .codigo-invalido {
     display: flex;
     align-items: center;
-    width: 275.965px;
-    height: 25.21px;
+    width: 100%;
+    height: 30.21px;
     background-color: #EE4C58;
-    border-radius: 3px;
     position: relative;
-    bottom: 1rem;
+    top: 0;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
@@ -864,64 +939,71 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.4rem;  
+    top: 0.4rem;
     left: 15px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
-    position: relative;
-    left: 95px;
+    position: fixed;
+    right: 5px;
   }
 
   .telefone {
     color: #3E3E3E;
     text-align: center;
     font-family: Poppins;
-    font-size: 9.628px;
+    font-size: 13.566px;
     font-style: normal;
     font-weight: 600;
-    line-height: 12.791px;
+    line-height: 16.791px;
   }
 
   //Placeholder do input
   .placeholder {
-    color: #717171;
+    color: #444343;
     text-align: center;
     font-family: Poppins;
-    font-size: 10.336px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 21.141px;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 2px;
+    gap: 0.5rem;
     position: relative;
-    bottom: 1.8rem;
+    top: 4.8rem;
   }
+
   input {
-    width: 31.961px;
-    height: 25.967px;
+    width: 3rem;
+    height: 3rem;
     flex-shrink: 0;
     border-radius: 2.397px;
     border: 2.067px solid rgba(113, 113, 113, 0.40);
     opacity: 0.5;
     background: #FFF;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
@@ -932,25 +1014,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 4rem;
 
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
     font-family: Poppins;
-    font-size: 12.403px;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 12.403px;
+    line-height: 1.5rem;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-    bottom: 1rem;
+    top: 8rem;
   }
+
   button {
     display: inline-flex;
     align-items: center;
@@ -960,27 +1046,30 @@
     background: #e49011;
     color: #fff;
     font-family: Poppins;
-    font-size: 11.766px;
+    font-size: 0.9rem;
     font-style: normal;
     line-height: 9.413px;
     border-radius: 2.253px;
     transition: 0.1s;
-    width: 250.21px;
-    height: 29.416px;
+    width: 21rem;
+    height: 2.5rem;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
-    width: 250.21px;
+    width: 21rem;
     position: relative;
-    top: 5px;
+    top: 6.2rem;
     opacity: 0.5;
   }
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     display: flex;
@@ -997,6 +1086,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -1004,10 +1094,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
     width: 40px;
     height: 40px;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -1017,6 +1109,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -1030,6 +1123,7 @@
     flex-shrink: 0;
     top: 20px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -1043,20 +1137,18 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: fixed;
-    top: 15rem;
-    border-radius: 2.584px;
+    top: 10rem;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-      width: 249.965px;
-      height: 184.706px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
   }
 
@@ -1067,32 +1159,33 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 1.5rem;
+    top: 0.5rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 11.303px;
-    line-height: 13.58px;;
+    font-size: 13.303px;
+    line-height: 13.58px;
     font-style: normal;
     font-weight: 400;
     width: 190px;
     position: relative;
-    top: 1.2rem;
+    top: 2.2rem;
   }
 
   .codigo-invalido {
     display: flex;
     align-items: center;
-    width: 235.965px;
-    height: 20.21px;
+    width: 100%;
+    height: 30.21px;
     background-color: #EE4C58;
-    border-radius: 3px;
     position: relative;
-    bottom: 1rem;
+    top: 0px;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
@@ -1107,21 +1200,22 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.4rem;  
+    top: 0.4rem;
     left: 15px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
-    position: relative;
-    left: 65px;
+    position: fixed;
+    right: 5px;
   }
 
   .telefone {
     color: #3E3E3E;
     text-align: center;
     font-family: Poppins;
-    font-size: 9.689px;
+    font-size: 13.303px;
     font-style: normal;
     font-weight: 600;
     line-height: 10.657px;
@@ -1129,42 +1223,48 @@
 
   //Placeholder do input
   .placeholder {
-    color: #717171;
+    color: #444343;
     text-align: center;
     font-family: Poppins;
-    font-size: 6.459px;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 13.211px;
+    line-height: 1.5rem;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 2px;
+    gap: 0.5rem;
     position: relative;
-    bottom: 1rem;
+    top: 3.5rem;
   }
+
   input {
-    width: 24.963px;
-    height: 19.969px;
+    width: 2.3rem;
+    height: 2.3rem;
     flex-shrink: 0;
     border-radius: 1.998px;
-    border: 2.067px solid rgba(113, 113, 113, 0.40);
+    border: 2.067px solid rgba(52, 52, 52, 0.4);
     opacity: 0.5;
     background: #FFF;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
@@ -1175,26 +1275,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 5px;
+    top: 5rem;
 
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
     font-family: Poppins;
-    font-size: 7.751px;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 7.751px;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-    bottom: 0.3rem;
+    top: 7.8rem;
   }
+
   button {
     display: inline-flex;
     align-items: center;
@@ -1204,26 +1307,29 @@
     background: #e49011;
     color: #fff;
     font-family: Poppins;
-    font-size: 9.804px;
+    font-size: 0.9rem;
     font-style: normal;
-    line-height: 7.843px;
+    line-height: 1rem;
     border-radius: 1.961px;
-    width: 205.98px;
-    height: 24.51px;
+    width: 17rem;
+    height: 1.9rem;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
-    width: 205.98px;
+    width: 17rem;
     position: relative;
-    top: 5px;
+    top: 7rem;
     opacity: 0.5;
   }
 }
+
 @media (max-width: 319px) {
   .container {
     display: flex;
@@ -1240,6 +1346,7 @@
     background: linear-gradient(90deg, black, #e49011);
     background-size: 150% 150%;
   }
+
   //Setas que ficam no canto superior esquerdo indicando voltar a tela anterior
   .seta-voltar {
     position: relative;
@@ -1247,10 +1354,12 @@
     top: 0.5rem;
     color: #e49011;
   }
+
   .seta-voltar img {
-    width: 35px;
-    height: 35px;
+    width: 2.1rem;
+    height: 2.1rem;
   }
+
   //div que contém a imagem que pega a tela toda e a elipse
   .div-pai-img-form {
     display: flex;
@@ -1260,6 +1369,7 @@
     height: 100%;
     width: 100%;
   }
+
   //Elipse com a logo dentro
   .img {
     display: flex;
@@ -1273,6 +1383,7 @@
     flex-shrink: 0;
     top: 20px;
   }
+
   //Logo que está dentro da elipse
   .logo-sobreposta {
     display: flex;
@@ -1286,20 +1397,18 @@
     transform: translate(-50%, -50%);
     overflow: hidden;
   }
+
   //Div que contem a div de todo o conteudo do formúlario
   .container-formulario {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: fixed;
-    top: 15rem;
-    border-radius: 2.584px;
+    top: 10rem;
     background: #fff;
-    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px
-      rgba(0, 0, 0, 0.05);
-    width: 249.965px;
-    height: 184.706px;
+    box-shadow: 0px 1.517857313156128px 6.071429252624512px 0px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 700px;
     flex-shrink: 0;
   }
 
@@ -1310,15 +1419,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 1.5rem;
+    top: 1.5rem;
   }
+
   //Titulo (informe o numero do seu celular para continuar)
   h1 {
     color: #717171;
     text-align: center;
     font-family: Poppins;
-    font-size: 11.303px;
-    line-height: 13.58px;;
+    font-size: 12.303px;
+    line-height: 13.58px;
     font-style: normal;
     font-weight: 400;
     width: 190px;
@@ -1329,18 +1439,18 @@
   .codigo-invalido {
     display: flex;
     align-items: center;
-    width: 235.965px;
-    height: 20.21px;
+    width: 100%;
+    height: 25px;
     background-color: #EE4C58;
-    border-radius: 3px;
     position: relative;
-    bottom: 1rem;
+    top: 0;
   }
+
   .warning {
     width: 12.6px;
     height: 12.6px;
     position: relative;
-    left: 10px;
+    left: 5px;
   }
 
   .codigo-invalido-paragrafo {
@@ -1350,14 +1460,15 @@
     font-family: poppins;
     font-weight: 400;
     position: relative;
-    top: 0.4rem;  
+    top: 0.4rem;
     left: 15px;
   }
+
   .remove {
     width: 15.6px;
     height: 15.6px;
-    position: relative;
-    left: 65px;
+    position: fixed;
+    right: 5px;
   }
 
   .telefone {
@@ -1372,14 +1483,15 @@
 
   //Placeholder do input
   .placeholder {
-    color: #717171;
+    color: #201f1f;
     text-align: center;
     font-family: Poppins;
-    font-size: 6.459px;
+    font-size: 12.459px;
     font-style: normal;
     font-weight: 400;
     line-height: 13.211px;
   }
+
   .input-e-validacao {
     display: flex;
     justify-content: center;
@@ -1387,27 +1499,32 @@
     width: 100%;
     gap: 2px;
     position: relative;
-    bottom: 1rem;
+    top: 3.8rem;
   }
+
   input {
-    width: 24.963px;
-    height: 19.969px;
+    width: 2.2rem;
+    height: 2.2rem;
     flex-shrink: 0;
     border-radius: 1.998px;
     border: 2.067px solid rgba(113, 113, 113, 0.40);
     opacity: 0.5;
     background: #FFF;
   }
+
   input:focus::placeholder {
     color: transparent;
   }
-  input:focus + ::placeholder {
+
+  input:focus+ ::placeholder {
     color: #000;
   }
+
   input:focus {
     border-color: #007bff;
     outline: none;
   }
+
   .mensagem-erro {
     font-size: 10px;
     color: red;
@@ -1418,26 +1535,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 5px;
+    top: 65px;
 
   }
+
   .container-p p {
     color: #E49011;
     text-align: center;
     font-family: Poppins;
-    font-size: 7.751px;
+    font-size: 10.751px;
     font-style: normal;
     font-weight: 400;
     line-height: 7.751px;
   }
+
   .btn-continuar {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-    bottom: 0.3rem;
+    top: 6.8rem;
   }
+
   button {
     display: inline-flex;
     align-items: center;
@@ -1451,19 +1571,21 @@
     font-style: normal;
     line-height: 7.843px;
     border-radius: 1.961px;
-    width: 205.98px;
-    height: 24.51px;
+    width: 80%;
+    height: 1.8rem;
     flex-shrink: 0;
   }
+
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
   .borda {
     border-top: 1px solid #e49011;
-    width: 205.98px;
+    width: 80%;
     position: relative;
-    top: 5px;
+    top: 97px;
     opacity: 0.5;
   }
 }
