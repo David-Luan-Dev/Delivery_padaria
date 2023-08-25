@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { DialogLocalizacaoComponent } from './header/dialog-localizacao/dialog-localizacao.component';
+import { DialogLocalizacaoComponent } from './components/componentes-header/header/dialog-localizacao/dialog-localizacao.component'; 
 import { InformeEmailComponent } from './pages/login-pai/login-tela-um/informe-email/informe-email.component';
 import { InformeCelularComponent } from './pages/login-pai/login-tela-um/informe-celular/informe-celular.component';
 import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
-import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
+import { PesquisaComponent } from './components/pesquisa/pesquisa.component'; 
 
 const routes: Routes = [
 
