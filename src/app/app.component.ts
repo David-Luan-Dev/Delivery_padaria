@@ -20,13 +20,14 @@ export class AppComponent implements OnInit {
 
   modifyHeader(location: any) {
     console.log(location.url);
-    if (location.url === '/app-login'
-    || location.url === '/informar-email'
-    || location.url === '/informar-celular'
-    || location.url === '/codigo-celular'
-    || location.url === '/codigo-email'
-    || location.url === '/pesquisa'
-    || location.url === '/pesquisa-tela-quatro'
+    if (
+      location.url === '/app-login' ||
+      location.url === '/informar-email' ||
+      location.url === '/informar-celular' ||
+      location.url === '/codigo-celular' ||
+      location.url === '/codigo-email' ||
+      location.url === '/pesquisa' ||
+      location.url === '/cesta'
     ) {
       this.showHeader = false;
     } else {
@@ -37,5 +38,4 @@ export class AppComponent implements OnInit {
   teste() {
     console.log(window.screen.width);
   }
- 
 }

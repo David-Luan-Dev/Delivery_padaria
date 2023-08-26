@@ -1,30 +1,41 @@
-import { ChangeDetectorRef, Component, ViewChild, ElementRef } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
+import { CestaComunicacaoServiceService } from '../services/cesta-comunicacao-service.service';
+
 //import { DialogLocalizacaoComponent } from '../header/dialog-localizacao/dialog-localizacao.component';
 @Component({
   selector: 'app-header-tela-dois',
   templateUrl: './header-tela-dois.component.html',
-  styleUrls: ['./header-tela-dois.component.scss']
+  styleUrls: ['./header-tela-dois.component.scss'],
 })
 export class HeaderTelaDoisComponent {
-  @ViewChild('meuForm')formElement!: ElementRef;
+  @ViewChild('meuForm') formElement!: ElementRef;
   setFocusForm() {
-    console.log('focado')
+    console.log('focado');
     this.formElement.nativeElement.focus();
-  };
+  }
 
   isTelaLogin: boolean = false;
-  nomeMenu: string = 'Início'
+  nomeMenu: string = 'Início';
   numero: number = 7;
-  searchTerm = "";
+  searchTerm = '';
   showSuggestions = false;
-  suggestions = ["Pão","Açucar", "Queijo"];
+  suggestions = ['Pão', 'Açucar', 'Queijo'];
 
   filteredSuggestions: string[] = [];
   isInputFocused = false;
 
-  constructor(public dialog: MatDialog, public cd: ChangeDetectorRef) { }
+  constructor(
+    public dialog: MatDialog,
+    public cd: ChangeDetectorRef,
+    private cestaComunicacaoService: CestaComunicacaoServiceService
+  ) {}
   // <!--representa as telas de 1200px pra cima-->
   public openDialogTelaDois() {
     this.cd.detectChanges();
@@ -42,34 +53,37 @@ export class HeaderTelaDoisComponent {
   }
 
   onInput() {
-    this.filteredSuggestions = this.suggestions.filter(
-      suggestions => 
+    this.filteredSuggestions = this.suggestions.filter((suggestions) =>
       suggestions.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
     this.showSuggestions = true;
   }
-  onBlur () {
+  onBlur() {
     setTimeout(() => {
       this.showSuggestions = false;
-    },200);
+    }, 200);
 
     if (!this.searchTerm) {
       this.isInputFocused = false;
     }
   }
-  
+
   selectSuggestions(suggestions: string) {
     this.searchTerm = suggestions;
     this.showSuggestions = false;
   }
 
- toggleFilter() {
-  this.isInputFocused = !this.isInputFocused;
- }
+  toggleFilter() {
+    this.isInputFocused = !this.isInputFocused;
+  }
 
- handleClick () {
-  this.toggleFilter();
-  this.setFocusForm();
-  this.onInput();
-}
+  handleClick() {
+    this.toggleFilter();
+    this.setFocusForm();
+    this.onInput();
+  }
+  abrirGaveta() {
+    console.log('teste');
+    this.cestaComunicacaoService.alternarGaveta(true);
+  }
 }

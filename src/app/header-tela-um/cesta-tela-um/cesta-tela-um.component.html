@@ -1,0 +1,35 @@
+<div class="cesta" [class.aberta]="gavetaAberta">
+  <div class="topo-cesta">
+    <h1>Sua cesta</h1>
+    <img
+      class="x-modal-img"
+      src="assets/img/Frame-x.svg"
+      alt="icone x"
+      (click)="alternarGaveta()"
+    />
+  </div>
+  <div class="localizacao-cesta">
+    <img
+      class="icon-localizacao-cesta"
+      src="assets/img/carbon_location-filled-atual.svg"
+      alt="icone-localização"
+    />
+    <p class="p-localizacao-cesta">Rio de Janeiro</p>
+    <img
+      class="icon-seta-cesta"
+      src="assets/img/eva_arrow-down-fill-atual.svg"
+      alt=" icone-seta"
+    />
+  </div>
+  <div class="produtos-cesta">
+    <img
+      class="img-carrinho"
+      src="assets/img/img-cesta/carrinho.svg"
+      alt="carrinho"
+    />
+    <p class="texto-cesta">Você ainda não tem produtos na sua cesta</p>
+    <button class="btn">
+      <span class="texto-btn">Começar a comprar</span>
+    </button>
+  </div>
+</div>

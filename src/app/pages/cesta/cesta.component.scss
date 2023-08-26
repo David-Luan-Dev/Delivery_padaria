@@ -1,0 +1,740 @@
+/* Estilos para telas de 769px a 1024px tela-três */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cesta-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.22269rem;
+  }
+
+  .topo-cesta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4.375rem;
+    padding: 0.9375rem 20.375rem 0.9375rem 1.52519rem;
+    //align-items: flex-start;
+    //gap: 16.34981rem;
+    flex-shrink: 0;
+  }
+
+  .icone-home {
+    position: fixed;
+    left: 0px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.53rem;
+    //margin: 0.94rem .44rem auto 1.53rem;
+  }
+
+  h1 {
+    display: flex;
+    width: 7.3125rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    text-align: center;
+    color: #2e2c36;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.57531rem; /* 305.022% */
+    letter-spacing: -0.03225rem;
+    position: fixed;
+    right: 43%;
+  }
+
+  .localizacao-cesta {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2.148px solid #e6ebf1;
+    background: #fff;
+  }
+
+  .icon-localizacao-cesta {
+    width: 1.39788rem;
+    height: 1.65425rem;
+    margin: -0.9rem 0.2rem 0 1.6rem;
+    flex-shrink: 0;
+    //margin-left: 0.47rem;
+  }
+
+  .p-localizacao-cesta {
+    display: flex;
+    padding: 0rem 20.92356rem 0rem 0.00013rem;
+    align-items: center;
+    color: #e49011;
+    font-family: Poppins;
+    font-size: 1.63994rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.80431rem; /* 171% */
+  }
+
+  .icon-seta-cesta {
+    width: 2.31131rem;
+    height: 2.31131rem;
+    flex-shrink: 0;
+    margin: 0.01rem 0.93rem 0 8.24rem;
+    position: fixed;
+    right: 0px;
+  }
+
+  .produtos-cesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .img-carrinho {
+    display: flex;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding: 0.89294rem 1.78575rem 0.89281rem 1.78569rem;
+    justify-content: center;
+    //align-items: center;
+    flex-shrink: 0;
+    //margin: 2.24rem 20.9rem 0 0;
+  }
+
+  .texto-cesta {
+    color: #2e2c36;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.50131rem; /* 280.105% */
+  }
+
+  .btn {
+    display: inline-flex;
+    width: 21.4375rem;
+    height: 3.15644rem;
+    //padding: 0.85219rem 5.88219rem 0.8575rem 5.89594rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.61644rem;
+    background: #e49011;
+    border: none;
+    margin: 7rem 13.31rem;
+  }
+
+  .texto-btn {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.05213rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.715rem; /* 163% */
+  }
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 769 a 1025*/
+  .menu-fixo-cesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4.75rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    gap: 4.42rem;
+    z-index: 998;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
+  //Estilização do span
+  .item-fixo-cesta span {
+    display: flex;
+    width: 3.81363rem;
+    height: 1.66669rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-family: Poppins;
+    font-size: 1.05819rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  //Estilização da img
+  .item-fixo-cesta img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6645rem;
+    height: 1.66163rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-cesta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*Estilização das para tamanhos de telas de 481px até 768px tela-quatro*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .cesta-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .topo-cesta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4.375rem;
+    padding: 0.9375rem 20.375rem 0.9375rem 1.52519rem;
+    //align-items: flex-start;
+    //gap: 16.34981rem;
+    flex-shrink: 0;
+  }
+
+  .icone-home {
+    position: fixed;
+    left: 0px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1.2rem;
+    //margin: 0.94rem .44rem auto 1.53rem;
+  }
+
+  h1 {
+    display: flex;
+    width: 7.3125rem;
+    height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    text-align: center;
+    color: #2e2c36;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.57531rem; /* 305.022% */
+    letter-spacing: -0.03225rem;
+    position: fixed;
+    right: 43%;
+  }
+
+  .localizacao-cesta {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2.148px solid #e6ebf1;
+  }
+
+  .icon-localizacao-cesta {
+    width: 1.39788rem;
+    height: 1.65425rem;
+    margin: -0.9rem 0.2rem 0 1.6rem;
+    flex-shrink: 0;
+    //margin-left: 0.47rem;
+  }
+
+  .p-localizacao-cesta {
+    display: flex;
+    //padding: 0rem 20.92356rem 0rem 0.00013rem;
+    align-items: center;
+    color: #e49011;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.80431rem; /* 171% */
+  }
+
+  .icon-seta-cesta {
+    width: 2.31131rem;
+    height: 2.31131rem;
+    flex-shrink: 0;
+    position: fixed;
+    right: 0px;
+  }
+
+  .produtos-cesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .img-carrinho {
+    display: flex;
+    width: 6.25rem;
+    height: 6.25rem;
+    padding: 0.89294rem 1.78575rem 0.89281rem 1.78569rem;
+    justify-content: center;
+    //align-items: center;
+    flex-shrink: 0;
+    //margin: 2.24rem 20.9rem 0 0;
+  }
+
+  .texto-cesta {
+    color: #2e2c36;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.50131rem; /* 280.105% */
+  }
+
+  .btn {
+    display: inline-flex;
+    width: 21.4375rem;
+    height: 3.15644rem;
+    //padding: 0.85219rem 5.88219rem 0.8575rem 5.89594rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.61644rem;
+    background: #e49011;
+    border: none;
+    margin: 7rem 13.31rem;
+  }
+
+  .texto-btn {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.05213rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.715rem; /* 163% */
+  }
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 481 a 768*/
+  .menu-fixo-cesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4.75rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    gap: 4.42rem;
+    z-index: 998;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
+  //Estilização do span
+  .item-fixo-cesta span {
+    display: flex;
+    width: 3.81363rem;
+    height: 1.66669rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-family: Poppins;
+    font-size: 1.05819rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  //Estilização da img
+  .item-fixo-cesta img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6645rem;
+    height: 1.66163rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-cesta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*Estilização para tamanhos de telas de 320px até 480px tela-cinco*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .cesta-container {
+    display: flex;
+    width: 98%;
+    height: 98%;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: flex-start;
+  }
+
+  .topo-cesta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4.375rem;
+    padding: 0.9375rem 20.375rem 0.9375rem 1.52519rem;
+    //align-items: flex-start;
+    //gap: 16.34981rem;
+    flex-shrink: 0;
+  }
+
+  .icone-home {
+    position: fixed;
+    left: 0px;
+    width: 1.66319rem;
+    height: 1.66319rem;
+    margin-left: 1.2rem;
+    //margin: 0.94rem .44rem auto 1.53rem;
+  }
+
+  h1 {
+    display: flex;
+    width: 4.86488rem;
+    height: 1.66319rem;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    text-align: center;
+    color: #2e2c36;
+    font-family: Poppins;
+    font-size: 0.99794rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.04388rem; /* 305.022% */
+    letter-spacing: -0.02144rem;
+    position: fixed;
+    right: 43%;
+  }
+
+  .localizacao-cesta {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2.148px solid #e6ebf1;
+  }
+
+  .icon-localizacao-cesta {
+    width: 0.92994rem;
+    height: 1.10056rem;
+    margin: -0.9rem 0.2rem 0 1.6rem;
+    flex-shrink: 0;
+    //margin-left: 0.47rem;
+  }
+
+  .p-localizacao-cesta {
+    display: flex;
+    //padding: 0rem 20.92356rem 0rem 0.00013rem;
+    align-items: center;
+    color: #e49011;
+    font-family: Poppins;
+    font-size: 0.83163rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.86563rem; /* 224.345% */
+  }
+
+  .icon-seta-cesta {
+    width: 1.589rem;
+    height: 1.589rem;
+    flex-shrink: 0;
+    position: fixed;
+    right: 16%;
+    border: 1px solid;
+  }
+
+  .produtos-cesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    //height: 100%;
+    flex-shrink: 0;
+  }
+
+  .img-carrinho {
+    display: flex;
+    width: 4.158rem;
+    height: 4.158rem;
+    padding: 0.59406rem 1.188rem 0.59394rem 1.188rem;
+    justify-content: center;
+    //align-items: center;
+    flex-shrink: 0;
+
+    //margin: 2.24rem 20.9rem 0 0;
+  }
+
+  .texto-cesta {
+    color: #2e2c36;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.83163rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.32938rem; /* 280.105% */
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-flex;
+    width: 14.26194rem;
+    height: 2.09994rem;
+    //padding: 0.85219rem 5.88219rem 0.8575rem 5.89594rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.35rem;
+    background: #e49011;
+    border: none;
+    margin: 7rem 13.31rem;
+  }
+
+  .texto-btn {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.14094rem; /* 163% */
+  }
+
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 320 a 480*/
+  .menu-fixo-cesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4.125rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    gap: 2.8rem;
+    z-index: 998;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
+  //Estilização do span
+  .item-fixo-cesta span {
+    display: flex;
+    width: 2.53713rem;
+    height: 1.10881rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-family: "Poppins";
+    font-size: 0.704rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  //Estilização da img
+  .item-fixo-cesta img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.10738rem;
+    height: 1.10544rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-cesta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*Estilização para tamanhos de telas de 319px  tela-seis*/
+@media (max-width: 319px) {
+  .header-pesquisa {
+    width: 100vw;
+    height: 2.91063rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px rgba(228, 144, 17, 0.5);
+  }
+  .icon-home-pesquisa {
+    width: 1.46319rem;
+    height: 1.46319rem;
+    flex-shrink: 0;
+    position: fixed;
+    left: -3px;
+    top: 2px;
+  }
+  .form-pesquisa {
+    display: inline-flex;
+    padding: 0.10588rem 0.33719rem 0.08163rem 0.332rem;
+    justify-content: center;
+    align-items: center;
+    //gap: 4.92388rem;
+    border-radius: 0.6875rem;
+    border: 1px solid rgba(113, 113, 113, 0.4);
+    margin-left: 30px;
+  }
+  .input-pesquisa {
+    width: 14.5rem;
+    //height: 1.5rem;
+    border: none;
+    outline: none;
+  }
+  ::placeholder {
+    color: #717171;
+    font-family: "Poppins";
+    font-size: 0.7875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .form-pesquisa:focus-within {
+    border: 1px solid #e49011;
+  }
+  .search-icon {
+    width: 0.764rem;
+    height: 0.764rem;
+  }
+
+  //dimensões do card / filter lista input
+  .seach-filter-lista {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 15rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+    background-color: white;
+    box-shadow: 4px 5px 4px 4px rgba(228, 144, 17, 0.1);
+    z-index: 999;
+  }
+
+  .seach-filter-lista h3 {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    right: -1%;
+  }
+  .seach-filter-lista hr {
+    width: 14.5rem;
+    height: 0rem;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    color: rgba(113, 113, 113, 0.41);
+    position: relative;
+    bottom: 16%;
+  }
+  .suggestions {
+    list-style: none;
+    color: #717171;
+    font-family: "Poppins";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    right: 20%;
+    bottom: 1.4rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .suggestions img {
+    width: 0.74856rem;
+    height: 0.54544rem;
+    flex-shrink: 0;
+  }
+
+  /*Div pai, parte que vai ficar fixa na parte inferior da tela de 320 a 480*/
+  .menu-fixo-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4.125rem;
+    border-top: 1.594px solid rgba(228, 144, 17, 0.34);
+    box-shadow: 0px 9.57807731628418px 9.57807731628418px 0px
+      rgba(228, 144, 17, 0.1);
+    gap: 1.8rem;
+    z-index: 998;
+    background: rgba(13, 12, 10, 0.06);
+  }
+
+  //Estilização do span
+  .item-fixo-pesquisa span {
+    display: flex;
+    width: 2.53713rem;
+    height: 1.10881rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #1e1e1e;
+    font-family: "Poppins";
+    font-size: 0.704rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  //Estilização da img
+  .item-fixo-pesquisa img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.10738rem;
+    height: 1.10544rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  //div que agrupa o span e a img
+  .item-fixo-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

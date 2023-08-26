@@ -8,21 +8,22 @@ import { LoginPaiComponent } from './pages/login-pai/login-pai.component';
 import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/inform-codigo-celular/inform-codigo-celular.component';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component';
+import { CestaComponent } from './pages/cesta/cesta.component';
 
 const routes: Routes = [
-
-{ path: 'home', component: HomeComponent },
-{ path: 'dialog-localizacao', component: DialogLocalizacaoComponent},
-{ path: 'app-login', component: LoginPaiComponent},
-{path: 'informar-email', component: InformeEmailComponent},
-{path: 'informar-celular', component: InformeCelularComponent},
-{path: 'codigo-celular', component: InformCodigoCelularComponent},
-{path: 'codigo-email', component: InformeCodigoEmailComponent},
-{path:'pesquisa', component: PesquisaComponent},
+  { path: 'home', component: HomeComponent },
+  { path: 'dialog-localizacao', component: DialogLocalizacaoComponent },
+  { path: 'app-login', component: LoginPaiComponent },
+  { path: 'informar-email', component: InformeEmailComponent },
+  { path: 'informar-celular', component: InformeCelularComponent },
+  { path: 'codigo-celular', component: InformCodigoCelularComponent },
+  { path: 'codigo-email', component: InformeCodigoEmailComponent },
+  { path: 'pesquisa', component: PesquisaComponent },
+  { path: 'cesta', component: CestaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

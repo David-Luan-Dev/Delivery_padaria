@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,7 +42,10 @@ import { InformCodigoCelularComponent } from './pages/login-pai/login-tela-um/in
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask, IConfig } from 'ngx-mask';
 import { InformeCodigoEmailComponent } from './pages/login-pai/login-tela-um/informe-codigo-email/informe-codigo-email.component';
 import { PesquisaComponent } from './pages/pesquisa/pesquisa.component'; 
-import { InputEmailComponent } from './input-email/input-email.component'; 
+import { InputEmailComponent } from './input-email/input-email.component';
+import { CestaComunicacaoServiceService } from './services/cesta-comunicacao-service.service';
+import { CestaTelaUmComponent } from './header-tela-um/cesta-tela-um/cesta-tela-um.component';
+import { CestaComponent } from './pages/cesta/cesta.component';
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 @NgModule({
   declarations: [
@@ -75,6 +79,10 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     InformeCodigoEmailComponent,
     PesquisaComponent,
     InputEmailComponent,
+    CestaTelaUmComponent,
+    CestaComponent,
+  
+    
   ],
   imports: [
     BrowserModule,
@@ -85,14 +93,14 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     ReactiveFormsModule,
     CommonModule,
     NgxMaskDirective,
-     NgxMaskPipe,
-     MatInputModule,
-     MatFormFieldModule,
-     FormsModule,
-  
+    NgxMaskPipe,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatSidenavModule,
 
   ],
-  providers: [provideNgxMask()],
+  providers: [provideNgxMask(), CestaComunicacaoServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
